@@ -1,0 +1,460 @@
+{
+  "type": "File",
+  "start": 0,
+  "end": 646,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 20,
+      "column": 0
+    }
+  },
+  "program": {
+    "type": "Program",
+    "start": 0,
+    "end": 646,
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 20,
+        "column": 0
+      }
+    },
+    "sourceType": "module",
+    "body": [
+      {
+        "type": "ImportDeclaration",
+        "start": 600,
+        "end": 624,
+        "loc": {
+          "start": {
+            "line": 17,
+            "column": 0
+          },
+          "end": {
+            "line": 17,
+            "column": 24
+          }
+        },
+        "specifiers": [
+          {
+            "type": "ImportDefaultSpecifier",
+            "start": 607,
+            "end": 610,
+            "loc": {
+              "start": {
+                "line": 17,
+                "column": 7
+              },
+              "end": {
+                "line": 17,
+                "column": 10
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 607,
+              "end": 610,
+              "loc": {
+                "start": {
+                  "line": 17,
+                  "column": 7
+                },
+                "end": {
+                  "line": 17,
+                  "column": 10
+                },
+                "identifierName": "es6"
+              },
+              "name": "es6",
+              "leadingComments": null
+            },
+            "leadingComments": null
+          }
+        ],
+        "source": {
+          "type": "StringLiteral",
+          "start": 616,
+          "end": 623,
+          "loc": {
+            "start": {
+              "line": 17,
+              "column": 16
+            },
+            "end": {
+              "line": 17,
+              "column": 23
+            }
+          },
+          "extra": {
+            "rawValue": "./es6",
+            "raw": "'./es6'"
+          },
+          "value": "./es6"
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * Copyright 2017 Moshe Simantov\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n ",
+            "start": 0,
+            "end": 598,
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 0
+              },
+              "end": {
+                "line": 15,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "ExportDefaultDeclaration",
+        "start": 626,
+        "end": 645,
+        "loc": {
+          "start": {
+            "line": 19,
+            "column": 0
+          },
+          "end": {
+            "line": 19,
+            "column": 19
+          }
+        },
+        "declaration": {
+          "type": "Identifier",
+          "start": 641,
+          "end": 644,
+          "loc": {
+            "start": {
+              "line": 19,
+              "column": 15
+            },
+            "end": {
+              "line": 19,
+              "column": 18
+            },
+            "identifierName": "es6"
+          },
+          "name": "es6",
+          "leadingComments": [],
+          "trailingComments": []
+        }
+      }
+    ],
+    "directives": []
+  },
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Copyright 2017 Moshe Simantov\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n ",
+      "start": 0,
+      "end": 598,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 15,
+          "column": 3
+        }
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Copyright 2017 Moshe Simantov\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n ",
+      "start": 0,
+      "end": 598,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 15,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "import",
+        "keyword": "import",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "import",
+      "start": 600,
+      "end": 606,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 0
+        },
+        "end": {
+          "line": 17,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "es6",
+      "start": 607,
+      "end": 610,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 7
+        },
+        "end": {
+          "line": 17,
+          "column": 10
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "from",
+      "start": 611,
+      "end": 615,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 11
+        },
+        "end": {
+          "line": 17,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "./es6",
+      "start": 616,
+      "end": 623,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 16
+        },
+        "end": {
+          "line": 17,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 623,
+      "end": 624,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 23
+        },
+        "end": {
+          "line": 17,
+          "column": 24
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "export",
+        "keyword": "export",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "export",
+      "start": 626,
+      "end": 632,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 0
+        },
+        "end": {
+          "line": 19,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "default",
+        "keyword": "default",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "default",
+      "start": 633,
+      "end": 640,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 7
+        },
+        "end": {
+          "line": 19,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "es6",
+      "start": 641,
+      "end": 644,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 15
+        },
+        "end": {
+          "line": 19,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 644,
+      "end": 645,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 18
+        },
+        "end": {
+          "line": 19,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "eof",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 646,
+      "end": 646,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 0
+        },
+        "end": {
+          "line": 20,
+          "column": 0
+        }
+      }
+    }
+  ]
+}

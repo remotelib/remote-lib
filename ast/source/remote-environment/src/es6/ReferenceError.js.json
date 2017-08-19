@@ -1,0 +1,768 @@
+{
+  "type": "File",
+  "start": 0,
+  "end": 752,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 23,
+      "column": 0
+    }
+  },
+  "program": {
+    "type": "Program",
+    "start": 0,
+    "end": 752,
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 23,
+        "column": 0
+      }
+    },
+    "sourceType": "module",
+    "body": [
+      {
+        "type": "ExportDefaultDeclaration",
+        "start": 640,
+        "end": 751,
+        "loc": {
+          "start": {
+            "line": 19,
+            "column": 0
+          },
+          "end": {
+            "line": 22,
+            "column": 2
+          }
+        },
+        "declaration": {
+          "type": "ObjectExpression",
+          "start": 655,
+          "end": 750,
+          "loc": {
+            "start": {
+              "line": 19,
+              "column": 15
+            },
+            "end": {
+              "line": 22,
+              "column": 1
+            }
+          },
+          "properties": [
+            {
+              "type": "ObjectProperty",
+              "start": 659,
+              "end": 691,
+              "loc": {
+                "start": {
+                  "line": 20,
+                  "column": 2
+                },
+                "end": {
+                  "line": 20,
+                  "column": 34
+                }
+              },
+              "method": false,
+              "shorthand": false,
+              "computed": false,
+              "key": {
+                "type": "StringLiteral",
+                "start": 659,
+                "end": 675,
+                "loc": {
+                  "start": {
+                    "line": 20,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 20,
+                    "column": 18
+                  }
+                },
+                "extra": {
+                  "rawValue": "ReferenceError",
+                  "raw": "'ReferenceError'"
+                },
+                "value": "ReferenceError",
+                "leadingComments": null
+              },
+              "value": {
+                "type": "Identifier",
+                "start": 677,
+                "end": 691,
+                "loc": {
+                  "start": {
+                    "line": 20,
+                    "column": 20
+                  },
+                  "end": {
+                    "line": 20,
+                    "column": 34
+                  },
+                  "identifierName": "ReferenceError"
+                },
+                "name": "ReferenceError"
+              },
+              "leadingComments": null
+            },
+            {
+              "type": "ObjectProperty",
+              "start": 695,
+              "end": 747,
+              "loc": {
+                "start": {
+                  "line": 21,
+                  "column": 2
+                },
+                "end": {
+                  "line": 21,
+                  "column": 54
+                }
+              },
+              "method": false,
+              "shorthand": false,
+              "computed": false,
+              "key": {
+                "type": "StringLiteral",
+                "start": 695,
+                "end": 721,
+                "loc": {
+                  "start": {
+                    "line": 21,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 21,
+                    "column": 28
+                  }
+                },
+                "extra": {
+                  "rawValue": "ReferenceError.prototype",
+                  "raw": "'ReferenceError.prototype'"
+                },
+                "value": "ReferenceError.prototype"
+              },
+              "value": {
+                "type": "MemberExpression",
+                "start": 723,
+                "end": 747,
+                "loc": {
+                  "start": {
+                    "line": 21,
+                    "column": 30
+                  },
+                  "end": {
+                    "line": 21,
+                    "column": 54
+                  }
+                },
+                "object": {
+                  "type": "Identifier",
+                  "start": 723,
+                  "end": 737,
+                  "loc": {
+                    "start": {
+                      "line": 21,
+                      "column": 30
+                    },
+                    "end": {
+                      "line": 21,
+                      "column": 44
+                    },
+                    "identifierName": "ReferenceError"
+                  },
+                  "name": "ReferenceError"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "start": 738,
+                  "end": 747,
+                  "loc": {
+                    "start": {
+                      "line": 21,
+                      "column": 45
+                    },
+                    "end": {
+                      "line": 21,
+                      "column": 54
+                    },
+                    "identifierName": "prototype"
+                  },
+                  "name": "prototype"
+                },
+                "computed": false
+              }
+            }
+          ],
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * Copyright 2017 Moshe Simantov\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n ",
+              "start": 0,
+              "end": 598,
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 0
+                },
+                "end": {
+                  "line": 15,
+                  "column": 3
+                }
+              }
+            },
+            {
+              "type": "CommentBlock",
+              "value": " eslint-disable prettier/prettier ",
+              "start": 600,
+              "end": 638,
+              "loc": {
+                "start": {
+                  "line": 17,
+                  "column": 0
+                },
+                "end": {
+                  "line": 17,
+                  "column": 38
+                }
+              }
+            }
+          ],
+          "trailingComments": []
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * Copyright 2017 Moshe Simantov\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n ",
+            "start": 0,
+            "end": 598,
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 0
+              },
+              "end": {
+                "line": 15,
+                "column": 3
+              }
+            }
+          },
+          {
+            "type": "CommentBlock",
+            "value": " eslint-disable prettier/prettier ",
+            "start": 600,
+            "end": 638,
+            "loc": {
+              "start": {
+                "line": 17,
+                "column": 0
+              },
+              "end": {
+                "line": 17,
+                "column": 38
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "directives": []
+  },
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Copyright 2017 Moshe Simantov\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n ",
+      "start": 0,
+      "end": 598,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 15,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": " eslint-disable prettier/prettier ",
+      "start": 600,
+      "end": 638,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 0
+        },
+        "end": {
+          "line": 17,
+          "column": 38
+        }
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Copyright 2017 Moshe Simantov\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n ",
+      "start": 0,
+      "end": 598,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 15,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": " eslint-disable prettier/prettier ",
+      "start": 600,
+      "end": 638,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 0
+        },
+        "end": {
+          "line": 17,
+          "column": 38
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "export",
+        "keyword": "export",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "export",
+      "start": 640,
+      "end": 646,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 0
+        },
+        "end": {
+          "line": 19,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "default",
+        "keyword": "default",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "default",
+      "start": 647,
+      "end": 654,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 7
+        },
+        "end": {
+          "line": 19,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 655,
+      "end": 656,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 15
+        },
+        "end": {
+          "line": 19,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "ReferenceError",
+      "start": 659,
+      "end": 675,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 2
+        },
+        "end": {
+          "line": 20,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 675,
+      "end": 676,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 18
+        },
+        "end": {
+          "line": 20,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ReferenceError",
+      "start": 677,
+      "end": 691,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 20
+        },
+        "end": {
+          "line": 20,
+          "column": 34
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 691,
+      "end": 692,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 34
+        },
+        "end": {
+          "line": 20,
+          "column": 35
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "ReferenceError.prototype",
+      "start": 695,
+      "end": 721,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 2
+        },
+        "end": {
+          "line": 21,
+          "column": 28
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 721,
+      "end": 722,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 28
+        },
+        "end": {
+          "line": 21,
+          "column": 29
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ReferenceError",
+      "start": 723,
+      "end": 737,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 30
+        },
+        "end": {
+          "line": 21,
+          "column": 44
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 737,
+      "end": 738,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 44
+        },
+        "end": {
+          "line": 21,
+          "column": 45
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "prototype",
+      "start": 738,
+      "end": 747,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 45
+        },
+        "end": {
+          "line": 21,
+          "column": 54
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 747,
+      "end": 748,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 54
+        },
+        "end": {
+          "line": 21,
+          "column": 55
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 749,
+      "end": 750,
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 0
+        },
+        "end": {
+          "line": 22,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 750,
+      "end": 751,
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 1
+        },
+        "end": {
+          "line": 22,
+          "column": 2
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "eof",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 752,
+      "end": 752,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 0
+        },
+        "end": {
+          "line": 23,
+          "column": 0
+        }
+      }
+    }
+  ]
+}

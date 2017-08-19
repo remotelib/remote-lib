@@ -1,0 +1,2090 @@
+{
+  "type": "File",
+  "start": 0,
+  "end": 930,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 27,
+      "column": 0
+    }
+  },
+  "program": {
+    "type": "Program",
+    "start": 0,
+    "end": 930,
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 27,
+        "column": 0
+      }
+    },
+    "sourceType": "module",
+    "body": [
+      {
+        "type": "ExportDefaultDeclaration",
+        "start": 640,
+        "end": 929,
+        "loc": {
+          "start": {
+            "line": 19,
+            "column": 0
+          },
+          "end": {
+            "line": 26,
+            "column": 2
+          }
+        },
+        "declaration": {
+          "type": "ObjectExpression",
+          "start": 655,
+          "end": 928,
+          "loc": {
+            "start": {
+              "line": 19,
+              "column": 15
+            },
+            "end": {
+              "line": 26,
+              "column": 1
+            }
+          },
+          "properties": [
+            {
+              "type": "ObjectProperty",
+              "start": 659,
+              "end": 677,
+              "loc": {
+                "start": {
+                  "line": 20,
+                  "column": 2
+                },
+                "end": {
+                  "line": 20,
+                  "column": 20
+                }
+              },
+              "method": false,
+              "shorthand": false,
+              "computed": false,
+              "key": {
+                "type": "StringLiteral",
+                "start": 659,
+                "end": 668,
+                "loc": {
+                  "start": {
+                    "line": 20,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 20,
+                    "column": 11
+                  }
+                },
+                "extra": {
+                  "rawValue": "WeakMap",
+                  "raw": "'WeakMap'"
+                },
+                "value": "WeakMap",
+                "leadingComments": null
+              },
+              "value": {
+                "type": "Identifier",
+                "start": 670,
+                "end": 677,
+                "loc": {
+                  "start": {
+                    "line": 20,
+                    "column": 13
+                  },
+                  "end": {
+                    "line": 20,
+                    "column": 20
+                  },
+                  "identifierName": "WeakMap"
+                },
+                "name": "WeakMap"
+              },
+              "leadingComments": null
+            },
+            {
+              "type": "ObjectProperty",
+              "start": 681,
+              "end": 719,
+              "loc": {
+                "start": {
+                  "line": 21,
+                  "column": 2
+                },
+                "end": {
+                  "line": 21,
+                  "column": 40
+                }
+              },
+              "method": false,
+              "shorthand": false,
+              "computed": false,
+              "key": {
+                "type": "StringLiteral",
+                "start": 681,
+                "end": 700,
+                "loc": {
+                  "start": {
+                    "line": 21,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 21,
+                    "column": 21
+                  }
+                },
+                "extra": {
+                  "rawValue": "WeakMap.prototype",
+                  "raw": "'WeakMap.prototype'"
+                },
+                "value": "WeakMap.prototype"
+              },
+              "value": {
+                "type": "MemberExpression",
+                "start": 702,
+                "end": 719,
+                "loc": {
+                  "start": {
+                    "line": 21,
+                    "column": 23
+                  },
+                  "end": {
+                    "line": 21,
+                    "column": 40
+                  }
+                },
+                "object": {
+                  "type": "Identifier",
+                  "start": 702,
+                  "end": 709,
+                  "loc": {
+                    "start": {
+                      "line": 21,
+                      "column": 23
+                    },
+                    "end": {
+                      "line": 21,
+                      "column": 30
+                    },
+                    "identifierName": "WeakMap"
+                  },
+                  "name": "WeakMap"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "start": 710,
+                  "end": 719,
+                  "loc": {
+                    "start": {
+                      "line": 21,
+                      "column": 31
+                    },
+                    "end": {
+                      "line": 21,
+                      "column": 40
+                    },
+                    "identifierName": "prototype"
+                  },
+                  "name": "prototype"
+                },
+                "computed": false
+              }
+            },
+            {
+              "type": "ObjectProperty",
+              "start": 723,
+              "end": 775,
+              "loc": {
+                "start": {
+                  "line": 22,
+                  "column": 2
+                },
+                "end": {
+                  "line": 22,
+                  "column": 54
+                }
+              },
+              "method": false,
+              "shorthand": false,
+              "computed": false,
+              "key": {
+                "type": "StringLiteral",
+                "start": 723,
+                "end": 749,
+                "loc": {
+                  "start": {
+                    "line": 22,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 22,
+                    "column": 28
+                  }
+                },
+                "extra": {
+                  "rawValue": "WeakMap.prototype.delete",
+                  "raw": "'WeakMap.prototype.delete'"
+                },
+                "value": "WeakMap.prototype.delete"
+              },
+              "value": {
+                "type": "MemberExpression",
+                "start": 751,
+                "end": 775,
+                "loc": {
+                  "start": {
+                    "line": 22,
+                    "column": 30
+                  },
+                  "end": {
+                    "line": 22,
+                    "column": 54
+                  }
+                },
+                "object": {
+                  "type": "MemberExpression",
+                  "start": 751,
+                  "end": 768,
+                  "loc": {
+                    "start": {
+                      "line": 22,
+                      "column": 30
+                    },
+                    "end": {
+                      "line": 22,
+                      "column": 47
+                    }
+                  },
+                  "object": {
+                    "type": "Identifier",
+                    "start": 751,
+                    "end": 758,
+                    "loc": {
+                      "start": {
+                        "line": 22,
+                        "column": 30
+                      },
+                      "end": {
+                        "line": 22,
+                        "column": 37
+                      },
+                      "identifierName": "WeakMap"
+                    },
+                    "name": "WeakMap"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "start": 759,
+                    "end": 768,
+                    "loc": {
+                      "start": {
+                        "line": 22,
+                        "column": 38
+                      },
+                      "end": {
+                        "line": 22,
+                        "column": 47
+                      },
+                      "identifierName": "prototype"
+                    },
+                    "name": "prototype"
+                  },
+                  "computed": false
+                },
+                "property": {
+                  "type": "Identifier",
+                  "start": 769,
+                  "end": 775,
+                  "loc": {
+                    "start": {
+                      "line": 22,
+                      "column": 48
+                    },
+                    "end": {
+                      "line": 22,
+                      "column": 54
+                    },
+                    "identifierName": "delete"
+                  },
+                  "name": "delete"
+                },
+                "computed": false
+              }
+            },
+            {
+              "type": "ObjectProperty",
+              "start": 779,
+              "end": 825,
+              "loc": {
+                "start": {
+                  "line": 23,
+                  "column": 2
+                },
+                "end": {
+                  "line": 23,
+                  "column": 48
+                }
+              },
+              "method": false,
+              "shorthand": false,
+              "computed": false,
+              "key": {
+                "type": "StringLiteral",
+                "start": 779,
+                "end": 802,
+                "loc": {
+                  "start": {
+                    "line": 23,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 23,
+                    "column": 25
+                  }
+                },
+                "extra": {
+                  "rawValue": "WeakMap.prototype.get",
+                  "raw": "'WeakMap.prototype.get'"
+                },
+                "value": "WeakMap.prototype.get"
+              },
+              "value": {
+                "type": "MemberExpression",
+                "start": 804,
+                "end": 825,
+                "loc": {
+                  "start": {
+                    "line": 23,
+                    "column": 27
+                  },
+                  "end": {
+                    "line": 23,
+                    "column": 48
+                  }
+                },
+                "object": {
+                  "type": "MemberExpression",
+                  "start": 804,
+                  "end": 821,
+                  "loc": {
+                    "start": {
+                      "line": 23,
+                      "column": 27
+                    },
+                    "end": {
+                      "line": 23,
+                      "column": 44
+                    }
+                  },
+                  "object": {
+                    "type": "Identifier",
+                    "start": 804,
+                    "end": 811,
+                    "loc": {
+                      "start": {
+                        "line": 23,
+                        "column": 27
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 34
+                      },
+                      "identifierName": "WeakMap"
+                    },
+                    "name": "WeakMap"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "start": 812,
+                    "end": 821,
+                    "loc": {
+                      "start": {
+                        "line": 23,
+                        "column": 35
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 44
+                      },
+                      "identifierName": "prototype"
+                    },
+                    "name": "prototype"
+                  },
+                  "computed": false
+                },
+                "property": {
+                  "type": "Identifier",
+                  "start": 822,
+                  "end": 825,
+                  "loc": {
+                    "start": {
+                      "line": 23,
+                      "column": 45
+                    },
+                    "end": {
+                      "line": 23,
+                      "column": 48
+                    },
+                    "identifierName": "get"
+                  },
+                  "name": "get"
+                },
+                "computed": false
+              }
+            },
+            {
+              "type": "ObjectProperty",
+              "start": 829,
+              "end": 875,
+              "loc": {
+                "start": {
+                  "line": 24,
+                  "column": 2
+                },
+                "end": {
+                  "line": 24,
+                  "column": 48
+                }
+              },
+              "method": false,
+              "shorthand": false,
+              "computed": false,
+              "key": {
+                "type": "StringLiteral",
+                "start": 829,
+                "end": 852,
+                "loc": {
+                  "start": {
+                    "line": 24,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 24,
+                    "column": 25
+                  }
+                },
+                "extra": {
+                  "rawValue": "WeakMap.prototype.has",
+                  "raw": "'WeakMap.prototype.has'"
+                },
+                "value": "WeakMap.prototype.has"
+              },
+              "value": {
+                "type": "MemberExpression",
+                "start": 854,
+                "end": 875,
+                "loc": {
+                  "start": {
+                    "line": 24,
+                    "column": 27
+                  },
+                  "end": {
+                    "line": 24,
+                    "column": 48
+                  }
+                },
+                "object": {
+                  "type": "MemberExpression",
+                  "start": 854,
+                  "end": 871,
+                  "loc": {
+                    "start": {
+                      "line": 24,
+                      "column": 27
+                    },
+                    "end": {
+                      "line": 24,
+                      "column": 44
+                    }
+                  },
+                  "object": {
+                    "type": "Identifier",
+                    "start": 854,
+                    "end": 861,
+                    "loc": {
+                      "start": {
+                        "line": 24,
+                        "column": 27
+                      },
+                      "end": {
+                        "line": 24,
+                        "column": 34
+                      },
+                      "identifierName": "WeakMap"
+                    },
+                    "name": "WeakMap"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "start": 862,
+                    "end": 871,
+                    "loc": {
+                      "start": {
+                        "line": 24,
+                        "column": 35
+                      },
+                      "end": {
+                        "line": 24,
+                        "column": 44
+                      },
+                      "identifierName": "prototype"
+                    },
+                    "name": "prototype"
+                  },
+                  "computed": false
+                },
+                "property": {
+                  "type": "Identifier",
+                  "start": 872,
+                  "end": 875,
+                  "loc": {
+                    "start": {
+                      "line": 24,
+                      "column": 45
+                    },
+                    "end": {
+                      "line": 24,
+                      "column": 48
+                    },
+                    "identifierName": "has"
+                  },
+                  "name": "has"
+                },
+                "computed": false
+              }
+            },
+            {
+              "type": "ObjectProperty",
+              "start": 879,
+              "end": 925,
+              "loc": {
+                "start": {
+                  "line": 25,
+                  "column": 2
+                },
+                "end": {
+                  "line": 25,
+                  "column": 48
+                }
+              },
+              "method": false,
+              "shorthand": false,
+              "computed": false,
+              "key": {
+                "type": "StringLiteral",
+                "start": 879,
+                "end": 902,
+                "loc": {
+                  "start": {
+                    "line": 25,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 25,
+                    "column": 25
+                  }
+                },
+                "extra": {
+                  "rawValue": "WeakMap.prototype.set",
+                  "raw": "'WeakMap.prototype.set'"
+                },
+                "value": "WeakMap.prototype.set"
+              },
+              "value": {
+                "type": "MemberExpression",
+                "start": 904,
+                "end": 925,
+                "loc": {
+                  "start": {
+                    "line": 25,
+                    "column": 27
+                  },
+                  "end": {
+                    "line": 25,
+                    "column": 48
+                  }
+                },
+                "object": {
+                  "type": "MemberExpression",
+                  "start": 904,
+                  "end": 921,
+                  "loc": {
+                    "start": {
+                      "line": 25,
+                      "column": 27
+                    },
+                    "end": {
+                      "line": 25,
+                      "column": 44
+                    }
+                  },
+                  "object": {
+                    "type": "Identifier",
+                    "start": 904,
+                    "end": 911,
+                    "loc": {
+                      "start": {
+                        "line": 25,
+                        "column": 27
+                      },
+                      "end": {
+                        "line": 25,
+                        "column": 34
+                      },
+                      "identifierName": "WeakMap"
+                    },
+                    "name": "WeakMap"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "start": 912,
+                    "end": 921,
+                    "loc": {
+                      "start": {
+                        "line": 25,
+                        "column": 35
+                      },
+                      "end": {
+                        "line": 25,
+                        "column": 44
+                      },
+                      "identifierName": "prototype"
+                    },
+                    "name": "prototype"
+                  },
+                  "computed": false
+                },
+                "property": {
+                  "type": "Identifier",
+                  "start": 922,
+                  "end": 925,
+                  "loc": {
+                    "start": {
+                      "line": 25,
+                      "column": 45
+                    },
+                    "end": {
+                      "line": 25,
+                      "column": 48
+                    },
+                    "identifierName": "set"
+                  },
+                  "name": "set"
+                },
+                "computed": false
+              }
+            }
+          ],
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * Copyright 2017 Moshe Simantov\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n ",
+              "start": 0,
+              "end": 598,
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 0
+                },
+                "end": {
+                  "line": 15,
+                  "column": 3
+                }
+              }
+            },
+            {
+              "type": "CommentBlock",
+              "value": " eslint-disable prettier/prettier ",
+              "start": 600,
+              "end": 638,
+              "loc": {
+                "start": {
+                  "line": 17,
+                  "column": 0
+                },
+                "end": {
+                  "line": 17,
+                  "column": 38
+                }
+              }
+            }
+          ],
+          "trailingComments": []
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * Copyright 2017 Moshe Simantov\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n ",
+            "start": 0,
+            "end": 598,
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 0
+              },
+              "end": {
+                "line": 15,
+                "column": 3
+              }
+            }
+          },
+          {
+            "type": "CommentBlock",
+            "value": " eslint-disable prettier/prettier ",
+            "start": 600,
+            "end": 638,
+            "loc": {
+              "start": {
+                "line": 17,
+                "column": 0
+              },
+              "end": {
+                "line": 17,
+                "column": 38
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "directives": []
+  },
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Copyright 2017 Moshe Simantov\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n ",
+      "start": 0,
+      "end": 598,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 15,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": " eslint-disable prettier/prettier ",
+      "start": 600,
+      "end": 638,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 0
+        },
+        "end": {
+          "line": 17,
+          "column": 38
+        }
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Copyright 2017 Moshe Simantov\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n ",
+      "start": 0,
+      "end": 598,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 15,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": " eslint-disable prettier/prettier ",
+      "start": 600,
+      "end": 638,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 0
+        },
+        "end": {
+          "line": 17,
+          "column": 38
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "export",
+        "keyword": "export",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "export",
+      "start": 640,
+      "end": 646,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 0
+        },
+        "end": {
+          "line": 19,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "default",
+        "keyword": "default",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "default",
+      "start": 647,
+      "end": 654,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 7
+        },
+        "end": {
+          "line": 19,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 655,
+      "end": 656,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 15
+        },
+        "end": {
+          "line": 19,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "WeakMap",
+      "start": 659,
+      "end": 668,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 2
+        },
+        "end": {
+          "line": 20,
+          "column": 11
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 668,
+      "end": 669,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 11
+        },
+        "end": {
+          "line": 20,
+          "column": 12
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "WeakMap",
+      "start": 670,
+      "end": 677,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 13
+        },
+        "end": {
+          "line": 20,
+          "column": 20
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 677,
+      "end": 678,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 20
+        },
+        "end": {
+          "line": 20,
+          "column": 21
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "WeakMap.prototype",
+      "start": 681,
+      "end": 700,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 2
+        },
+        "end": {
+          "line": 21,
+          "column": 21
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 700,
+      "end": 701,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 21
+        },
+        "end": {
+          "line": 21,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "WeakMap",
+      "start": 702,
+      "end": 709,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 23
+        },
+        "end": {
+          "line": 21,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 709,
+      "end": 710,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 30
+        },
+        "end": {
+          "line": 21,
+          "column": 31
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "prototype",
+      "start": 710,
+      "end": 719,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 31
+        },
+        "end": {
+          "line": 21,
+          "column": 40
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 719,
+      "end": 720,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 40
+        },
+        "end": {
+          "line": 21,
+          "column": 41
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "WeakMap.prototype.delete",
+      "start": 723,
+      "end": 749,
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 2
+        },
+        "end": {
+          "line": 22,
+          "column": 28
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 749,
+      "end": 750,
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 28
+        },
+        "end": {
+          "line": 22,
+          "column": 29
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "WeakMap",
+      "start": 751,
+      "end": 758,
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 30
+        },
+        "end": {
+          "line": 22,
+          "column": 37
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 758,
+      "end": 759,
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 37
+        },
+        "end": {
+          "line": 22,
+          "column": 38
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "prototype",
+      "start": 759,
+      "end": 768,
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 38
+        },
+        "end": {
+          "line": 22,
+          "column": 47
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 768,
+      "end": 769,
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 47
+        },
+        "end": {
+          "line": 22,
+          "column": 48
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "delete",
+        "keyword": "delete",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": true,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "delete",
+      "start": 769,
+      "end": 775,
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 48
+        },
+        "end": {
+          "line": 22,
+          "column": 54
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 775,
+      "end": 776,
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 54
+        },
+        "end": {
+          "line": 22,
+          "column": 55
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "WeakMap.prototype.get",
+      "start": 779,
+      "end": 802,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 2
+        },
+        "end": {
+          "line": 23,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 802,
+      "end": 803,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 25
+        },
+        "end": {
+          "line": 23,
+          "column": 26
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "WeakMap",
+      "start": 804,
+      "end": 811,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 27
+        },
+        "end": {
+          "line": 23,
+          "column": 34
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 811,
+      "end": 812,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 34
+        },
+        "end": {
+          "line": 23,
+          "column": 35
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "prototype",
+      "start": 812,
+      "end": 821,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 35
+        },
+        "end": {
+          "line": 23,
+          "column": 44
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 821,
+      "end": 822,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 44
+        },
+        "end": {
+          "line": 23,
+          "column": 45
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "get",
+      "start": 822,
+      "end": 825,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 45
+        },
+        "end": {
+          "line": 23,
+          "column": 48
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 825,
+      "end": 826,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 48
+        },
+        "end": {
+          "line": 23,
+          "column": 49
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "WeakMap.prototype.has",
+      "start": 829,
+      "end": 852,
+      "loc": {
+        "start": {
+          "line": 24,
+          "column": 2
+        },
+        "end": {
+          "line": 24,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 852,
+      "end": 853,
+      "loc": {
+        "start": {
+          "line": 24,
+          "column": 25
+        },
+        "end": {
+          "line": 24,
+          "column": 26
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "WeakMap",
+      "start": 854,
+      "end": 861,
+      "loc": {
+        "start": {
+          "line": 24,
+          "column": 27
+        },
+        "end": {
+          "line": 24,
+          "column": 34
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 861,
+      "end": 862,
+      "loc": {
+        "start": {
+          "line": 24,
+          "column": 34
+        },
+        "end": {
+          "line": 24,
+          "column": 35
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "prototype",
+      "start": 862,
+      "end": 871,
+      "loc": {
+        "start": {
+          "line": 24,
+          "column": 35
+        },
+        "end": {
+          "line": 24,
+          "column": 44
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 871,
+      "end": 872,
+      "loc": {
+        "start": {
+          "line": 24,
+          "column": 44
+        },
+        "end": {
+          "line": 24,
+          "column": 45
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "has",
+      "start": 872,
+      "end": 875,
+      "loc": {
+        "start": {
+          "line": 24,
+          "column": 45
+        },
+        "end": {
+          "line": 24,
+          "column": 48
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 875,
+      "end": 876,
+      "loc": {
+        "start": {
+          "line": 24,
+          "column": 48
+        },
+        "end": {
+          "line": 24,
+          "column": 49
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "WeakMap.prototype.set",
+      "start": 879,
+      "end": 902,
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 2
+        },
+        "end": {
+          "line": 25,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 902,
+      "end": 903,
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 25
+        },
+        "end": {
+          "line": 25,
+          "column": 26
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "WeakMap",
+      "start": 904,
+      "end": 911,
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 27
+        },
+        "end": {
+          "line": 25,
+          "column": 34
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 911,
+      "end": 912,
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 34
+        },
+        "end": {
+          "line": 25,
+          "column": 35
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "prototype",
+      "start": 912,
+      "end": 921,
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 35
+        },
+        "end": {
+          "line": 25,
+          "column": 44
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 921,
+      "end": 922,
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 44
+        },
+        "end": {
+          "line": 25,
+          "column": 45
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "set",
+      "start": 922,
+      "end": 925,
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 45
+        },
+        "end": {
+          "line": 25,
+          "column": 48
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 925,
+      "end": 926,
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 48
+        },
+        "end": {
+          "line": 25,
+          "column": 49
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 927,
+      "end": 928,
+      "loc": {
+        "start": {
+          "line": 26,
+          "column": 0
+        },
+        "end": {
+          "line": 26,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 928,
+      "end": 929,
+      "loc": {
+        "start": {
+          "line": 26,
+          "column": 1
+        },
+        "end": {
+          "line": 26,
+          "column": 2
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "eof",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 930,
+      "end": 930,
+      "loc": {
+        "start": {
+          "line": 27,
+          "column": 0
+        },
+        "end": {
+          "line": 27,
+          "column": 0
+        }
+      }
+    }
+  ]
+}

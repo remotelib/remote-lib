@@ -1,0 +1,70 @@
+[
+  {
+    "name": "Session#request",
+    "filePath": "packages/remote-protocol/src/Session.js",
+    "lines": [
+      {
+        "lineNumber": 272,
+        "line": "  /**"
+      },
+      {
+        "lineNumber": 273,
+        "line": "   * Request from the other peer to fetch the given action and send back it's response value."
+      },
+      {
+        "lineNumber": 274,
+        "line": "   *"
+      },
+      {
+        "lineNumber": 275,
+        "line": "   * @param {Action} action the given action to fetch by the peer"
+      },
+      {
+        "lineNumber": 276,
+        "line": "   * @param {object} [opts] Options"
+      },
+      {
+        "lineNumber": 277,
+        "line": "   * @param {number|null} [opts.timeout] Override the default timeout for this request (See {@link constructor})."
+      },
+      {
+        "lineNumber": 278,
+        "line": "   * @param {function} onFulfilled a function that will be called with the response value on the"
+      },
+      {
+        "lineNumber": 279,
+        "line": "   * first arguments as-is (ie. without `Promise.resolve`)."
+      },
+      {
+        "lineNumber": 280,
+        "line": "   * @param {function} onRejected a function that will be called with an error at the first"
+      },
+      {
+        "lineNumber": 281,
+        "line": "   * argument if the fetching throws an error or the request timeout as reached."
+      },
+      {
+        "lineNumber": 282,
+        "line": "   * @return {Session}"
+      },
+      {
+        "lineNumber": 283,
+        "line": "   */"
+      },
+      {
+        "lineNumber": 284,
+        "line": "  request(action, ...args) {"
+      }
+    ],
+    "codeParams": [
+      "action",
+      "args"
+    ],
+    "docParams": [
+      "action",
+      "opts",
+      "onFulfilled",
+      "onRejected"
+    ]
+  }
+]

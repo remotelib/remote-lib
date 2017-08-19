@@ -1,0 +1,2488 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">ReferenceContext | remote-lib-private</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="A private module for developing remote-lib packages."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="remote-lib-private"><meta property="twitter:description" content="A private module for developing remote-lib packages."></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/remotelib/remote-lib.git"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#lib">lib</a><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#src">src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isValidReference">isValidReference</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div class="header-notice">
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import ReferenceContext from &apos;<span><a href="file/reference-context/src/reference-context.js.html#lineNumber36">remote-lib-private/reference-context/src/reference-context.js</a></span>&apos;</code></pre></div>
+  <span data-ice="access">public</span>
+  <span data-ice="kind">class</span>
+  
+  
+  
+  <span data-ice="source">| <span><a href="file/reference-context/src/reference-context.js.html#lineNumber36">source</a></span></span>
+</div>
+
+<div class="self-detail detail">
+  <h1 data-ice="name">ReferenceContext</h1>
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  <div class="description" data-ice="description"><p>The reference context class.</p>
+</div>
+  
+
+  
+
+  
+
+  
+
+  
+</div>
+
+
+<div data-ice="staticMethodSummary"><h2>Static Method Summary</h2><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">Static Public Methods</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      <span data-ice="static">static</span>
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html#static-method-isValidReference">isValidReference</a></span></span><span class="code" data-ice="signature">(reference: <span>*</span>): <span>boolean</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Check if the given reference is valid.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div data-ice="constructorSummary"><h2>Constructor Summary</h2><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">Public Constructor</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html#instance-constructor-constructor">constructor</a></span></span><span class="code" data-ice="signature">(context: <span>object</span> | <span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span> | <span>Iterable</span>, parentContext: <span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span>)</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Create a reference-context instance.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div data-ice="memberSummary"><h2>Member Summary</h2><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">Public Members</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html#instance-member-[kContext]">[kContext]</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html#instance-member-[kParent]">[kParent]</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      <span class="kind" data-ice="kind">get</span>
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html#instance-get-count">count</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>The the number of values in this context including it&apos;s parents.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      <span class="kind" data-ice="kind">get</span>
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html#instance-get-ownCount">ownCount</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>The the number of values in this context (excluding the parents).</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      <span class="kind" data-ice="kind">get</span>
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html#instance-get-ownSize">ownSize</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>The the number of keys in this context (excluding the parents).</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      <span class="kind" data-ice="kind">get</span>
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html#instance-get-parent">parent</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Get the parent context.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      <span class="kind" data-ice="kind">get</span>
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html#instance-get-size">size</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>The the number of keys in this context including it&apos;s parents.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div data-ice="methodSummary"><h2>Method Summary</h2><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">Public Methods</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html#instance-method-assign">assign</a></span></span><span class="code" data-ice="signature">(value: <span>*</span>): <span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Assign a new reference for the given value or return it&apos;s current reference.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html#instance-method-clear">clear</a></span></span><span class="code" data-ice="signature">(): <span>undefined</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Clear and release all the values on this context.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html#instance-method-closure">closure</a></span></span><span class="code" data-ice="signature">(): <span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Create a closure context for this context.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html#instance-method-copyFrom">copyFrom</a></span></span><span class="code" data-ice="signature">(context: <span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span> | <span>Map</span> | <span>Array</span> | <span>object</span>): <span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Copy from other context it&apos;s references and values</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html#instance-method-delete">delete</a></span></span><span class="code" data-ice="signature">(reference: <span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span>): <span>boolean</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Remove the given reference from this context.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html#instance-method-exists">exists</a></span></span><span class="code" data-ice="signature">(value: <span>*</span>): <span>boolean</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Check if this context or one of it&apos;s parents has the given value.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html#instance-method-forEach">forEach</a></span></span><span class="code" data-ice="signature">(callback: <span>function</span>, thisArg: <span>*</span>): <span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Iterate over the context own values.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html#instance-method-generateReference">generateReference</a></span></span><span class="code" data-ice="signature">(): <span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Generate a reference for the <code>assign</code> method.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html#instance-method-get">get</a></span></span><span class="code" data-ice="signature">(reference: <span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span>): <span>*</span> | <span>undefined</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Get the reference value on this context or it&apos;s parents.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html#instance-method-has">has</a></span></span><span class="code" data-ice="signature">(reference: <span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span>): <span>boolean</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Check if this context or it&apos;s parents has the given reference.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html#instance-method-hasOwnReference">hasOwnReference</a></span></span><span class="code" data-ice="signature">(reference: <span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span>): <span>boolean</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Check if this context only (and not the parents) has the given reference.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html#instance-method-lookup">lookup</a></span></span><span class="code" data-ice="signature">(value: <span>*</span>): <span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span> | <span>undefined</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Get the reference of the given value in this context or one of it&apos;s parents.
+Return undefined if the value not exists.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html#instance-method-own">own</a></span></span><span class="code" data-ice="signature">(value: <span>*</span>): <span>boolean</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Check if this context only (excluding the parents) has the given value.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html#instance-method-release">release</a></span></span><span class="code" data-ice="signature">(value: <span>*</span>): <span>boolean</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Release a value from this context and remove any reference for this value.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html#instance-method-set">set</a></span></span><span class="code" data-ice="signature">(reference: <span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span>, value: <span>*</span>): <span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Set a reference for the given value.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html#instance-method-toString">toString</a></span></span><span class="code" data-ice="signature">(): <span>string</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Get the instance constructor name.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+
+
+
+
+<div data-ice="staticMethodDetails"><h2 data-ice="title">Static Public Methods</h2>
+
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-method-isValidReference">
+    <span class="access" data-ice="access">public</span>
+    <span data-ice="static">static</span>
+    
+    
+    
+    
+    <span class="code" data-ice="name">isValidReference</span><span class="code" data-ice="signature">(reference: <span>*</span>): <span>boolean</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/reference-context/src/reference-context.js.html#lineNumber44">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Check if the given reference is valid.
+All truthy values are valid reference expects <code>true</code>.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">reference</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The given reference</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>boolean</span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>True if it&apos;s {Reference}</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+</div>
+<div data-ice="constructorDetails"><h2 data-ice="title">Public Constructors</h2>
+
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-constructor-constructor">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">constructor</span><span class="code" data-ice="signature">(context: <span>object</span> | <span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span> | <span>Iterable</span>, parentContext: <span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span>)</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/reference-context/src/reference-context.js.html#lineNumber70">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Create a reference-context instance.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">context</td>
+      <td data-ice="type" class="code"><span>object</span> | <span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span> | <span>Iterable</span></td>
+      <td data-ice="appendix"><ul><li>optional</li></ul></td>
+      <td data-ice="description"><p>Initialize context with values</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">parentContext</td>
+      <td data-ice="type" class="code"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span></td>
+      <td data-ice="appendix"><ul><li>optional</li></ul></td>
+      <td data-ice="description"><p>The parent context for this context</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+</div>
+<div data-ice="memberDetails"><h2 data-ice="title">Public Members</h2>
+
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-member-[kContext]">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">[kContext]</span><span class="code" data-ice="signature">: <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/reference-context/src/reference-context.js.html#lineNumber85">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-member-[kParent]">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">[kParent]</span><span class="code" data-ice="signature">: <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/reference-context/src/reference-context.js.html#lineNumber78">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-get-count">
+    <span class="access" data-ice="access">public</span>
+    
+    <span class="kind" data-ice="kind">get</span>
+    
+    
+    
+    <span class="code" data-ice="name">count</span><span class="code" data-ice="signature">: <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/reference-context/src/reference-context.js.html#lineNumber130">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>The the number of values in this context including it&apos;s parents.</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-get-ownCount">
+    <span class="access" data-ice="access">public</span>
+    
+    <span class="kind" data-ice="kind">get</span>
+    
+    
+    
+    <span class="code" data-ice="name">ownCount</span><span class="code" data-ice="signature">: <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/reference-context/src/reference-context.js.html#lineNumber141">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>The the number of values in this context (excluding the parents).</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-get-ownSize">
+    <span class="access" data-ice="access">public</span>
+    
+    <span class="kind" data-ice="kind">get</span>
+    
+    
+    
+    <span class="code" data-ice="name">ownSize</span><span class="code" data-ice="signature">: <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/reference-context/src/reference-context.js.html#lineNumber119">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>The the number of keys in this context (excluding the parents).</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-get-parent">
+    <span class="access" data-ice="access">public</span>
+    
+    <span class="kind" data-ice="kind">get</span>
+    
+    
+    
+    <span class="code" data-ice="name">parent</span><span class="code" data-ice="signature">: <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/reference-context/src/reference-context.js.html#lineNumber97">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Get the parent context.</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-get-size">
+    <span class="access" data-ice="access">public</span>
+    
+    <span class="kind" data-ice="kind">get</span>
+    
+    
+    
+    <span class="code" data-ice="name">size</span><span class="code" data-ice="signature">: <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/reference-context/src/reference-context.js.html#lineNumber108">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>The the number of keys in this context including it&apos;s parents.</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+</div>
+<div data-ice="methodDetails"><h2 data-ice="title">Public Methods</h2>
+
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-assign">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">assign</span><span class="code" data-ice="signature">(value: <span>*</span>): <span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/reference-context/src/reference-context.js.html#lineNumber306">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Assign a new reference for the given value or return it&apos;s current reference.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">value</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The given value</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>The generated reference</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  <div data-ice="throwWrap">
+    <h4>Throw:</h4>
+    <table>
+      <tbody>
+      
+      <tr class="throw" data-ice="throw">
+        <td><p data-ice="throwName"><span>TypeError</span></p></td>
+        <td data-ice="throwDesc"><p>If generating references is not supported in this context</p>
+</td>
+      </tr>
+</tbody>
+    </table>
+  </div>
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-clear">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">clear</span><span class="code" data-ice="signature">(): <span>undefined</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/reference-context/src/reference-context.js.html#lineNumber376">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Clear and release all the values on this context.</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>undefined</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-closure">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">closure</span><span class="code" data-ice="signature">(): <span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/reference-context/src/reference-context.js.html#lineNumber189">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Create a closure context for this context.</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>The closure context</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-copyFrom">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">copyFrom</span><span class="code" data-ice="signature">(context: <span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span> | <span>Map</span> | <span>Array</span> | <span>object</span>): <span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/reference-context/src/reference-context.js.html#lineNumber160">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Copy from other context it&apos;s references and values</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">context</td>
+      <td data-ice="type" class="code"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span> | <span>Map</span> | <span>Array</span> | <span>object</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The context to copy from</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-delete">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">delete</span><span class="code" data-ice="signature">(reference: <span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span>): <span>boolean</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/reference-context/src/reference-context.js.html#lineNumber340">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Remove the given reference from this context.
+If the reference exists only on the parent contexts, this method will do nothing.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">reference</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The given reference</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>boolean</span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>True if the reference has been removed</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-exists">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">exists</span><span class="code" data-ice="signature">(value: <span>*</span>): <span>boolean</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/reference-context/src/reference-context.js.html#lineNumber263">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Check if this context or one of it&apos;s parents has the given value.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">value</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The given value</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>boolean</span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>True if it&apos;s does.</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-forEach">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">forEach</span><span class="code" data-ice="signature">(callback: <span>function</span>, thisArg: <span>*</span>): <span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/reference-context/src/reference-context.js.html#lineNumber179">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Iterate over the context own values.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">callback</td>
+      <td data-ice="type" class="code"><span>function</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">thisArg</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"><ul><li>optional</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-generateReference">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">generateReference</span><span class="code" data-ice="signature">(): <span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/reference-context/src/reference-context.js.html#lineNumber329">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Generate a reference for the <code>assign</code> method.
+The reference not required to be unique, the callee is responsible to verify that the
+reference is not in use and if required call this method again.</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>The generated reference</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  <div data-ice="throwWrap">
+    <h4>Throw:</h4>
+    <table>
+      <tbody>
+      
+      <tr class="throw" data-ice="throw">
+        <td><p data-ice="throwName"><span>TypeError</span></p></td>
+        <td data-ice="throwDesc"><p>If generating references is not supported in this context</p>
+</td>
+      </tr>
+</tbody>
+    </table>
+  </div>
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-get">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">get</span><span class="code" data-ice="signature">(reference: <span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span>): <span>*</span> | <span>undefined</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/reference-context/src/reference-context.js.html#lineNumber223">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Get the reference value on this context or it&apos;s parents.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">reference</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The reference of the value</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>*</span> | <span>undefined</span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>The reference value or undefined</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  <div data-ice="throwWrap">
+    <h4>Throw:</h4>
+    <table>
+      <tbody>
+      
+      <tr class="throw" data-ice="throw">
+        <td><p data-ice="throwName"><span>ReferenceError</span></p></td>
+        <td data-ice="throwDesc"><p>If the reference not exists.</p>
+</td>
+      </tr>
+</tbody>
+    </table>
+  </div>
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-has">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">has</span><span class="code" data-ice="signature">(reference: <span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span>): <span>boolean</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/reference-context/src/reference-context.js.html#lineNumber199">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Check if this context or it&apos;s parents has the given reference.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">reference</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The given reference</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>boolean</span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>True if it&apos;s has</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-hasOwnReference">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">hasOwnReference</span><span class="code" data-ice="signature">(reference: <span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span>): <span>boolean</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/reference-context/src/reference-context.js.html#lineNumber212">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Check if this context only (and not the parents) has the given reference.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">reference</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The given reference</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>boolean</span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>True if it&apos;s has</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-lookup">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">lookup</span><span class="code" data-ice="signature">(value: <span>*</span>): <span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span> | <span>undefined</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/reference-context/src/reference-context.js.html#lineNumber288">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Get the reference of the given value in this context or one of it&apos;s parents.
+Return undefined if the value not exists.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">value</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The given value</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span> | <span>undefined</span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>The value reference or undefined</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  <div data-ice="throwWrap">
+    <h4>Throw:</h4>
+    <table>
+      <tbody>
+      
+      <tr class="throw" data-ice="throw">
+        <td><p data-ice="throwName"><span>ReferenceError</span></p></td>
+        <td data-ice="throwDesc"><p>If the value not exists.</p>
+</td>
+      </tr>
+</tbody>
+    </table>
+  </div>
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-own">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">own</span><span class="code" data-ice="signature">(value: <span>*</span>): <span>boolean</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/reference-context/src/reference-context.js.html#lineNumber276">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Check if this context only (excluding the parents) has the given value.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">value</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The given value</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>boolean</span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>True if it&apos;s does.</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-release">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">release</span><span class="code" data-ice="signature">(value: <span>*</span>): <span>boolean</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/reference-context/src/reference-context.js.html#lineNumber362">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Release a value from this context and remove any reference for this value.
+If the value exists on the parent context, this method will do nothing.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">value</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The value to release</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>boolean</span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>True if the value released from this context</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-set">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">set</span><span class="code" data-ice="signature">(reference: <span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span>, value: <span>*</span>): <span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/reference-context/src/reference-context.js.html#lineNumber242">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Set a reference for the given value.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">reference</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The value reference</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">value</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The referable value</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-toString">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">toString</span><span class="code" data-ice="signature">(): <span>string</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/reference-context/src/reference-context.js.html#lineNumber150">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Get the instance constructor name.</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>string</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.1)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

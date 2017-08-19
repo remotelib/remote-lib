@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">packages/remote-context/test/remote-context.js</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#reference-context-src">reference-context/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isValidReference">isValidReference</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-context-src">remote-context/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/AssignableContext.js~AssignableContext.html">AssignableContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/Context.js~Context.html">Context</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/EnvContext.js~EnvContext.html">EnvContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/LocalContext.js~LocalContext.html">LocalContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/LocalPromise.js~LocalPromise.html">LocalPromise</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/LocalReference.js~LocalReference.html">LocalReference</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/ObjectSnapshot.js~ObjectSnapshot.html">ObjectSnapshot</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/RemoteContext.js~RemoteContext.html">RemoteContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/RemotePromise.js~RemotePromise.html">RemotePromise</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html">RemoteSession</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/RemoteValue.js~RemoteValue.html">RemoteValue</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-getInstance">getInstance</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isRemoteValue">isRemoteValue</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-observe">observe</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-reveal">reveal</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-revoke">revoke</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-context-src-actions">remote-context/src/actions</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/DeleteAction.js~DeleteAction.html">DeleteAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/GetAction.js~GetAction.html">GetAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/LocalDefinePropertyAction.js~LocalDefinePropertyAction.html">LocalDefinePropertyAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/LocalDeletePropertyAction.js~LocalDeletePropertyAction.html">LocalDeletePropertyAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/LocalPreventExtensionsAction.js~LocalPreventExtensionsAction.html">LocalPreventExtensionsAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/LocalReferenceAction.js~LocalReferenceAction.html">LocalReferenceAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/LocalSetPrototypeOfAction.js~LocalSetPrototypeOfAction.html">LocalSetPrototypeOfAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/PropertyDescriptorAction.js~PropertyDescriptorAction.html">PropertyDescriptorAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/PropertyDescriptorsAction.js~PropertyDescriptorsAction.html">PropertyDescriptorsAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/ReferenceAction.js~ReferenceAction.html">ReferenceAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/ReferencePropertyAction.js~ReferencePropertyAction.html">ReferencePropertyAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/ReflectAction.js~ReflectAction.html">ReflectAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/ReflectApplyAction.js~ReflectApplyAction.html">ReflectApplyAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/ReflectConstructAction.js~ReflectConstructAction.html">ReflectConstructAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/ReflectGetAction.js~ReflectGetAction.html">ReflectGetAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/ReflectPromiseAction.js~ReflectPromiseAction.html">ReflectPromiseAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteDefinePropertyAction.js~RemoteDefinePropertyAction.html">RemoteDefinePropertyAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteDeletePropertyAction.js~RemoteDeletePropertyAction.html">RemoteDeletePropertyAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemotePreventExtensionsAction.js~RemotePreventExtensionsAction.html">RemotePreventExtensionsAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteReferenceAction.js~RemoteReferenceAction.html">RemoteReferenceAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteSetAction.js~RemoteSetAction.html">RemoteSetAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteSetFunctionAction.js~RemoteSetFunctionAction.html">RemoteSetFunctionAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteSetObjectAction.js~RemoteSetObjectAction.html">RemoteSetObjectAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteSetPrototypeOfAction.js~RemoteSetPrototypeOfAction.html">RemoteSetPrototypeOfAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteSetSymbolAction.js~RemoteSetSymbolAction.html">RemoteSetSymbolAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/UndefinedValueAction.js~UndefinedValueAction.html">UndefinedValueAction</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-context-test-utils">remote-context/test/utils</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createsockets">createsockets</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-instance-src">remote-instance/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-instance/src/parser.js~Parser.html">Parser</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-lib-src">remote-lib/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-lib/src/Context.js~Context.html">Context</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-lib/src/Library.js~Library.html">Library</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-protocol-src">remote-protocol/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-protocol/src/Session.js~Session.html">Session</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-protocol-src-actions">remote-protocol/src/actions</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-protocol/src/actions/Action.js~Action.html">Action</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-protocol/src/actions/RequestAction.js~RequestAction.html">RequestAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-protocol/src/actions/ResponseAction.js~ResponseAction.html">ResponseAction</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">packages/remote-context/test/remote-context.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * Copyright 2017 Moshe Simantov
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+import assert from &apos;assert&apos;;
+import net from &apos;net&apos;;
+import &apos;babel-polyfill&apos;;
+import createStream from &apos;./utils/create-sockets&apos;;
+import { Context, EnvContext } from &apos;..&apos;;
+import envContext from &apos;../envs/es6-unstable&apos;;
+
+const { describe, it } = global;
+
+describe(&apos;RemoteContext&apos;, () =&gt; {
+  it(&apos;README Usage&apos;, done =&gt; {
+    // Create a new context under ES6 environment.
+    // You can put any object, class or instance under the context and it will be proxied to the
+    // remote peer automatically
+    const context = new Context(envContext, {
+      // Static vars
+      foo: &apos;bar&apos;,
+
+      // Dynamic functions
+      getRandom: () =&gt; Math.random(),
+
+      // Async functions
+      getData: () =&gt;
+        new Promise(resolve =&gt;
+          setTimeout(() =&gt; resolve({ data: &apos;Tada!&apos; }), 100),
+        ),
+
+      // Classes and objects
+      myThings: new Set([&apos;car&apos;, &apos;keys&apos;, &apos;pizza&apos;]),
+    });
+
+    // Create a server and serve each client the context remotely
+    const server = net.createServer(socket =&gt; {
+      context.remote(socket);
+    });
+
+    // Bind on port 3000
+    server.listen(3000, () =&gt; {
+      let tests = 4;
+
+      // Connect to the server and get a stream
+      const socket = net.createConnection(3000);
+
+      // Create the remote context
+      const clientContext = new Context(envContext);
+      const remoteContext = clientContext.remote(socket);
+
+      remoteContext.on(&apos;close&apos;, () =&gt; {
+        assert.equal(tests, 0);
+        server.close();
+        done();
+      });
+
+      // Get the remote &quot;foo&quot;
+      remoteContext
+        .fetch(&apos;foo&apos;)
+        .then(value =&gt; {
+          assert.equal(value, &apos;bar&apos;);
+
+          tests -= 1;
+          if (!tests) remoteContext.destroy();
+        })
+        .catch(done);
+
+      // Run the remote function &quot;getRandom&quot;
+      remoteContext.fetch(&apos;getRandom&apos;)()
+        .then(value =&gt; {
+          assert.equal(typeof value, &apos;number&apos;);
+          assert(value &lt; 1);
+          assert(value &gt;= 0);
+
+          tests -= 1;
+          if (!tests) remoteContext.destroy();
+        })
+        .catch(done);
+
+      // Run the remote async function &quot;getData&quot;
+      remoteContext.fetch(&apos;getData&apos;)()
+        .then(value =&gt; {
+          assert.deepEqual(value, { data: &apos;Tada!&apos; });
+
+          tests -= 1;
+          if (!tests) remoteContext.destroy();
+        })
+        .catch(done);
+
+      // Get remote instance set &quot;myThings&quot;
+      remoteContext
+        .fetch(&apos;myThings&apos;)
+        .then(async set =&gt; {
+          assert.equal(set instanceof Set, true);
+
+          // All instance methods require await or #then() when calling
+          assert.equal(await set.has(&apos;keys&apos;), true);
+          assert.equal(await set.has(&apos;cat&apos;), false);
+
+          // Change the remote instance
+          await set.add(&apos;dog&apos;);
+          assert.equal(await set.has(&apos;dog&apos;), true);
+
+          tests -= 1;
+          if (!tests) remoteContext.destroy();
+        })
+        .catch(done);
+    });
+  });
+
+  describe(&apos;#remote()&apos;, () =&gt; {
+    class Foo {
+      constructor() {
+        this.self = this;
+      }
+
+      // eslint-disable-next-line class-methods-use-this
+      bar(res = &apos;hi!&apos;) {
+        return res;
+      }
+    }
+
+    Foo.prototype.Math = Math;
+
+    it(&apos;should close when peer close&apos;, done =&gt; {
+      const server = new Context(envContext, { foo: new Foo() });
+      const client = new Context(envContext);
+
+      const streams = createStream();
+      const clientRemote = client.remote(streams[0]);
+      const serverRemote = server.remote(streams[1]);
+
+      let run = false;
+      serverRemote.on(&apos;close&apos;, () =&gt; {
+        assert(run);
+        done();
+      });
+
+      setTimeout(() =&gt; {
+        run = true;
+        clientRemote.destroy();
+      }, 20);
+    });
+
+    it(&apos;should call functions remotely&apos;, done =&gt; {
+      const server = new Context(envContext, { foo: new Foo() });
+      const client = new Context(envContext);
+
+      const streams = createStream();
+      const clientRemote = client.remote(streams[0]);
+      server.remote(streams[1]);
+
+      clientRemote
+        .fetch(&apos;foo&apos;)
+        .then(obj =&gt; {
+          assert.equal(typeof obj, &apos;object&apos;);
+          assert.notEqual(obj, server.get(&apos;foo&apos;));
+
+          assert.equal(obj.self, obj);
+          assert.equal(typeof obj.bar, &apos;function&apos;);
+          assert.equal(obj.Math, Math);
+
+          const promise = obj.bar();
+          assert.equal(typeof promise, &apos;function&apos;);
+          assert.equal(typeof promise.then, &apos;function&apos;);
+
+          promise.then(value =&gt; {
+            assert.equal(value, &apos;hi!&apos;);
+
+            clientRemote.destroy();
+            done();
+          }, done);
+        })
+        .catch(done);
+    });
+
+    it(&apos;should work with empty envContext&apos;, done =&gt; {
+      const server = new Context(new EnvContext(&apos;empty&apos;, {}), {
+        foo: new Foo(),
+      });
+      const client = new Context(new EnvContext(&apos;empty&apos;, {}));
+
+      const streams = createStream();
+      const clientRemote = client.remote(streams[0]);
+      server.remote(streams[1]);
+
+      clientRemote
+        .fetch(&apos;foo&apos;)
+        .then(obj =&gt; {
+          assert.equal(typeof obj, &apos;object&apos;);
+          assert.notEqual(obj, server.get(&apos;foo&apos;));
+
+          assert.equal(obj.self, obj);
+          assert.equal(typeof obj.bar, &apos;function&apos;);
+
+          assert.notEqual(obj.Math, Math);
+          assert.equal(typeof obj.Math.abs, &apos;function&apos;);
+          assert.notEqual(obj.Math.abs, Math.abs);
+          assert.equal(typeof obj.Math.min, &apos;function&apos;);
+          assert.notEqual(obj.Math.min, Math.min);
+
+          const promise = obj.bar();
+          assert.equal(typeof promise, &apos;function&apos;);
+          assert.equal(typeof promise.then, &apos;function&apos;);
+
+          promise.then(value =&gt; {
+            assert.equal(value, &apos;hi!&apos;);
+
+            clientRemote.destroy();
+            done();
+          }, done);
+        })
+        .catch(done);
+    });
+
+    it(&apos;should protect read-only context&apos;, done =&gt; {
+      const server = new Context(envContext, { foo: new Foo() });
+      const client = new Context(envContext);
+
+      const streams = createStream();
+      const clientRemote = client.remote(streams[0]);
+      server.remote(streams[1]);
+
+      clientRemote
+        .fetch(&apos;foo&apos;)
+        .then(obj =&gt; {
+          // eslint-disable-next-line no-param-reassign
+          obj.jjj = &apos;123&apos;;
+
+          return clientRemote.resolve(obj).then(
+            () =&gt; done(new Error(&quot;Should&apos;t resolved&quot;)),
+            err =&gt; {
+              if (!(err instanceof TypeError)) {
+                done(err);
+                return;
+              }
+
+              assert.equal(
+                err.message,
+                &quot;Can&apos;t define property of a read-only object: [object Object]&quot;,
+              );
+
+              clientRemote.destroy();
+              done();
+            },
+          );
+        })
+        .catch(done);
+    });
+
+    it(&apos;should change writable context&apos;, done =&gt; {
+      const server = new Context(envContext, { foo: new Foo() });
+      const client = new Context(envContext);
+
+      const streams = createStream();
+      const clientRemote = client.remote(streams[0]);
+      server.remote(streams[1], {
+        writable: true,
+      });
+
+      clientRemote
+        .fetch(&apos;foo&apos;)
+        .then(obj =&gt; {
+          // eslint-disable-next-line no-param-reassign
+          obj.jjj = &apos;123&apos;;
+          assert.equal(obj.jjj, undefined);
+
+          return clientRemote.resolve(obj).then(value =&gt; {
+            assert.equal(value, obj);
+            assert.equal(obj.jjj, &apos;123&apos;);
+
+            clientRemote.destroy();
+            done();
+          });
+        })
+        .catch(done);
+    });
+
+    it(&apos;should call sub-functions remotely via promise&apos;, done =&gt; {
+      const server = new Context(envContext, { foo: new Foo() });
+      const client = new Context(envContext);
+
+      const streams = createStream();
+      const clientRemote = client.remote(streams[0]);
+      server.remote(streams[1]);
+
+      const paramObj = {};
+
+      clientRemote
+        .fetch(&apos;foo&apos;)
+        .bar(paramObj)
+        .then(obj =&gt; {
+          assert.equal(obj, paramObj);
+
+          clientRemote.destroy();
+          done();
+        })
+        .catch(done);
+    });
+
+    it(&apos;should work with promises&apos;, done =&gt; {
+      const server = new Context(envContext, { promise: Promise.resolve(123) });
+      const client = new Context(envContext);
+
+      const streams = createStream();
+      const clientRemote = client.remote(streams[0]);
+      server.remote(streams[1]);
+
+      clientRemote
+        .fetch(&apos;promise&apos;)
+        .then(obj =&gt; {
+          assert.equal(obj, 123);
+
+          return &apos;foo&apos;;
+        })
+        .then(value =&gt; {
+          assert.equal(value, &apos;foo&apos;);
+
+          clientRemote.destroy();
+          done();
+        })
+        .catch(done);
+    });
+
+    it(&apos;should handle promise reject&apos;, done =&gt; {
+      const server = new Context(envContext, { promise: Promise.reject(123) });
+      const client = new Context(envContext);
+
+      const streams = createStream();
+      const clientRemote = client.remote(streams[0]);
+      server.remote(streams[1]);
+
+      clientRemote
+        .fetch(&apos;promise&apos;)
+        .then(() =&gt; {
+          done(new Error(&apos;Should resolved&apos;));
+        })
+        .catch(err =&gt; {
+          assert.equal(err, 123);
+
+          clientRemote.destroy();
+          done();
+        })
+        .catch(done);
+    });
+
+    it(&apos;should handle promise then throws&apos;, done =&gt; {
+      const server = new Context(envContext, { foo: 123 });
+      const client = new Context(envContext);
+
+      const streams = createStream();
+      const clientRemote = client.remote(streams[0]);
+      server.remote(streams[1]);
+
+      clientRemote
+        .fetch(&apos;foo&apos;)
+        .then(value =&gt; {
+          assert.equal(value, 123);
+
+          throw new Error(&apos;should catch&apos;);
+        })
+        .catch(err =&gt; {
+          assert.equal(err.message, &apos;should catch&apos;);
+
+          clientRemote.destroy();
+          done();
+        });
+    });
+  });
+});
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.1)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

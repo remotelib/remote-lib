@@ -1,0 +1,1290 @@
+{
+  "type": "File",
+  "start": 0,
+  "end": 760,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 21,
+      "column": 0
+    }
+  },
+  "program": {
+    "type": "Program",
+    "start": 0,
+    "end": 760,
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 21,
+        "column": 0
+      }
+    },
+    "sourceType": "module",
+    "body": [
+      {
+        "type": "ImportDeclaration",
+        "start": 600,
+        "end": 632,
+        "loc": {
+          "start": {
+            "line": 17,
+            "column": 0
+          },
+          "end": {
+            "line": 17,
+            "column": 32
+          }
+        },
+        "specifiers": [
+          {
+            "type": "ImportDefaultSpecifier",
+            "start": 607,
+            "end": 614,
+            "loc": {
+              "start": {
+                "line": 17,
+                "column": 7
+              },
+              "end": {
+                "line": 17,
+                "column": 14
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 607,
+              "end": 614,
+              "loc": {
+                "start": {
+                  "line": 17,
+                  "column": 7
+                },
+                "end": {
+                  "line": 17,
+                  "column": 14
+                },
+                "identifierName": "Session"
+              },
+              "name": "Session",
+              "leadingComments": null
+            },
+            "leadingComments": null
+          }
+        ],
+        "source": {
+          "type": "StringLiteral",
+          "start": 620,
+          "end": 631,
+          "loc": {
+            "start": {
+              "line": 17,
+              "column": 20
+            },
+            "end": {
+              "line": 17,
+              "column": 31
+            }
+          },
+          "extra": {
+            "rawValue": "./Session",
+            "raw": "'./Session'"
+          },
+          "value": "./Session"
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * Copyright 2017 Moshe Simantov\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n ",
+            "start": 0,
+            "end": 598,
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 0
+              },
+              "end": {
+                "line": 15,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "ImportDeclaration",
+        "start": 633,
+        "end": 699,
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 0
+          },
+          "end": {
+            "line": 18,
+            "column": 66
+          }
+        },
+        "specifiers": [
+          {
+            "type": "ImportSpecifier",
+            "start": 642,
+            "end": 648,
+            "loc": {
+              "start": {
+                "line": 18,
+                "column": 9
+              },
+              "end": {
+                "line": 18,
+                "column": 15
+              }
+            },
+            "imported": {
+              "type": "Identifier",
+              "start": 642,
+              "end": 648,
+              "loc": {
+                "start": {
+                  "line": 18,
+                  "column": 9
+                },
+                "end": {
+                  "line": 18,
+                  "column": 15
+                },
+                "identifierName": "Action"
+              },
+              "name": "Action"
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 642,
+              "end": 648,
+              "loc": {
+                "start": {
+                  "line": 18,
+                  "column": 9
+                },
+                "end": {
+                  "line": 18,
+                  "column": 15
+                },
+                "identifierName": "Action"
+              },
+              "name": "Action"
+            }
+          },
+          {
+            "type": "ImportSpecifier",
+            "start": 650,
+            "end": 663,
+            "loc": {
+              "start": {
+                "line": 18,
+                "column": 17
+              },
+              "end": {
+                "line": 18,
+                "column": 30
+              }
+            },
+            "imported": {
+              "type": "Identifier",
+              "start": 650,
+              "end": 663,
+              "loc": {
+                "start": {
+                  "line": 18,
+                  "column": 17
+                },
+                "end": {
+                  "line": 18,
+                  "column": 30
+                },
+                "identifierName": "RequestAction"
+              },
+              "name": "RequestAction"
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 650,
+              "end": 663,
+              "loc": {
+                "start": {
+                  "line": 18,
+                  "column": 17
+                },
+                "end": {
+                  "line": 18,
+                  "column": 30
+                },
+                "identifierName": "RequestAction"
+              },
+              "name": "RequestAction"
+            }
+          },
+          {
+            "type": "ImportSpecifier",
+            "start": 665,
+            "end": 679,
+            "loc": {
+              "start": {
+                "line": 18,
+                "column": 32
+              },
+              "end": {
+                "line": 18,
+                "column": 46
+              }
+            },
+            "imported": {
+              "type": "Identifier",
+              "start": 665,
+              "end": 679,
+              "loc": {
+                "start": {
+                  "line": 18,
+                  "column": 32
+                },
+                "end": {
+                  "line": 18,
+                  "column": 46
+                },
+                "identifierName": "ResponseAction"
+              },
+              "name": "ResponseAction"
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 665,
+              "end": 679,
+              "loc": {
+                "start": {
+                  "line": 18,
+                  "column": 32
+                },
+                "end": {
+                  "line": 18,
+                  "column": 46
+                },
+                "identifierName": "ResponseAction"
+              },
+              "name": "ResponseAction"
+            }
+          }
+        ],
+        "source": {
+          "type": "StringLiteral",
+          "start": 687,
+          "end": 698,
+          "loc": {
+            "start": {
+              "line": 18,
+              "column": 54
+            },
+            "end": {
+              "line": 18,
+              "column": 65
+            }
+          },
+          "extra": {
+            "rawValue": "./actions",
+            "raw": "'./actions'"
+          },
+          "value": "./actions"
+        }
+      },
+      {
+        "type": "ExportNamedDeclaration",
+        "start": 701,
+        "end": 759,
+        "loc": {
+          "start": {
+            "line": 20,
+            "column": 0
+          },
+          "end": {
+            "line": 20,
+            "column": 58
+          }
+        },
+        "declaration": null,
+        "specifiers": [
+          {
+            "type": "ExportSpecifier",
+            "start": 710,
+            "end": 717,
+            "loc": {
+              "start": {
+                "line": 20,
+                "column": 9
+              },
+              "end": {
+                "line": 20,
+                "column": 16
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 710,
+              "end": 717,
+              "loc": {
+                "start": {
+                  "line": 20,
+                  "column": 9
+                },
+                "end": {
+                  "line": 20,
+                  "column": 16
+                },
+                "identifierName": "Session"
+              },
+              "name": "Session"
+            },
+            "exported": {
+              "type": "Identifier",
+              "start": 710,
+              "end": 717,
+              "loc": {
+                "start": {
+                  "line": 20,
+                  "column": 9
+                },
+                "end": {
+                  "line": 20,
+                  "column": 16
+                },
+                "identifierName": "Session"
+              },
+              "name": "Session"
+            }
+          },
+          {
+            "type": "ExportSpecifier",
+            "start": 719,
+            "end": 725,
+            "loc": {
+              "start": {
+                "line": 20,
+                "column": 18
+              },
+              "end": {
+                "line": 20,
+                "column": 24
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 719,
+              "end": 725,
+              "loc": {
+                "start": {
+                  "line": 20,
+                  "column": 18
+                },
+                "end": {
+                  "line": 20,
+                  "column": 24
+                },
+                "identifierName": "Action"
+              },
+              "name": "Action"
+            },
+            "exported": {
+              "type": "Identifier",
+              "start": 719,
+              "end": 725,
+              "loc": {
+                "start": {
+                  "line": 20,
+                  "column": 18
+                },
+                "end": {
+                  "line": 20,
+                  "column": 24
+                },
+                "identifierName": "Action"
+              },
+              "name": "Action"
+            }
+          },
+          {
+            "type": "ExportSpecifier",
+            "start": 727,
+            "end": 740,
+            "loc": {
+              "start": {
+                "line": 20,
+                "column": 26
+              },
+              "end": {
+                "line": 20,
+                "column": 39
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 727,
+              "end": 740,
+              "loc": {
+                "start": {
+                  "line": 20,
+                  "column": 26
+                },
+                "end": {
+                  "line": 20,
+                  "column": 39
+                },
+                "identifierName": "RequestAction"
+              },
+              "name": "RequestAction"
+            },
+            "exported": {
+              "type": "Identifier",
+              "start": 727,
+              "end": 740,
+              "loc": {
+                "start": {
+                  "line": 20,
+                  "column": 26
+                },
+                "end": {
+                  "line": 20,
+                  "column": 39
+                },
+                "identifierName": "RequestAction"
+              },
+              "name": "RequestAction"
+            }
+          },
+          {
+            "type": "ExportSpecifier",
+            "start": 742,
+            "end": 756,
+            "loc": {
+              "start": {
+                "line": 20,
+                "column": 41
+              },
+              "end": {
+                "line": 20,
+                "column": 55
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 742,
+              "end": 756,
+              "loc": {
+                "start": {
+                  "line": 20,
+                  "column": 41
+                },
+                "end": {
+                  "line": 20,
+                  "column": 55
+                },
+                "identifierName": "ResponseAction"
+              },
+              "name": "ResponseAction"
+            },
+            "exported": {
+              "type": "Identifier",
+              "start": 742,
+              "end": 756,
+              "loc": {
+                "start": {
+                  "line": 20,
+                  "column": 41
+                },
+                "end": {
+                  "line": 20,
+                  "column": 55
+                },
+                "identifierName": "ResponseAction"
+              },
+              "name": "ResponseAction"
+            }
+          }
+        ],
+        "source": null
+      }
+    ],
+    "directives": []
+  },
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Copyright 2017 Moshe Simantov\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n ",
+      "start": 0,
+      "end": 598,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 15,
+          "column": 3
+        }
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Copyright 2017 Moshe Simantov\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n ",
+      "start": 0,
+      "end": 598,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 15,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "import",
+        "keyword": "import",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "import",
+      "start": 600,
+      "end": 606,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 0
+        },
+        "end": {
+          "line": 17,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "Session",
+      "start": 607,
+      "end": 614,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 7
+        },
+        "end": {
+          "line": 17,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "from",
+      "start": 615,
+      "end": 619,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 15
+        },
+        "end": {
+          "line": 17,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "./Session",
+      "start": 620,
+      "end": 631,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 20
+        },
+        "end": {
+          "line": 17,
+          "column": 31
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 631,
+      "end": 632,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 31
+        },
+        "end": {
+          "line": 17,
+          "column": 32
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "import",
+        "keyword": "import",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "import",
+      "start": 633,
+      "end": 639,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 0
+        },
+        "end": {
+          "line": 18,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 640,
+      "end": 641,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 7
+        },
+        "end": {
+          "line": 18,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "Action",
+      "start": 642,
+      "end": 648,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 9
+        },
+        "end": {
+          "line": 18,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 648,
+      "end": 649,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 15
+        },
+        "end": {
+          "line": 18,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "RequestAction",
+      "start": 650,
+      "end": 663,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 17
+        },
+        "end": {
+          "line": 18,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 663,
+      "end": 664,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 30
+        },
+        "end": {
+          "line": 18,
+          "column": 31
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ResponseAction",
+      "start": 665,
+      "end": 679,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 32
+        },
+        "end": {
+          "line": 18,
+          "column": 46
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 680,
+      "end": 681,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 47
+        },
+        "end": {
+          "line": 18,
+          "column": 48
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "from",
+      "start": 682,
+      "end": 686,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 49
+        },
+        "end": {
+          "line": 18,
+          "column": 53
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "./actions",
+      "start": 687,
+      "end": 698,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 54
+        },
+        "end": {
+          "line": 18,
+          "column": 65
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 698,
+      "end": 699,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 65
+        },
+        "end": {
+          "line": 18,
+          "column": 66
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "export",
+        "keyword": "export",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "export",
+      "start": 701,
+      "end": 707,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 0
+        },
+        "end": {
+          "line": 20,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 708,
+      "end": 709,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 7
+        },
+        "end": {
+          "line": 20,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "Session",
+      "start": 710,
+      "end": 717,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 9
+        },
+        "end": {
+          "line": 20,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 717,
+      "end": 718,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 16
+        },
+        "end": {
+          "line": 20,
+          "column": 17
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "Action",
+      "start": 719,
+      "end": 725,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 18
+        },
+        "end": {
+          "line": 20,
+          "column": 24
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 725,
+      "end": 726,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 24
+        },
+        "end": {
+          "line": 20,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "RequestAction",
+      "start": 727,
+      "end": 740,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 26
+        },
+        "end": {
+          "line": 20,
+          "column": 39
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 740,
+      "end": 741,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 39
+        },
+        "end": {
+          "line": 20,
+          "column": 40
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ResponseAction",
+      "start": 742,
+      "end": 756,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 41
+        },
+        "end": {
+          "line": 20,
+          "column": 55
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 757,
+      "end": 758,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 56
+        },
+        "end": {
+          "line": 20,
+          "column": 57
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 758,
+      "end": 759,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 57
+        },
+        "end": {
+          "line": 20,
+          "column": 58
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "eof",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 760,
+      "end": 760,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 0
+        },
+        "end": {
+          "line": 21,
+          "column": 0
+        }
+      }
+    }
+  ]
+}

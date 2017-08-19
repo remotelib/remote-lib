@@ -1,0 +1,2076 @@
+{
+  "type": "File",
+  "start": 0,
+  "end": 978,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 36,
+      "column": 0
+    }
+  },
+  "program": {
+    "type": "Program",
+    "start": 0,
+    "end": 978,
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 36,
+        "column": 0
+      }
+    },
+    "sourceType": "module",
+    "body": [
+      {
+        "type": "ImportDeclaration",
+        "start": 600,
+        "end": 638,
+        "loc": {
+          "start": {
+            "line": 17,
+            "column": 0
+          },
+          "end": {
+            "line": 17,
+            "column": 38
+          }
+        },
+        "specifiers": [
+          {
+            "type": "ImportDefaultSpecifier",
+            "start": 607,
+            "end": 617,
+            "loc": {
+              "start": {
+                "line": 17,
+                "column": 7
+              },
+              "end": {
+                "line": 17,
+                "column": 17
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 607,
+              "end": 617,
+              "loc": {
+                "start": {
+                  "line": 17,
+                  "column": 7
+                },
+                "end": {
+                  "line": 17,
+                  "column": 17
+                },
+                "identifierName": "EnvContext"
+              },
+              "name": "EnvContext",
+              "leadingComments": null
+            },
+            "leadingComments": null
+          }
+        ],
+        "source": {
+          "type": "StringLiteral",
+          "start": 623,
+          "end": 637,
+          "loc": {
+            "start": {
+              "line": 17,
+              "column": 23
+            },
+            "end": {
+              "line": 17,
+              "column": 37
+            }
+          },
+          "extra": {
+            "rawValue": "./EnvContext",
+            "raw": "'./EnvContext'"
+          },
+          "value": "./EnvContext"
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * Copyright 2017 Moshe Simantov\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n ",
+            "start": 0,
+            "end": 598,
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 0
+              },
+              "end": {
+                "line": 15,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "ImportDeclaration",
+        "start": 639,
+        "end": 671,
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 0
+          },
+          "end": {
+            "line": 18,
+            "column": 32
+          }
+        },
+        "specifiers": [
+          {
+            "type": "ImportDefaultSpecifier",
+            "start": 646,
+            "end": 653,
+            "loc": {
+              "start": {
+                "line": 18,
+                "column": 7
+              },
+              "end": {
+                "line": 18,
+                "column": 14
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 646,
+              "end": 653,
+              "loc": {
+                "start": {
+                  "line": 18,
+                  "column": 7
+                },
+                "end": {
+                  "line": 18,
+                  "column": 14
+                },
+                "identifierName": "Context"
+              },
+              "name": "Context"
+            }
+          }
+        ],
+        "source": {
+          "type": "StringLiteral",
+          "start": 659,
+          "end": 670,
+          "loc": {
+            "start": {
+              "line": 18,
+              "column": 20
+            },
+            "end": {
+              "line": 18,
+              "column": 31
+            }
+          },
+          "extra": {
+            "rawValue": "./Context",
+            "raw": "'./Context'"
+          },
+          "value": "./Context"
+        }
+      },
+      {
+        "type": "ImportDeclaration",
+        "start": 672,
+        "end": 716,
+        "loc": {
+          "start": {
+            "line": 19,
+            "column": 0
+          },
+          "end": {
+            "line": 19,
+            "column": 44
+          }
+        },
+        "specifiers": [
+          {
+            "type": "ImportDefaultSpecifier",
+            "start": 679,
+            "end": 692,
+            "loc": {
+              "start": {
+                "line": 19,
+                "column": 7
+              },
+              "end": {
+                "line": 19,
+                "column": 20
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 679,
+              "end": 692,
+              "loc": {
+                "start": {
+                  "line": 19,
+                  "column": 7
+                },
+                "end": {
+                  "line": 19,
+                  "column": 20
+                },
+                "identifierName": "RemoteContext"
+              },
+              "name": "RemoteContext"
+            }
+          }
+        ],
+        "source": {
+          "type": "StringLiteral",
+          "start": 698,
+          "end": 715,
+          "loc": {
+            "start": {
+              "line": 19,
+              "column": 26
+            },
+            "end": {
+              "line": 19,
+              "column": 43
+            }
+          },
+          "extra": {
+            "rawValue": "./RemoteContext",
+            "raw": "'./RemoteContext'"
+          },
+          "value": "./RemoteContext"
+        }
+      },
+      {
+        "type": "ImportDeclaration",
+        "start": 717,
+        "end": 761,
+        "loc": {
+          "start": {
+            "line": 20,
+            "column": 0
+          },
+          "end": {
+            "line": 20,
+            "column": 44
+          }
+        },
+        "specifiers": [
+          {
+            "type": "ImportDefaultSpecifier",
+            "start": 724,
+            "end": 737,
+            "loc": {
+              "start": {
+                "line": 20,
+                "column": 7
+              },
+              "end": {
+                "line": 20,
+                "column": 20
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 724,
+              "end": 737,
+              "loc": {
+                "start": {
+                  "line": 20,
+                  "column": 7
+                },
+                "end": {
+                  "line": 20,
+                  "column": 20
+                },
+                "identifierName": "RemoteSession"
+              },
+              "name": "RemoteSession"
+            }
+          }
+        ],
+        "source": {
+          "type": "StringLiteral",
+          "start": 743,
+          "end": 760,
+          "loc": {
+            "start": {
+              "line": 20,
+              "column": 26
+            },
+            "end": {
+              "line": 20,
+              "column": 43
+            }
+          },
+          "extra": {
+            "rawValue": "./RemoteSession",
+            "raw": "'./RemoteSession'"
+          },
+          "value": "./RemoteSession"
+        }
+      },
+      {
+        "type": "ImportDeclaration",
+        "start": 762,
+        "end": 815,
+        "loc": {
+          "start": {
+            "line": 21,
+            "column": 0
+          },
+          "end": {
+            "line": 21,
+            "column": 53
+          }
+        },
+        "specifiers": [
+          {
+            "type": "ImportDefaultSpecifier",
+            "start": 769,
+            "end": 780,
+            "loc": {
+              "start": {
+                "line": 21,
+                "column": 7
+              },
+              "end": {
+                "line": 21,
+                "column": 18
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 769,
+              "end": 780,
+              "loc": {
+                "start": {
+                  "line": 21,
+                  "column": 7
+                },
+                "end": {
+                  "line": 21,
+                  "column": 18
+                },
+                "identifierName": "RemoteValue"
+              },
+              "name": "RemoteValue"
+            }
+          },
+          {
+            "type": "ImportSpecifier",
+            "start": 784,
+            "end": 791,
+            "loc": {
+              "start": {
+                "line": 21,
+                "column": 22
+              },
+              "end": {
+                "line": 21,
+                "column": 29
+              }
+            },
+            "imported": {
+              "type": "Identifier",
+              "start": 784,
+              "end": 791,
+              "loc": {
+                "start": {
+                  "line": 21,
+                  "column": 22
+                },
+                "end": {
+                  "line": 21,
+                  "column": 29
+                },
+                "identifierName": "observe"
+              },
+              "name": "observe"
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 784,
+              "end": 791,
+              "loc": {
+                "start": {
+                  "line": 21,
+                  "column": 22
+                },
+                "end": {
+                  "line": 21,
+                  "column": 29
+                },
+                "identifierName": "observe"
+              },
+              "name": "observe"
+            }
+          }
+        ],
+        "source": {
+          "type": "StringLiteral",
+          "start": 799,
+          "end": 814,
+          "loc": {
+            "start": {
+              "line": 21,
+              "column": 37
+            },
+            "end": {
+              "line": 21,
+              "column": 52
+            }
+          },
+          "extra": {
+            "rawValue": "./RemoteValue",
+            "raw": "'./RemoteValue'"
+          },
+          "value": "./RemoteValue"
+        },
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * The remote context module\n * @module remote-context\n ",
+            "start": 817,
+            "end": 879,
+            "loc": {
+              "start": {
+                "line": 23,
+                "column": 0
+              },
+              "end": {
+                "line": 26,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "ExportNamedDeclaration",
+        "start": 881,
+        "end": 977,
+        "loc": {
+          "start": {
+            "line": 28,
+            "column": 0
+          },
+          "end": {
+            "line": 35,
+            "column": 2
+          }
+        },
+        "declaration": null,
+        "specifiers": [
+          {
+            "type": "ExportSpecifier",
+            "start": 892,
+            "end": 902,
+            "loc": {
+              "start": {
+                "line": 29,
+                "column": 2
+              },
+              "end": {
+                "line": 29,
+                "column": 12
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 892,
+              "end": 902,
+              "loc": {
+                "start": {
+                  "line": 29,
+                  "column": 2
+                },
+                "end": {
+                  "line": 29,
+                  "column": 12
+                },
+                "identifierName": "EnvContext"
+              },
+              "name": "EnvContext",
+              "leadingComments": null
+            },
+            "exported": {
+              "type": "Identifier",
+              "start": 892,
+              "end": 902,
+              "loc": {
+                "start": {
+                  "line": 29,
+                  "column": 2
+                },
+                "end": {
+                  "line": 29,
+                  "column": 12
+                },
+                "identifierName": "EnvContext"
+              },
+              "name": "EnvContext"
+            },
+            "leadingComments": null
+          },
+          {
+            "type": "ExportSpecifier",
+            "start": 906,
+            "end": 913,
+            "loc": {
+              "start": {
+                "line": 30,
+                "column": 2
+              },
+              "end": {
+                "line": 30,
+                "column": 9
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 906,
+              "end": 913,
+              "loc": {
+                "start": {
+                  "line": 30,
+                  "column": 2
+                },
+                "end": {
+                  "line": 30,
+                  "column": 9
+                },
+                "identifierName": "Context"
+              },
+              "name": "Context"
+            },
+            "exported": {
+              "type": "Identifier",
+              "start": 906,
+              "end": 913,
+              "loc": {
+                "start": {
+                  "line": 30,
+                  "column": 2
+                },
+                "end": {
+                  "line": 30,
+                  "column": 9
+                },
+                "identifierName": "Context"
+              },
+              "name": "Context"
+            }
+          },
+          {
+            "type": "ExportSpecifier",
+            "start": 917,
+            "end": 930,
+            "loc": {
+              "start": {
+                "line": 31,
+                "column": 2
+              },
+              "end": {
+                "line": 31,
+                "column": 15
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 917,
+              "end": 930,
+              "loc": {
+                "start": {
+                  "line": 31,
+                  "column": 2
+                },
+                "end": {
+                  "line": 31,
+                  "column": 15
+                },
+                "identifierName": "RemoteContext"
+              },
+              "name": "RemoteContext"
+            },
+            "exported": {
+              "type": "Identifier",
+              "start": 917,
+              "end": 930,
+              "loc": {
+                "start": {
+                  "line": 31,
+                  "column": 2
+                },
+                "end": {
+                  "line": 31,
+                  "column": 15
+                },
+                "identifierName": "RemoteContext"
+              },
+              "name": "RemoteContext"
+            }
+          },
+          {
+            "type": "ExportSpecifier",
+            "start": 934,
+            "end": 947,
+            "loc": {
+              "start": {
+                "line": 32,
+                "column": 2
+              },
+              "end": {
+                "line": 32,
+                "column": 15
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 934,
+              "end": 947,
+              "loc": {
+                "start": {
+                  "line": 32,
+                  "column": 2
+                },
+                "end": {
+                  "line": 32,
+                  "column": 15
+                },
+                "identifierName": "RemoteSession"
+              },
+              "name": "RemoteSession"
+            },
+            "exported": {
+              "type": "Identifier",
+              "start": 934,
+              "end": 947,
+              "loc": {
+                "start": {
+                  "line": 32,
+                  "column": 2
+                },
+                "end": {
+                  "line": 32,
+                  "column": 15
+                },
+                "identifierName": "RemoteSession"
+              },
+              "name": "RemoteSession"
+            }
+          },
+          {
+            "type": "ExportSpecifier",
+            "start": 951,
+            "end": 962,
+            "loc": {
+              "start": {
+                "line": 33,
+                "column": 2
+              },
+              "end": {
+                "line": 33,
+                "column": 13
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 951,
+              "end": 962,
+              "loc": {
+                "start": {
+                  "line": 33,
+                  "column": 2
+                },
+                "end": {
+                  "line": 33,
+                  "column": 13
+                },
+                "identifierName": "RemoteValue"
+              },
+              "name": "RemoteValue"
+            },
+            "exported": {
+              "type": "Identifier",
+              "start": 951,
+              "end": 962,
+              "loc": {
+                "start": {
+                  "line": 33,
+                  "column": 2
+                },
+                "end": {
+                  "line": 33,
+                  "column": 13
+                },
+                "identifierName": "RemoteValue"
+              },
+              "name": "RemoteValue"
+            }
+          },
+          {
+            "type": "ExportSpecifier",
+            "start": 966,
+            "end": 973,
+            "loc": {
+              "start": {
+                "line": 34,
+                "column": 2
+              },
+              "end": {
+                "line": 34,
+                "column": 9
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 966,
+              "end": 973,
+              "loc": {
+                "start": {
+                  "line": 34,
+                  "column": 2
+                },
+                "end": {
+                  "line": 34,
+                  "column": 9
+                },
+                "identifierName": "observe"
+              },
+              "name": "observe"
+            },
+            "exported": {
+              "type": "Identifier",
+              "start": 966,
+              "end": 973,
+              "loc": {
+                "start": {
+                  "line": 34,
+                  "column": 2
+                },
+                "end": {
+                  "line": 34,
+                  "column": 9
+                },
+                "identifierName": "observe"
+              },
+              "name": "observe"
+            }
+          }
+        ],
+        "source": null,
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * The remote context module\n * @module remote-context\n ",
+            "start": 817,
+            "end": 879,
+            "loc": {
+              "start": {
+                "line": 23,
+                "column": 0
+              },
+              "end": {
+                "line": 26,
+                "column": 3
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "directives": []
+  },
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Copyright 2017 Moshe Simantov\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n ",
+      "start": 0,
+      "end": 598,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 15,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * The remote context module\n * @module remote-context\n ",
+      "start": 817,
+      "end": 879,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 0
+        },
+        "end": {
+          "line": 26,
+          "column": 3
+        }
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Copyright 2017 Moshe Simantov\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n ",
+      "start": 0,
+      "end": 598,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 15,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "import",
+        "keyword": "import",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "import",
+      "start": 600,
+      "end": 606,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 0
+        },
+        "end": {
+          "line": 17,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "EnvContext",
+      "start": 607,
+      "end": 617,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 7
+        },
+        "end": {
+          "line": 17,
+          "column": 17
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "from",
+      "start": 618,
+      "end": 622,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 18
+        },
+        "end": {
+          "line": 17,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "./EnvContext",
+      "start": 623,
+      "end": 637,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 23
+        },
+        "end": {
+          "line": 17,
+          "column": 37
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 637,
+      "end": 638,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 37
+        },
+        "end": {
+          "line": 17,
+          "column": 38
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "import",
+        "keyword": "import",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "import",
+      "start": 639,
+      "end": 645,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 0
+        },
+        "end": {
+          "line": 18,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "Context",
+      "start": 646,
+      "end": 653,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 7
+        },
+        "end": {
+          "line": 18,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "from",
+      "start": 654,
+      "end": 658,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 15
+        },
+        "end": {
+          "line": 18,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "./Context",
+      "start": 659,
+      "end": 670,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 20
+        },
+        "end": {
+          "line": 18,
+          "column": 31
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 670,
+      "end": 671,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 31
+        },
+        "end": {
+          "line": 18,
+          "column": 32
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "import",
+        "keyword": "import",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "import",
+      "start": 672,
+      "end": 678,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 0
+        },
+        "end": {
+          "line": 19,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "RemoteContext",
+      "start": 679,
+      "end": 692,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 7
+        },
+        "end": {
+          "line": 19,
+          "column": 20
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "from",
+      "start": 693,
+      "end": 697,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 21
+        },
+        "end": {
+          "line": 19,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "./RemoteContext",
+      "start": 698,
+      "end": 715,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 26
+        },
+        "end": {
+          "line": 19,
+          "column": 43
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 715,
+      "end": 716,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 43
+        },
+        "end": {
+          "line": 19,
+          "column": 44
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "import",
+        "keyword": "import",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "import",
+      "start": 717,
+      "end": 723,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 0
+        },
+        "end": {
+          "line": 20,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "RemoteSession",
+      "start": 724,
+      "end": 737,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 7
+        },
+        "end": {
+          "line": 20,
+          "column": 20
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "from",
+      "start": 738,
+      "end": 742,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 21
+        },
+        "end": {
+          "line": 20,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "./RemoteSession",
+      "start": 743,
+      "end": 760,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 26
+        },
+        "end": {
+          "line": 20,
+          "column": 43
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 760,
+      "end": 761,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 43
+        },
+        "end": {
+          "line": 20,
+          "column": 44
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "import",
+        "keyword": "import",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "import",
+      "start": 762,
+      "end": 768,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 0
+        },
+        "end": {
+          "line": 21,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "RemoteValue",
+      "start": 769,
+      "end": 780,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 7
+        },
+        "end": {
+          "line": 21,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 780,
+      "end": 781,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 18
+        },
+        "end": {
+          "line": 21,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 782,
+      "end": 783,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 20
+        },
+        "end": {
+          "line": 21,
+          "column": 21
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "observe",
+      "start": 784,
+      "end": 791,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 22
+        },
+        "end": {
+          "line": 21,
+          "column": 29
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 792,
+      "end": 793,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 30
+        },
+        "end": {
+          "line": 21,
+          "column": 31
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "from",
+      "start": 794,
+      "end": 798,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 32
+        },
+        "end": {
+          "line": 21,
+          "column": 36
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "./RemoteValue",
+      "start": 799,
+      "end": 814,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 37
+        },
+        "end": {
+          "line": 21,
+          "column": 52
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 814,
+      "end": 815,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 52
+        },
+        "end": {
+          "line": 21,
+          "column": 53
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * The remote context module\n * @module remote-context\n ",
+      "start": 817,
+      "end": 879,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 0
+        },
+        "end": {
+          "line": 26,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "export",
+        "keyword": "export",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "export",
+      "start": 881,
+      "end": 887,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 0
+        },
+        "end": {
+          "line": 28,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 888,
+      "end": 889,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 7
+        },
+        "end": {
+          "line": 28,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "EnvContext",
+      "start": 892,
+      "end": 902,
+      "loc": {
+        "start": {
+          "line": 29,
+          "column": 2
+        },
+        "end": {
+          "line": 29,
+          "column": 12
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 902,
+      "end": 903,
+      "loc": {
+        "start": {
+          "line": 29,
+          "column": 12
+        },
+        "end": {
+          "line": 29,
+          "column": 13
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "Context",
+      "start": 906,
+      "end": 913,
+      "loc": {
+        "start": {
+          "line": 30,
+          "column": 2
+        },
+        "end": {
+          "line": 30,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 913,
+      "end": 914,
+      "loc": {
+        "start": {
+          "line": 30,
+          "column": 9
+        },
+        "end": {
+          "line": 30,
+          "column": 10
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "RemoteContext",
+      "start": 917,
+      "end": 930,
+      "loc": {
+        "start": {
+          "line": 31,
+          "column": 2
+        },
+        "end": {
+          "line": 31,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 930,
+      "end": 931,
+      "loc": {
+        "start": {
+          "line": 31,
+          "column": 15
+        },
+        "end": {
+          "line": 31,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "RemoteSession",
+      "start": 934,
+      "end": 947,
+      "loc": {
+        "start": {
+          "line": 32,
+          "column": 2
+        },
+        "end": {
+          "line": 32,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 947,
+      "end": 948,
+      "loc": {
+        "start": {
+          "line": 32,
+          "column": 15
+        },
+        "end": {
+          "line": 32,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "RemoteValue",
+      "start": 951,
+      "end": 962,
+      "loc": {
+        "start": {
+          "line": 33,
+          "column": 2
+        },
+        "end": {
+          "line": 33,
+          "column": 13
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 962,
+      "end": 963,
+      "loc": {
+        "start": {
+          "line": 33,
+          "column": 13
+        },
+        "end": {
+          "line": 33,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "observe",
+      "start": 966,
+      "end": 973,
+      "loc": {
+        "start": {
+          "line": 34,
+          "column": 2
+        },
+        "end": {
+          "line": 34,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 973,
+      "end": 974,
+      "loc": {
+        "start": {
+          "line": 34,
+          "column": 9
+        },
+        "end": {
+          "line": 34,
+          "column": 10
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 975,
+      "end": 976,
+      "loc": {
+        "start": {
+          "line": 35,
+          "column": 0
+        },
+        "end": {
+          "line": 35,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 976,
+      "end": 977,
+      "loc": {
+        "start": {
+          "line": 35,
+          "column": 1
+        },
+        "end": {
+          "line": 35,
+          "column": 2
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "eof",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 978,
+      "end": 978,
+      "loc": {
+        "start": {
+          "line": 36,
+          "column": 0
+        },
+        "end": {
+          "line": 36,
+          "column": 0
+        }
+      }
+    }
+  ]
+}

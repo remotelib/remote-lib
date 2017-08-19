@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">packages/remote-context/src/Context.js | Remotelib</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Run code remotely"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Remotelib"><meta property="twitter:description" content="Run code remotely"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/remotelib/remote-lib"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#reference-context-src">reference-context/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isValidReference">isValidReference</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-context-src">remote-context/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/AssignableContext.js~AssignableContext.html">AssignableContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/Context.js~Context.html">Context</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/EnvContext.js~EnvContext.html">EnvContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/LocalContext.js~LocalContext.html">LocalContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/LocalPromise.js~LocalPromise.html">LocalPromise</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/LocalReference.js~LocalReference.html">LocalReference</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/ObjectSnapshot.js~ObjectSnapshot.html">ObjectSnapshot</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/RemoteContext.js~RemoteContext.html">RemoteContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/RemotePromise.js~RemotePromise.html">RemotePromise</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html">RemoteSession</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/RemoteValue.js~RemoteValue.html">RemoteValue</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-getInstance">getInstance</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isRemoteValue">isRemoteValue</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-observe">observe</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-reveal">reveal</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-revoke">revoke</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-context-src-actions">remote-context/src/actions</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/DeleteAction.js~DeleteAction.html">DeleteAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/GetAction.js~GetAction.html">GetAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/LocalDefinePropertyAction.js~LocalDefinePropertyAction.html">LocalDefinePropertyAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/LocalDeletePropertyAction.js~LocalDeletePropertyAction.html">LocalDeletePropertyAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/LocalPreventExtensionsAction.js~LocalPreventExtensionsAction.html">LocalPreventExtensionsAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/LocalReferenceAction.js~LocalReferenceAction.html">LocalReferenceAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/LocalSetPrototypeOfAction.js~LocalSetPrototypeOfAction.html">LocalSetPrototypeOfAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/PropertyDescriptorAction.js~PropertyDescriptorAction.html">PropertyDescriptorAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/PropertyDescriptorsAction.js~PropertyDescriptorsAction.html">PropertyDescriptorsAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/ReferenceAction.js~ReferenceAction.html">ReferenceAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/ReferencePropertyAction.js~ReferencePropertyAction.html">ReferencePropertyAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/ReflectAction.js~ReflectAction.html">ReflectAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/ReflectApplyAction.js~ReflectApplyAction.html">ReflectApplyAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/ReflectConstructAction.js~ReflectConstructAction.html">ReflectConstructAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/ReflectGetAction.js~ReflectGetAction.html">ReflectGetAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/ReflectPromiseAction.js~ReflectPromiseAction.html">ReflectPromiseAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteDefinePropertyAction.js~RemoteDefinePropertyAction.html">RemoteDefinePropertyAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteDeletePropertyAction.js~RemoteDeletePropertyAction.html">RemoteDeletePropertyAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemotePreventExtensionsAction.js~RemotePreventExtensionsAction.html">RemotePreventExtensionsAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteReferenceAction.js~RemoteReferenceAction.html">RemoteReferenceAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteSetAction.js~RemoteSetAction.html">RemoteSetAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteSetFunctionAction.js~RemoteSetFunctionAction.html">RemoteSetFunctionAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteSetObjectAction.js~RemoteSetObjectAction.html">RemoteSetObjectAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteSetPrototypeOfAction.js~RemoteSetPrototypeOfAction.html">RemoteSetPrototypeOfAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteSetSymbolAction.js~RemoteSetSymbolAction.html">RemoteSetSymbolAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/UndefinedValueAction.js~UndefinedValueAction.html">UndefinedValueAction</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-instance-src">remote-instance/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-instance/src/parser.js~Parser.html">Parser</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-lib-src">remote-lib/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-lib/src/Context.js~Context.html">Context</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-lib/src/Library.js~Library.html">Library</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-protocol-src">remote-protocol/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-protocol/src/Session.js~Session.html">Session</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-protocol-src-actions">remote-protocol/src/actions</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-protocol/src/actions/Action.js~Action.html">Action</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-protocol/src/actions/RequestAction.js~RequestAction.html">RequestAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-protocol/src/actions/ResponseAction.js~ResponseAction.html">ResponseAction</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">packages/remote-context/src/Context.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * Copyright 2017 Moshe Simantov
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+import AssignableContext from &apos;./AssignableContext&apos;;
+import EnvContext from &apos;./EnvContext&apos;;
+import RemoteSession from &apos;./RemoteSession&apos;;
+import parser from &apos;./parser&apos;;
+import LocalPromise from &apos;./LocalPromise&apos;;
+
+const kChildRefs = Symbol(&apos;childRefs&apos;);
+
+function getPropValueSafe(obj, prop) {
+  try {
+    return obj[prop];
+  } catch (err) {
+    return undefined;
+  }
+}
+
+/**
+ * The main context class extending [ReferenceContext](../reference-context).
+ *
+ * @alias module:remote-context#Context
+ */
+export default class Context extends AssignableContext {
+  /**
+   * Check if the given value is unique per this environment.
+   * For example the string `&apos;foo&apos;` is not referable, but the object `{ foo: 1 }` is referable.
+   *
+   * @param {*} value The given value to check
+   * @return {boolean} True if the given value is referable
+   */
+  static isReferable(value) {
+    switch (typeof value) {
+      case &apos;function&apos;:
+      case &apos;symbol&apos;:
+        return true;
+
+      case &apos;object&apos;:
+        return value !== null;
+
+      default:
+        return false;
+    }
+  }
+
+  /**
+   * Create a new virtual context on the given environment.
+   *
+   * @param {EnvContext} envContext The given environment
+   * @param {object} context The context to create
+   * @param {object} opts Context options
+   * @param {number} opts.maxReferences The maximum references allowed to assign on this context
+   * (Default: 65K references)
+   * @constructor
+   */
+  constructor(envContext, context = {}, opts = {}) {
+    if (!(envContext instanceof EnvContext)) {
+      throw new TypeError(`Invalid &quot;envContext&quot; param: ${envContext}`);
+    }
+
+    super({}, envContext, opts);
+
+    this[kChildRefs] = new Map();
+
+    this.copyFrom(context);
+  }
+
+  remote(stream, opts = {}) {
+    const objectStream =
+      opts.objectMode !== true ? parser.transform(stream) : stream;
+
+    const session = new RemoteSession(objectStream, this, opts);
+    return session.remote;
+  }
+
+  fetch(reference) {
+    try {
+      return new LocalPromise(this.get(reference));
+    } catch (error) {
+      return new LocalPromise(error, true);
+    }
+  }
+
+  // eslint-disable-next-line class-methods-use-this
+  resolve(value) {
+    return new LocalPromise(value);
+  }
+
+  set(reference, value) {
+    if (typeof reference !== &apos;string&apos; &amp;&amp; typeof reference !== &apos;number&apos;) {
+      throw new TypeError(
+        `Only string or number references are allowed: ${typeof reference}`,
+      );
+    }
+
+    super.set(reference, value);
+
+    let childRefs = this[kChildRefs].get(value);
+    if (!childRefs) {
+      childRefs = new Set();
+      this[kChildRefs].set(value, childRefs);
+    }
+
+    const proto = Object.getPrototypeOf(value);
+    if (proto !== null &amp;&amp; !this.exists(proto)) {
+      const childRef = this.assign(proto);
+      childRefs.add(childRef);
+    }
+
+    Object.getOwnPropertyNames(value).forEach(propName =&gt; {
+      const propValue = getPropValueSafe(value, propName);
+      if (!this.constructor.isReferable(propValue) || this.exists(propValue))
+        return;
+
+      const childRef = this.assign(propValue);
+      childRefs.add(childRef);
+    });
+
+    Object.getOwnPropertySymbols(value).forEach(symbol =&gt; {
+      const propValue = getPropValueSafe(value, symbol);
+      if (
+        !this.constructor.isReferable(propValue) ||
+        this.exists(propValue) ||
+        !this.exists(symbol)
+      )
+        return;
+
+      const symbolReference = this.lookup(symbol);
+      if (!symbolReference) return;
+
+      const childRef = this.assign(propValue);
+      childRefs.add(childRef);
+    });
+
+    return this;
+  }
+
+  release(value) {
+    const ret = super.release(value);
+
+    const childRefs = this[kChildRefs].get(value);
+    if (childRefs) {
+      childRefs.forEach(ref =&gt; this.delete(ref));
+      this[kChildRefs].delete(value);
+    }
+
+    return ret;
+  }
+
+  clear() {
+    super.clear();
+    this[kChildRefs].clear();
+  }
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.1)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
