@@ -39,7 +39,12 @@
 </nav>
 
 <div class="content" data-ice="content"><div class="github-markdown">
-  <div class="manual-user-index" data-ice="manualUserIndex"><h1 id="remote-lib">Remote-lib</h1><p>Remote-lib is a library that can run remotely on other <a href="http://nodejs.org">node.js</a> servers or
+  <div class="manual-user-index" data-ice="manualUserIndex"><p><a href="https://www.npmjs.org/package/remote-lib"><img src="http://img.shields.io/npm/v/remote-lib.svg" alt="view on npm"></a>
+<a href="https://travis-ci.org/remotelib/remote-lib"><img src="https://travis-ci.org/remotelib/remote-lib.svg?branch=master" alt="Build Status"></a>
+<a href="https://david-dm.org/remotelib/remote-lib"><img src="https://david-dm.org/remotelib/remote-lib.svg" alt="Dependency Status"></a>
+<a href="https://codecov.io/gh/remotelib/remote-lib"><img src="https://codecov.io/gh/remotelib/remote-lib/branch/master/graph/badge.svg" alt="codecov"></a>
+<a href="LICENSE"><img src="https://img.shields.io/npm/l/remote-lib.svg" alt="npm license"></a></p>
+<h1 id="remote-lib">Remote-lib</h1><p>Remote-lib is a library that can run remotely on other <a href="http://nodejs.org">node.js</a> servers or
 even on remote clients on the browser. It&apos;s only need a <a href="https://nodejs.org/api/stream.html#stream_class_stream_duplex">Duplex stream</a> such as <a href="https://nodejs.org/api/net.html#net_net_createconnection_options_connectlistener">TCP soocket</a>, <a href="https://www.npmjs.com/package/websocket-stream">WebSocket</a> or even <a href="https://www.npmjs.com/package/simple-peer">WebRTC DataChannel</a>.</p>
 <h2 id="install">Install</h2><pre><code><code class="source-code prettyprint">npm install remote-lib</code>
 </code></pre><h2 id="usage">Usage</h2><h3 id="as-a-server">As a Server</h3><pre><code class="lang-js"><code class="source-code prettyprint">const RemoteLib = require(&apos;remote-lib&apos;);
@@ -52,12 +57,12 @@ even on remote clients on the browser. It&apos;s only need a <a href="https://no
 </code></pre>
 <h1 id="api-reference">API Reference</h1><p>Remote-lib is build with many small sub-packages, each package implement a small part of this library. </p>
 <ul>
-<li><a href="packages/remote-lib">remote-lib</a> - A high level API for creating remote libraries.</li>
-<li><a href="packages/remote-context">remote-context</a> - The core of <code>remote-lib</code>, creating and serving remote context.</li>
-<li><a href="packages/remote-environment">remote-environment</a> - A shared environment context with native objects such as <code>Object</code>, <code>Number</code>, <code>String</code>, etc...</li>
-<li><a href="packages/remote-instance">remote-instance</a> - A stream transformer that can parse and construct instance remotely.</li>
-<li><a href="packages/remote-protocol">remote-protocol</a> - The core of <code>remote-lib</code> protocol.</li>
-<li><a href="packages/reference-context">reference-context</a> - Virtual context implementation on vanilla Javascript.</li>
+<li><a href="https://www.npmjs.com/package/remote-lib">remote-lib</a> - A high level API for creating remote libraries.</li>
+<li><a href="https://www.npmjs.com/package/remote-context">remote-context</a> - The core of <code>remote-lib</code>, creating and serving remote context.</li>
+<li><a href="https://www.npmjs.com/package/remote-environment">remote-environment</a> - A shared environment context with native objects such as <code>Object</code>, <code>Number</code>, <code>String</code>, etc...</li>
+<li><a href="https://www.npmjs.com/package/remote-instance">remote-instance</a> - A stream transformer that can parse and construct instance remotely.</li>
+<li><a href="https://www.npmjs.com/package/remote-protocol">remote-protocol</a> - The core of <code>remote-lib</code> protocol.</li>
+<li><a href="https://www.npmjs.com/package/reference-context">reference-context</a> - Virtual context implementation on vanilla Javascript.</li>
 </ul>
 <hr>
 <p>&#xA9; 2017 Moshe Simantov</p>
