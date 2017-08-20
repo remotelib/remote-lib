@@ -13,7 +13,7 @@
 
 <header>
   <a href="./">Home</a>
-  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  
   <a href="identifiers.html">Reference</a>
   <a href="source.html">Source</a>
   
@@ -32,6 +32,7 @@
   <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#reference-context-src">reference-context/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isValidReference">isValidReference</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-context-envs">remote-context/envs</a><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-es6UnstableEnv">es6UnstableEnv</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-context-src">remote-context/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/AssignableContext.js~AssignableContext.html">AssignableContext</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/Context.js~Context.html">Context</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/EnvContext.js~EnvContext.html">EnvContext</a></span></span></li>
@@ -43,11 +44,17 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/RemotePromise.js~RemotePromise.html">RemotePromise</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html">RemoteSession</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/RemoteValue.js~RemoteValue.html">RemoteValue</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-getInstance">getInstance</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isRemoteValue">isRemoteValue</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-observe">observe</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-reveal">reveal</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-revoke">revoke</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Context">Context</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-EnvContext">EnvContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RemoteContext">RemoteContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RemoteSession">RemoteSession</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RemoteValue">RemoteValue</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-observe">observe</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-RemoteValueProxy">RemoteValueProxy</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-context-src-actions">remote-context/src/actions</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/DeleteAction.js~DeleteAction.html">DeleteAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/GetAction.js~GetAction.html">GetAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/LocalDefinePropertyAction.js~LocalDefinePropertyAction.html">LocalDefinePropertyAction</a></span></span></li>
@@ -74,9 +81,15 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteSetPrototypeOfAction.js~RemoteSetPrototypeOfAction.html">RemoteSetPrototypeOfAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteSetSymbolAction.js~RemoteSetSymbolAction.html">RemoteSetSymbolAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/UndefinedValueAction.js~UndefinedValueAction.html">UndefinedValueAction</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-environment">remote-environment</a><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-es6">es6</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-instance-src">remote-instance/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-instance/src/parser.js~Parser.html">Parser</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-lib-src">remote-lib/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-lib/src/Context.js~Context.html">Context</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-lib/src/Library.js~Library.html">Library</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-construct">construct</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isConstructor">isConstructor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-trimArgumentsList">trimArgumentsList</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-lib-src">remote-lib/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-lib/src/Library.js~Library.html">Library</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary.html">RemoteLibrary</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Library">Library</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RemoteLibrary">RemoteLibrary</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-protocol-src">remote-protocol/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-protocol/src/Session.js~Session.html">Session</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-protocol-src-actions">remote-protocol/src/actions</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-protocol/src/actions/Action.js~Action.html">Action</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-protocol/src/actions/RequestAction.js~RequestAction.html">RequestAction</a></span></span></li>
@@ -86,13 +99,13 @@
 </nav>
 
 <div class="content" data-ice="content"><div class="header-notice">
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import RemoteValue from &apos;<span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber32">remote-context/lib/RemoteValue.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import RemoteValue from &apos;<span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber47">remote-context/lib/RemoteValue.js</a></span>&apos;</code></pre></div>
   <span data-ice="access">public</span>
   <span data-ice="kind">class</span>
   
   
   
-  <span data-ice="source">| <span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber32">source</a></span></span>
+  <span data-ice="source">| <span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber47">source</a></span></span>
 </div>
 
 <div class="self-detail detail">
@@ -112,12 +125,22 @@
 
   
   
-  
+  <div class="description" data-ice="description"><p>Remote value representation locally.</p>
+</div>
   
 
   
 
-  
+  <div data-ice="exampleDocs">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">import { RemoteValue } from &apos;remote-context&apos;;
+
+const proxy = new RemoteValue(remoteSession, reference, value);</code></pre>
+    </div>
+</div>
 
   
 
@@ -143,13 +166,14 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteValue.js~RemoteValue.html#static-method-getInstance">getInstance</a></span></span><span class="code" data-ice="signature">(proxy: <span>*</span>): <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteValue.js~RemoteValue.html#static-method-isRemoteValue">isRemoteValue</a></span></span><span class="code" data-ice="signature">(proxy: <span><a href="typedef/index.html#static-typedef-RemoteValueProxy">RemoteValueProxy</a></span> | <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
         </p>
       </div>
       <div>
         
         
-        
+        <div data-ice="description"><p>Check if the give value is a proxy of remote value.</p>
+</div>
       </div>
     </td>
     <td>
@@ -171,13 +195,14 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteValue.js~RemoteValue.html#static-method-handleResolve">handleResolve</a></span></span><span class="code" data-ice="signature">(value: <span>*</span>): <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteValue.js~RemoteValue.html#static-method-observe">observe</a></span></span><span class="code" data-ice="signature">(proxy: <span><a href="typedef/index.html#static-typedef-RemoteValueProxy">RemoteValueProxy</a></span>, onNext: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span>, onError: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span>, onComplete: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span><span>()</span>: <span>boolean}</span></span></span>
         </p>
       </div>
       <div>
         
         
-        
+        <div data-ice="description"><p>Observe for any change on the given remote value proxy.</p>
+</div>
       </div>
     </td>
     <td>
@@ -199,13 +224,14 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteValue.js~RemoteValue.html#static-method-isRemoteValue">isRemoteValue</a></span></span><span class="code" data-ice="signature">(proxy: <span>*</span>): <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteValue.js~RemoteValue.html#static-method-resolve">resolve</a></span></span><span class="code" data-ice="signature">(value: <span><a href="typedef/index.html#static-typedef-RemoteValueProxy">RemoteValueProxy</a></span> | <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></span>
         </p>
       </div>
       <div>
         
         
-        
+        <div data-ice="description"><p>Resolve the given value.</p>
+</div>
       </div>
     </td>
     <td>
@@ -227,13 +253,14 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteValue.js~RemoteValue.html#static-method-observe">observe</a></span></span><span class="code" data-ice="signature">(proxy: <span>*</span>, onNext: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span>, onError: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span>, onComplete: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span>): <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteValue.js~RemoteValue.html#static-method-reveal">reveal</a></span></span><span class="code" data-ice="signature">(proxy: <span><a href="typedef/index.html#static-typedef-RemoteValueProxy">RemoteValueProxy</a></span>): <span><a href="class/packages/remote-context/src/RemoteValue.js~RemoteValue.html">RemoteValue</a></span></span>
         </p>
       </div>
       <div>
         
         
-        
+        <div data-ice="description"><p>Get the remote value instance of the given proxy.</p>
+</div>
       </div>
     </td>
     <td>
@@ -255,41 +282,14 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteValue.js~RemoteValue.html#static-method-reveal">reveal</a></span></span><span class="code" data-ice="signature">(value: <span>*</span>): <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteValue.js~RemoteValue.html#static-method-revoke">revoke</a></span></span><span class="code" data-ice="signature">(proxy: <span>*</span>): <span>void</span></span>
         </p>
       </div>
       <div>
         
         
-        
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      <span data-ice="static">static</span>
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteValue.js~RemoteValue.html#static-method-revoke">revoke</a></span></span><span class="code" data-ice="signature">(proxy: <span>*</span>)</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        
+        <div data-ice="description"><p>If the given value is a <span><a href="typedef/index.html#static-typedef-RemoteValueProxy">RemoteValueProxy</a></span>, revoke the value proxy.</p>
+</div>
       </div>
     </td>
     <td>
@@ -318,13 +318,14 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteValue.js~RemoteValue.html#instance-constructor-constructor">constructor</a></span></span><span class="code" data-ice="signature">()</span>
+          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteValue.js~RemoteValue.html#instance-constructor-constructor">constructor</a></span></span><span class="code" data-ice="signature">(session: <span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html">RemoteSession</a></span>, reference: <span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span>, value: <span>*</span>): <span><a href="typedef/index.html#static-typedef-RemoteValueProxy">RemoteValueProxy</a></span></span>
         </p>
       </div>
       <div>
         
         
-        
+        <div data-ice="description"><p>Create a <span><a href="class/packages/remote-context/src/RemoteValue.js~RemoteValue.html">RemoteValue</a></span> class and a proxy to the given value.</p>
+</div>
       </div>
     </td>
     <td>
@@ -636,85 +637,14 @@
 <div data-ice="staticMethodDetails"><h2 data-ice="title">Static Public Methods</h2>
 
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="static-method-getInstance">
+  <h3 data-ice="anchor" id="static-method-isRemoteValue">
     <span class="access" data-ice="access">public</span>
     <span data-ice="static">static</span>
     
     
     
     
-    <span class="code" data-ice="name">getInstance</span><span class="code" data-ice="signature">(proxy: <span>*</span>): <span>*</span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber37">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  
-
-  
-
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">proxy</td>
-      <td data-ice="type" class="code"><span>*</span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
-</div>
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span>*</span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="static-method-handleResolve">
-    <span class="access" data-ice="access">public</span>
-    <span data-ice="static">static</span>
-    
-    
-    
-    
-    <span class="code" data-ice="name">handleResolve</span><span class="code" data-ice="signature">(value: <span>*</span>): <span>*</span></span>
+    <span class="code" data-ice="name">isRemoteValue</span><span class="code" data-ice="signature">(proxy: <span><a href="typedef/index.html#static-typedef-RemoteValueProxy">RemoteValueProxy</a></span> | <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
     <span class="right-info">
       
       
@@ -725,78 +655,8 @@
   
   
   
-  
-
-  
-
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">value</td>
-      <td data-ice="type" class="code"><span>*</span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
+  <div data-ice="description"><p>Check if the give value is a proxy of remote value.</p>
 </div>
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span>*</span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="static-method-isRemoteValue">
-    <span class="access" data-ice="access">public</span>
-    <span data-ice="static">static</span>
-    
-    
-    
-    
-    <span class="code" data-ice="name">isRemoteValue</span><span class="code" data-ice="signature">(proxy: <span>*</span>): <span>*</span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber33">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  
 
   
 
@@ -810,9 +670,10 @@
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">proxy</td>
-      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-RemoteValueProxy">RemoteValueProxy</a></span> | <span>*</span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
+      <td data-ice="description"><p>The given value</p>
+</td>
     </tr>
 </tbody>
   </table>
@@ -824,7 +685,7 @@
     <table>
       <tbody>
         <tr>
-          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></td>
           
         </tr>
       </tbody>
@@ -856,18 +717,19 @@
     
     
     
-    <span class="code" data-ice="name">observe</span><span class="code" data-ice="signature">(proxy: <span>*</span>, onNext: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span>, onError: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span>, onComplete: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span>): <span>*</span></span>
+    <span class="code" data-ice="name">observe</span><span class="code" data-ice="signature">(proxy: <span><a href="typedef/index.html#static-typedef-RemoteValueProxy">RemoteValueProxy</a></span>, onNext: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span>, onError: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span>, onComplete: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span><span>()</span>: <span>boolean}</span></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber71">source</a></span></span>
+      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber127">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  
+  <div data-ice="description"><p>Observe for any change on the given remote value proxy.</p>
+</div>
 
   
 
@@ -881,30 +743,33 @@
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">proxy</td>
-      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-RemoteValueProxy">RemoteValueProxy</a></span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
+      <td data-ice="description"><p>The given remove value proxy</p>
+</td>
     </tr>
 <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">onNext</td>
-      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span></td>
-      <td data-ice="appendix"><ul><li>optional</li>
-<li>default: undefined</li></ul></td>
-      <td data-ice="description"></td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Called on every change to the given value with the
+<span><a href="typedef/index.html#static-typedef-RemoteValueProxy">RemoteValueProxy</a></span> as the first argument</p>
+</td>
     </tr>
 <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">onError</td>
-      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span></td>
-      <td data-ice="appendix"><ul><li>optional</li>
-<li>default: undefined</li></ul></td>
-      <td data-ice="description"></td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Called on every error occurred on the given value with an
+error as first argument</p>
+</td>
     </tr>
 <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">onComplete</td>
-      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span></td>
-      <td data-ice="appendix"><ul><li>optional</li>
-<li>default: undefined</li></ul></td>
-      <td data-ice="description"></td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Called when the given value revoked with no arguments</p>
+</td>
     </tr>
 </tbody>
   </table>
@@ -916,7 +781,84 @@
     <table>
       <tbody>
         <tr>
-          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          <td class="return-type code" data-ice="returnType"><span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span><span>()</span>: <span>boolean}</span></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>An subscription object with
+<code>unsubscribe</code> method to stop observer events from calling and a <code>closed</code> property.</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="see"><h4>See:</h4><ul><li><span><span>https://github.com/tc39/proposal-observable</span></span></li></ul></div>
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-method-resolve">
+    <span class="access" data-ice="access">public</span>
+    <span data-ice="static">static</span>
+    
+    
+    
+    
+    <span class="code" data-ice="name">resolve</span><span class="code" data-ice="signature">(value: <span><a href="typedef/index.html#static-typedef-RemoteValueProxy">RemoteValueProxy</a></span> | <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber85">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Resolve the given value.
+Reject the value if it&apos;s a <span><a href="typedef/index.html#static-typedef-RemoteValueProxy">RemoteValueProxy</a></span> and an uncaught error accord while
+using the value (ie. assign property to the value failed). Otherwise, resolve it.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">value</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-RemoteValueProxy">RemoteValueProxy</a></span> | <span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The given value</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></td>
           
         </tr>
       </tbody>
@@ -948,18 +890,19 @@
     
     
     
-    <span class="code" data-ice="name">reveal</span><span class="code" data-ice="signature">(value: <span>*</span>): <span>*</span></span>
+    <span class="code" data-ice="name">reveal</span><span class="code" data-ice="signature">(proxy: <span><a href="typedef/index.html#static-typedef-RemoteValueProxy">RemoteValueProxy</a></span>): <span><a href="class/packages/remote-context/src/RemoteValue.js~RemoteValue.html">RemoteValue</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber49">source</a></span></span>
+      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber65">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  
+  <div data-ice="description"><p>Get the remote value instance of the given proxy.</p>
+</div>
 
   
 
@@ -972,10 +915,11 @@
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">value</td>
-      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">proxy</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-RemoteValueProxy">RemoteValueProxy</a></span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
+      <td data-ice="description"><p>The given proxy</p>
+</td>
     </tr>
 </tbody>
   </table>
@@ -987,7 +931,7 @@
     <table>
       <tbody>
         <tr>
-          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/packages/remote-context/src/RemoteValue.js~RemoteValue.html">RemoteValue</a></span></td>
           
         </tr>
       </tbody>
@@ -1000,7 +944,19 @@
 
   
 
-  
+  <div data-ice="throwWrap">
+    <h4>Throw:</h4>
+    <table>
+      <tbody>
+      
+      <tr class="throw" data-ice="throw">
+        <td><p data-ice="throwName"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError">ReferenceError</a></span></p></td>
+        <td data-ice="throwDesc"><p>If the given value is not a <span><a href="typedef/index.html#static-typedef-RemoteValueProxy">RemoteValueProxy</a></span>.</p>
+</td>
+      </tr>
+</tbody>
+    </table>
+  </div>
 
   
 
@@ -1019,18 +975,20 @@
     
     
     
-    <span class="code" data-ice="name">revoke</span><span class="code" data-ice="signature">(proxy: <span>*</span>)</span>
+    <span class="code" data-ice="name">revoke</span><span class="code" data-ice="signature">(proxy: <span>*</span>): <span>void</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber64">source</a></span></span>
+      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber107">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  
+  <div data-ice="description"><p>If the given value is a <span><a href="typedef/index.html#static-typedef-RemoteValueProxy">RemoteValueProxy</a></span>, revoke the value proxy.
+Otherwise, do nothing.</p>
+</div>
 
   
 
@@ -1046,14 +1004,27 @@
       <td data-ice="name" class="code" data-depth="0">proxy</td>
       <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
+      <td data-ice="description"><p>The given value</p>
+</td>
     </tr>
 </tbody>
   </table>
 </div>
 </div>
 
-  
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>void</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
 
   
 
@@ -1081,25 +1052,70 @@
     
     
     
-    <span class="code" data-ice="name">constructor</span><span class="code" data-ice="signature">()</span>
+    <span class="code" data-ice="name">constructor</span><span class="code" data-ice="signature">(session: <span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html">RemoteSession</a></span>, reference: <span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span>, value: <span>*</span>): <span><a href="typedef/index.html#static-typedef-RemoteValueProxy">RemoteValueProxy</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber109">source</a></span></span>
+      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber173">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  
-
-  
-
-  <div data-ice="properties">
+  <div data-ice="description"><p>Create a <span><a href="class/packages/remote-context/src/RemoteValue.js~RemoteValue.html">RemoteValue</a></span> class and a proxy to the given value.</p>
 </div>
 
   
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">session</td>
+      <td data-ice="type" class="code"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html">RemoteSession</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The current value remote session</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">reference</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>he value reference for further updates to the remote peer</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">value</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The given value</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="typedef/index.html#static-typedef-RemoteValueProxy">RemoteValueProxy</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>A proxy to the given value</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
 
   
 
@@ -1131,7 +1147,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber126">source</a></span></span>
+      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber190">source</a></span></span>
     </span>
   </h3>
 
@@ -1174,7 +1190,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber128">source</a></span></span>
+      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber192">source</a></span></span>
     </span>
   </h3>
 
@@ -1217,7 +1233,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber194">source</a></span></span>
+      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber258">source</a></span></span>
     </span>
   </h3>
 
@@ -1260,7 +1276,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber198">source</a></span></span>
+      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber262">source</a></span></span>
     </span>
   </h3>
 
@@ -1306,7 +1322,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber243">source</a></span></span>
+      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber307">source</a></span></span>
     </span>
   </h3>
 
@@ -1383,7 +1399,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber253">source</a></span></span>
+      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber317">source</a></span></span>
     </span>
   </h3>
 
@@ -1454,7 +1470,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber233">source</a></span></span>
+      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber297">source</a></span></span>
     </span>
   </h3>
 
@@ -1509,7 +1525,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber202">source</a></span></span>
+      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber266">source</a></span></span>
     </span>
   </h3>
 
@@ -1568,7 +1584,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber214">source</a></span></span>
+      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber278">source</a></span></span>
     </span>
   </h3>
 
@@ -1611,7 +1627,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber223">source</a></span></span>
+      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#lineNumber287">source</a></span></span>
     </span>
   </h3>
 

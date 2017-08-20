@@ -13,7 +13,7 @@
 
 <header>
   <a href="./">Home</a>
-  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  
   <a href="identifiers.html">Reference</a>
   <a href="source.html">Source</a>
   
@@ -32,6 +32,7 @@
   <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#reference-context-src">reference-context/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isValidReference">isValidReference</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-context-envs">remote-context/envs</a><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-es6UnstableEnv">es6UnstableEnv</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-context-src">remote-context/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/AssignableContext.js~AssignableContext.html">AssignableContext</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/Context.js~Context.html">Context</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/EnvContext.js~EnvContext.html">EnvContext</a></span></span></li>
@@ -43,11 +44,17 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/RemotePromise.js~RemotePromise.html">RemotePromise</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html">RemoteSession</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/RemoteValue.js~RemoteValue.html">RemoteValue</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-getInstance">getInstance</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isRemoteValue">isRemoteValue</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-observe">observe</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-reveal">reveal</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-revoke">revoke</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Context">Context</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-EnvContext">EnvContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RemoteContext">RemoteContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RemoteSession">RemoteSession</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RemoteValue">RemoteValue</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-observe">observe</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-RemoteValueProxy">RemoteValueProxy</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-context-src-actions">remote-context/src/actions</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/DeleteAction.js~DeleteAction.html">DeleteAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/GetAction.js~GetAction.html">GetAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/LocalDefinePropertyAction.js~LocalDefinePropertyAction.html">LocalDefinePropertyAction</a></span></span></li>
@@ -74,9 +81,15 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteSetPrototypeOfAction.js~RemoteSetPrototypeOfAction.html">RemoteSetPrototypeOfAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteSetSymbolAction.js~RemoteSetSymbolAction.html">RemoteSetSymbolAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/UndefinedValueAction.js~UndefinedValueAction.html">UndefinedValueAction</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-environment">remote-environment</a><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-es6">es6</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-instance-src">remote-instance/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-instance/src/parser.js~Parser.html">Parser</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-lib-src">remote-lib/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-lib/src/Context.js~Context.html">Context</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-lib/src/Library.js~Library.html">Library</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-construct">construct</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isConstructor">isConstructor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-trimArgumentsList">trimArgumentsList</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-lib-src">remote-lib/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-lib/src/Library.js~Library.html">Library</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary.html">RemoteLibrary</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Library">Library</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RemoteLibrary">RemoteLibrary</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-protocol-src">remote-protocol/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-protocol/src/Session.js~Session.html">Session</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-protocol-src-actions">remote-protocol/src/actions</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-protocol/src/actions/Action.js~Action.html">Action</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-protocol/src/actions/RequestAction.js~RequestAction.html">RequestAction</a></span></span></li>
@@ -117,16 +130,44 @@ const kError = Symbol(&apos;error&apos;);
 
 const proxyMap = new WeakMap();
 
+/**
+ * A remote value proxy returned from the {@link RemoteValue} constructor.
+ * This proxy make possible to make changes to remote values and get the changes send to
+ * the remote peer.
+ *
+ * @typedef {object|function} RemoteValueProxy
+ */
+
+/**
+ * Remote value representation locally.
+ * @example
+ * import { RemoteValue } from &apos;remote-context&apos;;
+ *
+ * const proxy = new RemoteValue(remoteSession, reference, value);
+ */
 export default class RemoteValue extends EventEmitter {
+  /**
+   * Check if the give value is a proxy of remote value.
+   *
+   * @param {RemoteValueProxy|*} proxy The given value
+   * @return {boolean}
+   */
   static isRemoteValue(proxy) {
     return proxyMap.has(proxy);
   }
 
-  static getInstance(proxy) {
+  /**
+   * Get the remote value instance of the given proxy.
+   *
+   * @param {RemoteValueProxy} proxy The given proxy
+   * @throws {ReferenceError} If the given value is not a {@link RemoteValueProxy}.
+   * @return {RemoteValue}
+   */
+  static reveal(proxy) {
     const remoteValue = proxyMap.get(proxy);
 
     if (!remoteValue) {
-      throw new TypeError(
+      throw new ReferenceError(
         `The given value is not a RemoteValue proxy: ${proxy}`,
       );
     }
@@ -134,21 +175,36 @@ export default class RemoteValue extends EventEmitter {
     return remoteValue;
   }
 
-  static reveal(value) {
-    const remoteValue = proxyMap.get(value);
-    return remoteValue ? remoteValue.target : value;
+  /**
+   * Resolve the given value.
+   * Reject the value if it&apos;s a {@link RemoteValueProxy} and an uncaught error accord while
+   * using the value (ie. assign property to the value failed). Otherwise, resolve it.
+   *
+   * @param {RemoteValueProxy|*} value The given value
+   * @return {Promise}
+   */
+  static resolve(value) {
+    return new Promise((resolve, reject) =&gt; {
+      const remoteValue = proxyMap.get(value);
+      if (!remoteValue || !remoteValue[kError]) {
+        resolve(value);
+        return;
+      }
+
+      const error = remoteValue[kError];
+      remoteValue[kError] = null;
+
+      reject(error);
+    });
   }
 
-  static handleResolve(value) {
-    const remoteValue = proxyMap.get(value);
-    if (!remoteValue || !remoteValue[kError]) return value;
-
-    const error = remoteValue[kError];
-    remoteValue[kError] = null;
-
-    throw error;
-  }
-
+  /**
+   * If the given value is a {@link RemoteValueProxy}, revoke the value proxy.
+   * Otherwise, do nothing.
+   *
+   * @param {*} proxy The given value
+   * @return {void}
+   */
   static revoke(proxy) {
     const remoteValue = proxyMap.get(proxy);
     if (!remoteValue) return;
@@ -156,8 +212,21 @@ export default class RemoteValue extends EventEmitter {
     remoteValue.revoke();
   }
 
+  /**
+   * Observe for any change on the given remote value proxy.
+   *
+   * @see {@link https://github.com/tc39/proposal-observable}
+   * @param {RemoteValueProxy} proxy The given remove value proxy
+   * @param {function|null} onNext Called on every change to the given value with the
+   * {@link RemoteValueProxy} as the first argument
+   * @param {function|null} onError Called on every error occurred on the given value with an
+   * error as first argument
+   * @param {function|null} onComplete Called when the given value revoked with no arguments
+   * @return {{unsubscribe: (function()), closed: boolean}} An subscription object with
+   * `unsubscribe` method to stop observer events from calling and a `closed` property.
+   */
   static observe(proxy, onNext = null, onError = null, onComplete = null) {
-    const remoteValue = RemoteValue.getInstance(proxy);
+    const remoteValue = RemoteValue.reveal(proxy);
 
     let subscription;
     const events = {
@@ -194,6 +263,14 @@ export default class RemoteValue extends EventEmitter {
     return subscription;
   }
 
+  /**
+   * Create a {@link RemoteValue} class and a proxy to the given value.
+   *
+   * @param {RemoteSession} session The current value remote session
+   * @param {Reference} reference he value reference for further updates to the remote peer
+   * @param {*} value The given value
+   * @return {RemoteValueProxy} A proxy to the given value
+   */
   constructor(session, reference, value) {
     if (!(session instanceof RemoteSession)) {
       throw new TypeError(
@@ -217,13 +294,13 @@ export default class RemoteValue extends EventEmitter {
       // FIXME handle property get cache
 
       get(target, property) {
-        const value = target[property];
+        const val = target[property];
 
-        if (typeof value !== &apos;function&apos;) {
-          return value;
+        if (typeof val !== &apos;function&apos;) {
+          return val;
         }
 
-        return session.bind(value);
+        return session.bind(val);
       },
 
       setPrototypeOf(target, prototype) {
@@ -349,10 +426,24 @@ export default class RemoteValue extends EventEmitter {
   }
 }
 
+/**
+ * @type {RemoteValue.isRemoteValue}
+ */
 export const isRemoteValue = RemoteValue.isRemoteValue;
-export const getInstance = RemoteValue.getInstance;
+
+/**
+ * @type {RemoteValue.reveal}
+ */
 export const reveal = RemoteValue.reveal;
+
+/**
+ * @type {RemoteValue.revoke}
+ */
 export const revoke = RemoteValue.revoke;
+
+/**
+ * @type {RemoteValue.observe}
+ */
 export const observe = RemoteValue.observe;
 </code></pre>
 

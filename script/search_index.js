@@ -18,10 +18,10 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "remote-lib/lib/context.js~context",
-    "class/packages/remote-lib/src/Context.js~Context.html",
-    "<span>Context</span> <span class=\"search-result-import-path\">remote-lib/lib/Context.js</span>",
-    "class"
+    "remote-context~context",
+    "variable/index.html#static-variable-Context",
+    "<span>Context</span> <span class=\"search-result-import-path\">remote-context</span>",
+    "variable"
   ],
   [
     "remote-context/lib/actions/deleteaction.js~deleteaction",
@@ -36,6 +36,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "remote-context~envcontext",
+    "variable/index.html#static-variable-EnvContext",
+    "<span>EnvContext</span> <span class=\"search-result-import-path\">remote-context</span>",
+    "variable"
+  ],
+  [
     "remote-context/lib/actions/getaction.js~getaction",
     "class/packages/remote-context/src/actions/GetAction.js~GetAction.html",
     "<span>GetAction</span> <span class=\"search-result-import-path\">remote-context/lib/actions/GetAction.js</span>",
@@ -46,6 +52,12 @@ window.esdocSearchIndex = [
     "class/packages/remote-lib/src/Library.js~Library.html",
     "<span>Library</span> <span class=\"search-result-import-path\">remote-lib/lib/Library.js</span>",
     "class"
+  ],
+  [
+    "remote-lib~library",
+    "variable/index.html#static-variable-Library",
+    "<span>Library</span> <span class=\"search-result-import-path\">remote-lib</span>",
+    "variable"
   ],
   [
     "remote-context/lib/localcontext.js~localcontext",
@@ -174,6 +186,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "remote-context~remotecontext",
+    "variable/index.html#static-variable-RemoteContext",
+    "<span>RemoteContext</span> <span class=\"search-result-import-path\">remote-context</span>",
+    "variable"
+  ],
+  [
     "remote-context/lib/actions/remotedefinepropertyaction.js~remotedefinepropertyaction",
     "class/packages/remote-context/src/actions/RemoteDefinePropertyAction.js~RemoteDefinePropertyAction.html",
     "<span>RemoteDefinePropertyAction</span> <span class=\"search-result-import-path\">remote-context/lib/actions/RemoteDefinePropertyAction.js</span>",
@@ -184,6 +202,18 @@ window.esdocSearchIndex = [
     "class/packages/remote-context/src/actions/RemoteDeletePropertyAction.js~RemoteDeletePropertyAction.html",
     "<span>RemoteDeletePropertyAction</span> <span class=\"search-result-import-path\">remote-context/lib/actions/RemoteDeletePropertyAction.js</span>",
     "class"
+  ],
+  [
+    "remote-lib/lib/remotelibrary.js~remotelibrary",
+    "class/packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary.html",
+    "<span>RemoteLibrary</span> <span class=\"search-result-import-path\">remote-lib/lib/RemoteLibrary.js</span>",
+    "class"
+  ],
+  [
+    "remote-lib~remotelibrary",
+    "variable/index.html#static-variable-RemoteLibrary",
+    "<span>RemoteLibrary</span> <span class=\"search-result-import-path\">remote-lib</span>",
+    "variable"
   ],
   [
     "remote-context/lib/actions/remotepreventextensionsaction.js~remotepreventextensionsaction",
@@ -208,6 +238,12 @@ window.esdocSearchIndex = [
     "class/packages/remote-context/src/RemoteSession.js~RemoteSession.html",
     "<span>RemoteSession</span> <span class=\"search-result-import-path\">remote-context/lib/RemoteSession.js</span>",
     "class"
+  ],
+  [
+    "remote-context~remotesession",
+    "variable/index.html#static-variable-RemoteSession",
+    "<span>RemoteSession</span> <span class=\"search-result-import-path\">remote-context</span>",
+    "variable"
   ],
   [
     "remote-context/lib/actions/remotesetaction.js~remotesetaction",
@@ -246,6 +282,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "remote-context~remotevalue",
+    "variable/index.html#static-variable-RemoteValue",
+    "<span>RemoteValue</span> <span class=\"search-result-import-path\">remote-context</span>",
+    "variable"
+  ],
+  [
     "remote-protocol/lib/actions/requestaction.js~requestaction",
     "class/packages/remote-protocol/src/actions/RequestAction.js~RequestAction.html",
     "<span>RequestAction</span> <span class=\"search-result-import-path\">remote-protocol/lib/actions/RequestAction.js</span>",
@@ -270,9 +312,15 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "remote-context/lib/remotevalue.js~getinstance",
-    "variable/index.html#static-variable-getInstance",
-    "<span>getInstance</span> <span class=\"search-result-import-path\">remote-context/lib/RemoteValue.js</span>",
+    "remote-instance~construct",
+    "variable/index.html#static-variable-construct",
+    "<span>construct</span> <span class=\"search-result-import-path\">remote-instance</span>",
+    "variable"
+  ],
+  [
+    "remote-instance~isconstructor",
+    "variable/index.html#static-variable-isConstructor",
+    "<span>isConstructor</span> <span class=\"search-result-import-path\">remote-instance</span>",
     "variable"
   ],
   [
@@ -294,6 +342,12 @@ window.esdocSearchIndex = [
     "variable"
   ],
   [
+    "remote-context~observe",
+    "variable/index.html#static-variable-observe",
+    "<span>observe</span> <span class=\"search-result-import-path\">remote-context</span>",
+    "variable"
+  ],
+  [
     "remote-context/lib/remotevalue.js~reveal",
     "variable/index.html#static-variable-reveal",
     "<span>reveal</span> <span class=\"search-result-import-path\">remote-context/lib/RemoteValue.js</span>",
@@ -303,6 +357,12 @@ window.esdocSearchIndex = [
     "remote-context/lib/remotevalue.js~revoke",
     "variable/index.html#static-variable-revoke",
     "<span>revoke</span> <span class=\"search-result-import-path\">remote-context/lib/RemoteValue.js</span>",
+    "variable"
+  ],
+  [
+    "remote-instance~trimargumentslist",
+    "variable/index.html#static-variable-trimArgumentsList",
+    "<span>trimArgumentsList</span> <span class=\"search-result-import-path\">remote-instance</span>",
     "variable"
   ],
   [
@@ -750,22 +810,16 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "packages/remote-context/envs/es6-unstable.js~es6unstableenv",
+    "typedef/index.html#static-typedef-es6UnstableEnv",
+    "packages/remote-context/envs/es6-unstable.js~es6UnstableEnv",
+    "typedef"
+  ],
+  [
     "packages/remote-context/src/assignablecontext.js",
     "file/packages/remote-context/src/AssignableContext.js.html",
     "packages/remote-context/src/AssignableContext.js",
     "file"
-  ],
-  [
-    "packages/remote-context/src/assignablecontext.js~assignablecontext#[knextrefid]",
-    "class/packages/remote-context/src/AssignableContext.js~AssignableContext.html#instance-member-[kNextRefId]",
-    "packages/remote-context/src/AssignableContext.js~AssignableContext#[kNextRefId]",
-    "member"
-  ],
-  [
-    "packages/remote-context/src/assignablecontext.js~assignablecontext#[krefnummax]",
-    "class/packages/remote-context/src/AssignableContext.js~AssignableContext.html#instance-member-[kRefNumMax]",
-    "packages/remote-context/src/AssignableContext.js~AssignableContext#[kRefNumMax]",
-    "member"
   ],
   [
     "packages/remote-context/src/assignablecontext.js~assignablecontext#constructor",
@@ -784,12 +838,6 @@ window.esdocSearchIndex = [
     "file/packages/remote-context/src/Context.js.html",
     "packages/remote-context/src/Context.js",
     "file"
-  ],
-  [
-    "packages/remote-context/src/context.js~context#[kchildrefs]",
-    "class/packages/remote-context/src/Context.js~Context.html#instance-member-[kChildRefs]",
-    "packages/remote-context/src/Context.js~Context#[kChildRefs]",
-    "member"
   ],
   [
     "packages/remote-context/src/context.js~context#clear",
@@ -846,12 +894,6 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "packages/remote-context/src/envcontext.js~envcontext#[kname]",
-    "class/packages/remote-context/src/EnvContext.js~EnvContext.html#instance-member-[kName]",
-    "packages/remote-context/src/EnvContext.js~EnvContext#[kName]",
-    "member"
-  ],
-  [
     "packages/remote-context/src/envcontext.js~envcontext#constructor",
     "class/packages/remote-context/src/EnvContext.js~EnvContext.html#instance-constructor-constructor",
     "packages/remote-context/src/EnvContext.js~EnvContext#constructor",
@@ -868,30 +910,6 @@ window.esdocSearchIndex = [
     "file/packages/remote-context/src/LocalContext.js.html",
     "packages/remote-context/src/LocalContext.js",
     "file"
-  ],
-  [
-    "packages/remote-context/src/localcontext.js~localcontext#[kdispatchset]",
-    "class/packages/remote-context/src/LocalContext.js~LocalContext.html#instance-member-[kDispatchSet]",
-    "packages/remote-context/src/LocalContext.js~LocalContext#[kDispatchSet]",
-    "member"
-  ],
-  [
-    "packages/remote-context/src/localcontext.js~localcontext#[kdispatchsnapshots]",
-    "class/packages/remote-context/src/LocalContext.js~LocalContext.html#instance-member-[kDispatchSnapshots]",
-    "packages/remote-context/src/LocalContext.js~LocalContext#[kDispatchSnapshots]",
-    "member"
-  ],
-  [
-    "packages/remote-context/src/localcontext.js~localcontext#[ksessionlistener]",
-    "class/packages/remote-context/src/LocalContext.js~LocalContext.html#instance-member-[kSessionListener]",
-    "packages/remote-context/src/LocalContext.js~LocalContext#[kSessionListener]",
-    "member"
-  ],
-  [
-    "packages/remote-context/src/localcontext.js~localcontext#[ksession]",
-    "class/packages/remote-context/src/LocalContext.js~LocalContext.html#instance-member-[kSession]",
-    "packages/remote-context/src/LocalContext.js~LocalContext#[kSession]",
-    "member"
   ],
   [
     "packages/remote-context/src/localcontext.js~localcontext#clear",
@@ -972,18 +990,6 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "packages/remote-context/src/localreference.js~localreference#[kreference]",
-    "class/packages/remote-context/src/LocalReference.js~LocalReference.html#instance-member-[kReference]",
-    "packages/remote-context/src/LocalReference.js~LocalReference#[kReference]",
-    "member"
-  ],
-  [
-    "packages/remote-context/src/localreference.js~localreference#[ksession]",
-    "class/packages/remote-context/src/LocalReference.js~LocalReference.html#instance-member-[kSession]",
-    "packages/remote-context/src/LocalReference.js~LocalReference#[kSession]",
-    "member"
-  ],
-  [
     "packages/remote-context/src/localreference.js~localreference#constructor",
     "class/packages/remote-context/src/LocalReference.js~LocalReference.html#instance-constructor-constructor",
     "packages/remote-context/src/LocalReference.js~LocalReference#constructor",
@@ -1020,18 +1026,6 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "packages/remote-context/src/objectsnapshot.js~objectsnapshot#[kdescriptors]",
-    "class/packages/remote-context/src/ObjectSnapshot.js~ObjectSnapshot.html#instance-member-[kDescriptors]",
-    "packages/remote-context/src/ObjectSnapshot.js~ObjectSnapshot#[kDescriptors]",
-    "member"
-  ],
-  [
-    "packages/remote-context/src/objectsnapshot.js~objectsnapshot#[kprototype]",
-    "class/packages/remote-context/src/ObjectSnapshot.js~ObjectSnapshot.html#instance-member-[kPrototype]",
-    "packages/remote-context/src/ObjectSnapshot.js~ObjectSnapshot#[kPrototype]",
-    "member"
-  ],
-  [
     "packages/remote-context/src/objectsnapshot.js~objectsnapshot#constructor",
     "class/packages/remote-context/src/ObjectSnapshot.js~ObjectSnapshot.html#instance-constructor-constructor",
     "packages/remote-context/src/ObjectSnapshot.js~ObjectSnapshot#constructor",
@@ -1048,24 +1042,6 @@ window.esdocSearchIndex = [
     "file/packages/remote-context/src/RemoteContext.js.html",
     "packages/remote-context/src/RemoteContext.js",
     "file"
-  ],
-  [
-    "packages/remote-context/src/remotecontext.js~remotecontext#[kfetchrequests]",
-    "class/packages/remote-context/src/RemoteContext.js~RemoteContext.html#instance-member-[kFetchRequests]",
-    "packages/remote-context/src/RemoteContext.js~RemoteContext#[kFetchRequests]",
-    "member"
-  ],
-  [
-    "packages/remote-context/src/remotecontext.js~remotecontext#[ksessionlistener]",
-    "class/packages/remote-context/src/RemoteContext.js~RemoteContext.html#instance-member-[kSessionListener]",
-    "packages/remote-context/src/RemoteContext.js~RemoteContext#[kSessionListener]",
-    "member"
-  ],
-  [
-    "packages/remote-context/src/remotecontext.js~remotecontext#[ksession]",
-    "class/packages/remote-context/src/RemoteContext.js~RemoteContext.html#instance-member-[kSession]",
-    "packages/remote-context/src/RemoteContext.js~RemoteContext#[kSession]",
-    "member"
   ],
   [
     "packages/remote-context/src/remotecontext.js~remotecontext#clear",
@@ -1116,6 +1092,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "packages/remote-context/src/remotecontext.js~remotecontext#gettarget",
+    "class/packages/remote-context/src/RemoteContext.js~RemoteContext.html#instance-method-getTarget",
+    "packages/remote-context/src/RemoteContext.js~RemoteContext#getTarget",
+    "method"
+  ],
+  [
     "packages/remote-context/src/remotecontext.js~remotecontext#on",
     "class/packages/remote-context/src/RemoteContext.js~RemoteContext.html#instance-method-on",
     "packages/remote-context/src/RemoteContext.js~RemoteContext#on",
@@ -1131,12 +1113,6 @@ window.esdocSearchIndex = [
     "packages/remote-context/src/remotecontext.js~remotecontext#release",
     "class/packages/remote-context/src/RemoteContext.js~RemoteContext.html#instance-method-release",
     "packages/remote-context/src/RemoteContext.js~RemoteContext#release",
-    "method"
-  ],
-  [
-    "packages/remote-context/src/remotecontext.js~remotecontext#remoteinstance",
-    "class/packages/remote-context/src/RemoteContext.js~RemoteContext.html#instance-method-remoteInstance",
-    "packages/remote-context/src/RemoteContext.js~RemoteContext#remoteInstance",
     "method"
   ],
   [
@@ -1180,36 +1156,6 @@ window.esdocSearchIndex = [
     "file/packages/remote-context/src/RemoteSession.js.html",
     "packages/remote-context/src/RemoteSession.js",
     "file"
-  ],
-  [
-    "packages/remote-context/src/remotesession.js~remotesession#[kbinds]",
-    "class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-member-[kBinds]",
-    "packages/remote-context/src/RemoteSession.js~RemoteSession#[kBinds]",
-    "member"
-  ],
-  [
-    "packages/remote-context/src/remotesession.js~remotesession#[kiswritable]",
-    "class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-member-[kIsWritable]",
-    "packages/remote-context/src/RemoteSession.js~RemoteSession#[kIsWritable]",
-    "member"
-  ],
-  [
-    "packages/remote-context/src/remotesession.js~remotesession#[klocal]",
-    "class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-member-[kLocal]",
-    "packages/remote-context/src/RemoteSession.js~RemoteSession#[kLocal]",
-    "member"
-  ],
-  [
-    "packages/remote-context/src/remotesession.js~remotesession#[kremote]",
-    "class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-member-[kRemote]",
-    "packages/remote-context/src/RemoteSession.js~RemoteSession#[kRemote]",
-    "member"
-  ],
-  [
-    "packages/remote-context/src/remotesession.js~remotesession#[kshowstack]",
-    "class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-member-[kShowStack]",
-    "packages/remote-context/src/RemoteSession.js~RemoteSession#[kShowStack]",
-    "member"
   ],
   [
     "packages/remote-context/src/remotesession.js~remotesession#bind",
@@ -1350,18 +1296,6 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "packages/remote-context/src/remotevalue.js~remotevalue.getinstance",
-    "class/packages/remote-context/src/RemoteValue.js~RemoteValue.html#static-method-getInstance",
-    "packages/remote-context/src/RemoteValue.js~RemoteValue.getInstance",
-    "method"
-  ],
-  [
-    "packages/remote-context/src/remotevalue.js~remotevalue.handleresolve",
-    "class/packages/remote-context/src/RemoteValue.js~RemoteValue.html#static-method-handleResolve",
-    "packages/remote-context/src/RemoteValue.js~RemoteValue.handleResolve",
-    "method"
-  ],
-  [
     "packages/remote-context/src/remotevalue.js~remotevalue.isremotevalue",
     "class/packages/remote-context/src/RemoteValue.js~RemoteValue.html#static-method-isRemoteValue",
     "packages/remote-context/src/RemoteValue.js~RemoteValue.isRemoteValue",
@@ -1371,6 +1305,12 @@ window.esdocSearchIndex = [
     "packages/remote-context/src/remotevalue.js~remotevalue.observe",
     "class/packages/remote-context/src/RemoteValue.js~RemoteValue.html#static-method-observe",
     "packages/remote-context/src/RemoteValue.js~RemoteValue.observe",
+    "method"
+  ],
+  [
+    "packages/remote-context/src/remotevalue.js~remotevalue.resolve",
+    "class/packages/remote-context/src/RemoteValue.js~RemoteValue.html#static-method-resolve",
+    "packages/remote-context/src/RemoteValue.js~RemoteValue.resolve",
     "method"
   ],
   [
@@ -1384,6 +1324,12 @@ window.esdocSearchIndex = [
     "class/packages/remote-context/src/RemoteValue.js~RemoteValue.html#static-method-revoke",
     "packages/remote-context/src/RemoteValue.js~RemoteValue.revoke",
     "method"
+  ],
+  [
+    "packages/remote-context/src/remotevalue.js~remotevalueproxy",
+    "typedef/index.html#static-typedef-RemoteValueProxy",
+    "packages/remote-context/src/RemoteValue.js~RemoteValueProxy",
+    "typedef"
   ],
   [
     "packages/remote-context/src/actions/deleteaction.js",
@@ -2274,6 +2220,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "packages/remote-context/src/actions/undefinedvalueaction.js~undefinedvalueaction.isundefined",
+    "class/packages/remote-context/src/actions/UndefinedValueAction.js~UndefinedValueAction.html#static-method-isUndefined",
+    "packages/remote-context/src/actions/UndefinedValueAction.js~UndefinedValueAction.isUndefined",
+    "method"
+  ],
+  [
     "packages/remote-context/src/actions/index.js",
     "file/packages/remote-context/src/actions/index.js.html",
     "packages/remote-context/src/actions/index.js",
@@ -2308,6 +2260,12 @@ window.esdocSearchIndex = [
     "file/packages/remote-environment/es6.js.html",
     "packages/remote-environment/es6.js",
     "file"
+  ],
+  [
+    "packages/remote-environment/es6.js~es6",
+    "typedef/index.html#static-typedef-es6",
+    "packages/remote-environment/es6.js~es6",
+    "typedef"
   ],
   [
     "packages/remote-environment/src/es6/array.js",
@@ -2556,16 +2514,16 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "packages/remote-instance/src/index.js",
+    "file/packages/remote-instance/src/index.js.html",
+    "packages/remote-instance/src/index.js",
+    "file"
+  ],
+  [
     "packages/remote-instance/src/parser.js",
     "file/packages/remote-instance/src/parser.js.html",
     "packages/remote-instance/src/parser.js",
     "file"
-  ],
-  [
-    "packages/remote-instance/src/parser.js~parser#[kparser]",
-    "class/packages/remote-instance/src/parser.js~Parser.html#instance-member-[kParser]",
-    "packages/remote-instance/src/parser.js~Parser#[kParser]",
-    "member"
   ],
   [
     "packages/remote-instance/src/parser.js~parser#constructor",
@@ -2640,45 +2598,87 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "packages/remote-lib/src/context.js",
-    "file/packages/remote-lib/src/Context.js.html",
-    "packages/remote-lib/src/Context.js",
-    "file"
-  ],
-  [
-    "packages/remote-lib/src/context.js~context#[kopts]",
-    "class/packages/remote-lib/src/Context.js~Context.html#instance-member-[kOpts]",
-    "packages/remote-lib/src/Context.js~Context#[kOpts]",
-    "member"
-  ],
-  [
-    "packages/remote-lib/src/context.js~context#constructor",
-    "class/packages/remote-lib/src/Context.js~Context.html#instance-constructor-constructor",
-    "packages/remote-lib/src/Context.js~Context#constructor",
-    "method"
-  ],
-  [
-    "packages/remote-lib/src/context.js~context#remote",
-    "class/packages/remote-lib/src/Context.js~Context.html#instance-method-remote",
-    "packages/remote-lib/src/Context.js~Context#remote",
-    "method"
-  ],
-  [
     "packages/remote-lib/src/library.js",
     "file/packages/remote-lib/src/Library.js.html",
     "packages/remote-lib/src/Library.js",
     "file"
   ],
   [
-    "packages/remote-lib/src/library.js~library#[kremotecontext]",
-    "class/packages/remote-lib/src/Library.js~Library.html#instance-member-[kRemoteContext]",
-    "packages/remote-lib/src/Library.js~Library#[kRemoteContext]",
-    "member"
-  ],
-  [
     "packages/remote-lib/src/library.js~library#constructor",
     "class/packages/remote-lib/src/Library.js~Library.html#instance-constructor-constructor",
     "packages/remote-lib/src/Library.js~Library#constructor",
+    "method"
+  ],
+  [
+    "packages/remote-lib/src/library.js~library#serve",
+    "class/packages/remote-lib/src/Library.js~Library.html#instance-method-serve",
+    "packages/remote-lib/src/Library.js~Library#serve",
+    "method"
+  ],
+  [
+    "packages/remote-lib/src/remotelibrary.js",
+    "file/packages/remote-lib/src/RemoteLibrary.js.html",
+    "packages/remote-lib/src/RemoteLibrary.js",
+    "file"
+  ],
+  [
+    "packages/remote-lib/src/remotelibrary.js~remotelibrary#constructor",
+    "class/packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary.html#instance-constructor-constructor",
+    "packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary#constructor",
+    "method"
+  ],
+  [
+    "packages/remote-lib/src/remotelibrary.js~remotelibrary#context",
+    "class/packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary.html#instance-get-context",
+    "packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary#context",
+    "member"
+  ],
+  [
+    "packages/remote-lib/src/remotelibrary.js~remotelibrary#delete",
+    "class/packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary.html#instance-method-delete",
+    "packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary#delete",
+    "method"
+  ],
+  [
+    "packages/remote-lib/src/remotelibrary.js~remotelibrary#destroy",
+    "class/packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary.html#instance-method-destroy",
+    "packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary#destroy",
+    "method"
+  ],
+  [
+    "packages/remote-lib/src/remotelibrary.js~remotelibrary#get",
+    "class/packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary.html#instance-method-get",
+    "packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary#get",
+    "method"
+  ],
+  [
+    "packages/remote-lib/src/remotelibrary.js~remotelibrary#on",
+    "class/packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary.html#instance-method-on",
+    "packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary#on",
+    "method"
+  ],
+  [
+    "packages/remote-lib/src/remotelibrary.js~remotelibrary#once",
+    "class/packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary.html#instance-method-once",
+    "packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary#once",
+    "method"
+  ],
+  [
+    "packages/remote-lib/src/remotelibrary.js~remotelibrary#release",
+    "class/packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary.html#instance-method-release",
+    "packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary#release",
+    "method"
+  ],
+  [
+    "packages/remote-lib/src/remotelibrary.js~remotelibrary#removelistener",
+    "class/packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary.html#instance-method-removeListener",
+    "packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary#removeListener",
+    "method"
+  ],
+  [
+    "packages/remote-lib/src/remotelibrary.js~remotelibrary#resolve",
+    "class/packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary.html#instance-method-resolve",
+    "packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary#resolve",
     "method"
   ],
   [

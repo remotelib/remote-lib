@@ -13,7 +13,7 @@
 
 <header>
   <a href="./">Home</a>
-  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  
   <a href="identifiers.html">Reference</a>
   <a href="source.html">Source</a>
   
@@ -32,6 +32,7 @@
   <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#reference-context-src">reference-context/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isValidReference">isValidReference</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-context-envs">remote-context/envs</a><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-es6UnstableEnv">es6UnstableEnv</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-context-src">remote-context/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/AssignableContext.js~AssignableContext.html">AssignableContext</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/Context.js~Context.html">Context</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/EnvContext.js~EnvContext.html">EnvContext</a></span></span></li>
@@ -43,11 +44,17 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/RemotePromise.js~RemotePromise.html">RemotePromise</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html">RemoteSession</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/RemoteValue.js~RemoteValue.html">RemoteValue</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-getInstance">getInstance</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isRemoteValue">isRemoteValue</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-observe">observe</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-reveal">reveal</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-revoke">revoke</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Context">Context</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-EnvContext">EnvContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RemoteContext">RemoteContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RemoteSession">RemoteSession</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RemoteValue">RemoteValue</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-observe">observe</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-RemoteValueProxy">RemoteValueProxy</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-context-src-actions">remote-context/src/actions</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/DeleteAction.js~DeleteAction.html">DeleteAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/GetAction.js~GetAction.html">GetAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/LocalDefinePropertyAction.js~LocalDefinePropertyAction.html">LocalDefinePropertyAction</a></span></span></li>
@@ -74,9 +81,15 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteSetPrototypeOfAction.js~RemoteSetPrototypeOfAction.html">RemoteSetPrototypeOfAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteSetSymbolAction.js~RemoteSetSymbolAction.html">RemoteSetSymbolAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/UndefinedValueAction.js~UndefinedValueAction.html">UndefinedValueAction</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-environment">remote-environment</a><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-es6">es6</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-instance-src">remote-instance/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-instance/src/parser.js~Parser.html">Parser</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-lib-src">remote-lib/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-lib/src/Context.js~Context.html">Context</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-lib/src/Library.js~Library.html">Library</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-construct">construct</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isConstructor">isConstructor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-trimArgumentsList">trimArgumentsList</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-lib-src">remote-lib/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-lib/src/Library.js~Library.html">Library</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary.html">RemoteLibrary</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Library">Library</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RemoteLibrary">RemoteLibrary</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-protocol-src">remote-protocol/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-protocol/src/Session.js~Session.html">Session</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-protocol-src-actions">remote-protocol/src/actions</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-protocol/src/actions/Action.js~Action.html">Action</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-protocol/src/actions/RequestAction.js~RequestAction.html">RequestAction</a></span></span></li>
@@ -86,13 +99,13 @@
 </nav>
 
 <div class="content" data-ice="content"><div class="header-notice">
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import RemoteSession from &apos;<span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber29">remote-context/lib/RemoteSession.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import RemoteSession from &apos;<span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber38">remote-context/lib/RemoteSession.js</a></span>&apos;</code></pre></div>
   <span data-ice="access">public</span>
   <span data-ice="kind">class</span>
   
   
   
-  <span data-ice="source">| <span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber29">source</a></span></span>
+  <span data-ice="source">| <span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber38">source</a></span></span>
 </div>
 
 <div class="self-detail detail">
@@ -102,7 +115,7 @@
 
   
   
-  <div class="flat-list" data-ice="extendsChain"><h4>Extends:</h4><div><span>remote-protocol~Session</span> &#x2192; RemoteSession</div></div>
+  <div class="flat-list" data-ice="extendsChain"><h4>Extends:</h4><div><span>events~EventEmitter</span> &#x2192; <span><a href="class/packages/remote-protocol/src/Session.js~Session.html">Session</a></span> &#x2192; RemoteSession</div></div>
   
   
   
@@ -112,12 +125,22 @@
 
   
   
-  
+  <div class="description" data-ice="description"><p>A remote context <span><a href="class/packages/remote-protocol/src/Session.js~Session.html">Session</a></span> to another peer.</p>
+</div>
   
 
   
 
-  
+  <div data-ice="exampleDocs">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">import { RemoteSession } from &apos;remote-context&apos;;
+
+const session = new RemoteSession(objectStream, context);</code></pre>
+    </div>
+</div>
 
   
 
@@ -144,13 +167,14 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-constructor-constructor">constructor</a></span></span><span class="code" data-ice="signature">()</span>
+          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-constructor-constructor">constructor</a></span></span><span class="code" data-ice="signature">(objectStream: <span>Stream</span>, context: <span><a href="class/packages/remote-context/src/Context.js~Context.html">Context</a></span>, opts: <span>options</span>)</span>
         </p>
       </div>
       <div>
         
         
-        
+        <div data-ice="description"><p>Create a session from an object stream.</p>
+</div>
       </div>
     </td>
     <td>
@@ -169,35 +193,7 @@
     <td>
       <span class="access" data-ice="access">public</span>
       
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-member-[kBinds]">[kBinds]</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
+      <span class="kind" data-ice="kind">get</span>
       
       <span class="override" data-ice="override"></span>
     </td>
@@ -207,97 +203,14 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-member-[kIsWritable]">[kIsWritable]</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-get-remote">remote</a></span></span><span class="code" data-ice="signature">: <span><a href="class/packages/remote-context/src/RemoteContext.js~RemoteContext.html">RemoteContext</a></span></span>
         </p>
       </div>
       <div>
         
         
-        
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-member-[kLocal]">[kLocal]</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-member-[kRemote]">[kRemote]</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-member-[kShowStack]">[kShowStack]</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        
+        <div data-ice="description"><p>Get the remote context</p>
+</div>
       </div>
     </td>
     <td>
@@ -319,41 +232,14 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-get-remote">remote</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-get-showStack">showStack</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
         </p>
       </div>
       <div>
         
         
-        
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      <span class="kind" data-ice="kind">get</span>
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-get-showStack">showStack</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        
+        <div data-ice="description"><p>True if the remote peer should see stack errors.</p>
+</div>
       </div>
     </td>
     <td>
@@ -382,13 +268,14 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-method-bind">bind</a></span></span><span class="code" data-ice="signature">(func: <span>*</span>): <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-method-bind">bind</a></span></span><span class="code" data-ice="signature">(func: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span></span>
         </p>
       </div>
       <div>
         
         
-        
+        <div data-ice="description"><p>Bind to a local function and apply it remotely if the <code>this</code> parameter is a remote value.</p>
+</div>
       </div>
     </td>
     <td>
@@ -410,13 +297,14 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-method-delete">delete</a></span></span><span class="code" data-ice="signature">(reference: <span>*</span>): <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-method-delete">delete</a></span></span><span class="code" data-ice="signature">(reference: <span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
         </p>
       </div>
       <div>
         
         
-        
+        <div data-ice="description"><p>Delete a local reference from the local-context.</p>
+</div>
       </div>
     </td>
     <td>
@@ -466,13 +354,14 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-method-dispatch">dispatch</a></span></span><span class="code" data-ice="signature">(value: <span>*</span>): <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-method-dispatch">dispatch</a></span></span><span class="code" data-ice="signature">(value: <span>*</span>): <span><a href="class/packages/remote-protocol/src/actions/Action.js~Action.html">Action</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
         </p>
       </div>
       <div>
         
         
-        
+        <div data-ice="description"><p>Dispatch a value for the remote peer session.</p>
+</div>
       </div>
     </td>
     <td>
@@ -494,13 +383,14 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-method-exists">exists</a></span></span><span class="code" data-ice="signature">(value: <span>*</span>): <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-method-exists">exists</a></span></span><span class="code" data-ice="signature">(value: <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
         </p>
       </div>
       <div>
         
         
-        
+        <div data-ice="description"><p>Check if the given value exists on the local-context.</p>
+</div>
       </div>
     </td>
     <td>
@@ -522,13 +412,14 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-method-get">get</a></span></span><span class="code" data-ice="signature">(reference: <span>*</span>): <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-method-get">get</a></span></span><span class="code" data-ice="signature">(reference: <span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span>): <span>*</span></span>
         </p>
       </div>
       <div>
         
         
-        
+        <div data-ice="description"><p>Get a local reference value from the local-context.</p>
+</div>
       </div>
     </td>
     <td>
@@ -550,13 +441,14 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-method-isWritable">isWritable</a></span></span><span class="code" data-ice="signature">(value: <span>*</span>): <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-method-isWritable">isWritable</a></span></span><span class="code" data-ice="signature">(value: <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
         </p>
       </div>
       <div>
         
         
-        
+        <div data-ice="description"><p>Check if the given value is writable.</p>
+</div>
       </div>
     </td>
     <td>
@@ -578,13 +470,283 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-method-set">set</a></span></span><span class="code" data-ice="signature">(reference: <span>*</span>, value: <span>*</span>): <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-method-set">set</a></span></span><span class="code" data-ice="signature">(reference: <span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span>, value: <span>*</span>): <span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html">RemoteSession</a></span></span>
         </p>
       </div>
       <div>
         
         
+        <div data-ice="description"><p>Set a local reference to the local-context.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+
+<div class="inherited-summary" data-ice="inheritedSummary"><h2>Inherited Summary</h2><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3"><span class="toggle closed"></span> From class <span><a href="class/packages/remote-protocol/src/Session.js~Session.html">Session</a></span></td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      <span class="kind" data-ice="kind">get</span>
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/packages/remote-protocol/src/Session.js~Session.html#instance-get-isEnded">isEnded</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        </p>
+      </div>
+      <div>
         
+        
+        <div data-ice="description"><p>True if the session is no longer readable.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      <span class="kind" data-ice="kind">get</span>
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/packages/remote-protocol/src/Session.js~Session.html#instance-get-isOpen">isOpen</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>True if the session is open.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      <span class="kind" data-ice="kind">get</span>
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/packages/remote-protocol/src/Session.js~Session.html#instance-get-openRequests">openRequests</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>The number of requests sent and waiting for response.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/packages/remote-protocol/src/Session.js~Session.html#instance-method-destroy">destroy</a></span></span><span class="code" data-ice="signature">(err: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a></span>): <span>void</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Destroy this session and it&apos;s stream.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/packages/remote-protocol/src/Session.js~Session.html#instance-method-dispatch">dispatch</a></span></span><span class="code" data-ice="signature">(value: <span>*</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Convert the given value to a value that can be send ove to the other peer.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/packages/remote-protocol/src/Session.js~Session.html#instance-method-end">end</a></span></span><span class="code" data-ice="signature">(): <span><a href="class/packages/remote-protocol/src/Session.js~Session.html">Session</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>End this session stream.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/packages/remote-protocol/src/Session.js~Session.html#instance-method-request">request</a></span></span><span class="code" data-ice="signature">(action: <span><a href="class/packages/remote-protocol/src/actions/Action.js~Action.html">Action</a></span>, opts: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span>, onFulfilled: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>, onRejected: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>): <span><a href="class/packages/remote-protocol/src/Session.js~Session.html">Session</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Request from the other peer to fetch the given action and send back it&apos;s response value.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/packages/remote-protocol/src/Session.js~Session.html#instance-method-send">send</a></span></span><span class="code" data-ice="signature">(action: <span><a href="class/packages/remote-protocol/src/actions/Action.js~Action.html">Action</a></span>): <span><a href="class/packages/remote-protocol/src/Session.js~Session.html">Session</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Send an action for execution to the other peer.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/packages/remote-protocol/src/Session.js~Session.html#instance-method-toString">toString</a></span></span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Return session constructor name.</p>
+</div>
       </div>
     </td>
     <td>
@@ -598,8 +760,6 @@
 
 
 
-
-
 <div data-ice="constructorDetails"><h2 data-ice="title">Public Constructors</h2>
 
 <div class="detail" data-ice="detail">
@@ -610,22 +770,71 @@
     
     
     
-    <span class="code" data-ice="name">constructor</span><span class="code" data-ice="signature">()</span>
+    <span class="code" data-ice="name">constructor</span><span class="code" data-ice="signature">(objectStream: <span>Stream</span>, context: <span><a href="class/packages/remote-context/src/Context.js~Context.html">Context</a></span>, opts: <span>options</span>)</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber30">source</a></span></span>
+      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber49">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  
+  <div data-ice="description"><p>Create a session from an object stream.</p>
+</div>
 
-  
+  <div data-ice="override"><h4>Override:</h4><span><a href="class/packages/remote-protocol/src/Session.js~Session.html#instance-constructor-constructor">Session#constructor</a></span></div>
 
-  <div data-ice="properties">
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">objectStream</td>
+      <td data-ice="type" class="code"><span>Stream</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>an actions object stream</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">context</td>
+      <td data-ice="type" class="code"><span><a href="class/packages/remote-context/src/Context.js~Context.html">Context</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The main context</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">opts</td>
+      <td data-ice="type" class="code"><span>options</span></td>
+      <td data-ice="appendix"><ul><li>optional</li></ul></td>
+      <td data-ice="description"><p><span><a href="class/packages/remote-protocol/src/Session.js~Session.html">Session</a></span> options with extensions</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="1">
+      <td data-ice="name" class="code" data-depth="1">opts.writable</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></td>
+      <td data-ice="appendix"><ul><li>optional</li>
+<li>default: false</li></ul></td>
+      <td data-ice="description"><p>True if this context is writable to the remote peer</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="1">
+      <td data-ice="name" class="code" data-depth="1">opts.showStack</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></td>
+      <td data-ice="appendix"><ul><li>optional</li>
+<li>default: false</li></ul></td>
+      <td data-ice="description"><p>True if errors on this context should include full
+stack (The stack will be send to the remote peer as a string)</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
 </div>
 
   
@@ -649,221 +858,6 @@
 <div data-ice="memberDetails"><h2 data-ice="title">Public Members</h2>
 
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-member-[kBinds]">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">[kBinds]</span><span class="code" data-ice="signature">: <span>*</span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber39">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-member-[kIsWritable]">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">[kIsWritable]</span><span class="code" data-ice="signature">: <span>*</span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber41">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-member-[kLocal]">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">[kLocal]</span><span class="code" data-ice="signature">: <span>*</span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber37">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-member-[kRemote]">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">[kRemote]</span><span class="code" data-ice="signature">: <span>*</span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber38">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-member-[kShowStack]">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">[kShowStack]</span><span class="code" data-ice="signature">: <span>*</span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber42">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="instance-get-remote">
     <span class="access" data-ice="access">public</span>
     
@@ -871,18 +865,19 @@
     
     
     
-    <span class="code" data-ice="name">remote</span><span class="code" data-ice="signature">: <span>*</span></span>
+    <span class="code" data-ice="name">remote</span><span class="code" data-ice="signature">: <span><a href="class/packages/remote-context/src/RemoteContext.js~RemoteContext.html">RemoteContext</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber47">source</a></span></span>
+      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber94">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  
+  <div data-ice="description"><p>Get the remote context</p>
+</div>
 
   
 
@@ -914,18 +909,19 @@
     
     
     
-    <span class="code" data-ice="name">showStack</span><span class="code" data-ice="signature">: <span>*</span></span>
+    <span class="code" data-ice="name">showStack</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber55">source</a></span></span>
+      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber107">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  
+  <div data-ice="description"><p>True if the remote peer should see stack errors.</p>
+</div>
 
   
 
@@ -960,18 +956,19 @@
     
     
     
-    <span class="code" data-ice="name">bind</span><span class="code" data-ice="signature">(func: <span>*</span>): <span>*</span></span>
+    <span class="code" data-ice="name">bind</span><span class="code" data-ice="signature">(func: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber125">source</a></span></span>
+      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber201">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  
+  <div data-ice="description"><p>Bind to a local function and apply it remotely if the <code>this</code> parameter is a remote value.</p>
+</div>
 
   
 
@@ -985,9 +982,10 @@
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">func</td>
-      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
+      <td data-ice="description"><p>The local function to bind</p>
+</td>
     </tr>
 </tbody>
   </table>
@@ -999,8 +997,9 @@
     <table>
       <tbody>
         <tr>
-          <td class="return-type code" data-ice="returnType"><span>*</span></td>
-          
+          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>A proxy to the original local function</p>
+</td>
         </tr>
       </tbody>
     </table>
@@ -1031,18 +1030,19 @@
     
     
     
-    <span class="code" data-ice="name">delete</span><span class="code" data-ice="signature">(reference: <span>*</span>): <span>*</span></span>
+    <span class="code" data-ice="name">delete</span><span class="code" data-ice="signature">(reference: <span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber198">source</a></span></span>
+      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber302">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  
+  <div data-ice="description"><p>Delete a local reference from the local-context.</p>
+</div>
 
   
 
@@ -1056,9 +1056,10 @@
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">reference</td>
-      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
+      <td data-ice="description"><p>The local reference</p>
+</td>
     </tr>
 </tbody>
   </table>
@@ -1070,8 +1071,9 @@
     <table>
       <tbody>
         <tr>
-          <td class="return-type code" data-ice="returnType"><span>*</span></td>
-          
+          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>True if the reference has been removed</p>
+</td>
         </tr>
       </tbody>
     </table>
@@ -1106,16 +1108,17 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber158">source</a></span></span>
+      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber237">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  
+  <div data-ice="description"><p>Destroy this session and it&apos;s stream.</p>
+</div>
 
-  
+  <div data-ice="override"><h4>Override:</h4><span><a href="class/packages/remote-protocol/src/Session.js~Session.html#instance-method-destroy">Session#destroy</a></span></div>
 
   <div data-ice="properties"><div data-ice="properties">
   <h4 data-ice="title">Params:</h4>
@@ -1161,20 +1164,23 @@
     
     
     
-    <span class="code" data-ice="name">dispatch</span><span class="code" data-ice="signature">(value: <span>*</span>): <span>*</span></span>
+    <span class="code" data-ice="name">dispatch</span><span class="code" data-ice="signature">(value: <span>*</span>): <span><a href="class/packages/remote-protocol/src/actions/Action.js~Action.html">Action</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber70">source</a></span></span>
+      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber139">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  
+  <div data-ice="description"><p>Dispatch a value for the remote peer session.
+Objects and functions will convert to actions, other primitive values such as string or numbers
+will remain as-is.</p>
+</div>
 
-  
+  <div data-ice="override"><h4>Override:</h4><span><a href="class/packages/remote-protocol/src/Session.js~Session.html#instance-method-dispatch">Session#dispatch</a></span></div>
 
   <div data-ice="properties"><div data-ice="properties">
   <h4 data-ice="title">Params:</h4>
@@ -1200,7 +1206,7 @@
     <table>
       <tbody>
         <tr>
-          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/packages/remote-protocol/src/actions/Action.js~Action.html">Action</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></td>
           
         </tr>
       </tbody>
@@ -1232,18 +1238,19 @@
     
     
     
-    <span class="code" data-ice="name">exists</span><span class="code" data-ice="signature">(value: <span>*</span>): <span>*</span></span>
+    <span class="code" data-ice="name">exists</span><span class="code" data-ice="signature">(value: <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber190">source</a></span></span>
+      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber288">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  
+  <div data-ice="description"><p>Check if the given value exists on the local-context.</p>
+</div>
 
   
 
@@ -1259,7 +1266,8 @@
       <td data-ice="name" class="code" data-depth="0">value</td>
       <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
+      <td data-ice="description"><p>The given value</p>
+</td>
     </tr>
 </tbody>
   </table>
@@ -1271,8 +1279,9 @@
     <table>
       <tbody>
         <tr>
-          <td class="return-type code" data-ice="returnType"><span>*</span></td>
-          
+          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>True if exists</p>
+</td>
         </tr>
       </tbody>
     </table>
@@ -1303,18 +1312,19 @@
     
     
     
-    <span class="code" data-ice="name">get</span><span class="code" data-ice="signature">(reference: <span>*</span>): <span>*</span></span>
+    <span class="code" data-ice="name">get</span><span class="code" data-ice="signature">(reference: <span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span>): <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber173">source</a></span></span>
+      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber258">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  
+  <div data-ice="description"><p>Get a local reference value from the local-context.</p>
+</div>
 
   
 
@@ -1328,9 +1338,10 @@
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">reference</td>
-      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
+      <td data-ice="description"><p>The local reference</p>
+</td>
     </tr>
 </tbody>
   </table>
@@ -1374,18 +1385,22 @@
     
     
     
-    <span class="code" data-ice="name">isWritable</span><span class="code" data-ice="signature">(value: <span>*</span>): <span>*</span></span>
+    <span class="code" data-ice="name">isWritable</span><span class="code" data-ice="signature">(value: <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber59">source</a></span></span>
+      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber120">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  
+  <div data-ice="description"><p>Check if the given value is writable.
+A value is writable if the local-context own it (ie. the value created elusively for this
+peer) or if the context is writable and the main-context own it. Environment values are
+always readonly unless there are on the context.</p>
+</div>
 
   
 
@@ -1401,7 +1416,8 @@
       <td data-ice="name" class="code" data-depth="0">value</td>
       <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
+      <td data-ice="description"><p>The given value</p>
+</td>
     </tr>
 </tbody>
   </table>
@@ -1413,7 +1429,7 @@
     <table>
       <tbody>
         <tr>
-          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></td>
           
         </tr>
       </tbody>
@@ -1445,18 +1461,19 @@
     
     
     
-    <span class="code" data-ice="name">set</span><span class="code" data-ice="signature">(reference: <span>*</span>, value: <span>*</span>): <span>*</span></span>
+    <span class="code" data-ice="name">set</span><span class="code" data-ice="signature">(reference: <span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span>, value: <span>*</span>): <span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html">RemoteSession</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber181">source</a></span></span>
+      <span data-ice="source"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#lineNumber273">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  
+  <div data-ice="description"><p>Set a local reference to the local-context.</p>
+</div>
 
   
 
@@ -1470,15 +1487,17 @@
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">reference</td>
-      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
+      <td data-ice="description"><p>The local reference</p>
+</td>
     </tr>
 <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">value</td>
       <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
+      <td data-ice="description"><p>The local value</p>
+</td>
     </tr>
 </tbody>
   </table>
@@ -1490,7 +1509,7 @@
     <table>
       <tbody>
         <tr>
-          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html">RemoteSession</a></span></td>
           
         </tr>
       </tbody>

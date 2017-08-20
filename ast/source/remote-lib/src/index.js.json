@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 711,
+  "end": 820,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 22,
+      "line": 29,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 711,
+    "end": 820,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 22,
+        "line": 29,
         "column": 0
       }
     },
@@ -31,7 +31,7 @@
       {
         "type": "ImportDeclaration",
         "start": 600,
-        "end": 632,
+        "end": 633,
         "loc": {
           "start": {
             "line": 17,
@@ -39,14 +39,14 @@
           },
           "end": {
             "line": 17,
-            "column": 32
+            "column": 33
           }
         },
         "specifiers": [
           {
             "type": "ImportDefaultSpecifier",
             "start": 607,
-            "end": 614,
+            "end": 615,
             "loc": {
               "start": {
                 "line": 17,
@@ -54,13 +54,13 @@
               },
               "end": {
                 "line": 17,
-                "column": 14
+                "column": 15
               }
             },
             "local": {
               "type": "Identifier",
               "start": 607,
-              "end": 614,
+              "end": 615,
               "loc": {
                 "start": {
                   "line": 17,
@@ -68,11 +68,11 @@
                 },
                 "end": {
                   "line": 17,
-                  "column": 14
+                  "column": 15
                 },
-                "identifierName": "Library"
+                "identifierName": "_Library"
               },
-              "name": "Library",
+              "name": "_Library",
               "leadingComments": null
             },
             "leadingComments": null
@@ -80,16 +80,16 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 620,
-          "end": 631,
+          "start": 621,
+          "end": 632,
           "loc": {
             "start": {
               "line": 17,
-              "column": 20
+              "column": 21
             },
             "end": {
               "line": 17,
-              "column": 31
+              "column": 32
             }
           },
           "extra": {
@@ -119,8 +119,8 @@
       },
       {
         "type": "ImportDeclaration",
-        "start": 633,
-        "end": 665,
+        "start": 634,
+        "end": 679,
         "loc": {
           "start": {
             "line": 18,
@@ -128,14 +128,14 @@
           },
           "end": {
             "line": 18,
-            "column": 32
+            "column": 45
           }
         },
         "specifiers": [
           {
             "type": "ImportDefaultSpecifier",
-            "start": 640,
-            "end": 647,
+            "start": 641,
+            "end": 655,
             "loc": {
               "start": {
                 "line": 18,
@@ -143,13 +143,13 @@
               },
               "end": {
                 "line": 18,
-                "column": 14
+                "column": 21
               }
             },
             "local": {
               "type": "Identifier",
-              "start": 640,
-              "end": 647,
+              "start": 641,
+              "end": 655,
               "loc": {
                 "start": {
                   "line": 18,
@@ -157,136 +157,333 @@
                 },
                 "end": {
                   "line": 18,
-                  "column": 14
+                  "column": 21
                 },
-                "identifierName": "Context"
+                "identifierName": "_RemoteLibrary"
               },
-              "name": "Context"
+              "name": "_RemoteLibrary"
             }
           }
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 653,
-          "end": 664,
+          "start": 661,
+          "end": 678,
           "loc": {
             "start": {
               "line": 18,
-              "column": 20
+              "column": 27
             },
             "end": {
               "line": 18,
-              "column": 31
+              "column": 44
             }
           },
           "extra": {
-            "rawValue": "./Context",
-            "raw": "'./Context'"
+            "rawValue": "./RemoteLibrary",
+            "raw": "'./RemoteLibrary'"
           },
-          "value": "./Context"
-        }
-      },
-      {
-        "type": "ExportDefaultDeclaration",
-        "start": 667,
-        "end": 690,
-        "loc": {
-          "start": {
-            "line": 20,
-            "column": 0
-          },
-          "end": {
-            "line": 20,
-            "column": 23
-          }
+          "value": "./RemoteLibrary"
         },
-        "declaration": {
-          "type": "Identifier",
-          "start": 682,
-          "end": 689,
-          "loc": {
-            "start": {
-              "line": 20,
-              "column": 15
-            },
-            "end": {
-              "line": 20,
-              "column": 22
-            },
-            "identifierName": "Library"
-          },
-          "name": "Library",
-          "leadingComments": [],
-          "trailingComments": []
-        }
-      },
-      {
-        "type": "ExportNamedDeclaration",
-        "start": 691,
-        "end": 710,
-        "loc": {
-          "start": {
-            "line": 21,
-            "column": 0
-          },
-          "end": {
-            "line": 21,
-            "column": 19
-          }
-        },
-        "declaration": null,
-        "specifiers": [
+        "trailingComments": [
           {
-            "type": "ExportSpecifier",
-            "start": 700,
+            "type": "CommentBlock",
+            "value": "*\n * @type {Library}\n ",
+            "start": 681,
             "end": 707,
             "loc": {
               "start": {
-                "line": 21,
-                "column": 9
+                "line": 20,
+                "column": 0
               },
               "end": {
-                "line": 21,
-                "column": 16
+                "line": 22,
+                "column": 3
               }
+            }
+          }
+        ]
+      },
+      {
+        "type": "ExportNamedDeclaration",
+        "start": 708,
+        "end": 740,
+        "loc": {
+          "start": {
+            "line": 23,
+            "column": 0
+          },
+          "end": {
+            "line": 23,
+            "column": 32
+          }
+        },
+        "specifiers": [],
+        "source": null,
+        "declaration": {
+          "type": "VariableDeclaration",
+          "start": 715,
+          "end": 740,
+          "loc": {
+            "start": {
+              "line": 23,
+              "column": 7
             },
-            "local": {
-              "type": "Identifier",
-              "start": 700,
+            "end": {
+              "line": 23,
+              "column": 32
+            }
+          },
+          "declarations": [
+            {
+              "type": "VariableDeclarator",
+              "start": 721,
+              "end": 739,
+              "loc": {
+                "start": {
+                  "line": 23,
+                  "column": 13
+                },
+                "end": {
+                  "line": 23,
+                  "column": 31
+                }
+              },
+              "id": {
+                "type": "Identifier",
+                "start": 721,
+                "end": 728,
+                "loc": {
+                  "start": {
+                    "line": 23,
+                    "column": 13
+                  },
+                  "end": {
+                    "line": 23,
+                    "column": 20
+                  },
+                  "identifierName": "Library"
+                },
+                "name": "Library",
+                "leadingComments": null
+              },
+              "init": {
+                "type": "Identifier",
+                "start": 731,
+                "end": 739,
+                "loc": {
+                  "start": {
+                    "line": 23,
+                    "column": 23
+                  },
+                  "end": {
+                    "line": 23,
+                    "column": 31
+                  },
+                  "identifierName": "_Library"
+                },
+                "name": "_Library"
+              },
+              "leadingComments": null
+            }
+          ],
+          "kind": "const",
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * @type {Library}\n ",
+              "start": 681,
               "end": 707,
               "loc": {
                 "start": {
-                  "line": 21,
-                  "column": 9
+                  "line": 20,
+                  "column": 0
                 },
                 "end": {
-                  "line": 21,
-                  "column": 16
-                },
-                "identifierName": "Context"
-              },
-              "name": "Context"
-            },
-            "exported": {
-              "type": "Identifier",
-              "start": 700,
-              "end": 707,
+                  "line": 22,
+                  "column": 3
+                }
+              }
+            }
+          ],
+          "trailingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * @type {RemoteLibrary}\n ",
+              "start": 742,
+              "end": 774,
               "loc": {
                 "start": {
-                  "line": 21,
-                  "column": 9
+                  "line": 25,
+                  "column": 0
                 },
                 "end": {
-                  "line": 21,
-                  "column": 16
-                },
-                "identifierName": "Context"
+                  "line": 27,
+                  "column": 3
+                }
+              }
+            }
+          ]
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * @type {Library}\n ",
+            "start": 681,
+            "end": 707,
+            "loc": {
+              "start": {
+                "line": 20,
+                "column": 0
               },
-              "name": "Context"
+              "end": {
+                "line": 22,
+                "column": 3
+              }
             }
           }
         ],
-        "source": null
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * @type {RemoteLibrary}\n ",
+            "start": 742,
+            "end": 774,
+            "loc": {
+              "start": {
+                "line": 25,
+                "column": 0
+              },
+              "end": {
+                "line": 27,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "ExportNamedDeclaration",
+        "start": 775,
+        "end": 819,
+        "loc": {
+          "start": {
+            "line": 28,
+            "column": 0
+          },
+          "end": {
+            "line": 28,
+            "column": 44
+          }
+        },
+        "specifiers": [],
+        "source": null,
+        "declaration": {
+          "type": "VariableDeclaration",
+          "start": 782,
+          "end": 819,
+          "loc": {
+            "start": {
+              "line": 28,
+              "column": 7
+            },
+            "end": {
+              "line": 28,
+              "column": 44
+            }
+          },
+          "declarations": [
+            {
+              "type": "VariableDeclarator",
+              "start": 788,
+              "end": 818,
+              "loc": {
+                "start": {
+                  "line": 28,
+                  "column": 13
+                },
+                "end": {
+                  "line": 28,
+                  "column": 43
+                }
+              },
+              "id": {
+                "type": "Identifier",
+                "start": 788,
+                "end": 801,
+                "loc": {
+                  "start": {
+                    "line": 28,
+                    "column": 13
+                  },
+                  "end": {
+                    "line": 28,
+                    "column": 26
+                  },
+                  "identifierName": "RemoteLibrary"
+                },
+                "name": "RemoteLibrary",
+                "leadingComments": null
+              },
+              "init": {
+                "type": "Identifier",
+                "start": 804,
+                "end": 818,
+                "loc": {
+                  "start": {
+                    "line": 28,
+                    "column": 29
+                  },
+                  "end": {
+                    "line": 28,
+                    "column": 43
+                  },
+                  "identifierName": "_RemoteLibrary"
+                },
+                "name": "_RemoteLibrary"
+              },
+              "leadingComments": null
+            }
+          ],
+          "kind": "const",
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * @type {RemoteLibrary}\n ",
+              "start": 742,
+              "end": 774,
+              "loc": {
+                "start": {
+                  "line": 25,
+                  "column": 0
+                },
+                "end": {
+                  "line": 27,
+                  "column": 3
+                }
+              }
+            }
+          ],
+          "trailingComments": []
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * @type {RemoteLibrary}\n ",
+            "start": 742,
+            "end": 774,
+            "loc": {
+              "start": {
+                "line": 25,
+                "column": 0
+              },
+              "end": {
+                "line": 27,
+                "column": 3
+              }
+            }
+          }
+        ]
       }
     ],
     "directives": []
@@ -304,6 +501,38 @@
         },
         "end": {
           "line": 15,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @type {Library}\n ",
+      "start": 681,
+      "end": 707,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 0
+        },
+        "end": {
+          "line": 22,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @type {RemoteLibrary}\n ",
+      "start": 742,
+      "end": 774,
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 0
+        },
+        "end": {
+          "line": 27,
           "column": 3
         }
       }
@@ -366,9 +595,9 @@
         "postfix": false,
         "binop": null
       },
-      "value": "Library",
+      "value": "_Library",
       "start": 607,
-      "end": 614,
+      "end": 615,
       "loc": {
         "start": {
           "line": 17,
@@ -376,7 +605,7 @@
         },
         "end": {
           "line": 17,
-          "column": 14
+          "column": 15
         }
       }
     },
@@ -393,16 +622,16 @@
         "binop": null
       },
       "value": "from",
-      "start": 615,
-      "end": 619,
+      "start": 616,
+      "end": 620,
       "loc": {
         "start": {
           "line": 17,
-          "column": 15
+          "column": 16
         },
         "end": {
           "line": 17,
-          "column": 19
+          "column": 20
         }
       }
     },
@@ -420,16 +649,16 @@
         "updateContext": null
       },
       "value": "./Library",
-      "start": 620,
-      "end": 631,
+      "start": 621,
+      "end": 632,
       "loc": {
         "start": {
           "line": 17,
-          "column": 20
+          "column": 21
         },
         "end": {
           "line": 17,
-          "column": 31
+          "column": 32
         }
       }
     },
@@ -446,16 +675,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 631,
-      "end": 632,
+      "start": 632,
+      "end": 633,
       "loc": {
         "start": {
           "line": 17,
-          "column": 31
+          "column": 32
         },
         "end": {
           "line": 17,
-          "column": 32
+          "column": 33
         }
       }
     },
@@ -474,8 +703,8 @@
         "updateContext": null
       },
       "value": "import",
-      "start": 633,
-      "end": 639,
+      "start": 634,
+      "end": 640,
       "loc": {
         "start": {
           "line": 18,
@@ -499,9 +728,9 @@
         "postfix": false,
         "binop": null
       },
-      "value": "Context",
-      "start": 640,
-      "end": 647,
+      "value": "_RemoteLibrary",
+      "start": 641,
+      "end": 655,
       "loc": {
         "start": {
           "line": 18,
@@ -509,7 +738,7 @@
         },
         "end": {
           "line": 18,
-          "column": 14
+          "column": 21
         }
       }
     },
@@ -526,16 +755,16 @@
         "binop": null
       },
       "value": "from",
-      "start": 648,
-      "end": 652,
+      "start": 656,
+      "end": 660,
       "loc": {
         "start": {
           "line": 18,
-          "column": 15
+          "column": 22
         },
         "end": {
           "line": 18,
-          "column": 19
+          "column": 26
         }
       }
     },
@@ -552,17 +781,17 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "./Context",
-      "start": 653,
-      "end": 664,
+      "value": "./RemoteLibrary",
+      "start": 661,
+      "end": 678,
       "loc": {
         "start": {
           "line": 18,
-          "column": 20
+          "column": 27
         },
         "end": {
           "line": 18,
-          "column": 31
+          "column": 44
         }
       }
     },
@@ -579,16 +808,32 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 664,
-      "end": 665,
+      "start": 678,
+      "end": 679,
       "loc": {
         "start": {
           "line": 18,
-          "column": 31
+          "column": 44
         },
         "end": {
           "line": 18,
-          "column": 32
+          "column": 45
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @type {Library}\n ",
+      "start": 681,
+      "end": 707,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 0
+        },
+        "end": {
+          "line": 22,
+          "column": 3
         }
       }
     },
@@ -607,24 +852,24 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 667,
-      "end": 673,
+      "start": 708,
+      "end": 714,
       "loc": {
         "start": {
-          "line": 20,
+          "line": 23,
           "column": 0
         },
         "end": {
-          "line": 20,
+          "line": 23,
           "column": 6
         }
       }
     },
     {
       "type": {
-        "label": "default",
-        "keyword": "default",
-        "beforeExpr": true,
+        "label": "const",
+        "keyword": "const",
+        "beforeExpr": false,
         "startsExpr": false,
         "rightAssociative": false,
         "isLoop": false,
@@ -634,17 +879,17 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "default",
-      "start": 674,
-      "end": 681,
+      "value": "const",
+      "start": 715,
+      "end": 720,
       "loc": {
         "start": {
-          "line": 20,
+          "line": 23,
           "column": 7
         },
         "end": {
-          "line": 20,
-          "column": 14
+          "line": 23,
+          "column": 12
         }
       }
     },
@@ -661,16 +906,69 @@
         "binop": null
       },
       "value": "Library",
-      "start": 682,
-      "end": 689,
+      "start": 721,
+      "end": 728,
       "loc": {
         "start": {
-          "line": 20,
-          "column": 15
+          "line": 23,
+          "column": 13
         },
         "end": {
-          "line": 20,
+          "line": 23,
+          "column": 20
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 729,
+      "end": 730,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 21
+        },
+        "end": {
+          "line": 23,
           "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "_Library",
+      "start": 731,
+      "end": 739,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 23
+        },
+        "end": {
+          "line": 23,
+          "column": 31
         }
       }
     },
@@ -687,16 +985,32 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 689,
-      "end": 690,
+      "start": 739,
+      "end": 740,
       "loc": {
         "start": {
-          "line": 20,
-          "column": 22
+          "line": 23,
+          "column": 31
         },
         "end": {
-          "line": 20,
-          "column": 23
+          "line": 23,
+          "column": 32
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @type {RemoteLibrary}\n ",
+      "start": 742,
+      "end": 774,
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 0
+        },
+        "end": {
+          "line": 27,
+          "column": 3
         }
       }
     },
@@ -715,41 +1029,44 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 691,
-      "end": 697,
+      "start": 775,
+      "end": 781,
       "loc": {
         "start": {
-          "line": 21,
+          "line": 28,
           "column": 0
         },
         "end": {
-          "line": 21,
+          "line": 28,
           "column": 6
         }
       }
     },
     {
       "type": {
-        "label": "{",
-        "beforeExpr": true,
-        "startsExpr": true,
+        "label": "const",
+        "keyword": "const",
+        "beforeExpr": false,
+        "startsExpr": false,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
         "prefix": false,
         "postfix": false,
-        "binop": null
+        "binop": null,
+        "updateContext": null
       },
-      "start": 698,
-      "end": 699,
+      "value": "const",
+      "start": 782,
+      "end": 787,
       "loc": {
         "start": {
-          "line": 21,
+          "line": 28,
           "column": 7
         },
         "end": {
-          "line": 21,
-          "column": 8
+          "line": 28,
+          "column": 12
         }
       }
     },
@@ -765,25 +1082,52 @@
         "postfix": false,
         "binop": null
       },
-      "value": "Context",
-      "start": 700,
-      "end": 707,
+      "value": "RemoteLibrary",
+      "start": 788,
+      "end": 801,
       "loc": {
         "start": {
-          "line": 21,
-          "column": 9
+          "line": 28,
+          "column": 13
         },
         "end": {
-          "line": 21,
-          "column": 16
+          "line": 28,
+          "column": 26
         }
       }
     },
     {
       "type": {
-        "label": "}",
-        "beforeExpr": false,
+        "label": "=",
+        "beforeExpr": true,
         "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 802,
+      "end": 803,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 27
+        },
+        "end": {
+          "line": 28,
+          "column": 28
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -791,16 +1135,17 @@
         "postfix": false,
         "binop": null
       },
-      "start": 708,
-      "end": 709,
+      "value": "_RemoteLibrary",
+      "start": 804,
+      "end": 818,
       "loc": {
         "start": {
-          "line": 21,
-          "column": 17
+          "line": 28,
+          "column": 29
         },
         "end": {
-          "line": 21,
-          "column": 18
+          "line": 28,
+          "column": 43
         }
       }
     },
@@ -817,16 +1162,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 709,
-      "end": 710,
+      "start": 818,
+      "end": 819,
       "loc": {
         "start": {
-          "line": 21,
-          "column": 18
+          "line": 28,
+          "column": 43
         },
         "end": {
-          "line": 21,
-          "column": 19
+          "line": 28,
+          "column": 44
         }
       }
     },
@@ -843,15 +1188,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 711,
-      "end": 711,
+      "start": 820,
+      "end": 820,
       "loc": {
         "start": {
-          "line": 22,
+          "line": 29,
           "column": 0
         },
         "end": {
-          "line": 22,
+          "line": 29,
           "column": 0
         }
       }

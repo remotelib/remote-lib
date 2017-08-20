@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 646,
+  "end": 684,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 20,
+      "line": 22,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 646,
+    "end": 684,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 20,
+        "line": 22,
         "column": 0
       }
     },
@@ -115,41 +115,94 @@
               }
             }
           }
+        ],
+        "trailingComments": [
+          {
+            "type": "CommentLine",
+            "value": " TODO switch between node6 and es6",
+            "start": 626,
+            "end": 662,
+            "loc": {
+              "start": {
+                "line": 19,
+                "column": 0
+              },
+              "end": {
+                "line": 19,
+                "column": 36
+              }
+            }
+          }
         ]
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 626,
-        "end": 645,
+        "start": 664,
+        "end": 683,
         "loc": {
           "start": {
-            "line": 19,
+            "line": 21,
             "column": 0
           },
           "end": {
-            "line": 19,
+            "line": 21,
             "column": 19
           }
         },
         "declaration": {
           "type": "Identifier",
-          "start": 641,
-          "end": 644,
+          "start": 679,
+          "end": 682,
           "loc": {
             "start": {
-              "line": 19,
+              "line": 21,
               "column": 15
             },
             "end": {
-              "line": 19,
+              "line": 21,
               "column": 18
             },
             "identifierName": "es6"
           },
           "name": "es6",
-          "leadingComments": [],
+          "leadingComments": [
+            {
+              "type": "CommentLine",
+              "value": " TODO switch between node6 and es6",
+              "start": 626,
+              "end": 662,
+              "loc": {
+                "start": {
+                  "line": 19,
+                  "column": 0
+                },
+                "end": {
+                  "line": 19,
+                  "column": 36
+                }
+              }
+            }
+          ],
           "trailingComments": []
-        }
+        },
+        "leadingComments": [
+          {
+            "type": "CommentLine",
+            "value": " TODO switch between node6 and es6",
+            "start": 626,
+            "end": 662,
+            "loc": {
+              "start": {
+                "line": 19,
+                "column": 0
+              },
+              "end": {
+                "line": 19,
+                "column": 36
+              }
+            }
+          }
+        ]
       }
     ],
     "directives": []
@@ -168,6 +221,22 @@
         "end": {
           "line": 15,
           "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " TODO switch between node6 and es6",
+      "start": 626,
+      "end": 662,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 0
+        },
+        "end": {
+          "line": 19,
+          "column": 36
         }
       }
     }
@@ -323,6 +392,22 @@
       }
     },
     {
+      "type": "CommentLine",
+      "value": " TODO switch between node6 and es6",
+      "start": 626,
+      "end": 662,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 0
+        },
+        "end": {
+          "line": 19,
+          "column": 36
+        }
+      }
+    },
+    {
       "type": {
         "label": "export",
         "keyword": "export",
@@ -337,15 +422,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 626,
-      "end": 632,
+      "start": 664,
+      "end": 670,
       "loc": {
         "start": {
-          "line": 19,
+          "line": 21,
           "column": 0
         },
         "end": {
-          "line": 19,
+          "line": 21,
           "column": 6
         }
       }
@@ -365,15 +450,15 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 633,
-      "end": 640,
+      "start": 671,
+      "end": 678,
       "loc": {
         "start": {
-          "line": 19,
+          "line": 21,
           "column": 7
         },
         "end": {
-          "line": 19,
+          "line": 21,
           "column": 14
         }
       }
@@ -391,15 +476,15 @@
         "binop": null
       },
       "value": "es6",
-      "start": 641,
-      "end": 644,
+      "start": 679,
+      "end": 682,
       "loc": {
         "start": {
-          "line": 19,
+          "line": 21,
           "column": 15
         },
         "end": {
-          "line": 19,
+          "line": 21,
           "column": 18
         }
       }
@@ -417,15 +502,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 644,
-      "end": 645,
+      "start": 682,
+      "end": 683,
       "loc": {
         "start": {
-          "line": 19,
+          "line": 21,
           "column": 18
         },
         "end": {
-          "line": 19,
+          "line": 21,
           "column": 19
         }
       }
@@ -443,15 +528,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 646,
-      "end": 646,
+      "start": 684,
+      "end": 684,
       "loc": {
         "start": {
-          "line": 20,
+          "line": 22,
           "column": 0
         },
         "end": {
-          "line": 20,
+          "line": 22,
           "column": 0
         }
       }

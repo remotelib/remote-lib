@@ -13,7 +13,7 @@
 
 <header>
   <a href="./">Home</a>
-  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  
   <a href="identifiers.html">Reference</a>
   <a href="source.html">Source</a>
   
@@ -32,6 +32,7 @@
   <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#reference-context-src">reference-context/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/reference-context/src/reference-context.js~ReferenceContext.html">ReferenceContext</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isValidReference">isValidReference</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Reference">Reference</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-context-envs">remote-context/envs</a><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-es6UnstableEnv">es6UnstableEnv</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-context-src">remote-context/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/AssignableContext.js~AssignableContext.html">AssignableContext</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/Context.js~Context.html">Context</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/EnvContext.js~EnvContext.html">EnvContext</a></span></span></li>
@@ -43,11 +44,17 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/RemotePromise.js~RemotePromise.html">RemotePromise</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html">RemoteSession</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/RemoteValue.js~RemoteValue.html">RemoteValue</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-getInstance">getInstance</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isRemoteValue">isRemoteValue</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-observe">observe</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-reveal">reveal</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-revoke">revoke</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Context">Context</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-EnvContext">EnvContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RemoteContext">RemoteContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RemoteSession">RemoteSession</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RemoteValue">RemoteValue</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-observe">observe</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-RemoteValueProxy">RemoteValueProxy</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-context-src-actions">remote-context/src/actions</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/DeleteAction.js~DeleteAction.html">DeleteAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/GetAction.js~GetAction.html">GetAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/LocalDefinePropertyAction.js~LocalDefinePropertyAction.html">LocalDefinePropertyAction</a></span></span></li>
@@ -74,9 +81,15 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteSetPrototypeOfAction.js~RemoteSetPrototypeOfAction.html">RemoteSetPrototypeOfAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteSetSymbolAction.js~RemoteSetSymbolAction.html">RemoteSetSymbolAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/UndefinedValueAction.js~UndefinedValueAction.html">UndefinedValueAction</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-environment">remote-environment</a><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-es6">es6</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-instance-src">remote-instance/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-instance/src/parser.js~Parser.html">Parser</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-lib-src">remote-lib/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-lib/src/Context.js~Context.html">Context</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-lib/src/Library.js~Library.html">Library</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-construct">construct</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isConstructor">isConstructor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-trimArgumentsList">trimArgumentsList</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-lib-src">remote-lib/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-lib/src/Library.js~Library.html">Library</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary.html">RemoteLibrary</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Library">Library</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RemoteLibrary">RemoteLibrary</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-protocol-src">remote-protocol/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-protocol/src/Session.js~Session.html">Session</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-protocol-src-actions">remote-protocol/src/actions</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-protocol/src/actions/Action.js~Action.html">Action</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-protocol/src/actions/RequestAction.js~RequestAction.html">RequestAction</a></span></span></li>
@@ -104,7 +117,7 @@
 
 import ReferenceContext from &apos;reference-context&apos;;
 import RemoteSession from &apos;./RemoteSession&apos;;
-import RemoteValue, { revoke, getInstance } from &apos;./RemoteValue&apos;;
+import RemoteValue, { revoke, reveal } from &apos;./RemoteValue&apos;;
 import RemotePromise from &apos;./RemotePromise&apos;;
 import LocalPromise from &apos;./LocalPromise&apos;;
 
@@ -114,7 +127,21 @@ const kSession = Symbol(&apos;session&apos;);
 const kSessionListener = Symbol(&apos;sessionListener&apos;);
 const kFetchRequests = Symbol(&apos;fetchRequests&apos;);
 
+/**
+ * A remote context that will represent the local context of the other peer.
+ * @extends {ReferenceContext}
+ * @example
+ * import { RemoteContext } from &apos;remote-context&apos;;
+ *
+ * const remoteContext = new RemoteContext(session, parentContext);
+ */
 export default class RemoteContext extends ReferenceContext {
+  /**
+   * Create a remote context with given remote session and environment context.
+   *
+   * @param {RemoteSession} session The remote session
+   * @param {ReferenceContext} parentContext The environment context
+   */
   constructor(session, parentContext) {
     if (!(session instanceof RemoteSession)) {
       throw new TypeError(
@@ -124,7 +151,17 @@ export default class RemoteContext extends ReferenceContext {
 
     super({}, parentContext);
 
+    /**
+     * @type {RemoteSession}
+     * @private
+     */
     this[kSession] = session;
+
+    /**
+     * @type {function}
+     * @private
+     * @return {void}
+     */
     this[kSessionListener] = () =&gt; {
       session.removeListener(&apos;close&apos;, this[kSessionListener]);
 
@@ -135,13 +172,25 @@ export default class RemoteContext extends ReferenceContext {
     };
     session.on(&apos;close&apos;, this[kSessionListener]);
 
+    /**
+     * @type {Map}
+     * @private
+     */
     this[kFetchRequests] = new Map();
   }
 
+  /**
+   * Get the context remote session.
+   *
+   * @type {RemoteSession}
+   */
   get session() {
     return this[kSession];
   }
 
+  /**
+   * @override
+   */
   closure() {
     if (!this[kSession]) {
       throw new TypeError(&apos;RemoteSession already closed&apos;);
@@ -150,6 +199,14 @@ export default class RemoteContext extends ReferenceContext {
     return new this.constructor(this[kSession], this);
   }
 
+  /**
+   * Fetch a remote reference and return a remote promise.
+   * If the value already fetched, return a remote promise of the same value.
+   *
+   * @param {Reference} reference The remote reference to fetch
+   * @param {object} [opts] {@link RemotePromise.constructor} options
+   * @return {RemotePromise}
+   */
   fetch(reference, opts = {}) {
     let promise = this[kFetchRequests].get(reference);
     if (promise) return promise;
@@ -160,7 +217,15 @@ export default class RemoteContext extends ReferenceContext {
     return promise;
   }
 
-  resolve(value) {
+  /**
+   * Resolve a remote value and return a remote promise to that value.
+   * If the value is not a remote value, return a local promise to the same value.
+   *
+   * @param {*} value The remote value to resolve
+   * @param {object} [opts] {@link RemoteContext.fetch} options
+   * @return {RemotePromise|LocalPromise}
+   */
+  resolve(value, opts = {}) {
     if (!(value instanceof Object) || !this.exists(value)) {
       return new LocalPromise(value);
     }
@@ -168,17 +233,34 @@ export default class RemoteContext extends ReferenceContext {
     const reference = this.lookup(value);
     this[kFetchRequests].delete(reference);
 
-    return this.fetch(reference);
+    return this.fetch(reference, opts);
   }
 
+  /**
+   * Generate a remote action for dispatching the given value remotely.
+   *
+   * @param {*} value The given value
+   * @throws {ReferenceError} If the value is not {@link RemoteContext#exists}
+   * @return {Action}
+   */
   dispatch(value) {
     return new RemoteReferenceAction(this.lookup(value));
   }
 
-  remoteInstance(reference) {
-    return getInstance(this.get(reference));
+  /**
+   * Get an {@link RemoteValue} instance for the given reference value.
+   *
+   * @param {Reference} reference The remote reference
+   * @throws {ReferenceError} If the context not {@link RemoteContext#has} the given reference
+   * @return {RemoteValue}
+   */
+  getTarget(reference) {
+    return reveal(this.get(reference));
   }
 
+  /**
+   * @override
+   */
   set(reference, value) {
     if (!this[kSession]) {
       throw new TypeError(&apos;RemoteSession already closed&apos;);
@@ -188,6 +270,9 @@ export default class RemoteContext extends ReferenceContext {
     return super.set(reference, remoteValue);
   }
 
+  /**
+   * @override
+   */
   delete(reference) {
     this[kFetchRequests].delete(reference);
     if (!super.delete(reference)) return false;
@@ -199,6 +284,9 @@ export default class RemoteContext extends ReferenceContext {
     return true;
   }
 
+  /**
+   * @override
+   */
   release(value) {
     if (!this.parent || !this.parent.exists(value)) {
       revoke(value);
@@ -207,6 +295,9 @@ export default class RemoteContext extends ReferenceContext {
     return super.release(value);
   }
 
+  /**
+   * @override
+   */
   clear() {
     this.forEach((value, reference) =&gt; {
       if (this[kSession] &amp;&amp; !this[kSession].isEnded) {
@@ -222,12 +313,25 @@ export default class RemoteContext extends ReferenceContext {
     super.clear();
   }
 
+  /**
+   * End the remote session.
+   *
+   * @return {RemoteContext}
+   */
   end() {
     if (this[kSession]) {
       this[kSession].end();
     }
+
+    return this;
   }
 
+  /**
+   * Clear the context and destroy the context session only if this context IS NOT created via
+   * closure.
+   *
+   * @return {void}
+   */
   destroy() {
     if (this[kSession]) {
       if (this[kSessionListener]) {
@@ -245,6 +349,13 @@ export default class RemoteContext extends ReferenceContext {
     this.clear();
   }
 
+  /**
+   * Listen to an event on the remote session.
+   *
+   * @param {string} event The event to listen to
+   * @param {function} listener The listener
+   * @return {RemoteContext}
+   */
   on(event, listener) {
     if (!this[kSession]) {
       throw new TypeError(&apos;RemoteSession already closed&apos;);
@@ -254,6 +365,13 @@ export default class RemoteContext extends ReferenceContext {
     return this;
   }
 
+  /**
+   * Listen once to an event on the remote session.
+   *
+   * @param {string} event The event to listen to
+   * @param {function} listener The listener
+   * @return {RemoteContext}
+   */
   once(event, listener) {
     if (!this[kSession]) {
       throw new TypeError(&apos;RemoteSession already closed&apos;);
@@ -263,6 +381,13 @@ export default class RemoteContext extends ReferenceContext {
     return this;
   }
 
+  /**
+   * Remove listener from the remote session.
+   *
+   * @param {string} event The event on the listener
+   * @param {function} listener The listener
+   * @return {RemoteContext}
+   */
   removeListener(event, listener) {
     if (!this[kSession]) {
       throw new TypeError(&apos;RemoteSession already closed&apos;);

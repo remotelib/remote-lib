@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 776,
+  "end": 858,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 24,
+      "line": 29,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 776,
+    "end": 858,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 24,
+        "line": 29,
         "column": 0
       }
     },
@@ -369,41 +369,94 @@
               "name": "remoteInstances"
             }
           ]
-        }
+        },
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * A parser with all the context actions registered.\n *\n * @type {Parser}\n ",
+            "start": 753,
+            "end": 834,
+            "loc": {
+              "start": {
+                "line": 23,
+                "column": 0
+              },
+              "end": {
+                "line": 27,
+                "column": 3
+              }
+            }
+          }
+        ]
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 753,
-        "end": 775,
+        "start": 835,
+        "end": 857,
         "loc": {
           "start": {
-            "line": 23,
+            "line": 28,
             "column": 0
           },
           "end": {
-            "line": 23,
+            "line": 28,
             "column": 22
           }
         },
         "declaration": {
           "type": "Identifier",
-          "start": 768,
-          "end": 774,
+          "start": 850,
+          "end": 856,
           "loc": {
             "start": {
-              "line": 23,
+              "line": 28,
               "column": 15
             },
             "end": {
-              "line": 23,
+              "line": 28,
               "column": 21
             },
             "identifierName": "parser"
           },
           "name": "parser",
-          "leadingComments": [],
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * A parser with all the context actions registered.\n *\n * @type {Parser}\n ",
+              "start": 753,
+              "end": 834,
+              "loc": {
+                "start": {
+                  "line": 23,
+                  "column": 0
+                },
+                "end": {
+                  "line": 27,
+                  "column": 3
+                }
+              }
+            }
+          ],
           "trailingComments": []
-        }
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * A parser with all the context actions registered.\n *\n * @type {Parser}\n ",
+            "start": 753,
+            "end": 834,
+            "loc": {
+              "start": {
+                "line": 23,
+                "column": 0
+              },
+              "end": {
+                "line": 27,
+                "column": 3
+              }
+            }
+          }
+        ]
       }
     ],
     "directives": []
@@ -421,6 +474,22 @@
         },
         "end": {
           "line": 15,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * A parser with all the context actions registered.\n *\n * @type {Parser}\n ",
+      "start": 753,
+      "end": 834,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 0
+        },
+        "end": {
+          "line": 27,
           "column": 3
         }
       }
@@ -1101,6 +1170,22 @@
       }
     },
     {
+      "type": "CommentBlock",
+      "value": "*\n * A parser with all the context actions registered.\n *\n * @type {Parser}\n ",
+      "start": 753,
+      "end": 834,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 0
+        },
+        "end": {
+          "line": 27,
+          "column": 3
+        }
+      }
+    },
+    {
       "type": {
         "label": "export",
         "keyword": "export",
@@ -1115,15 +1200,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 753,
-      "end": 759,
+      "start": 835,
+      "end": 841,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 28,
           "column": 0
         },
         "end": {
-          "line": 23,
+          "line": 28,
           "column": 6
         }
       }
@@ -1143,15 +1228,15 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 760,
-      "end": 767,
+      "start": 842,
+      "end": 849,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 28,
           "column": 7
         },
         "end": {
-          "line": 23,
+          "line": 28,
           "column": 14
         }
       }
@@ -1169,15 +1254,15 @@
         "binop": null
       },
       "value": "parser",
-      "start": 768,
-      "end": 774,
+      "start": 850,
+      "end": 856,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 28,
           "column": 15
         },
         "end": {
-          "line": 23,
+          "line": 28,
           "column": 21
         }
       }
@@ -1195,15 +1280,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 774,
-      "end": 775,
+      "start": 856,
+      "end": 857,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 28,
           "column": 21
         },
         "end": {
-          "line": 23,
+          "line": 28,
           "column": 22
         }
       }
@@ -1221,15 +1306,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 776,
-      "end": 776,
+      "start": 858,
+      "end": 858,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 29,
           "column": 0
         },
         "end": {
-          "line": 24,
+          "line": 29,
           "column": 0
         }
       }
