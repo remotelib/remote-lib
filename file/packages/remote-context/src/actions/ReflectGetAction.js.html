@@ -126,7 +126,7 @@ export default class ReflectGetAction extends ReflectAction {
   constructor(target, property) {
     if (typeof property !== &apos;string&apos; &amp;&amp; !(property instanceof Action)) {
       throw new TypeError(
-        `Expect property to be a string or an instance of Action: ${property}`,
+        `Expect property to be a string or an instance of Action: ${property}`
       );
     }
     super(target);

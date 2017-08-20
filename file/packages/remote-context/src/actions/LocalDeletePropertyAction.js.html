@@ -127,7 +127,7 @@ export default class LocalDeletePropertyAction extends ReferencePropertyAction {
 
     if (!session.isWritable(target)) {
       throw new TypeError(
-        `Can&apos;t delete property of a read-only object: ${target}`,
+        `Can&apos;t delete property of a read-only object: ${target}`
       );
     }
 

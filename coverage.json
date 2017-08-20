@@ -24,8 +24,8 @@
       "expectCount": 12,
       "actualCount": 10,
       "undocumentLines": [
-        23,
-        25
+        27,
+        29
       ]
     },
     "packages/remote-context/src/EnvContext.js": {
@@ -199,7 +199,7 @@
         73,
         74,
         77,
-        108
+        107
       ]
     },
     "packages/remote-context/src/actions/PropertyDescriptorsAction.js": {
@@ -207,12 +207,12 @@
       "actualCount": 1,
       "undocumentLines": [
         24,
-        30,
-        45,
+        36,
         51,
-        54,
-        58,
-        73
+        57,
+        60,
+        64,
+        79
       ]
     },
     "packages/remote-context/src/actions/ReferenceAction.js": {

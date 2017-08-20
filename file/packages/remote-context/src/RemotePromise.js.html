@@ -153,19 +153,19 @@ export default class RemotePromise {
   constructor(session, action, opts = {}) {
     if (!(session instanceof RemoteSession)) {
       throw new TypeError(
-        `Expect &quot;session&quot; param to be instance of RemoteSession: ${session}`,
+        `Expect &quot;session&quot; param to be instance of RemoteSession: ${session}`
       );
     }
     if (!(action instanceof Action)) {
       throw new TypeError(
-        `Expect &quot;action&quot; param to be instance of Action: ${action}`,
+        `Expect &quot;action&quot; param to be instance of Action: ${action}`
       );
     }
 
     // eslint-disable-next-line func-names
     const func = function() {
       throw new ReferenceError(
-        &quot;This is a remote-promise function and it should&apos;nt be execute&quot;,
+        &quot;This is a remote-promise function and it should&apos;nt be execute&quot;
       );
     };
 
@@ -190,7 +190,7 @@ export default class RemotePromise {
               error =&gt; {
                 session.removeListener(&apos;close&apos;, rejectOnSessionClose);
                 reject(error);
-              },
+              }
             ),
             opts,
             () =&gt; {
@@ -198,7 +198,7 @@ export default class RemotePromise {
             },
             error =&gt; {
               reject(error);
-            },
+            }
           );
         });
       }
@@ -217,7 +217,7 @@ export default class RemotePromise {
         return new RemotePromise(
           session,
           ReflectGetAction.fromProxy(session, action, property),
-          opts,
+          opts
         );
       },
 
@@ -225,7 +225,7 @@ export default class RemotePromise {
         return new RemotePromise(
           session,
           ReflectApplyAction.fromProxy(session, action, thisArg, argumentsList),
-          opts,
+          opts
         );
       },
 
@@ -233,7 +233,7 @@ export default class RemotePromise {
         return new RemotePromise(
           session,
           ReflectConstructAction.fromProxy(session, action, argumentsList),
-          opts,
+          opts
         );
       },
     });

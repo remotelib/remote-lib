@@ -125,6 +125,12 @@ export default class PropertyDescriptorsAction extends Action {
   static fromObject(session, obj) {
     const descriptors = Object.getOwnPropertyDescriptors(obj);
 
+    if (obj instanceof Error) {
+      if (!session.showStack) {
+        delete descriptors.stack;
+      }
+    }
+
     return this.fromPropertyDescriptors(session, descriptors);
   }
 
@@ -135,11 +141,11 @@ export default class PropertyDescriptorsAction extends Action {
           property,
           PropertyDescriptorAction.fromPropertyDescriptor(
             session,
-            descriptors[property],
-          ),
+            descriptors[property]
+          )
         );
         return arr;
-      }, []),
+      }, [])
     );
   }
 
@@ -164,7 +170,7 @@ export default class PropertyDescriptorsAction extends Action {
 
       descriptors[property] = this.constructor.fetch(
         session,
-        this.descriptors[i + 1],
+        this.descriptors[i + 1]
       );
     }
 

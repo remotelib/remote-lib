@@ -156,6 +156,10 @@ import es6URIError from &apos;./URIError&apos;;
 import es6WeakMap from &apos;./WeakMap&apos;;
 import es6WeakSet from &apos;./WeakSet&apos;;
 
+if (!(&apos;getOwnPropertyDescriptors&apos; in Object)) {
+  throw new Error(&apos;Old versions should require &quot;babel-polyfill&quot; module.&apos;);
+}
+
 export default Object.assign({},
   es6Array,
   es6ArrayBuffer,

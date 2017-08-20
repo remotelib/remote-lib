@@ -121,6 +121,10 @@ import RemoteSession from &apos;./RemoteSession&apos;;
 import parser from &apos;./parser&apos;;
 import LocalPromise from &apos;./LocalPromise&apos;;
 
+if (!(&apos;getOwnPropertyDescriptors&apos; in Object)) {
+  throw new Error(&apos;Old versions should require &quot;babel-polyfill&quot; module.&apos;);
+}
+
 const kChildRefs = Symbol(&apos;childRefs&apos;);
 
 function getPropValueSafe(obj, prop) {
@@ -230,7 +234,7 @@ export default class Context extends AssignableContext {
   set(reference, value) {
     if (typeof reference !== &apos;string&apos; &amp;&amp; typeof reference !== &apos;number&apos;) {
       throw new TypeError(
-        `Only string or number references are allowed: ${typeof reference}`,
+        `Only string or number references are allowed: ${typeof reference}`
       );
     }
 

@@ -138,7 +138,7 @@ export default class LocalContext extends AssignableContext {
   constructor(session, parentContext, opts = {}) {
     if (!(session instanceof RemoteSession)) {
       throw new TypeError(
-        `Expect session to be instance of RemoteSession: ${session}`,
+        `Expect session to be instance of RemoteSession: ${session}`
       );
     }
     super({}, parentContext, opts);
