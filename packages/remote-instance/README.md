@@ -1,5 +1,4 @@
-[![view on npm](http://img.shields.io/npm/v/remote-instance.svg)](https://www.npmjs
-.org/package/remote-instance)
+[![view on npm](http://img.shields.io/npm/v/remote-instance.svg)](https://www.npmjs.org/package/remote-instance)
 [![Build Status](https://travis-ci.org/remotelib/remote-lib.svg?branch=master)](https://travis-ci.org/remotelib/remote-lib)
 [![Dependency Status](https://david-dm.org/remotelib/remote-lib.svg?path=packages/remote-instance)](https://david-dm.org/remotelib/remote-lib?path=packages/remote-instance)
 [![codecov](https://codecov.io/gh/remotelib/remote-lib/branch/master/graph/badge.svg)](https://codecov.io/gh/remotelib/remote-lib)
