@@ -2,8 +2,17 @@
   "name": "remote-environment",
   "description": "Get a fixed context per specific environment such as ES6.",
   "keywords": [
-    "remote", "context", "environment", "es6", "node", "global", "window", "dictionary",
-    "objects", "list", "reference"
+    "remote",
+    "context",
+    "environment",
+    "es6",
+    "node",
+    "global",
+    "window",
+    "dictionary",
+    "objects",
+    "list",
+    "reference"
   ],
   "version": "0.1.0",
   "main": "lib/index.js",
