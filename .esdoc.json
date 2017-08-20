@@ -1,0 +1,64 @@
+{
+  "source": "packages",
+  "destination": "./docs",
+  "excludes": [
+    "/node_modules/",
+    "/lib/",
+    "/test/"
+  ],
+  "package": "./.esdoc.json",
+  "plugins": [{
+    "name": "esdoc-standard-plugin",
+    "option": {
+      "lint": {
+        "enable": true
+      },
+      "accessor": {
+        "access": ["public", "protected"],
+        "autoPrivate": true
+      },
+      "brand": {
+        "title": "Remotelib",
+        "description": "Run code remotely",
+        "repository": "https://github.com/remotelib/remote-lib",
+        "site": "http://wwww.remotelib.com"
+      },
+      "manual": {
+        "index": "./API.md",
+        "globalIndex": true,
+        "files": [
+          "./manual/remote-lib.md",
+          "./manual/remote-context.md",
+          "./manual/remote-environment.md",
+          "./manual/remote-instance.md",
+          "./manual/remote-protocol.md",
+          "./manual/reference-context.md",
+          "./CHANGELOG.md"
+        ]
+      }
+    }
+  }, {
+    "name": "esdoc-importpath-plugin",
+    "option": {
+      "replaces": [{
+        "from": "/src/",
+        "to": "/lib/"
+      }, {
+        "from": "^./packages/",
+        "to": ""
+      }, {
+        "from": "reference-context/lib/reference-context.js$",
+        "to": "reference-context"
+      }, {
+        "from": "remote-instance/lib/parser.js$",
+        "to": "remote-instance"
+      }, {
+        "from": "remote-context/lib/index.js$",
+        "to": "remote-context"
+      }, {
+        "from": "remote-lib/lib/index.js$",
+        "to": "remote-lib"
+      }]
+    }
+  }]
+}

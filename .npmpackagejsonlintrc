@@ -1,0 +1,44 @@
+{
+  "rules": {
+    "require-author": "error",
+    "require-bugs": "error",
+    "require-description": "error",
+    "require-engines": "error",
+    "require-homepage": "error",
+    "require-keywords": "error",
+    "require-license": "error",
+    "require-main": "error",
+    "require-name": "error",
+    "require-repository": "error",
+    "require-scripts": "error",
+    "require-version": "error",
+    "config-type": "error",
+    "description-type": "error",
+    "devDependencies-type": "error",
+    "engines-type": "error",
+    "homepage-type": "error",
+    "keywords-type": "error",
+    "license-type": "error",
+    "main-type": "error",
+    "name-type": "error",
+    "peerDependencies-type": "error",
+    "repository-type": "error",
+    "scripts-type": "error",
+    "version-type": "error",
+    "name-format": "error",
+    "version-format": "error",
+    "valid-values-author": ["error", [
+      "Moshe Simantov <hi@moshesimantov.com> (http://www.moshesimantov.com)"
+    ]],
+    "valid-values-license": ["error", [
+      "Apache-2.0"
+    ]],
+    "prefer-caret-version-dependencies": "error",
+    "prefer-caret-version-devDependencies": "error",
+    "prefer-alphabetical-dependencies": "error",
+    "prefer-alphabetical-devDependencies": "error",
+    "prefer-alphabetical-bundledDependencies": "error",
+    "prefer-alphabetical-optionalDependencies": "error",
+    "prefer-alphabetical-peerDependencies": "error"
+  }
+}

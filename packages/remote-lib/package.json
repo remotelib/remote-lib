@@ -1,0 +1,42 @@
+{
+  "name": "remote-lib",
+  "description": "Create a JavaScript library and use it remotely over the internet.",
+  "keywords": [
+    "remote",
+    "lib",
+    "library",
+    "context",
+    "rpc",
+    "stream",
+    "serverless",
+    "server",
+    "lambada",
+    "proxy",
+    "client",
+    "peer",
+    "p2p",
+    "protocol",
+    "instance",
+    "objects",
+    "module",
+    "export"
+  ],
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "homepage": "http://www.remotelib.com",
+  "repository": "https://github.com/remotelib/remote-lib/tree/master/packages/remote-lib",
+  "bugs": "https://github.com/remotelib/remote-lib/issues",
+  "engines": {
+    "node": ">=6.11"
+  },
+  "dependencies": {
+    "remote-context": "^0.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Moshe Simantov <hi@moshesimantov.com> (http://www.moshesimantov.com)",
+  "license": "Apache-2.0",
+  "devDependencies": {}
+}

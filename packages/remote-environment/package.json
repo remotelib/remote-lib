@@ -1,0 +1,21 @@
+{
+  "name": "remote-environment",
+  "description": "Get a fixed context per specific environment such as ES6.",
+  "keywords": [
+    "remote", "context", "environment", "es6", "node", "global", "window", "dictionary",
+    "objects", "list", "reference"
+  ],
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "homepage": "http://www.remotelib.com",
+  "repository": "https://github.com/remotelib/remote-lib/tree/master/packages/remote-environment",
+  "bugs": "https://github.com/remotelib/remote-lib/issues",
+  "engines": {
+    "node": ">=6.11"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Moshe Simantov <hi@moshesimantov.com> (http://www.moshesimantov.com)",
+  "license": "Apache-2.0"
+}

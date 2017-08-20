@@ -1,0 +1,8 @@
+language: node_js
+install:
+  - make bootstrap-ci
+script:
+  - make test-ci
+node_js:
+- 6
+- 7

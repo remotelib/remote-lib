@@ -1,0 +1,32 @@
+{
+  "name": "reference-context",
+  "description": "Creates a virtual context that can hold values with given references.",
+  "keywords": [
+    "reference",
+    "context",
+    "virtual",
+    "remote",
+    "assign",
+    "release",
+    "contains",
+    "symbol",
+    "var"
+  ],
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "module": "lib/reference-context.js",
+  "homepage": "http://www.remotelib.com",
+  "repository": "https://github.com/remotelib/remote-lib/tree/master/packages/reference-context",
+  "bugs": "https://github.com/remotelib/remote-lib/issues",
+  "engines": {
+    "node": ">=6.11"
+  },
+  "dependencies": {
+    "bidi-map": "^0.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Moshe Simantov <hi@moshesimantov.com> (http://www.moshesimantov.com)",
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,97 @@
+{
+  "name": "remote-lib-private",
+  "description": "A private module for developing remote-lib packages.",
+  "keywords": [
+    "remote",
+    "library",
+    "lib",
+    "context",
+    "protocol",
+    "instance",
+    "bidi-map",
+    "environment",
+    "reference",
+    "proxy",
+    "es6",
+    "rpc",
+    "stream",
+    "serverless"
+  ],
+  "private": true,
+  "author": "Moshe Simantov <hi@moshesimantov.com> (http://www.moshesimantov.com)",
+  "license": "Apache-2.0",
+  "main": "packages/remote-lib",
+  "module": "packages/remote-lib",
+  "version": "0.1.0",
+  "homepage": "http://www.remotelib.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remotelib/remote-lib.git"
+  },
+  "bugs": "https://github.com/remotelib/remote-lib/issues",
+  "scripts": {
+    "build": "make build",
+    "fix": "make fix",
+    "lint": "make lint",
+    "precommit": "lint-staged",
+    "prepush": "make prepush",
+    "test": "make test",
+    "package": "./scripts/npm-package.sh"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-istanbul": "^4.1.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.24.1",
+    "chalk": "^1.1.1",
+    "escape-string-regexp": "^1.0.5",
+    "esdoc": "^1.0.1",
+    "esdoc-importpath-plugin": "^1.0.0",
+    "esdoc-publish-markdown-plugin": "^1.0.0",
+    "esdoc-standard-plugin": "^1.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-import-resolver-node": "^0.3.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-notice": "^0.2.3",
+    "eslint-plugin-prettier": "^2.1.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-newer": "^1.3.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11",
+    "husky": "^0.14.3",
+    "istanbul": "^0.4.5",
+    "lerna": "^2.0.0-rc.5",
+    "lint-staged": "^4.0.2",
+    "mocha": "^3.0.0",
+    "npm-package-json-lint": "^2.8.0",
+    "prettier": "^1.5.3",
+    "through2": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=6.11"
+  },
+  "nyc": {
+    "all": true,
+    "exclude": [
+      "scripts/*.js",
+      "packages/*/test/**"
+    ],
+    "sourceMap": false,
+    "instrument": false
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --format=codeframe"
+    ],
+    "*.json": [
+      "eslint --format=codeframe"
+    ]
+  },
+  "dependencies": {}
+}

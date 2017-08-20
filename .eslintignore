@@ -1,0 +1,7 @@
+/config/copyright.js
+/lib
+packages/*/node_modules
+packages/*/lib
+packages/*/dist
+packages/*/test/fixtures
+packages/*/test/tmp
