@@ -24,6 +24,12 @@ export default class PropertyDescriptorsAction extends Action {
   static fromObject(session, obj) {
     const descriptors = Object.getOwnPropertyDescriptors(obj);
 
+    if (obj instanceof Error) {
+      if (!session.showStack) {
+        delete descriptors.stack;
+      }
+    }
+
     return this.fromPropertyDescriptors(session, descriptors);
   }
 

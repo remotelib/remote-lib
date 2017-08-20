@@ -98,7 +98,6 @@ export default class PropertyDescriptorAction extends Action {
 
     return {
       configurable: this.configurable,
-      writable: this.writable,
       enumerable: this.enumerable,
       get,
       set,

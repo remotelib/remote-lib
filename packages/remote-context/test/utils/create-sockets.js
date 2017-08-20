@@ -40,5 +40,13 @@ export default function() {
     }
   });
 
+  peer1.on('close', () => {
+    peer2.destroy();
+  });
+
+  peer2.on('close', () => {
+    peer1.destroy();
+  });
+
   return [peer1, peer2];
 }
