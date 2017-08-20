@@ -38,7 +38,7 @@ export default class EnvContext extends ReferenceContext {
     }
     if (!context || typeof context !== 'object') {
       throw new TypeError(
-        `Environment "context" param should be an object: ${context}`,
+        `Environment "context" param should be an object: ${context}`
       );
     }
 

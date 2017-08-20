@@ -34,7 +34,7 @@ describe('RemoteContext', () => {
       // Async functions
       getData: () =>
         new Promise(resolve =>
-          setTimeout(() => resolve({ data: 'Tada!' }), 100),
+          setTimeout(() => resolve({ data: 'Tada!' }), 100)
         ),
 
       // Classes and objects

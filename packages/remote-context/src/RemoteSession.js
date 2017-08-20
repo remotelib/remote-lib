@@ -154,13 +154,13 @@ export default class RemoteSession extends Session {
           value === this[kRemote]
         ) {
           throw new ReferenceError(
-            "[Safety Check] Can't dispatch internal context instances",
+            "[Safety Check] Can't dispatch internal context instances"
           );
         }
 
         if (value instanceof Action) {
           throw new TypeError(
-            "Bad behaviour, shouldn't dispatch Action instances",
+            "Bad behaviour, shouldn't dispatch Action instances"
           );
         }
 

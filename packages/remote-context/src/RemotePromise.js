@@ -52,19 +52,19 @@ export default class RemotePromise {
   constructor(session, action, opts = {}) {
     if (!(session instanceof RemoteSession)) {
       throw new TypeError(
-        `Expect "session" param to be instance of RemoteSession: ${session}`,
+        `Expect "session" param to be instance of RemoteSession: ${session}`
       );
     }
     if (!(action instanceof Action)) {
       throw new TypeError(
-        `Expect "action" param to be instance of Action: ${action}`,
+        `Expect "action" param to be instance of Action: ${action}`
       );
     }
 
     // eslint-disable-next-line func-names
     const func = function() {
       throw new ReferenceError(
-        "This is a remote-promise function and it should'nt be execute",
+        "This is a remote-promise function and it should'nt be execute"
       );
     };
 
@@ -89,7 +89,7 @@ export default class RemotePromise {
               error => {
                 session.removeListener('close', rejectOnSessionClose);
                 reject(error);
-              },
+              }
             ),
             opts,
             () => {
@@ -97,7 +97,7 @@ export default class RemotePromise {
             },
             error => {
               reject(error);
-            },
+            }
           );
         });
       }
@@ -116,7 +116,7 @@ export default class RemotePromise {
         return new RemotePromise(
           session,
           ReflectGetAction.fromProxy(session, action, property),
-          opts,
+          opts
         );
       },
 
@@ -124,7 +124,7 @@ export default class RemotePromise {
         return new RemotePromise(
           session,
           ReflectApplyAction.fromProxy(session, action, thisArg, argumentsList),
-          opts,
+          opts
         );
       },
 
@@ -132,7 +132,7 @@ export default class RemotePromise {
         return new RemotePromise(
           session,
           ReflectConstructAction.fromProxy(session, action, argumentsList),
-          opts,
+          opts
         );
       },
     });

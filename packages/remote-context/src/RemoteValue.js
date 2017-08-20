@@ -67,7 +67,7 @@ export default class RemoteValue extends EventEmitter {
 
     if (!remoteValue) {
       throw new ReferenceError(
-        `The given value is not a RemoteValue proxy: ${proxy}`,
+        `The given value is not a RemoteValue proxy: ${proxy}`
       );
     }
 
@@ -173,7 +173,7 @@ export default class RemoteValue extends EventEmitter {
   constructor(session, reference, value) {
     if (!(session instanceof RemoteSession)) {
       throw new TypeError(
-        `Expect session to be instance of RemoteSession: ${session}`,
+        `Expect session to be instance of RemoteSession: ${session}`
       );
     }
     if (!RemoteContext.isValidReference(reference)) {
@@ -206,7 +206,7 @@ export default class RemoteValue extends EventEmitter {
         session.request(
           LocalSetPrototypeOfAction.fromRemote(session, reference, prototype),
           () => {},
-          err => self.reject(err),
+          err => self.reject(err)
         );
 
         return true;
@@ -216,7 +216,7 @@ export default class RemoteValue extends EventEmitter {
         session.request(
           LocalPreventExtensionsAction.fromRemote(session, reference),
           () => {},
-          err => self.reject(err),
+          err => self.reject(err)
         );
 
         return true;
@@ -228,10 +228,10 @@ export default class RemoteValue extends EventEmitter {
             session,
             reference,
             property,
-            descriptor,
+            descriptor
           ),
           () => {},
-          err => self.reject(err),
+          err => self.reject(err)
         );
 
         return true;
@@ -241,7 +241,7 @@ export default class RemoteValue extends EventEmitter {
         session.request(
           LocalDeletePropertyAction.fromRemote(session, reference, property),
           () => {},
-          err => self.reject(err),
+          err => self.reject(err)
         );
 
         return true;

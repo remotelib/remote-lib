@@ -129,7 +129,7 @@ export default class Context extends AssignableContext {
   set(reference, value) {
     if (typeof reference !== 'string' && typeof reference !== 'number') {
       throw new TypeError(
-        `Only string or number references are allowed: ${typeof reference}`,
+        `Only string or number references are allowed: ${typeof reference}`
       );
     }
 

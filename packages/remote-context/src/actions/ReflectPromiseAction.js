@@ -22,7 +22,7 @@ export default class ReflectPromiseAction extends ReflectAction {
     return new this(
       target,
       session.dispatch(resolve),
-      session.dispatch(reject),
+      session.dispatch(reject)
     );
   }
 
@@ -54,7 +54,7 @@ export default class ReflectPromiseAction extends ReflectAction {
         error => {
           // TODO call reject without promise
           reject(error).catch(() => {});
-        },
+        }
       )
       .then(
         () => {
@@ -65,7 +65,7 @@ export default class ReflectPromiseAction extends ReflectAction {
         },
         err => {
           session.destroy(err);
-        },
+        }
       );
   }
 

@@ -34,11 +34,11 @@ export default class PropertyDescriptorsAction extends Action {
           property,
           PropertyDescriptorAction.fromPropertyDescriptor(
             session,
-            descriptors[property],
-          ),
+            descriptors[property]
+          )
         );
         return arr;
-      }, []),
+      }, [])
     );
   }
 
@@ -63,7 +63,7 @@ export default class PropertyDescriptorsAction extends Action {
 
       descriptors[property] = this.constructor.fetch(
         session,
-        this.descriptors[i + 1],
+        this.descriptors[i + 1]
       );
     }
 

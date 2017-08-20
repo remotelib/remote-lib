@@ -44,7 +44,7 @@ export default class RemoteContext extends ReferenceContext {
   constructor(session, parentContext) {
     if (!(session instanceof RemoteSession)) {
       throw new TypeError(
-        `Expect session to be instance of RemoteSession: ${session}`,
+        `Expect session to be instance of RemoteSession: ${session}`
       );
     }
 

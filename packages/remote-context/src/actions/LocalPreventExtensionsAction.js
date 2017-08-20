@@ -26,7 +26,7 @@ export default class LocalPreventExtensionsAction extends ReferenceAction {
 
     if (!session.isWritable(target)) {
       throw new TypeError(
-        `Can't prevent extensions of a read-only object: ${target}`,
+        `Can't prevent extensions of a read-only object: ${target}`
       );
     }
 

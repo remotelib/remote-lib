@@ -22,14 +22,14 @@ export default class RemoteDefinePropertyAction extends ReferencePropertyAction 
     return new this(
       reference,
       session.dispatch(property),
-      PropertyDescriptorAction.fromPropertyDescriptor(session, descriptor),
+      PropertyDescriptorAction.fromPropertyDescriptor(session, descriptor)
     );
   }
 
   constructor(reference, property, descriptor) {
     if (!(descriptor instanceof PropertyDescriptorAction)) {
       throw new TypeError(
-        `Expect descriptor to be instance of PropertyDescriptorAction: ${descriptor}`,
+        `Expect descriptor to be instance of PropertyDescriptorAction: ${descriptor}`
       );
     }
     super(reference, property);

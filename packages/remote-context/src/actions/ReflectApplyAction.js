@@ -22,14 +22,14 @@ export default class ReflectApplyAction extends ReflectAction {
     return new this(
       target,
       session.dispatch(thisArg),
-      argumentsList.map(arg => session.dispatch(arg)),
+      argumentsList.map(arg => session.dispatch(arg))
     );
   }
 
   constructor(target, thisArg = null, argumentsList = []) {
     if (!Array.isArray(argumentsList)) {
       throw new TypeError(
-        `Expect argumentsList to be an Array: ${argumentsList}`,
+        `Expect argumentsList to be an Array: ${argumentsList}`
       );
     }
     super(target);
@@ -42,7 +42,7 @@ export default class ReflectApplyAction extends ReflectAction {
     const target = this.fetchTarget(session);
     const thisArg = this.constructor.fetch(session, this.thisArg);
     const argumentsList = this.argumentsList.map(arg =>
-      this.constructor.fetch(session, arg),
+      this.constructor.fetch(session, arg)
     );
 
     return Reflect.apply(target, thisArg, argumentsList);

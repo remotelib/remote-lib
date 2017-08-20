@@ -35,7 +35,7 @@ export default class RemoteSetSymbolAction extends RemoteSetAction {
       }
     } else if (isKey === true) {
       throw new TypeError(
-        'Expected name to be a valid string when Symbol has a key',
+        'Expected name to be a valid string when Symbol has a key'
       );
     }
     if (typeof isKey !== 'boolean') {

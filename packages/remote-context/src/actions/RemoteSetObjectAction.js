@@ -33,7 +33,7 @@ export default class RemoteSetObjectAction extends RemoteSetAction {
       reference,
       descriptors.isEmpty() ? null : descriptors,
       proto,
-      isExtensible,
+      isExtensible
     );
   }
 
@@ -55,7 +55,7 @@ export default class RemoteSetObjectAction extends RemoteSetAction {
     reference,
     descriptors = null,
     proto = null,
-    isExtensible = true,
+    isExtensible = true
   ) {
     if (
       descriptors !== null &&

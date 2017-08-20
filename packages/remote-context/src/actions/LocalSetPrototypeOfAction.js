@@ -36,7 +36,7 @@ export default class LocalSetPrototypeOfAction extends ReferenceAction {
 
     if (!session.isWritable(target)) {
       throw new TypeError(
-        `Can't set prototype of a read-only object: ${target}`,
+        `Can't set prototype of a read-only object: ${target}`
       );
     }
 

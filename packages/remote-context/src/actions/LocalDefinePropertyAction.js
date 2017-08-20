@@ -22,14 +22,14 @@ export default class LocalDefinePropertyAction extends ReferencePropertyAction {
     return new this(
       reference,
       session.dispatch(property),
-      PropertyDescriptorAction.fromPropertyDescriptor(session, descriptor),
+      PropertyDescriptorAction.fromPropertyDescriptor(session, descriptor)
     );
   }
 
   constructor(reference, property, descriptor) {
     if (!(descriptor instanceof PropertyDescriptorAction)) {
       throw new TypeError(
-        `Expect descriptor to be instance of PropertyDescriptorAction: ${descriptor}`,
+        `Expect descriptor to be instance of PropertyDescriptorAction: ${descriptor}`
       );
     }
     super(reference, property);
@@ -42,7 +42,7 @@ export default class LocalDefinePropertyAction extends ReferencePropertyAction {
 
     if (!session.isWritable(target)) {
       throw new TypeError(
-        `Can't define property of a read-only object: ${target}`,
+        `Can't define property of a read-only object: ${target}`
       );
     }
 

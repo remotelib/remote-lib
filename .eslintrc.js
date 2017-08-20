@@ -79,7 +79,7 @@ module.exports = {
       {
         // https://github.com/prettier/prettier#options
         singleQuote: true,
-        trailingComma: 'all',
+        trailingComma: 'es5',
       },
     ],
   },

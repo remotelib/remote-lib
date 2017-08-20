@@ -23,7 +23,7 @@ export default class ReflectAction extends Action {
   constructor(target) {
     if (!(target instanceof Action)) {
       throw new TypeError(
-        `Expect reflect "target" to be instance of Action: ${target}`,
+        `Expect reflect "target" to be instance of Action: ${target}`
       );
     }
     super();

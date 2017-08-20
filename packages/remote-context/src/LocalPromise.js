@@ -46,7 +46,7 @@ export default class LocalPromise {
     // eslint-disable-next-line func-names
     const func = function() {
       throw new ReferenceError(
-        "This is a local-promise function and it should'nt be execute",
+        "This is a local-promise function and it should'nt be execute"
       );
     };
 

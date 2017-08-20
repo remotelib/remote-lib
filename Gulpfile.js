@@ -44,19 +44,19 @@ gulp.task('build', () =>
         errorHandler(err) {
           gutil.log(err.stack);
         },
-      }),
+      })
     )
     .pipe(
       newer({
         dest: base,
         map: swapSrcWithLib,
-      }),
+      })
     )
     .pipe(
       through.obj((file, enc, callback) => {
         gutil.log('Compiling', `'${chalk.cyan(file.relative)}'...`);
         callback(null, file);
-      }),
+      })
     )
     .pipe(babel())
     .pipe(
@@ -65,9 +65,9 @@ gulp.task('build', () =>
         // eslint-disable-next-line no-param-reassign
         file.path = path.resolve(file.base, swapSrcWithLib(file.relative));
         callback(null, file);
-      }),
+      })
     )
-    .pipe(gulp.dest(base)),
+    .pipe(gulp.dest(base))
 );
 
 gulp.task('watch', ['build'], () => {

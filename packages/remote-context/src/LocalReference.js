@@ -39,7 +39,7 @@ export default class LocalReference {
   constructor(session, reference) {
     if (!(session instanceof RemoteSession)) {
       throw new TypeError(
-        `Expect session to be instance of RemoteSession: ${session}`,
+        `Expect session to be instance of RemoteSession: ${session}`
       );
     }
     if (!LocalContext.isValidReference(reference)) {
@@ -70,8 +70,8 @@ export default class LocalReference {
       RemoteSetPrototypeOfAction.fromLocal(
         this[kSession],
         this[kReference],
-        prototype,
-      ),
+        prototype
+      )
     );
 
     return true;
@@ -84,7 +84,7 @@ export default class LocalReference {
    */
   preventExtensions() {
     this[kSession].send(
-      RemotePreventExtensionsAction.fromLocal(this[kSession], this[kReference]),
+      RemotePreventExtensionsAction.fromLocal(this[kSession], this[kReference])
     );
 
     return true;
@@ -103,8 +103,8 @@ export default class LocalReference {
         this[kSession],
         this[kReference],
         property,
-        descriptor,
-      ),
+        descriptor
+      )
     );
 
     return true;
@@ -121,8 +121,8 @@ export default class LocalReference {
       RemoteDeletePropertyAction.fromLocal(
         this[kSession],
         this[kReference],
-        property,
-      ),
+        property
+      )
     );
 
     return true;

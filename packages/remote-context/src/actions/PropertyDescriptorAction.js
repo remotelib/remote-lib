@@ -35,7 +35,7 @@ export default class PropertyDescriptorAction extends Action {
       descriptor.writable === true,
       descriptor.enumerable === true,
       descriptor.get ? session.dispatch(descriptor.get) : null,
-      descriptor.set ? session.dispatch(descriptor.set) : null,
+      descriptor.set ? session.dispatch(descriptor.set) : null
     );
   }
 
@@ -45,7 +45,7 @@ export default class PropertyDescriptorAction extends Action {
     writable = true,
     enumerable = true,
     get = null,
-    set = null,
+    set = null
   ) {
     if (typeof configurable !== 'boolean') {
       throw new TypeError('Argument "configurable" must be a boolean');
@@ -60,7 +60,7 @@ export default class PropertyDescriptorAction extends Action {
       if (get !== null || set !== null) {
         throw new TypeError(
           'Invalid property descriptor. ' +
-            'Cannot both specify accessors and a value or writable attribute',
+            'Cannot both specify accessors and a value or writable attribute'
         );
       }
     }

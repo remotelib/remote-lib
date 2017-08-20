@@ -37,7 +37,7 @@ describe('RemoteContext', () => {
       // Async functions
       getData: () =>
         new Promise(resolve =>
-          setTimeout(() => resolve({ data: 'Tada!' }), 100),
+          setTimeout(() => resolve({ data: 'Tada!' }), 100)
         ),
 
       // Classes and objects
@@ -249,12 +249,12 @@ describe('RemoteContext', () => {
 
               assert.equal(
                 err.message,
-                "Can't define property of a read-only object: [object Object]",
+                "Can't define property of a read-only object: [object Object]"
               );
 
               clientRemote.destroy();
               done();
-            },
+            }
           );
         })
         .catch(done);

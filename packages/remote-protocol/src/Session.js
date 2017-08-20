@@ -129,7 +129,7 @@ export default class Session extends EventEmitter {
     this[kStream].on('data', action => {
       if (!(action instanceof Action)) {
         this.destroy(
-          new TypeError(`Unrecognized action received: ${typeof action}`),
+          new TypeError(`Unrecognized action received: ${typeof action}`)
         );
         return;
       }
@@ -258,7 +258,7 @@ export default class Session extends EventEmitter {
   send(action) {
     if (!(action instanceof Action)) {
       throw new TypeError(
-        `Expect first argument to be instance of Action: ${action}`,
+        `Expect first argument to be instance of Action: ${action}`
       );
     }
 
@@ -303,19 +303,19 @@ export default class Session extends EventEmitter {
 
     if (!(action instanceof Action)) {
       throw new TypeError(
-        `Expect "action" to be instance of Action: ${action}`,
+        `Expect "action" to be instance of Action: ${action}`
       );
     }
 
     if (typeof onFulfilled !== 'function') {
       throw new TypeError(
-        `Expect "onFulfilled" to be a function: ${typeof onFulfilled}`,
+        `Expect "onFulfilled" to be a function: ${typeof onFulfilled}`
       );
     }
 
     if (typeof onRejected !== 'function') {
       throw new TypeError(
-        `Expect "onRejected" to be a function: ${typeof onRejected}`,
+        `Expect "onRejected" to be a function: ${typeof onRejected}`
       );
     }
 
@@ -486,7 +486,7 @@ export default class Session extends EventEmitter {
 
     this[kRequestsTimer] = setTimeout(
       () => this.requestsTimeoutInterval(),
-      REQUEST_TIMEOUT_INTERVAL,
+      REQUEST_TIMEOUT_INTERVAL
     );
 
     if (this[kRequestsTimer].unref) this[kRequestsTimer].unref();
@@ -505,7 +505,7 @@ export default class Session extends EventEmitter {
 
     if (this[kRequestsMap].size >= MAX_OPEN_REQUESTS) {
       throw new Error(
-        `Maximum open requests number reached: ${MAX_OPEN_REQUESTS}`,
+        `Maximum open requests number reached: ${MAX_OPEN_REQUESTS}`
       );
     }
 

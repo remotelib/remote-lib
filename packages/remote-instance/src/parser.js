@@ -132,13 +132,13 @@ export default class Parser {
       typeCode > TYPE_CODE_MAX
     ) {
       throw new TypeError(
-        `Expect typeCode to be integer between ${TYPE_CODE_MIN}-${TYPE_CODE_MAX}: ${typeCode}`,
+        `Expect typeCode to be integer between ${TYPE_CODE_MIN}-${TYPE_CODE_MAX}: ${typeCode}`
       );
     }
 
     if (!this.constructor.isConstructor(constructor)) {
       throw new TypeError(
-        `Expect constructor to have "toArgumentsList" method: ${constructor}`,
+        `Expect constructor to have "toArgumentsList" method: ${constructor}`
       );
     }
 
@@ -149,8 +149,8 @@ export default class Parser {
       buffer =>
         this.constructor.construct(
           constructor,
-          this.decodeArgumentsList(buffer),
-        ),
+          this.decodeArgumentsList(buffer)
+        )
     );
 
     return this;
@@ -255,7 +255,7 @@ export default class Parser {
       duplexReadable,
       Object.assign(opts, {
         objectMode: true,
-      }),
+      })
     );
 
     stream.on('error', err => objectStream.destroy(err));

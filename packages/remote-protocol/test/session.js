@@ -42,7 +42,7 @@ describe('Session', () => {
 
         done();
       },
-      done,
+      done
     );
   });
 });
