@@ -26,4 +26,9 @@ export default class RemoteReferenceAction extends ReferenceAction {
   fetch(session) {
     return session.remote.get(this.reference);
   }
+
+  release(session) {
+    session.remote.delete(this.reference);
+    this.reference = null;
+  }
 }

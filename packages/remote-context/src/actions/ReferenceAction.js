@@ -35,4 +35,8 @@ export default class ReferenceAction extends Action {
   toArgumentsList() {
     return [this.reference];
   }
+
+  release() {
+    throw new TypeError(`Release is not supported at ${this}`);
+  }
 }

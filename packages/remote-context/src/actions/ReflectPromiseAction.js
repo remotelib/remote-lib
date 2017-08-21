@@ -15,23 +15,24 @@
  */
 
 import ReflectAction from './ReflectAction';
-import RemoteSetFunctionAction from './RemoteSetFunctionAction';
+import ReferenceAction from './ReferenceAction';
+import ReflectApplyAction from './ReflectApplyAction';
 
 export default class ReflectPromiseAction extends ReflectAction {
   static fromValue(session, target, resolve, reject) {
-    return new this(
-      target,
-      session.dispatch(resolve),
-      session.dispatch(reject)
-    );
+    return new this(target, session.assign(resolve), session.assign(reject));
   }
 
   constructor(target, resolve, reject) {
-    if (!(resolve instanceof RemoteSetFunctionAction)) {
-      throw new TypeError(`Expect "resolve" to be a function: ${resolve}`);
+    if (!(resolve instanceof ReferenceAction)) {
+      throw new TypeError(
+        `Expect "resolve" to be reference to function: ${resolve}`
+      );
     }
-    if (!(reject instanceof RemoteSetFunctionAction)) {
-      throw new TypeError(`Expect "reject" to be a function: ${reject}`);
+    if (!(reject instanceof ReferenceAction)) {
+      throw new TypeError(
+        `Expect "reject" to be reference to function: ${reject}`
+      );
     }
     super(target);
 
@@ -42,31 +43,22 @@ export default class ReflectPromiseAction extends ReflectAction {
   fetch(session) {
     const target = this.fetchTarget(session);
 
-    const resolve = this.constructor.fetch(session, this.resolve);
-    const reject = this.constructor.fetch(session, this.reject);
-
     Promise.resolve(target)
       .then(
         value => {
-          // TODO call resolve without promise
-          resolve(value).catch(() => {});
+          session.send(
+            ReflectApplyAction.fromProxy(session, this.resolve, null, [value])
+          );
         },
         error => {
-          // TODO call reject without promise
-          reject(error).catch(() => {});
+          session.send(
+            ReflectApplyAction.fromProxy(session, this.reject, null, [error])
+          );
         }
       )
-      .then(
-        () => {
-          if (!session.isOpen) return;
-
-          this.resolve.delete(session);
-          this.reject.delete(session);
-        },
-        err => {
-          session.destroy(err);
-        }
-      );
+      .catch(err => {
+        session.destroy(err);
+      });
   }
 
   exec(session) {
@@ -75,5 +67,13 @@ export default class ReflectPromiseAction extends ReflectAction {
 
   toArgumentsList() {
     return [this.target, this.resolve, this.reject];
+  }
+
+  release(session) {
+    this.resolve.release(session);
+    this.resolve = null;
+
+    this.reject.release(session);
+    this.reject = null;
   }
 }

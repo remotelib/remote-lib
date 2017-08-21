@@ -72,30 +72,45 @@ export default class RemotePromise {
     let promise;
 
     func.then = function then(onFulfilled, onRejected) {
+      if (!(kAction in this)) {
+        throw new ReferenceError(
+          `Invalid 'this' bind to RemotePromise#then: ${this}`
+        );
+      }
+
       if (!promise) {
         promise = new Promise((resolve, reject) => {
-          const rejectOnSessionClose = () =>
+          let reflectAction;
+          const rejectOnSessionClose = () => {
+            reflectAction.release(session);
             reject(new Error('Session closed before promise resolved'));
+          };
+
+          reflectAction = ReflectPromiseAction.fromValue(
+            session,
+            this[kAction],
+            value => {
+              session.removeListener('close', rejectOnSessionClose);
+              reflectAction.release(session);
+
+              RemoteValue.resolve(value).then(resolve, reject);
+            },
+            error => {
+              session.removeListener('close', rejectOnSessionClose);
+              reflectAction.release(session);
+
+              reject(error);
+            }
+          );
 
           session.request(
-            ReflectPromiseAction.fromValue(
-              session,
-              this[kAction],
-              value => {
-                session.removeListener('close', rejectOnSessionClose);
-
-                RemoteValue.resolve(value).then(resolve, reject);
-              },
-              error => {
-                session.removeListener('close', rejectOnSessionClose);
-                reject(error);
-              }
-            ),
+            reflectAction,
             opts,
             () => {
               session.once('close', rejectOnSessionClose);
             },
             error => {
+              reflectAction.release(session);
               reject(error);
             }
           );

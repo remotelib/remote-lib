@@ -26,4 +26,9 @@ export default class LocalReferenceAction extends ReferenceAction {
   fetch(session) {
     return session.get(this.reference);
   }
+
+  release(session) {
+    session.delete(this.reference);
+    this.reference = null;
+  }
 }

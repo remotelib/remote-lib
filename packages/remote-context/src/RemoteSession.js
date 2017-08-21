@@ -19,6 +19,8 @@ import Context from './Context';
 import LocalContext from './LocalContext';
 import RemoteContext from './RemoteContext';
 import { UndefinedValueAction } from './actions';
+import RemoteReferenceAction from './actions/RemoteReferenceAction';
+import LocalReferenceAction from './actions/LocalReferenceAction';
 
 const kLocal = Symbol('local');
 const kRemote = Symbol('remote');
@@ -129,10 +131,31 @@ export default class RemoteSession extends Session {
   }
 
   /**
+   * Assign a remote or local reference to the given value and return the matching {@link Action}.
+   * First check if the given value exists on the remote context and if so, return it's reference.
+   * Otherwise assign a new reference for the given value on the local context.
+   *
+   * @param {*} value
+   * @return {ReferenceAction}
+   */
+  assign(value) {
+    if (!this[kLocal]) {
+      throw new Error(`${this} already destroyed`);
+    }
+
+    if (this[kRemote].exists(value)) {
+      return new RemoteReferenceAction(this[kRemote].lookup(value));
+    }
+
+    return new LocalReferenceAction(this[kLocal].assign(value));
+  }
+
+  /**
    * Dispatch a value for the remote peer session.
    * Objects and functions will convert to actions, other primitive values such as string or numbers
    * will remain as-is.
    *
+   * @override
    * @param {*} value
    * @return {Action|null|number|boolean|string}
    */
