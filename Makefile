@@ -26,6 +26,7 @@ docs-clone: docs-clean
 	git clone -b gh-pages https://github.com/remotelib/remote-lib.git docs
 
 docs-build:
+	test -d "./docs" || make docs-clone
 	./node_modules/.bin/esdoc
 
 docs-publish:
