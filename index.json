@@ -12554,7 +12554,7 @@
     "kind": "manual",
     "longname": "/Users/moshe/git/ventures/remote-lib/remote-lib/CHANGELOG.md",
     "name": "./CHANGELOG.md",
-    "content": "# Changelog\n\n## 0.1.0 (2017-08-21)\n- First release\n",
+    "content": "# Changelog\n\n## 0.1.1 (2017-08-21)\n- Fix missing files on first publish\n\n## 0.1.0 (2017-08-21)\n- First release\n",
     "static": true,
     "access": "public"
   }
