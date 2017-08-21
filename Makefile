@@ -17,7 +17,7 @@ build: build-only
 build-only:
 	./node_modules/.bin/gulp build
 
-build-dist: clean build
+build-dist: clean build docs-build
 
 docs-clean:
 	rm -rf docs
@@ -29,11 +29,11 @@ docs-build:
 	./node_modules/.bin/esdoc
 
 docs-publish:
-	test -d "./.git" || make docs-clone
+	test -d "./docs/.git" || make docs-clone
 	make docs-build
 	cd ./docs && \
 	git add . && \
-	git commit && \
+	git commit -m `cd .. && git rev-parse HEAD` && \
 	git push
 	open https://remotelib.github.io/remote-lib/
 
@@ -53,7 +53,7 @@ lint-package:
 lint-staged:
 	./node_modules/.bin/lint-staged
 
-clean: test-clean
+clean: test-clean docs-clean
 	rm -rf packages/*/lib
 	rm -rf packages/*/npm-debug*
 
@@ -61,7 +61,7 @@ test-clean:
 	rm -rf packages/*/test/tmp
 	rm -rf coverage
 
-clean-all: clean docs-clean
+clean-all: clean
 	rm -rf node_modules
 	rm -rf packages/*/node_modules
 
@@ -90,12 +90,12 @@ publish:
 	make build-dist
 	make test
 	./node_modules/.bin/lerna publish
+	make docs-publish
 
 bootstrap: clean-all
 	npm install
 	./node_modules/.bin/lerna bootstrap -- --no-package-lock
 	make build-dist
-	make docs-build
 
 bootstrap-ci: bootstrap
 	npm install -g codecov
