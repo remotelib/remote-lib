@@ -90,7 +90,7 @@ publish:
 	rm -rf packages/*/lib
 	make build-dist
 	make test
-	./node_modules/.bin/lerna publish
+	./node_modules/.bin/lerna publish --conventional-commits
 	make docs-publish
 
 bootstrap: clean-all

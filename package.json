@@ -33,6 +33,7 @@
     "build": "make build",
     "fix": "make fix",
     "lint": "make lint",
+    "commitmsg": "validate-commit-msg",
     "precommit": "lint-staged",
     "prepush": "make prepush",
     "test": "make test",
@@ -71,7 +72,8 @@
     "mocha": "^3.0.0",
     "npm-package-json-lint": "^2.8.0",
     "prettier": "^1.5.3",
-    "through2": "^2.0.0"
+    "through2": "^2.0.0",
+    "validate-commit-msg": "^2.14.0"
   },
   "engines": {
     "node": ">=6.11"
