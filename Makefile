@@ -90,7 +90,6 @@ publish:
 	make build-dist
 	make test
 	./node_modules/.bin/lerna publish
-	make clean
 
 bootstrap: clean-all
 	npm install
