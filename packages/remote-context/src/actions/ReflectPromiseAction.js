@@ -57,7 +57,10 @@ export default class ReflectPromiseAction extends ReflectAction {
         }
       )
       .catch(err => {
-        session.destroy(err);
+        // We want to throw an error if no-one catch the `error` event on the session.
+        // Therefore, we need to use a new stack without promise that the error could be thrown
+        // to the process.
+        process.nextTick(() => session.destroy(err));
       });
   }
 
