@@ -26,7 +26,6 @@
     "node": ">=6.11"
   },
   "dependencies": {
-    "deep-equal": "^1.0.1",
     "reference-context": "^0.1.1",
     "remote-environment": "^0.1.1",
     "remote-instance": "^0.1.1",

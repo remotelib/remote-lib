@@ -14,10 +14,20 @@
  * limitations under the License.
  */
 
-import deepEqual from 'deep-equal';
-
 const kPrototype = Symbol('prototype');
 const kDescriptors = Symbol('descriptors');
+
+function equalDescriptors(desc1, desc2) {
+  return (
+    (desc1.value === desc2.value ||
+      (isNaN(desc1.value) && isNaN(desc2.value))) &&
+    desc1.configurable === desc2.configurable &&
+    desc1.writable === desc2.writable &&
+    desc1.enumerable === desc2.enumerable &&
+    desc1.get === desc2.get &&
+    desc1.set === desc2.set
+  );
+}
 
 export default class ObjectSnapshot {
   /**
@@ -78,7 +88,7 @@ export default class ObjectSnapshot {
       const newDesc = descriptors[property];
       const oldDesc = oldDescriptors[property];
 
-      if (!deepEqual(newDesc, oldDesc, { strict: true })) {
+      if (!equalDescriptors(newDesc, oldDesc)) {
         localReference.defineProperty(property, newDesc);
       }
     });
