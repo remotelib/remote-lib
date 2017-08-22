@@ -18,7 +18,12 @@ const kPrototype = Symbol('prototype');
 const kDescriptors = Symbol('descriptors');
 
 function equalDescriptors(desc1, desc2) {
+  if (typeof desc1 !== 'object') {
+    return desc1 === desc2;
+  }
+
   return (
+    typeof desc2 === 'object' &&
     (desc1.value === desc2.value ||
       (isNaN(desc1.value) && isNaN(desc2.value))) &&
     desc1.configurable === desc2.configurable &&
