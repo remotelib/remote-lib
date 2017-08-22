@@ -26,14 +26,6 @@ if (!('getOwnPropertyDescriptors' in Object)) {
 
 const kChildRefs = Symbol('childRefs');
 
-function getPropValueSafe(obj, prop) {
-  try {
-    return obj[prop];
-  } catch (err) {
-    return undefined;
-  }
-}
-
 /**
  * @example
  * import { Context } from 'remote-context';
@@ -145,35 +137,31 @@ export default class Context extends AssignableContext {
       this[kChildRefs].set(value, childRefs);
     }
 
-    const proto = Object.getPrototypeOf(value);
-    if (proto !== null && !this.exists(proto)) {
-      const childRef = this.assign(proto);
-      childRefs.add(childRef);
-    }
-
-    Object.getOwnPropertyNames(value).forEach(propName => {
-      const propValue = getPropValueSafe(value, propName);
-      if (!this.constructor.isReferable(propValue) || this.exists(propValue))
+    const addChild = childValue => {
+      if (!this.constructor.isReferable(childValue) || this.exists(childValue))
         return;
 
-      const childRef = this.assign(propValue);
-      childRefs.add(childRef);
+      childRefs.add(this.assign(childValue));
+    };
+
+    addChild(Object.getPrototypeOf(value));
+
+    Object.getOwnPropertyNames(value).forEach(propName => {
+      const desc = Object.getOwnPropertyDescriptor(value, propName);
+
+      addChild(desc.value);
+      addChild(desc.get);
+      addChild(desc.set);
     });
 
     Object.getOwnPropertySymbols(value).forEach(symbol => {
-      const propValue = getPropValueSafe(value, symbol);
-      if (
-        !this.constructor.isReferable(propValue) ||
-        this.exists(propValue) ||
-        !this.exists(symbol)
-      )
-        return;
+      if (!this.exists(symbol)) return;
 
-      const symbolReference = this.lookup(symbol);
-      if (!symbolReference) return;
+      const desc = Object.getOwnPropertyDescriptor(value, symbol);
 
-      const childRef = this.assign(propValue);
-      childRefs.add(childRef);
+      addChild(desc.value);
+      addChild(desc.get);
+      addChild(desc.set);
     });
 
     return this;
