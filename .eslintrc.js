@@ -11,7 +11,7 @@ const copyrightMatch = escapeStringRegexp(copyrightTemplate).replace('<%= YEAR %
 
 module.exports = {
   extends: ['airbnb-base', 'prettier'],
-  plugins: ['prettier', 'json', 'notice'],
+  plugins: ['prettier', 'json', 'notice', 'mocha'],
 
   env: {
     node: true,
@@ -19,6 +19,14 @@ module.exports = {
   },
 
   rules: {
+    'mocha/no-exclusive-tests': 'error',
+    'mocha/no-skipped-tests': 'error',
+    'mocha/no-global-tests': 'error',
+    'mocha/handle-done-callback': 'error',
+    'mocha/no-identical-title': 'error',
+    'mocha/no-nested-tests': 'error',
+    'mocha/no-top-level-hooks': 'error',
+
     'notice/notice': ['error',
       {
         mustMatch: copyrightMatch,
