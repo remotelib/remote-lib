@@ -24,7 +24,7 @@
         "site": "http://wwww.remotelib.com"
       },
       "manual": {
-        "index": "./API.md",
+        "index": "./README.md",
         "globalIndex": true,
         "files": [
           "./manual/remote-lib.md",
