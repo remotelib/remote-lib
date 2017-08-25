@@ -99,12 +99,12 @@ remoteLibrary.myThings.then(async set => {
 
 ## API Reference
 
-This module is a part of the [`remote-lib`](https://github.com/remotelib/remote-lib) library.
+This module is a part of the [`remote-lib`](http://www.remotelib.com) library.
 
 Here is the relevant documentation for this module:
 
-- [`Library`](https://remotelib.github.io/remote-lib/class/packages/remote-lib/src/Library.js~Library.html)
-- [`RemoteLibrary`](https://remotelib.github.io/remote-lib/class/packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary.html)
+- [`Library`](http://www.remotelib.com/class/packages/remote-lib/src/Library.js~Library.html)
+- [`RemoteLibrary`](http://www.remotelib.com/class/packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary.html)
 
 
 <br />

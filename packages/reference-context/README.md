@@ -49,11 +49,11 @@ referenceContext.lookup(foo); // "foo"
  
 ## API Reference
 
-This module is a part of the [`remote-lib`](https://github.com/remotelib/remote-lib) library.
+This module is a part of the [`remote-lib`](http://www.remotelib.com) library.
 
 Here is the relevant documentation for this module:
 
-- [`ReferenceContext`](https://remotelib.github.io/remote-lib/class/packages/reference-context/src/reference-context.js~ReferenceContext.html)
+- [`ReferenceContext`](http://www.remotelib.com/class/packages/reference-context/src/reference-context.js~ReferenceContext.html)
 
 
 <br />

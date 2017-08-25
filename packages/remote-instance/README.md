@@ -67,11 +67,11 @@ decodedFoo.bar; // { test: 'myThing' }
  
 ## API Reference
 
-This module is a part of the [`remote-lib`](https://github.com/remotelib/remote-lib) library.
+This module is a part of the [`remote-lib`](http://www.remotelib.com) library.
 
 Here is the relevant documentation for this module:
 
-- [`Parser`](https://remotelib.github.io/remote-lib/class/packages/remote-instance/src/parser.js~Parser.html)
+- [`Parser`](http://www.remotelib.com/class/packages/remote-instance/src/parser.js~Parser.html)
 
 
 <br />

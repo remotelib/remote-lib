@@ -123,16 +123,16 @@ Name | Status | Description
 
 ## API Reference
 
-This module is a part of the [`remote-lib`](https://github.com/remotelib/remote-lib) library.
+This module is a part of the [`remote-lib`](http://www.remotelib.com) library.
 
 Here is the relevant documentation for this module:
 
-- [`Context`](https://remotelib.github.io/remote-lib/class/packages/remote-context/src/Context.js~Context.html)
-- [`EnvContext`](https://remotelib.github.io/remote-lib/class/packages/remote-context/src/EnvContext.js~EnvContext.html)
-- [`RemoteContext`](https://remotelib.github.io/remote-lib/class/packages/remote-context/src/RemoteContext.js~RemoteContext.html)
-- [`RemoteSession`](https://remotelib.github.io/remote-lib/class/packages/remote-context/src/RemoteSession.js~RemoteSession.html)
-- [`es6UnstableEnv`](https://remotelib.github.io/remote-lib/typedef/index.html#static-typedef-es6UnstableEnv)
-- [`observe`](https://remotelib.github.io/remote-lib/class/packages/remote-context/src/RemoteValue.js~RemoteValue.html#static-method-observe)
+- [`Context`](http://www.remotelib.com/class/packages/remote-context/src/Context.js~Context.html)
+- [`EnvContext`](http://www.remotelib.com/class/packages/remote-context/src/EnvContext.js~EnvContext.html)
+- [`RemoteContext`](http://www.remotelib.com/class/packages/remote-context/src/RemoteContext.js~RemoteContext.html)
+- [`RemoteSession`](http://www.remotelib.com/class/packages/remote-context/src/RemoteSession.js~RemoteSession.html)
+- [`es6UnstableEnv`](http://www.remotelib.com/typedef/index.html#static-typedef-es6UnstableEnv)
+- [`observe`](http://www.remotelib.com/class/packages/remote-context/src/RemoteValue.js~RemoteValue.html#static-method-observe)
 
 <br />
 <br />

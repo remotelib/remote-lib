@@ -49,14 +49,14 @@ session.request(
 
 ## API Reference
 
-This module is a part of the [`remote-lib`](https://github.com/remotelib/remote-lib) library.
+This module is a part of the [`remote-lib`](http://www.remotelib.com) library.
 
 Here is the relevant documentation for this module:
 
-- [`Session`](https://remotelib.github.io/remote-lib/class/packages/remote-protocol/src/Session.js~Session.html)
-- [`Action`](https://remotelib.github.io/remote-lib/class/packages/remote-protocol/src/actions/Action.js~Action.html)
-  - [`RequestAction`](https://remotelib.github.io/remote-lib/class/packages/remote-protocol/src/actions/RequestAction.js~RequestAction.html)
-  - [`RequestAction`](https://remotelib.github.io/remote-lib/class/packages/remote-protocol/src/actions/ResponseAction.js~ResponseAction.html)
+- [`Session`](http://www.remotelib.com/class/packages/remote-protocol/src/Session.js~Session.html)
+- [`Action`](http://www.remotelib.com/class/packages/remote-protocol/src/actions/Action.js~Action.html)
+  - [`RequestAction`](http://www.remotelib.com/class/packages/remote-protocol/src/actions/RequestAction.js~RequestAction.html)
+  - [`RequestAction`](http://www.remotelib.com/class/packages/remote-protocol/src/actions/ResponseAction.js~ResponseAction.html)
 
 
 <br />

@@ -48,11 +48,11 @@ Name | Status | Description
 
 ## API Reference
 
-This module is a part of the [`remote-lib`](https://github.com/remotelib/remote-lib) library.
+This module is a part of the [`remote-lib`](http://www.remotelib.com) library.
 
 Here is the relevant documentation for this module:
 
-- [`es6`](https://remotelib.github.io/remote-lib/typedef/index.html#static-typedef-es6)
+- [`es6`](http://www.remotelib.com/typedef/index.html#static-typedef-es6)
 
 <br />
 <br />

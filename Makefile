@@ -36,7 +36,7 @@ docs-publish:
 	git add . && \
 	git commit -m `cd .. && git rev-parse HEAD` && \
 	git push
-	open https://remotelib.github.io/remote-lib/
+	open http://www.remotelib.com/
 
 
 watch: clean
