@@ -21,6 +21,8 @@ import {
   RemoteDeletePropertyAction,
   RemoteSetPrototypeOfAction,
   RemotePreventExtensionsAction,
+  RemoteSetPropertyCacheAction,
+  RemoteDeletePropertyCacheAction,
 } from './actions';
 
 const kSession = Symbol('session');
@@ -111,7 +113,7 @@ export default class LocalReference {
   }
 
   /**
-   * Define a property from the reference value.
+   * Delete a property from the reference value.
    *
    * @param {Property} property The property
    * @return {boolean} True on success
@@ -119,6 +121,44 @@ export default class LocalReference {
   deleteProperty(property) {
     this[kSession].send(
       RemoteDeletePropertyAction.fromLocal(
+        this[kSession],
+        this[kReference],
+        property
+      )
+    );
+
+    return true;
+  }
+
+  /**
+   * Set property cache for getter.
+   *
+   * @param {Property} property The property
+   * @param {Descriptor} cachedValue The property descriptor
+   * @return {boolean} True on success
+   */
+  setPropertyCache(property, cachedValue) {
+    this[kSession].send(
+      RemoteSetPropertyCacheAction.fromLocal(
+        this[kSession],
+        this[kReference],
+        property,
+        cachedValue
+      )
+    );
+
+    return true;
+  }
+
+  /**
+   * Delete property cache for a getter .
+   *
+   * @param {Property} property The property
+   * @return {boolean} True on success
+   */
+  deletePropertyCache(property) {
+    this[kSession].send(
+      RemoteDeletePropertyCacheAction.fromLocal(
         this[kSession],
         this[kReference],
         property

@@ -16,23 +16,32 @@
 
 import { Action } from 'remote-protocol';
 import { trimArgumentsList } from 'remote-instance';
-import UndefinedValueAction from './UndefinedValueAction';
+import { isDataDescriptor } from '../helpers/descriptors';
 
 /**
  * @extends {Action}
  */
 export default class PropertyDescriptorAction extends Action {
-  static fromProperty(session, obj, prop) {
-    const descriptor = Object.getOwnPropertyDescriptor(obj, prop);
-
-    return this.fromPropertyDescriptor(session, descriptor);
-  }
+  // static fromObjectProperty(session, obj, prop) {
+  //   const descriptor = Object.getOwnPropertyDescriptor(obj, prop);
+  //
+  //   return this.fromPropertyDescriptor(session, descriptor);
+  // }
 
   static fromPropertyDescriptor(session, descriptor) {
+    if (isDataDescriptor(descriptor)) {
+      return new this(
+        session.dispatch(descriptor.value),
+        descriptor.configurable === true,
+        descriptor.writable === true,
+        descriptor.enumerable === true
+      );
+    }
+
     return new this(
-      session.dispatch(descriptor.value),
+      null,
       descriptor.configurable === true,
-      descriptor.writable === true,
+      null,
       descriptor.enumerable === true,
       descriptor.get ? session.dispatch(descriptor.get) : null,
       descriptor.set ? session.dispatch(descriptor.set) : null
@@ -40,7 +49,7 @@ export default class PropertyDescriptorAction extends Action {
   }
 
   constructor(
-    value = undefined,
+    value = null,
     configurable = true,
     writable = true,
     enumerable = true,
@@ -50,13 +59,14 @@ export default class PropertyDescriptorAction extends Action {
     if (typeof configurable !== 'boolean') {
       throw new TypeError('Argument "configurable" must be a boolean');
     }
-    if (typeof writable !== 'boolean') {
-      throw new TypeError('Argument "writable" must be a boolean');
-    }
     if (typeof enumerable !== 'boolean') {
       throw new TypeError('Argument "enumerable" must be a boolean');
     }
-    if (!UndefinedValueAction.isUndefined(value) || writable) {
+    if (writable !== null || value !== null) {
+      if (typeof writable !== 'boolean') {
+        throw new TypeError('Argument "writable" must be a boolean');
+      }
+
       if (get !== null || set !== null) {
         throw new TypeError(
           'Invalid property descriptor. ' +
@@ -74,26 +84,34 @@ export default class PropertyDescriptorAction extends Action {
     this.set = set;
   }
 
-  fetch(session) {
-    if (this.get === null && this.set === null) {
-      const value = this.constructor.fetch(session, this.value);
+  isDataDescriptor() {
+    return this.writable !== null;
+  }
 
+  isAccessorDescriptor() {
+    return this.writable === null;
+  }
+
+  fetch(session) {
+    if (this.isDataDescriptor()) {
       return {
-        value,
+        value: this.constructor.fetch(session, this.value),
         configurable: this.configurable,
         writable: this.writable,
         enumerable: this.enumerable,
       };
     }
 
-    const get = this.constructor.fetch(session, this.get) || undefined;
-    const set = this.constructor.fetch(session, this.set) || undefined;
+    const get =
+      this.get !== null ? this.constructor.fetch(session, this.get) : undefined;
+    const set =
+      this.set !== null ? this.constructor.fetch(session, this.set) : undefined;
 
     if (get !== undefined && typeof get !== 'function') {
-      throw new TypeError('Argument "get" must be a function or null');
+      throw new TypeError('Argument "get" must be a function or undefined');
     }
     if (set !== undefined && typeof set !== 'function') {
-      throw new TypeError('Argument "set" must be a function or null');
+      throw new TypeError('Argument "set" must be a function or undefined');
     }
 
     return {
@@ -113,7 +131,7 @@ export default class PropertyDescriptorAction extends Action {
       this.get,
       this.set,
     ];
-    const defaults = [undefined, true, true, true, null, null];
+    const defaults = [null, true, true, true, null, null];
 
     return trimArgumentsList(argumentsList, defaults);
   }

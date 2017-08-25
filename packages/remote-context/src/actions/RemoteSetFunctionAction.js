@@ -21,8 +21,8 @@ import RemoteSetObjectAction from './RemoteSetObjectAction';
 // TODO add built-in support for properties: name, length and prototype
 
 export default class RemoteSetFunctionAction extends RemoteSetObjectAction {
-  static getPrototype(obj) {
-    const proto = Object.getPrototypeOf(obj);
+  static getPrototype(snapshot) {
+    const proto = snapshot.prototype;
     return proto !== Function.prototype ? proto : null;
   }
 

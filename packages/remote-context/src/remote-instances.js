@@ -24,17 +24,18 @@ import {
   LocalReferenceAction,
   LocalSetPrototypeOfAction,
   PropertyDescriptorAction,
-  PropertyDescriptorsAction,
   ReflectApplyAction,
   ReflectConstructAction,
   ReflectGetAction,
   ReflectPromiseAction,
   RemoteDefinePropertyAction,
   RemoteDeletePropertyAction,
+  RemoteDeletePropertyCacheAction,
   RemotePreventExtensionsAction,
   RemoteReferenceAction,
   RemoteSetFunctionAction,
   RemoteSetObjectAction,
+  RemoteSetPropertyCacheAction,
   RemoteSetPrototypeOfAction,
   RemoteSetSymbolAction,
   UndefinedValueAction,
@@ -73,6 +74,8 @@ export default {
   0x31: RemoteDeletePropertyAction,
   0x32: RemoteSetPrototypeOfAction,
   0x33: RemotePreventExtensionsAction,
+  0x34: RemoteSetPropertyCacheAction,
+  0x35: RemoteDeletePropertyCacheAction,
 
   // Reflect Actions
   0x40: ReflectApplyAction,
@@ -82,6 +85,5 @@ export default {
 
   // Custom types
   0x51: PropertyDescriptorAction,
-  0x52: PropertyDescriptorsAction,
-  0x53: UndefinedValueAction,
+  0x52: UndefinedValueAction,
 };

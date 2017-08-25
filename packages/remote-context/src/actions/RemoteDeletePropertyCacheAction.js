@@ -17,18 +17,12 @@
 import ReferencePropertyAction from './ReferencePropertyAction';
 import { deleteCachedGetter } from '../helpers/descriptors';
 
-export default class RemoteDeletePropertyAction extends ReferencePropertyAction {
-  static fromLocal(session, reference, property) {
-    return this.fromProperty(session, reference, property);
-  }
-
+export default class RemoteSetPropertyCacheAction extends ReferencePropertyAction {
   fetch(session) {
-    const target = session.remote.getTarget(this.reference);
+    const target = session.remote.getTarget(this.reference).target;
     const property = this.constructor.fetch(session, this.property);
 
-    deleteCachedGetter(target.target, property);
-
-    return target.deleteProperty(property);
+    deleteCachedGetter(target, property);
   }
 
   exec(session) {

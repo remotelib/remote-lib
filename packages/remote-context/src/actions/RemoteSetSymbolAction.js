@@ -18,7 +18,9 @@ import { trimArgumentsList } from 'remote-instance';
 import RemoteSetAction from './RemoteSetAction';
 
 export default class RemoteSetSymbolAction extends RemoteSetAction {
-  static fromValue(session, reference, symbol) {
+  static fromSnapshot(session, reference, snapshot) {
+    const symbol = snapshot.value;
+
     const key = Symbol.keyFor(symbol);
     if (key) return new this(reference, key, true);
 

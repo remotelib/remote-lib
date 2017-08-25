@@ -22,6 +22,11 @@ import envContext from '../envs/es6-unstable';
 
 const { describe, it } = global;
 
+process.on('unhandledRejection', reason => {
+  console.error(reason.stack || reason.message);
+  process.exit(1);
+});
+
 describe('RemoteContext', () => {
   it('README Usage', done => {
     // Create a new context under ES6 environment.
@@ -377,6 +382,109 @@ describe('RemoteContext', () => {
           clientRemote.destroy();
           done();
         });
+    });
+
+    it('should cache getters', done => {
+      class TestGetter {
+        constructor() {
+          this.i = 0;
+        }
+
+        get getter() {
+          this.i += 1;
+          return this.i;
+        }
+      }
+
+      const server = new Context(envContext, { test: new TestGetter() });
+      const client = new Context(envContext);
+
+      const streams = createStream();
+      const clientRemote = client.remote(streams[0]);
+      server.remote(streams[1]);
+
+      clientRemote
+        .fetch('test')
+        .then(test => {
+          assert.equal(typeof test, 'object');
+
+          const proto = Object.getPrototypeOf(test);
+          const desc = Object.getOwnPropertyDescriptor(proto, 'getter');
+
+          assert.equal(typeof desc, 'object');
+          assert.equal(typeof desc.value, 'undefined');
+          assert.equal(desc.configurable, true);
+          assert.equal(typeof desc.writable, 'undefined');
+          assert.equal(desc.enumerable, false);
+          assert.equal(typeof desc.get, 'function');
+          assert.equal(typeof desc.set, 'undefined');
+
+          // validate getter is cached and use only once
+          assert.equal(test.i, 1);
+          assert.equal(test.getter, 1);
+          assert.equal(test.i, 1);
+
+          return clientRemote.resolve(test).then(resolvedTest => {
+            assert.equal(resolvedTest.i, 2);
+            assert.equal(resolvedTest.getter, 2);
+
+            assert.equal(test.i, 2);
+            assert.equal(test.getter, 2);
+
+            clientRemote.destroy();
+            done();
+          });
+        })
+        .catch(done);
+    });
+
+    it('should use native setters', done => {
+      class TestSetter {
+        constructor() {
+          this.i = 0;
+        }
+
+        set setter(i) {
+          this.i = i;
+        }
+      }
+
+      const server = new Context(envContext, { test: new TestSetter() });
+      const client = new Context(envContext);
+
+      const streams = createStream();
+      const clientRemote = client.remote(streams[0]);
+      server.remote(streams[1]);
+
+      clientRemote
+        .fetch('test')
+        .then(test => {
+          assert.equal(typeof test, 'object');
+
+          const proto = Object.getPrototypeOf(test);
+          const desc = Object.getOwnPropertyDescriptor(proto, 'setter');
+
+          assert.equal(typeof desc, 'object');
+          assert.equal(typeof desc.value, 'undefined');
+          assert.equal(desc.configurable, true);
+          assert.equal(typeof desc.writable, 'undefined');
+          assert.equal(desc.enumerable, false);
+          assert.equal(typeof desc.get, 'undefined');
+          assert.equal(typeof desc.set, 'function');
+
+          assert.equal(test.i, 0);
+          assert.equal((test.setter = 1), 1); // eslint-disable-line no-param-reassign
+          assert.equal(test.i, 0);
+
+          return clientRemote.resolve(test).then(resolvedTest => {
+            assert.equal(resolvedTest.i, 1);
+            assert.equal(test.i, 1);
+
+            clientRemote.destroy();
+            done();
+          });
+        })
+        .catch(done);
     });
   });
 });

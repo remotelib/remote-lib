@@ -20,10 +20,6 @@ import RemoteSession from './RemoteSession';
 import parser from './parser';
 import LocalPromise from './LocalPromise';
 
-if (!('getOwnPropertyDescriptors' in Object)) {
-  throw new Error('Old versions should require "babel-polyfill" module.');
-}
-
 const kChildRefs = Symbol('childRefs');
 
 /**

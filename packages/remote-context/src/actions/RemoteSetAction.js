@@ -17,15 +17,15 @@
 import ReferenceAction from './ReferenceAction';
 
 export default class RemoteSetAction extends ReferenceAction {
-  static fromValue(session, reference, value) {
-    const typeOf = typeof value;
+  static fromSnapshot(session, reference, snapshot) {
+    const typeOf = typeof snapshot.value;
     const action = this.types[typeOf];
 
     if (!action) {
       throw new TypeError(`Set is not supported for type: ${typeOf}`);
     }
 
-    return action.fromValue(session, reference, value);
+    return action.fromSnapshot(session, reference, snapshot);
   }
 
   createInstance(/* session */) {

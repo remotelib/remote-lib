@@ -22,18 +22,19 @@ import LocalPreventExtensionsAction from './LocalPreventExtensionsAction';
 import LocalReferenceAction from './LocalReferenceAction';
 import LocalSetPrototypeOfAction from './LocalSetPrototypeOfAction';
 import PropertyDescriptorAction from './PropertyDescriptorAction';
-import PropertyDescriptorsAction from './PropertyDescriptorsAction';
 import ReflectApplyAction from './ReflectApplyAction';
 import ReflectConstructAction from './ReflectConstructAction';
 import ReflectGetAction from './ReflectGetAction';
 import ReflectPromiseAction from './ReflectPromiseAction';
 import RemoteDefinePropertyAction from './RemoteDefinePropertyAction';
 import RemoteDeletePropertyAction from './RemoteDeletePropertyAction';
+import RemoteDeletePropertyCacheAction from './RemoteDeletePropertyCacheAction';
 import RemotePreventExtensionsAction from './RemotePreventExtensionsAction';
 import RemoteReferenceAction from './RemoteReferenceAction';
 import RemoteSetAction from './RemoteSetAction';
 import RemoteSetFunctionAction from './RemoteSetFunctionAction';
 import RemoteSetObjectAction from './RemoteSetObjectAction';
+import RemoteSetPropertyCacheAction from './RemoteSetPropertyCacheAction';
 import RemoteSetPrototypeOfAction from './RemoteSetPrototypeOfAction';
 import RemoteSetSymbolAction from './RemoteSetSymbolAction';
 import UndefinedValueAction from './UndefinedValueAction';
@@ -47,18 +48,19 @@ export {
   LocalReferenceAction,
   LocalSetPrototypeOfAction,
   PropertyDescriptorAction,
-  PropertyDescriptorsAction,
   ReflectApplyAction,
   ReflectConstructAction,
   ReflectGetAction,
   ReflectPromiseAction,
   RemoteDefinePropertyAction,
   RemoteDeletePropertyAction,
+  RemoteDeletePropertyCacheAction,
   RemotePreventExtensionsAction,
   RemoteReferenceAction,
   RemoteSetAction,
   RemoteSetFunctionAction,
   RemoteSetObjectAction,
+  RemoteSetPropertyCacheAction,
   RemoteSetPrototypeOfAction,
   RemoteSetSymbolAction,
   UndefinedValueAction,

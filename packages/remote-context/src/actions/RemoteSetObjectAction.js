@@ -16,29 +16,58 @@
 
 import { trimArgumentsList } from 'remote-instance';
 import RemoteSetAction from './RemoteSetAction';
-import PropertyDescriptorsAction from './PropertyDescriptorsAction';
+import PropertyDescriptorAction from './PropertyDescriptorAction';
+import { setCachedGetter } from '../helpers/descriptors';
 
 const ARRAY_PROTOTYPE_CODE = 1;
 
+function toPropertiesArray(session, obj, mapFn) {
+  return Object.keys(obj).reduce((arr, property) => {
+    arr.push(session.dispatch(property), mapFn(obj[property], property));
+    return arr;
+  }, []);
+}
+
+function isValidPropertiesArray(propsArr) {
+  return Array.isArray(propsArr) && propsArr.length % 2 === 0;
+}
+
+function fromPropertiesArray(session, propsArr, forEachFn) {
+  for (let i = 0; i < propsArr.length; i += 2) {
+    const property = RemoteSetAction.fetch(session, propsArr[i]);
+    const value = RemoteSetAction.fetch(session, propsArr[i + 1]);
+
+    forEachFn(value, property);
+  }
+}
+
 export default class RemoteSetObjectAction extends RemoteSetAction {
-  static fromValue(session, reference, obj) {
+  static fromSnapshot(session, reference, snapshot) {
+    const obj = snapshot.value;
     if (obj === null) return null;
 
     // Fetch order should be the same: first prototype then the descriptors
-    const proto = session.dispatch(this.getPrototype(obj));
-    const descriptors = PropertyDescriptorsAction.fromObject(session, obj);
+    const proto = session.dispatch(this.getPrototype(snapshot));
+
+    const descriptors = toPropertiesArray(
+      session,
+      snapshot.ownPropertyDescriptors,
+      desc => PropertyDescriptorAction.fromPropertyDescriptor(session, desc)
+    );
+
     const isExtensible = Object.isExtensible(obj);
 
-    return new this(
-      reference,
-      descriptors.isEmpty() ? null : descriptors,
-      proto,
-      isExtensible
+    const cachedGetters = toPropertiesArray(
+      session,
+      snapshot.cachedGetters,
+      cachedValue => session.dispatch(cachedValue)
     );
+
+    return new this(reference, descriptors, proto, isExtensible, cachedGetters);
   }
 
-  static getPrototype(obj) {
-    const proto = Object.getPrototypeOf(obj);
+  static getPrototype(snapshot) {
+    const proto = snapshot.prototype;
 
     if (proto === Object.prototype) {
       return null;
@@ -53,23 +82,27 @@ export default class RemoteSetObjectAction extends RemoteSetAction {
 
   constructor(
     reference,
-    descriptors = null,
+    descriptors = [],
     proto = null,
-    isExtensible = true
+    isExtensible = true,
+    cachedGetters = []
   ) {
-    if (
-      descriptors !== null &&
-      !(descriptors instanceof PropertyDescriptorsAction)
-    ) {
+    if (!isValidPropertiesArray(descriptors)) {
       throw new TypeError(`Invalid descriptors: ${descriptors}`);
     }
+
     if (typeof proto !== 'object') {
       if (proto !== ARRAY_PROTOTYPE_CODE) {
         throw new TypeError('Object prototype may only be an Object or null');
       }
     }
+
     if (typeof isExtensible !== 'boolean') {
       throw new TypeError('Expect "isExtensible" to be boolean');
+    }
+
+    if (!isValidPropertiesArray(cachedGetters)) {
+      throw new TypeError(`Invalid "cachedGetters" param: ${cachedGetters}`);
     }
 
     super(reference);
@@ -77,6 +110,7 @@ export default class RemoteSetObjectAction extends RemoteSetAction {
     this.descriptors = descriptors;
     this.proto = proto;
     this.isExtensible = isExtensible;
+    this.cachedGetters = cachedGetters;
   }
 
   // eslint-disable-next-line class-methods-use-this
@@ -89,17 +123,21 @@ export default class RemoteSetObjectAction extends RemoteSetAction {
   }
 
   populateInstance(session, instance) {
-    // Fetch order the same as dispatch order
-    const proto = this.constructor.fetch(session, this.proto);
-    const descriptors = this.constructor.fetch(session, this.descriptors);
+    // Fetch order the same as dispatch order (ie. first prototype then descriptors)
+    // @see {@link RemoteSetObjectAction.fromValue}
 
+    const proto = this.constructor.fetch(session, this.proto);
     if (proto !== null && typeof proto === 'object') {
       Object.setPrototypeOf(instance, proto);
     }
 
-    if (descriptors !== null) {
-      Object.defineProperties(instance, descriptors);
-    }
+    fromPropertiesArray(session, this.descriptors, (descriptor, property) => {
+      Object.defineProperty(instance, property, descriptor);
+    });
+
+    fromPropertiesArray(session, this.cachedGetters, (value, property) => {
+      setCachedGetter(instance, property, value);
+    });
   }
 
   toArgumentsList() {
@@ -108,8 +146,9 @@ export default class RemoteSetObjectAction extends RemoteSetAction {
       this.descriptors,
       this.proto,
       this.isExtensible,
+      this.cachedGetters,
     ];
-    const defaults = [undefined, null, null, true];
+    const defaults = [undefined, [], null, true, []];
 
     return trimArgumentsList(argumentsList, defaults);
   }

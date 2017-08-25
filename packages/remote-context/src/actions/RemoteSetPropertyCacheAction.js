@@ -15,38 +15,30 @@
  */
 
 import ReferencePropertyAction from './ReferencePropertyAction';
-import PropertyDescriptorAction from './PropertyDescriptorAction';
-import { deleteCachedGetter } from '../helpers/descriptors';
+import { setCachedGetter } from '../helpers/descriptors';
 
-export default class RemoteDefinePropertyAction extends ReferencePropertyAction {
-  static fromLocal(session, reference, property, descriptor) {
+export default class RemoteSetPropertyCacheAction extends ReferencePropertyAction {
+  static fromLocal(session, reference, property, getterValue) {
     return new this(
       reference,
       session.dispatch(property),
-      PropertyDescriptorAction.fromPropertyDescriptor(session, descriptor)
+      session.dispatch(getterValue)
     );
   }
 
-  constructor(reference, property, descriptor) {
-    if (!(descriptor instanceof PropertyDescriptorAction)) {
-      throw new TypeError(
-        `Expect descriptor to be instance of PropertyDescriptorAction: ${descriptor}`
-      );
-    }
+  constructor(reference, property, getterValue) {
     super(reference, property);
 
-    this.descriptor = descriptor;
+    this.getterValue = getterValue;
   }
 
   fetch(session) {
-    const target = session.remote.getTarget(this.reference);
+    const target = session.remote.getTarget(this.reference).target;
 
     const property = this.constructor.fetch(session, this.property);
-    const descriptor = this.constructor.fetch(session, this.descriptor);
+    const getterValue = this.constructor.fetch(session, this.getterValue);
 
-    deleteCachedGetter(target.target, property);
-
-    return target.defineProperty(property, descriptor);
+    setCachedGetter(target, property, getterValue);
   }
 
   exec(session) {
@@ -54,6 +46,6 @@ export default class RemoteDefinePropertyAction extends ReferencePropertyAction 
   }
 
   toArgumentsList() {
-    return [this.reference, this.property, this.descriptor];
+    return [this.reference, this.property, this.getterValue];
   }
 }

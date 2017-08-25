@@ -14,6 +14,9 @@
  * limitations under the License.
  */
 
+// Many methods in this file inspire from the ES5 shim for ES6 Reflect and Proxy objects:
+// {@link https://github.com/tvcutsem/harmony-reflect} (Apache-2.0 License)
+
 import EventEmitter from 'events';
 import RemoteSession from './RemoteSession';
 import RemoteContext from './RemoteContext';
@@ -23,6 +26,12 @@ import {
   LocalSetPrototypeOfAction,
   LocalPreventExtensionsAction,
 } from './actions';
+import {
+  getCachedGetter,
+  getPropertyDescriptor,
+  isDataDescriptor,
+  isAccessorDescriptor,
+} from './helpers/descriptors';
 
 const kProxyData = Symbol('proxyData');
 const kError = Symbol('error');
@@ -190,16 +199,88 @@ export default class RemoteValue extends EventEmitter {
     this[kError] = null;
 
     this[kProxyData] = Proxy.revocable(value, {
-      // FIXME handle property get cache
+      get(target, property, receiver) {
+        const desc = getPropertyDescriptor(target, property);
+        if (desc === undefined) return undefined;
 
-      get(target, property) {
-        const val = target[property];
+        let val;
+        if (isDataDescriptor(desc)) {
+          val = desc.value;
+        } else {
+          const getter = desc.get;
+          if (getter === undefined) {
+            return undefined;
+          }
 
-        if (typeof val !== 'function') {
+          if (!RemoteValue.isRemoteValue(getter)) {
+            return desc.get.call(receiver); // assumes Function.prototype.call
+          }
+
+          return getCachedGetter(target, property);
+        }
+
+        if (typeof val !== 'function' || !session.exists(val)) {
           return val;
         }
 
-        return session.bind(val);
+        const remoteContext = session.remote;
+        if (!remoteContext.exists(val)) {
+          return val;
+        }
+
+        return remoteContext.fetch(remoteContext.lookup(val));
+      },
+
+      set(target, property, val, receiver) {
+        let desc = getPropertyDescriptor(target, property);
+        if (desc === undefined) {
+          desc = {
+            value: undefined,
+            writable: true,
+            enumerable: true,
+            configurable: true,
+          };
+        }
+
+        if (isAccessorDescriptor(desc)) {
+          const setter = desc.set;
+          if (setter === undefined) return false;
+
+          const ret = setter.call(receiver, val); // assumes Function.prototype.call
+
+          if (RemoteValue.isRemoteValue(setter)) {
+            ret.then(() => {});
+          }
+
+          return true;
+        }
+
+        if (desc.writable === false) return false;
+
+        const existingDesc = Object.getOwnPropertyDescriptor(
+          receiver,
+          property
+        );
+
+        if (existingDesc) {
+          Object.defineProperty(receiver, property, {
+            value: val,
+            writable: existingDesc.writable,
+            enumerable: existingDesc.enumerable,
+            configurable: existingDesc.configurable,
+          });
+          return true;
+        }
+
+        if (!Object.isExtensible(receiver)) return false;
+
+        Object.defineProperty(receiver, property, {
+          value: val,
+          writable: true,
+          enumerable: true,
+          configurable: true,
+        });
+        return true;
       },
 
       setPrototypeOf(target, prototype) {

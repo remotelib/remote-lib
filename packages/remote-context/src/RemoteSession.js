@@ -187,6 +187,10 @@ export default class RemoteSession extends Session {
           );
         }
 
+        if (value instanceof Error && !this[kShowStack]) {
+          delete value.stack; // eslint-disable-line no-param-reassign
+        }
+
         // break and convert to reference
         break;
       }
@@ -213,45 +217,6 @@ export default class RemoteSession extends Session {
     }
 
     return this[kLocal].dispatch(value);
-  }
-
-  /**
-   * Bind to a local function and apply it remotely if the `this` parameter is a remote value.
-   *
-   * @param {function} func The local function to bind
-   * @return {function} A proxy to the original local function
-   */
-  bind(func) {
-    if (typeof func !== 'function') {
-      throw new TypeError(`Can't bind to non-function value: ${typeof func}`);
-    }
-
-    if (!this.exists(func)) {
-      return func;
-    }
-
-    let proxy = this[kBinds].get(func);
-    if (!proxy) {
-      const self = this;
-
-      proxy = new Proxy(func, {
-        apply(target, thisArg, argumentsList) {
-          if (self.exists(thisArg)) {
-            return target.apply(thisArg, argumentsList);
-          }
-
-          const remote = self.remote;
-          const reference = remote.lookup(target);
-          return remote.fetch(reference).apply(thisArg, argumentsList);
-        },
-
-        // No need to bind construct
-      });
-
-      this[kBinds].set(func, proxy);
-    }
-
-    return proxy;
   }
 
   /**

@@ -80,6 +80,14 @@ module.exports = {
       },
     ],
 
+    'no-warning-comments': [
+      'error',
+      {
+        terms: ['fixme'],
+        location: 'start',
+      },
+    ],
+
     // ESLint plugin for prettier formatting
     // https://github.com/prettier/eslint-plugin-prettier
     'prettier/prettier': [

@@ -18,7 +18,7 @@ import AssignableContext from './AssignableContext';
 import RemoteSession from './RemoteSession';
 import { RemoteSetAction, LocalReferenceAction } from './actions';
 import LocalReference from './LocalReference';
-import ObjectSnapshot from './ObjectSnapshot';
+import LocalSnapshot from './LocalSnapshot';
 
 const kSession = Symbol('session');
 const kSessionListener = Symbol('sessionListener');
@@ -110,12 +110,15 @@ export default class LocalContext extends AssignableContext {
 
     if (!this[kDispatchSet].has(reference)) {
       this[kDispatchSet].add(reference);
-      this[kDispatchSnapshots].set(value, new ObjectSnapshot(value));
-      return RemoteSetAction.fromValue(this[kSession], reference, value);
+
+      const snapshot = new LocalSnapshot(value);
+      this[kDispatchSnapshots].set(value, snapshot);
+
+      return RemoteSetAction.fromSnapshot(this[kSession], reference, snapshot);
     }
 
-    const localReference = new LocalReference(this[kSession], reference, value);
-    this[kDispatchSnapshots].get(value).update(value, localReference);
+    const localReference = new LocalReference(this[kSession], reference);
+    this[kDispatchSnapshots].get(value).update(localReference);
 
     return new LocalReferenceAction(reference);
   }
