@@ -46,8 +46,8 @@ export default class LocalDefinePropertyAction extends ReferencePropertyAction {
       );
     }
 
-    const property = this.constructor.fetch(session, this.property);
-    const descriptor = this.constructor.fetch(session, this.descriptor);
+    const property = session.fetch(this.property);
+    const descriptor = session.fetch(this.descriptor);
 
     return Reflect.defineProperty(target, property, descriptor);
   }

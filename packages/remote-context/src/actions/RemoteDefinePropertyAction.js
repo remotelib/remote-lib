@@ -41,8 +41,8 @@ export default class RemoteDefinePropertyAction extends ReferencePropertyAction 
   fetch(session) {
     const target = session.remote.getTarget(this.reference);
 
-    const property = this.constructor.fetch(session, this.property);
-    const descriptor = this.constructor.fetch(session, this.descriptor);
+    const property = session.fetch(this.property);
+    const descriptor = session.fetch(this.descriptor);
 
     deleteCachedGetter(target.target, property);
 

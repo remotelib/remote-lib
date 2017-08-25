@@ -33,7 +33,7 @@ export default class RemoteSetPrototypeOfAction extends ReferenceAction {
 
   fetch(session) {
     const target = session.remote.getTarget(this.reference);
-    const prototype = this.constructor.fetch(session, this.prototype);
+    const prototype = session.fetch(this.prototype);
 
     return target.setPrototypeOf(prototype);
   }

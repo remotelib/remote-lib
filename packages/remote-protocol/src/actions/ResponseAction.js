@@ -62,7 +62,7 @@ export default class ResponseAction extends Action {
    * @override
    */
   fetch(session) {
-    return this.constructor.fetch(session, this.value);
+    return session.fetch(this.value);
   }
 
   /**

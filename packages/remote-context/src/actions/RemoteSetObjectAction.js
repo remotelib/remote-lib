@@ -34,8 +34,8 @@ function isValidPropertiesArray(propsArr) {
 
 function fromPropertiesArray(session, propsArr, forEachFn) {
   for (let i = 0; i < propsArr.length; i += 2) {
-    const property = RemoteSetAction.fetch(session, propsArr[i]);
-    const value = RemoteSetAction.fetch(session, propsArr[i + 1]);
+    const property = session.fetch(propsArr[i]);
+    const value = session.fetch(propsArr[i + 1]);
 
     forEachFn(value, property);
   }
@@ -126,7 +126,7 @@ export default class RemoteSetObjectAction extends RemoteSetAction {
     // Fetch order the same as dispatch order (ie. first prototype then descriptors)
     // @see {@link RemoteSetObjectAction.fromValue}
 
-    const proto = this.constructor.fetch(session, this.proto);
+    const proto = session.fetch(this.proto);
     if (proto !== null && typeof proto === 'object') {
       Object.setPrototypeOf(instance, proto);
     }

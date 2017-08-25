@@ -95,17 +95,15 @@ export default class PropertyDescriptorAction extends Action {
   fetch(session) {
     if (this.isDataDescriptor()) {
       return {
-        value: this.constructor.fetch(session, this.value),
+        value: session.fetch(this.value),
         configurable: this.configurable,
         writable: this.writable,
         enumerable: this.enumerable,
       };
     }
 
-    const get =
-      this.get !== null ? this.constructor.fetch(session, this.get) : undefined;
-    const set =
-      this.set !== null ? this.constructor.fetch(session, this.set) : undefined;
+    const get = this.get !== null ? session.fetch(this.get) : undefined;
+    const set = this.set !== null ? session.fetch(this.set) : undefined;
 
     if (get !== undefined && typeof get !== 'function') {
       throw new TypeError('Argument "get" must be a function or undefined');

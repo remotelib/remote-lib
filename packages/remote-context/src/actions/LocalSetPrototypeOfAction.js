@@ -40,7 +40,7 @@ export default class LocalSetPrototypeOfAction extends ReferenceAction {
       );
     }
 
-    const prototype = this.constructor.fetch(session, this.prototype);
+    const prototype = session.fetch(this.prototype);
 
     return Reflect.setPrototypeOf(target, prototype);
   }

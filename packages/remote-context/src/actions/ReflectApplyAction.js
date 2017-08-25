@@ -40,10 +40,8 @@ export default class ReflectApplyAction extends ReflectAction {
 
   fetch(session) {
     const target = this.fetchTarget(session);
-    const thisArg = this.constructor.fetch(session, this.thisArg);
-    const argumentsList = this.argumentsList.map(arg =>
-      this.constructor.fetch(session, arg)
-    );
+    const thisArg = session.fetch(this.thisArg);
+    const argumentsList = this.argumentsList.map(arg => session.fetch(arg));
 
     return Reflect.apply(target, thisArg, argumentsList);
   }

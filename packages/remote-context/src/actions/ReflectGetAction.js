@@ -35,7 +35,7 @@ export default class ReflectGetAction extends ReflectAction {
 
   fetch(session) {
     const target = this.fetchTarget(session);
-    const property = this.constructor.fetch(session, this.property);
+    const property = session.fetch(this.property);
 
     return Reflect.get(target, property);
   }

@@ -20,7 +20,7 @@ import { deleteCachedGetter } from '../helpers/descriptors';
 export default class RemoteSetPropertyCacheAction extends ReferencePropertyAction {
   fetch(session) {
     const target = session.remote.getTarget(this.reference).target;
-    const property = this.constructor.fetch(session, this.property);
+    const property = session.fetch(this.property);
 
     deleteCachedGetter(target, property);
   }

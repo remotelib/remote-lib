@@ -22,22 +22,6 @@
  */
 export default class Action {
   /**
-   * Fetch an arbitrary value.
-   * If the given value is instance of action, fetch it. Otherwise return it as is.
-   *
-   * @param {Session} session The current action session
-   * @param {Action|*} value The given value
-   * @return {*}
-   */
-  static fetch(session, value) {
-    if (value instanceof Action) {
-      return value.fetch(session);
-    }
-
-    return value;
-  }
-
-  /**
    * Get a string that represent this class.
    *
    * @override

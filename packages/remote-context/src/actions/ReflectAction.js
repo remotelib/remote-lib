@@ -32,7 +32,7 @@ export default class ReflectAction extends Action {
   }
 
   fetchTarget(session) {
-    return this.constructor.fetch(session, this.target);
+    return session.fetch(this.target);
   }
 
   toArgumentsList() {

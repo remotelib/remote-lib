@@ -35,9 +35,7 @@ export default class ReflectConstructAction extends ReflectAction {
 
   fetch(session) {
     const target = this.fetchTarget(session);
-    const argumentsList = this.argumentsList.map(arg =>
-      this.constructor.fetch(session, arg)
-    );
+    const argumentsList = this.argumentsList.map(arg => session.fetch(arg));
 
     return Reflect.construct(target, argumentsList);
   }

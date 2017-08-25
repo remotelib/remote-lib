@@ -238,6 +238,21 @@ export default class Session extends EventEmitter {
   }
 
   /**
+   * Fetch an arbitrary value.
+   * If the given value is instance of {@link Action}, fetch it. Otherwise return it as is.
+   *
+   * @param {Action|*} value The given value
+   * @return {*}
+   */
+  fetch(value) {
+    if (value instanceof Action) {
+      return value.fetch(this);
+    }
+
+    return value;
+  }
+
+  /**
    * Convert the given value to a value that can be send ove to the other peer.
    * If the value can be send as-is, return the same value (default implementation).
    *

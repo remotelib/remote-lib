@@ -24,7 +24,7 @@ export default class RemoteDeletePropertyAction extends ReferencePropertyAction 
 
   fetch(session) {
     const target = session.remote.getTarget(this.reference);
-    const property = this.constructor.fetch(session, this.property);
+    const property = session.fetch(this.property);
 
     deleteCachedGetter(target.target, property);
 

@@ -30,7 +30,7 @@ export default class LocalDeletePropertyAction extends ReferencePropertyAction {
       );
     }
 
-    const property = this.constructor.fetch(session, this.property);
+    const property = session.fetch(this.property);
 
     return Reflect.deleteProperty(target, property);
   }

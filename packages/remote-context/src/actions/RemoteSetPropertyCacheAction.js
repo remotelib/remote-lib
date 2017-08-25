@@ -35,8 +35,8 @@ export default class RemoteSetPropertyCacheAction extends ReferencePropertyActio
   fetch(session) {
     const target = session.remote.getTarget(this.reference).target;
 
-    const property = this.constructor.fetch(session, this.property);
-    const getterValue = this.constructor.fetch(session, this.getterValue);
+    const property = session.fetch(this.property);
+    const getterValue = session.fetch(this.getterValue);
 
     setCachedGetter(target, property, getterValue);
   }
