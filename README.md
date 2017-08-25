@@ -5,7 +5,7 @@
   <br>
 </h1>
 
-<h4 align="center">Create a library and share it remotely with other peers via <strong>ANY</strong> stream object.</h4>
+<h4 align="center">Run remote JavaScript code as if it's your own local library.</h4>
 
 <p align="center">
 <a href="https://www.npmjs.org/package/remote-lib"><img src="http://img.shields.io/npm/v/remote-lib.svg" alt="View On NPM"></a>
@@ -16,12 +16,16 @@
 </p>
 <br>
 
-**RemoteLib** is library that can be shared remotely with other peers without worrying for API interfaces or RPC integration. Using only a [Duplex stream](https://nodejs.org/api/stream.html#stream_class_stream_duplex) such as 
-[TCP soocket](https://nodejs.org/api/net.html#net_net_createconnection_options_connectlistener), 
+**RemoteLib** is a library that can be shared remotely with other peers without worrying for API 
+interfaces or RPC integration. Using only a 
+[Duplex stream](https://nodejs.org/api/stream.html#stream_class_stream_duplex), such as 
+[TCP socket](https://nodejs.org/api/net.html#net_net_createconnection_options_connectlistener), 
 [WebSocket](https://www.npmj.com/package/websocket-stream) or even 
 [WebRTC DataChannel](https://www.npmjs.com/package/simple-peer), your users 
-will be able to use your code remotely exactly as you write it. Including calling functions with 
-callbacks, [Promises](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise), class inheritance and more. See [usage](#usage) for some examples.
+will be able to use your code remotely exactly as if it's local library. This, including calling 
+functions with callbacks, 
+[Promises](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise), 
+class inheritance, getters and setters support and more. See [usage](#usage) for some examples.
 
 ### Install
 ```
