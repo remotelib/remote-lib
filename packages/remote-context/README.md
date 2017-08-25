@@ -93,8 +93,11 @@ remoteContext.fetch('getData')().then(value => {
 // Get remote instance set "myThings"
 remoteContext.fetch('myThings').then(async set => {
   set instanceof Set; // true
+  
+  // Access getters and data properties instantly
+  set.size; // 3
 
-  // All instance methods require await or #then() when calling
+  // Call methods with async promises
   await set.has('keys'); // true
   await set.has('cat'); // false
 

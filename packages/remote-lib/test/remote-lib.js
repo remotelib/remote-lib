@@ -92,7 +92,10 @@ describe('RemoteContext', () => {
       remoteLibrary.myThings.then(async set => {
         assert.equal(set instanceof Set, true);
 
-        // All instance methods require await or #then() when calling
+        // Access getters and data properties instantly
+        assert.equal(set.size, 3);
+
+        // Call methods with async promises
         assert.equal(await set.has('keys'), true);
         assert.equal(await set.has('cat'), false);
 
