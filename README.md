@@ -126,7 +126,7 @@ remoteLibrary.myThings.then(async set => {
 
 ### API Reference
 Remote-lib is build with many small sub-packages, each package implement a small part of this library.
-You can read here the [full API Reference](http://www.remotelib.com/identifiers.html).
+You can read here the [full API Reference](http://www.remotelib.com).
 
 | module | version | description |
 |---|---|---|
