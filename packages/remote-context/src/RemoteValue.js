@@ -199,7 +199,7 @@ export default class RemoteValue extends EventEmitter {
     this[kError] = null;
 
     this[kProxyData] = Proxy.revocable(value, {
-      get(target, property, receiver) {
+      get(target, property) {
         const desc = getPropertyDescriptor(target, property);
         if (desc === undefined) return undefined;
 
@@ -210,10 +210,6 @@ export default class RemoteValue extends EventEmitter {
           const getter = desc.get;
           if (getter === undefined) {
             return undefined;
-          }
-
-          if (!RemoteValue.isRemoteValue(getter)) {
-            return desc.get.call(receiver); // assumes Function.prototype.call
           }
 
           return getCachedGetter(target, property);
