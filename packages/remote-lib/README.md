@@ -86,7 +86,10 @@ remoteLibrary.getData().then(value => {
 remoteLibrary.myThings.then(async set => {
   set instanceof Set; // true
 
-  // All instance methods require await or #then() when calling
+  // Access getters and data properties instantly
+  set.size; // 3
+  
+  // Call methods with async promises
   await set.has('keys'); // true
   await set.has('cat'); // false
 

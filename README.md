@@ -20,7 +20,7 @@
 interfaces or RPC integration. Using only a 
 [Duplex stream](https://nodejs.org/api/stream.html#stream_class_stream_duplex), such as 
 [TCP socket](https://nodejs.org/api/net.html#net_net_createconnection_options_connectlistener), 
-[WebSocket](https://www.npmj.com/package/websocket-stream) or even 
+[WebSocket](https://www.npmjs.com/package/websocket-stream) or even 
 [WebRTC DataChannel](https://www.npmjs.com/package/simple-peer), your users 
 will be able to use your code remotely exactly as if it's local library. This, including calling 
 functions with callbacks, 
@@ -43,7 +43,12 @@ npm install remote-lib
 
 
 ### Usage
-#### On the server
+In this example we will create a demo library on a TCP server and then serve and use in on the 
+client. Notice that the server and the client sharing only a Duplex tcp stream. You can replace it
+easily with [WebSocket](https://www.npmjs.com/package/websocket-stream) or even 
+[WebRTC DataChannel](https://www.npmjs.com/package/simple-peer).
+
+#### Create a library on the server
 ```js
 const net = require('net');
 const { Library } = require('remote-lib');
@@ -76,7 +81,7 @@ const server = net.createServer(socket => {
 server.listen(3000);
 ```
 
-#### On the client
+#### Use the library remotely on the client
 ```js
 const net = require('net');
 const { RemoteLibrary } = require('remote-lib');
@@ -131,9 +136,7 @@ You can read here the [full API Reference](http://www.remotelib.com/identifiers.
 | **[remote-instance](packages/remote-instance)** | [![view on npm](http://img.shields.io/npm/v/remote-instance.svg)](https://www.npmjs.org/package/remote-instance) | A stream transformer that can parse and `construct` instances remotely.
 | **[remote-protocol](packages/remote-protocol)** | [![view on npm](http://img.shields.io/npm/v/remote-protocol.svg)](https://www.npmjs.org/package/remote-protocol) | The core of `remote-context` protocol.
 | **[reference-context](packages/reference-context)** | [![view on npm](http://img.shields.io/npm/v/reference-context.svg)](https://www.npmjs.org/package/reference-context) | Virtual context implementation on vanilla Javascript.
-  
-<br />
-<br />
+
 
 ### License
 
