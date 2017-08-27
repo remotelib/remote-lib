@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../">
-  <title data-ice="title">Manual | Remotelib</title>
+  <title data-ice="title">Manual | RemoteLib</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
   <script src="script/manual.js"></script>
-<meta name="description" content="Run code remotely"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Remotelib"><meta property="twitter:description" content="Run code remotely"></head>
+<meta name="description" content="Run remote JavaScript code as if it&apos;s your own local library."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="RemoteLib"><meta property="twitter:description" content="Run remote JavaScript code as if it&apos;s your own local library."></head>
 <body class="layout-container manual-root" data-ice="rootContainer">
 
 <header>
@@ -180,7 +180,10 @@ remoteContext.fetch(&apos;getData&apos;)().then(value =&gt; {
 remoteContext.fetch(&apos;myThings&apos;).then(async set =&gt; {
   set instanceof Set; // true
 
-  // All instance methods require await or #then() when calling
+  // Access getters and data properties instantly
+  set.size; // 3
+
+  // Call methods with async promises
   await set.has(&apos;keys&apos;); // true
   await set.has(&apos;cat&apos;); // false
 
@@ -215,15 +218,15 @@ To use an environment you should require it explicitly:</p>
 </tr>
 </tbody>
 </table>
-<h2 id="api-reference">API Reference</h2><p>This module is a part of the <a href="https://github.com/remotelib/remote-lib"><code>remote-lib</code></a> library.</p>
+<h2 id="api-reference">API Reference</h2><p>This module is a part of the <a href="http://www.remotelib.com"><code>remote-lib</code></a> library.</p>
 <p>Here is the relevant documentation for this module:</p>
 <ul>
-<li><a href="https://remotelib.github.io/remote-lib/class/packages/remote-context/src/Context.js~Context.html"><code>Context</code></a></li>
-<li><a href="https://remotelib.github.io/remote-lib/class/packages/remote-context/src/EnvContext.js~EnvContext.html"><code>EnvContext</code></a></li>
-<li><a href="https://remotelib.github.io/remote-lib/class/packages/remote-context/src/RemoteContext.js~RemoteContext.html"><code>RemoteContext</code></a></li>
-<li><a href="https://remotelib.github.io/remote-lib/class/packages/remote-context/src/RemoteSession.js~RemoteSession.html"><code>RemoteSession</code></a></li>
-<li><a href="https://remotelib.github.io/remote-lib/typedef/index.html#static-typedef-es6UnstableEnv"><code>es6UnstableEnv</code></a></li>
-<li><a href="https://remotelib.github.io/remote-lib/class/packages/remote-context/src/RemoteValue.js~RemoteValue.html#static-method-observe"><code>observe</code></a></li>
+<li><a href="http://www.remotelib.com/class/packages/remote-context/src/Context.js~Context.html"><code>Context</code></a></li>
+<li><a href="http://www.remotelib.com/class/packages/remote-context/src/EnvContext.js~EnvContext.html"><code>EnvContext</code></a></li>
+<li><a href="http://www.remotelib.com/class/packages/remote-context/src/RemoteContext.js~RemoteContext.html"><code>RemoteContext</code></a></li>
+<li><a href="http://www.remotelib.com/class/packages/remote-context/src/RemoteSession.js~RemoteSession.html"><code>RemoteSession</code></a></li>
+<li><a href="http://www.remotelib.com/typedef/index.html#static-typedef-es6UnstableEnv"><code>es6UnstableEnv</code></a></li>
+<li><a href="http://www.remotelib.com/class/packages/remote-context/src/RemoteValue.js~RemoteValue.html#static-method-observe"><code>observe</code></a></li>
 </ul>
 <p><br>
 <br></p>

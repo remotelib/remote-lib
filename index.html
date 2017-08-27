@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="./">
-  <title data-ice="title">Manual | Remotelib</title>
+  <title data-ice="title">Manual | RemoteLib</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
   <script src="script/manual.js"></script>
-<meta name="description" content="Run code remotely"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Remotelib"><meta property="twitter:description" content="Run code remotely"></head>
+<meta name="description" content="Run remote JavaScript code as if it&apos;s your own local library."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="RemoteLib"><meta property="twitter:description" content="Run remote JavaScript code as if it&apos;s your own local library."></head>
 <body class="layout-container manual-root manual-index" data-ice="rootContainer">
 
 <header>
@@ -100,10 +100,163 @@
 </nav>
 
 <div class="content" data-ice="content"><div class="github-markdown">
-  <div class="manual-user-index" data-ice="manualUserIndex"><h1 id="remote-lib">Remote-lib</h1><p>This is the <a href="https://remotelib.github.io/remote-lib/manual/index.html">API Reference</a> 
-for <a href="https://github.com/remotelib/remote-lib"><strong>Remote-lib</strong></a>.</p>
-<p>Please checkout the <a href="https://github.com/remotelib/remote-lib">GitHub Repository</a> in order to get 
-started.</p>
+  <div class="manual-user-index" data-ice="manualUserIndex"><p></p><h1>
+  <br>
+  <a href="http://www.remotelib.com"><img src="https://github.com/remotelib/remote-lib/raw/master/manual/asset/icon.png?docs-hack=.svg" width="200"></a>
+  <br>
+  RemoteLib
+  <br>
+  <br>
+</h1>
+
+<p></p>
+<p></p><h4>Run remote JavaScript code as if it&apos;s your own local library.</h4>
+
+<p></p>
+<p></p><p>
+<a href="https://www.npmjs.org/package/remote-lib"><img src="http://img.shields.io/npm/v/remote-lib.svg"></a>
+<a href="https://travis-ci.org/remotelib/remote-lib"><img src="https://travis-ci.org/remotelib/remote-lib.svg?branch=master"></a>
+<a href="https://david-dm.org/remotelib/remote-lib"><img src="https://david-dm.org/remotelib/remote-lib.svg"></a>
+<a href="https://codecov.io/gh/remotelib/remote-lib"><img src="https://codecov.io/gh/remotelib/remote-lib/branch/master/graph/badge.svg"></a>
+<a href="LICENSE"><img src="https://img.shields.io/npm/l/remote-lib.svg"></a>
+</p>
+<br><p></p>
+<p><strong>RemoteLib</strong> is a library that can be shared remotely with other peers without worrying for API 
+interfaces or RPC integration. Using only a 
+<a href="https://nodejs.org/api/stream.html#stream_class_stream_duplex">Duplex stream</a>, such as 
+<a href="https://nodejs.org/api/net.html#net_net_createconnection_options_connectlistener">TCP socket</a>, 
+<a href="https://www.npmjs.com/package/websocket-stream">WebSocket</a> or even 
+<a href="https://www.npmjs.com/package/simple-peer">WebRTC DataChannel</a>, your users 
+will be able to use your code remotely exactly as if it&apos;s local library. This, including calling 
+functions with callbacks, 
+<a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promises</a>, 
+class inheritance, getters and setters support and more. See <a href="#usage">usage</a> for some examples.</p>
+<h3 id="install">Install</h3><pre><code><code class="source-code prettyprint">npm install remote-lib</code>
+</code></pre><h3 id="ways-to-help">Ways to help</h3><ul>
+<li><strong>Join us in <a href="https://gitter.im/remotelib/Lobby">Gitter</a></strong> to help with development or to hang out with some mad science hackers :)</li>
+<li><strong><a href="https://github.com/remotelib/remote-lib/issues/new">Create a new issue</a></strong> to report bugs</li>
+<li><strong><a href="https://github.com/remotelib/remote-lib/issues?state=open">Fix an issue</a></strong>. RemoteLib is an OPEN Open Source Project!</li>
+</ul>
+<h3 id="api-documentation">API Documentation</h3><p><strong><a href="#api-reference">See the API Reference bellow</a></strong>.</p>
+<h3 id="usage">Usage</h3><p>In this example we will create a demo library on a TCP server and then serve and use in on the 
+client. Notice that the server and the client sharing only a Duplex tcp stream. You can replace it
+easily with <a href="https://www.npmjs.com/package/websocket-stream">WebSocket</a> or even 
+<a href="https://www.npmjs.com/package/simple-peer">WebRTC DataChannel</a>.</p>
+<h4 id="create-a-library-on-the-server">Create a library on the server</h4><pre><code class="lang-js"><code class="source-code prettyprint">const net = require(&apos;net&apos;);
+const { Library } = require(&apos;remote-lib&apos;);
+
+// You can put any object, class or instance under the context and it will be proxied to the
+// remote peer automatically
+const library = new Library({
+  // Static vars
+  foo: &apos;bar&apos;,
+
+  // Dynamic functions
+  getRandom: () =&gt; Math.random(),
+
+  // Async functions
+  getData: () =&gt;
+    new Promise(resolve =&gt;
+      setTimeout(() =&gt; resolve({ data: &apos;Tada!&apos; }), 100),
+    ),
+
+  // Classes and objects
+  myThings: new Set([&apos;car&apos;, &apos;keys&apos;, &apos;pizza&apos;]),
+});
+
+// Create a server and serve each client the context remotely
+const server = net.createServer(socket =&gt; {
+  library.serve(socket);
+});
+
+// Bind on port 3000
+server.listen(3000);</code>
+</code></pre>
+<h4 id="use-the-library-remotely-on-the-client">Use the library remotely on the client</h4><pre><code class="lang-js"><code class="source-code prettyprint">const net = require(&apos;net&apos;);
+const { RemoteLibrary } = require(&apos;remote-lib&apos;);
+
+// Connect to the server and get a stream
+const socket = net.createConnection(3000);
+
+// Create the remote library
+const remoteLibrary = new RemoteLibrary(socket);
+
+// Get the remote &quot;foo&quot;
+remoteLibrary.foo.then(value =&gt; {
+  // value === &apos;bar&apos;
+});
+
+// Run the remote function &quot;getRandom&quot;
+remoteLibrary.getRandom().then(value =&gt; {
+  // `value` is random number
+});
+
+// Run the remote async function &quot;getData&quot;
+remoteLibrary.getData().then(value =&gt; {
+  // value === { data: &apos;Tada!&apos; }
+});
+
+// Get remote instance set &quot;myThings&quot;
+remoteLibrary.myThings.then(async set =&gt; {
+  set instanceof Set; // true
+
+  // Access getters and data properties instantly
+  set.size; // 3
+
+  // Call methods with async promises
+  await set.has(&apos;keys&apos;); // true
+  await set.has(&apos;cat&apos;); // false
+
+  // Change the remote instance
+  await set.add(&apos;dog&apos;);
+  await set.has(&apos;dog&apos;); // true
+});</code>
+</code></pre>
+<h3 id="api-reference">API Reference</h3><p>Remote-lib is build with many small sub-packages, each package implement a small part of this library.
+You can read here the <a href="http://www.remotelib.com">full API Reference</a>.</p>
+<table>
+<thead>
+<tr>
+<th>module</th>
+<th>version</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a href="packages/remote-lib">remote-lib</a></strong></td>
+<td><a href="https://www.npmjs.org/package/remote-lib"><img src="http://img.shields.io/npm/v/remote-lib.svg" alt="view on npm"></a></td>
+<td>A high level API for creating remote libraries.</td>
+</tr>
+<tr>
+<td><strong><a href="packages/remote-context">remote-context</a></strong></td>
+<td><a href="https://www.npmjs.org/package/remote-context"><img src="http://img.shields.io/npm/v/remote-context.svg" alt="view on npm"></a></td>
+<td>The core of <code>remote-lib</code>, creating and serving remote context.</td>
+</tr>
+<tr>
+<td><strong><a href="packages/remote-environment">remote-environment</a></strong></td>
+<td><a href="https://www.npmjs.org/package/remote-environment"><img src="http://img.shields.io/npm/v/remote-environment.svg" alt="view on npm"></a></td>
+<td>A shared environment context between remote peers.</td>
+</tr>
+<tr>
+<td><strong><a href="packages/remote-instance">remote-instance</a></strong></td>
+<td><a href="https://www.npmjs.org/package/remote-instance"><img src="http://img.shields.io/npm/v/remote-instance.svg" alt="view on npm"></a></td>
+<td>A stream transformer that can parse and <code>construct</code> instances remotely.</td>
+</tr>
+<tr>
+<td><strong><a href="packages/remote-protocol">remote-protocol</a></strong></td>
+<td><a href="https://www.npmjs.org/package/remote-protocol"><img src="http://img.shields.io/npm/v/remote-protocol.svg" alt="view on npm"></a></td>
+<td>The core of <code>remote-context</code> protocol.</td>
+</tr>
+<tr>
+<td><strong><a href="packages/reference-context">reference-context</a></strong></td>
+<td><a href="https://www.npmjs.org/package/reference-context"><img src="http://img.shields.io/npm/v/reference-context.svg" alt="view on npm"></a></td>
+<td>Virtual context implementation on vanilla Javascript.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="license">License</h3><p>&#xA9; 2017 Moshe Simantov</p>
+<p>Licensed under the <a href="LICENSE">Apache License, Version 2.0</a>.</p>
 </div>
 
   
@@ -176,7 +329,10 @@ remoteLibrary.getData().then(value =&gt; {
 remoteLibrary.myThings.then(async set =&gt; {
   set instanceof Set; // true
 
-  // All instance methods require await or #then() when calling
+  // Access getters and data properties instantly
+  set.size; // 3
+
+  // Call methods with async promises
   await set.has(&apos;keys&apos;); // true
   await set.has(&apos;cat&apos;); // false
 
@@ -184,9 +340,9 @@ remoteLibrary.myThings.then(async set =&gt; {
   await set.add(&apos;dog&apos;);
   await set.has(&apos;dog&apos;); // true
 });</code>
-</code></pre><h2>API Reference</h2><p>This module is a part of the <a href="https://github.com/remotelib/remote-lib"><code>remote-lib</code></a> library.</p><p>Here is the relevant documentation for this module:</p><ul>
-<li><a href="https://remotelib.github.io/remote-lib/class/packages/remote-lib/src/Library.js~Library.html"><code>Library</code></a></li>
-<li><a href="https://remotelib.github.io/remote-lib/class/packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary.html"><code>RemoteLibrary</code></a></li>
+</code></pre><h2>API Reference</h2><p>This module is a part of the <a href="http://www.remotelib.com"><code>remote-lib</code></a> library.</p><p>Here is the relevant documentation for this module:</p><ul>
+<li><a href="http://www.remotelib.com/class/packages/remote-lib/src/Library.js~Library.html"><code>Library</code></a></li>
+<li><a href="http://www.remotelib.com/class/packages/remote-lib/src/RemoteLibrary.js~RemoteLibrary.html"><code>RemoteLibrary</code></a></li>
 </ul><p><br>
 <br></p><hr><p>&#xA9; 2017 Moshe Simantov</p><p>Licensed under the <a href="./manual/LICENSE">Apache License, Version 2.0</a>.</p></div>
         <a data-ice="link" href="manual/remote-lib.html"></a>
@@ -266,7 +422,10 @@ remoteContext.fetch(&apos;getData&apos;)().then(value =&gt; {
 remoteContext.fetch(&apos;myThings&apos;).then(async set =&gt; {
   set instanceof Set; // true
 
-  // All instance methods require await or #then() when calling
+  // Access getters and data properties instantly
+  set.size; // 3
+
+  // Call methods with async promises
   await set.has(&apos;keys&apos;); // true
   await set.has(&apos;cat&apos;); // false
 
@@ -296,13 +455,13 @@ To use an environment you should require it explicitly:</p><pre><code class="lan
 <td>This environment will include all Node.js version 6 context. This environment consider unstable and may change over the versions.</td>
 </tr>
 </tbody>
-</table><h2>API Reference</h2><p>This module is a part of the <a href="https://github.com/remotelib/remote-lib"><code>remote-lib</code></a> library.</p><p>Here is the relevant documentation for this module:</p><ul>
-<li><a href="https://remotelib.github.io/remote-lib/class/packages/remote-context/src/Context.js~Context.html"><code>Context</code></a></li>
-<li><a href="https://remotelib.github.io/remote-lib/class/packages/remote-context/src/EnvContext.js~EnvContext.html"><code>EnvContext</code></a></li>
-<li><a href="https://remotelib.github.io/remote-lib/class/packages/remote-context/src/RemoteContext.js~RemoteContext.html"><code>RemoteContext</code></a></li>
-<li><a href="https://remotelib.github.io/remote-lib/class/packages/remote-context/src/RemoteSession.js~RemoteSession.html"><code>RemoteSession</code></a></li>
-<li><a href="https://remotelib.github.io/remote-lib/typedef/index.html#static-typedef-es6UnstableEnv"><code>es6UnstableEnv</code></a></li>
-<li><a href="https://remotelib.github.io/remote-lib/class/packages/remote-context/src/RemoteValue.js~RemoteValue.html#static-method-observe"><code>observe</code></a></li>
+</table><h2>API Reference</h2><p>This module is a part of the <a href="http://www.remotelib.com"><code>remote-lib</code></a> library.</p><p>Here is the relevant documentation for this module:</p><ul>
+<li><a href="http://www.remotelib.com/class/packages/remote-context/src/Context.js~Context.html"><code>Context</code></a></li>
+<li><a href="http://www.remotelib.com/class/packages/remote-context/src/EnvContext.js~EnvContext.html"><code>EnvContext</code></a></li>
+<li><a href="http://www.remotelib.com/class/packages/remote-context/src/RemoteContext.js~RemoteContext.html"><code>RemoteContext</code></a></li>
+<li><a href="http://www.remotelib.com/class/packages/remote-context/src/RemoteSession.js~RemoteSession.html"><code>RemoteSession</code></a></li>
+<li><a href="http://www.remotelib.com/typedef/index.html#static-typedef-es6UnstableEnv"><code>es6UnstableEnv</code></a></li>
+<li><a href="http://www.remotelib.com/class/packages/remote-context/src/RemoteValue.js~RemoteValue.html#static-method-observe"><code>observe</code></a></li>
 </ul><p><br>
 <br></p><hr><p>&#xA9; 2017 Moshe Simantov</p><p>Licensed under the <a href="./manual/LICENSE">Apache License, Version 2.0</a>.</p></div>
         <a data-ice="link" href="manual/remote-context.html"></a>
@@ -340,8 +499,8 @@ To use an environment you should require it explicitly:</p><pre><code class="lan
 <td>An ES6 context. This environment consider unstable and may change over the versions.</td>
 </tr>
 </tbody>
-</table><h2>API Reference</h2><p>This module is a part of the <a href="https://github.com/remotelib/remote-lib"><code>remote-lib</code></a> library.</p><p>Here is the relevant documentation for this module:</p><ul>
-<li><a href="https://remotelib.github.io/remote-lib/typedef/index.html#static-typedef-es6"><code>es6</code></a></li>
+</table><h2>API Reference</h2><p>This module is a part of the <a href="http://www.remotelib.com"><code>remote-lib</code></a> library.</p><p>Here is the relevant documentation for this module:</p><ul>
+<li><a href="http://www.remotelib.com/typedef/index.html#static-typedef-es6"><code>es6</code></a></li>
 </ul><p><br>
 <br></p><hr><p>&#xA9; 2017 Moshe Simantov</p><p>Licensed under the <a href="./manual/LICENSE">Apache License, Version 2.0</a>.</p></div>
         <a data-ice="link" href="manual/remote-environment.html"></a>
@@ -392,8 +551,8 @@ const decodedFoo = parser.decode(buffer);
 decodedFoo !== foo; // true
 decodedFoo instanceof Foo; // true
 decodedFoo.bar; // { test: &apos;myThing&apos; }</code>
-</code></pre><h2>API Reference</h2><p>This module is a part of the <a href="https://github.com/remotelib/remote-lib"><code>remote-lib</code></a> library.</p><p>Here is the relevant documentation for this module:</p><ul>
-<li><a href="https://remotelib.github.io/remote-lib/class/packages/remote-instance/src/parser.js~Parser.html"><code>Parser</code></a></li>
+</code></pre><h2>API Reference</h2><p>This module is a part of the <a href="http://www.remotelib.com"><code>remote-lib</code></a> library.</p><p>Here is the relevant documentation for this module:</p><ul>
+<li><a href="http://www.remotelib.com/class/packages/remote-instance/src/parser.js~Parser.html"><code>Parser</code></a></li>
 </ul><p><br>
 <br></p><hr><p>&#xA9; 2017 Moshe Simantov</p><p>Licensed under the <a href="./manual/LICENSE">Apache License, Version 2.0</a>.</p></div>
         <a data-ice="link" href="manual/remote-instance.html"></a>
@@ -429,11 +588,11 @@ session.request(
     // handle request error
   },
 );</code>
-</code></pre><h2>API Reference</h2><p>This module is a part of the <a href="https://github.com/remotelib/remote-lib"><code>remote-lib</code></a> library.</p><p>Here is the relevant documentation for this module:</p><ul>
-<li><a href="https://remotelib.github.io/remote-lib/class/packages/remote-protocol/src/Session.js~Session.html"><code>Session</code></a></li>
-<li><a href="https://remotelib.github.io/remote-lib/class/packages/remote-protocol/src/actions/Action.js~Action.html"><code>Action</code></a><ul>
-<li><a href="https://remotelib.github.io/remote-lib/class/packages/remote-protocol/src/actions/RequestAction.js~RequestAction.html"><code>RequestAction</code></a></li>
-<li><a href="https://remotelib.github.io/remote-lib/class/packages/remote-protocol/src/actions/ResponseAction.js~ResponseAction.html"><code>RequestAction</code></a></li>
+</code></pre><h2>API Reference</h2><p>This module is a part of the <a href="http://www.remotelib.com"><code>remote-lib</code></a> library.</p><p>Here is the relevant documentation for this module:</p><ul>
+<li><a href="http://www.remotelib.com/class/packages/remote-protocol/src/Session.js~Session.html"><code>Session</code></a></li>
+<li><a href="http://www.remotelib.com/class/packages/remote-protocol/src/actions/Action.js~Action.html"><code>Action</code></a><ul>
+<li><a href="http://www.remotelib.com/class/packages/remote-protocol/src/actions/RequestAction.js~RequestAction.html"><code>RequestAction</code></a></li>
+<li><a href="http://www.remotelib.com/class/packages/remote-protocol/src/actions/ResponseAction.js~ResponseAction.html"><code>RequestAction</code></a></li>
 </ul>
 </li>
 </ul><p><br>
@@ -471,8 +630,8 @@ referenceContext.get(&apos;foo&apos;); // foo
 
 referenceContext.lookup(Object); // &quot;Object&quot;
 referenceContext.lookup(foo); // &quot;foo&quot;</code>
-</code></pre><h2>API Reference</h2><p>This module is a part of the <a href="https://github.com/remotelib/remote-lib"><code>remote-lib</code></a> library.</p><p>Here is the relevant documentation for this module:</p><ul>
-<li><a href="https://remotelib.github.io/remote-lib/class/packages/reference-context/src/reference-context.js~ReferenceContext.html"><code>ReferenceContext</code></a></li>
+</code></pre><h2>API Reference</h2><p>This module is a part of the <a href="http://www.remotelib.com"><code>remote-lib</code></a> library.</p><p>Here is the relevant documentation for this module:</p><ul>
+<li><a href="http://www.remotelib.com/class/packages/reference-context/src/reference-context.js~ReferenceContext.html"><code>ReferenceContext</code></a></li>
 </ul><p><br>
 <br></p><hr><p>&#xA9; 2017 Moshe Simantov</p><p>Licensed under the <a href="./manual/LICENSE">Apache License, Version 2.0</a>.</p></div>
         <a data-ice="link" href="manual/reference-context.html"></a>

@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="">
-  <title data-ice="title">Source | Remotelib</title>
+  <title data-ice="title">Source | RemoteLib</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
   <script src="script/manual.js"></script>
-<meta name="description" content="Run code remotely"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Remotelib"><meta property="twitter:description" content="Run code remotely"></head>
+<meta name="description" content="Run remote JavaScript code as if it&apos;s your own local library."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="RemoteLib"><meta property="twitter:description" content="Run remote JavaScript code as if it&apos;s your own local library."></head>
 <body class="layout-container" data-ice="rootContainer">
 
 <header>
@@ -39,7 +39,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/LocalContext.js~LocalContext.html">LocalContext</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/LocalPromise.js~LocalPromise.html">LocalPromise</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/LocalReference.js~LocalReference.html">LocalReference</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/ObjectSnapshot.js~ObjectSnapshot.html">ObjectSnapshot</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/LocalSnapshot.js~LocalSnapshot.html">LocalSnapshot</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/RemoteContext.js~RemoteContext.html">RemoteContext</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/RemotePromise.js~RemotePromise.html">RemotePromise</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html">RemoteSession</a></span></span></li>
@@ -63,7 +63,6 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/LocalReferenceAction.js~LocalReferenceAction.html">LocalReferenceAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/LocalSetPrototypeOfAction.js~LocalSetPrototypeOfAction.html">LocalSetPrototypeOfAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/PropertyDescriptorAction.js~PropertyDescriptorAction.html">PropertyDescriptorAction</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/PropertyDescriptorsAction.js~PropertyDescriptorsAction.html">PropertyDescriptorsAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/ReferenceAction.js~ReferenceAction.html">ReferenceAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/ReferencePropertyAction.js~ReferencePropertyAction.html">ReferencePropertyAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/ReflectAction.js~ReflectAction.html">ReflectAction</a></span></span></li>
@@ -73,14 +72,28 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/ReflectPromiseAction.js~ReflectPromiseAction.html">ReflectPromiseAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteDefinePropertyAction.js~RemoteDefinePropertyAction.html">RemoteDefinePropertyAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteDeletePropertyAction.js~RemoteDeletePropertyAction.html">RemoteDeletePropertyAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteDeletePropertyCacheAction.js~RemoteSetPropertyCacheAction.html">RemoteSetPropertyCacheAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemotePreventExtensionsAction.js~RemotePreventExtensionsAction.html">RemotePreventExtensionsAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteReferenceAction.js~RemoteReferenceAction.html">RemoteReferenceAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteSetAction.js~RemoteSetAction.html">RemoteSetAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteSetFunctionAction.js~RemoteSetFunctionAction.html">RemoteSetFunctionAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteSetObjectAction.js~RemoteSetObjectAction.html">RemoteSetObjectAction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteSetPropertyCacheAction.js~RemoteSetPropertyCacheAction.html">RemoteSetPropertyCacheAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteSetPrototypeOfAction.js~RemoteSetPrototypeOfAction.html">RemoteSetPrototypeOfAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/RemoteSetSymbolAction.js~RemoteSetSymbolAction.html">RemoteSetSymbolAction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-context/src/actions/UndefinedValueAction.js~UndefinedValueAction.html">UndefinedValueAction</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-context-src-helpers">remote-context/src/helpers</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-cacheGetters">cacheGetters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-deleteCachedGetter">deleteCachedGetter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-equalDescriptors">equalDescriptors</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-equalValue">equalValue</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getCachedGetter">getCachedGetter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getOwnProperties">getOwnProperties</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getPropertyDescriptor">getPropertyDescriptor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-hasOwnProperty">hasOwnProperty</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isAccessorDescriptor">isAccessorDescriptor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isDataDescriptor">isDataDescriptor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setCachedGetter">setCachedGetter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-getOwnPropertyDescriptors">getOwnPropertyDescriptors</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-environment">remote-environment</a><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-es6">es6</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remote-instance-src">remote-instance/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/remote-instance/src/parser.js~Parser.html">Parser</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-construct">construct</a></span></span></li>
@@ -98,7 +111,7 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1>Source <img data-ice="coverageBadge" src="./badge.svg"><span data-ice="totalCoverageCount" class="total-coverage-count">214/418</span></h1>
+<div class="content" data-ice="content"><h1>Source <img data-ice="coverageBadge" src="./badge.svg"><span data-ice="totalCoverageCount" class="total-coverage-count">222/456</span></h1>
 
 <table class="files-summary" data-ice="files" data-use-coverage="true">
   <thead>
@@ -147,12 +160,12 @@
       <td style="display: none;" data-ice="updated">2017-08-07 20:27:09 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/Context.js.html#errorLines=27,29">packages/remote-context/src/Context.js</a></span></td>
+      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/Context.js.html#errorLines=23">packages/remote-context/src/Context.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/Context.js~Context.html">Context</a></span></td>
-      <td class="coverage"><span data-ice="coverage">83 %</span><span data-ice="coverageCount" class="coverage-count">10/12</span></td>
-      <td style="display: none;" data-ice="size">5265 byte</td>
-      <td style="display: none;" data-ice="lines">204</td>
-      <td style="display: none;" data-ice="updated">2017-08-01 23:28:02 (UTC)</td>
+      <td class="coverage"><span data-ice="coverage">90 %</span><span data-ice="coverageCount" class="coverage-count">10/11</span></td>
+      <td style="display: none;" data-ice="size">4811 byte</td>
+      <td style="display: none;" data-ice="lines">188</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:08:37 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/packages/remote-context/src/EnvContext.js.html#errorLines=19">packages/remote-context/src/EnvContext.js</a></span></td>
@@ -166,9 +179,9 @@
       <td data-ice="filePath"><span><a href="file/packages/remote-context/src/LocalContext.js.html#errorLines=23,24,25,26">packages/remote-context/src/LocalContext.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/LocalContext.js~LocalContext.html">LocalContext</a></span></td>
       <td class="coverage"><span data-ice="coverage">78 %</span><span data-ice="coverageCount" class="coverage-count">15/19</span></td>
-      <td style="display: none;" data-ice="size">4482 byte</td>
-      <td style="display: none;" data-ice="lines">193</td>
-      <td style="display: none;" data-ice="updated">2017-08-01 23:28:02 (UTC)</td>
+      <td style="display: none;" data-ice="size">4506 byte</td>
+      <td style="display: none;" data-ice="lines">196</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:08:37 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/packages/remote-context/src/LocalPromise.js.html">packages/remote-context/src/LocalPromise.js</a></span></td>
@@ -179,20 +192,20 @@
       <td style="display: none;" data-ice="updated">2017-08-01 23:28:02 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/LocalReference.js.html#errorLines=26,27">packages/remote-context/src/LocalReference.js</a></span></td>
+      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/LocalReference.js.html#errorLines=28,29">packages/remote-context/src/LocalReference.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/LocalReference.js~LocalReference.html">LocalReference</a></span></td>
-      <td class="coverage"><span data-ice="coverage">80 %</span><span data-ice="coverageCount" class="coverage-count">8/10</span></td>
-      <td style="display: none;" data-ice="size">3189 byte</td>
-      <td style="display: none;" data-ice="lines">130</td>
-      <td style="display: none;" data-ice="updated">2017-08-01 23:28:02 (UTC)</td>
+      <td class="coverage"><span data-ice="coverage">83 %</span><span data-ice="coverageCount" class="coverage-count">10/12</span></td>
+      <td style="display: none;" data-ice="size">4051 byte</td>
+      <td style="display: none;" data-ice="lines">170</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:08:37 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/ObjectSnapshot.js.html#errorLines=19,20,22">packages/remote-context/src/ObjectSnapshot.js</a></span></td>
-      <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/ObjectSnapshot.js~ObjectSnapshot.html">ObjectSnapshot</a></span></td>
-      <td class="coverage"><span data-ice="coverage">57 %</span><span data-ice="coverageCount" class="coverage-count">4/7</span></td>
-      <td style="display: none;" data-ice="size">2566 byte</td>
-      <td style="display: none;" data-ice="lines">86</td>
-      <td style="display: none;" data-ice="updated">2017-08-07 21:02:51 (UTC)</td>
+      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/LocalSnapshot.js.html#errorLines=24,25,26,27,29">packages/remote-context/src/LocalSnapshot.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/LocalSnapshot.js~LocalSnapshot.html">LocalSnapshot</a></span></td>
+      <td class="coverage"><span data-ice="coverage">66 %</span><span data-ice="coverageCount" class="coverage-count">10/15</span></td>
+      <td style="display: none;" data-ice="size">4284 byte</td>
+      <td style="display: none;" data-ice="lines">168</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:08:37 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/packages/remote-context/src/RemoteContext.js.html#errorLines=23,25,26,27">packages/remote-context/src/RemoteContext.js</a></span></td>
@@ -206,29 +219,29 @@
       <td data-ice="filePath"><span><a href="file/packages/remote-context/src/RemotePromise.js.html#errorLines=27">packages/remote-context/src/RemotePromise.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/RemotePromise.js~RemotePromise.html">RemotePromise</a></span></td>
       <td class="coverage"><span data-ice="coverage">66 %</span><span data-ice="coverageCount" class="coverage-count">2/3</span></td>
-      <td style="display: none;" data-ice="size">3931 byte</td>
-      <td style="display: none;" data-ice="lines">140</td>
-      <td style="display: none;" data-ice="updated">2017-08-01 23:28:02 (UTC)</td>
+      <td style="display: none;" data-ice="size">4327 byte</td>
+      <td style="display: none;" data-ice="lines">155</td>
+      <td style="display: none;" data-ice="updated">2017-08-02 21:22:46 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#errorLines=23,24,25,26,27">packages/remote-context/src/RemoteSession.js</a></span></td>
+      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/RemoteSession.js.html#errorLines=25,26,27,28,29">packages/remote-context/src/RemoteSession.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/RemoteSession.js~RemoteSession.html">RemoteSession</a></span></td>
       <td class="coverage"><span data-ice="coverage">77 %</span><span data-ice="coverageCount" class="coverage-count">17/22</span></td>
-      <td style="display: none;" data-ice="size">7488 byte</td>
-      <td style="display: none;" data-ice="lines">309</td>
-      <td style="display: none;" data-ice="updated">2017-08-01 23:28:02 (UTC)</td>
+      <td style="display: none;" data-ice="size">7430 byte</td>
+      <td style="display: none;" data-ice="lines">297</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:08:37 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#errorLines=190,192,258,262,266,27,278,28,287,297,30,307,317">packages/remote-context/src/RemoteValue.js</a></span></td>
+      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/RemoteValue.js.html#errorLines=199,201,335,339,343,355,36,364,37,374,384,39,394">packages/remote-context/src/RemoteValue.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/RemoteValue.js~RemoteValue.html">RemoteValue</a></span>
 <span><a href="variable/index.html#static-variable-isRemoteValue">isRemoteValue</a></span>
 <span><a href="variable/index.html#static-variable-observe">observe</a></span>
 <span><a href="variable/index.html#static-variable-reveal">reveal</a></span>
 <span><a href="variable/index.html#static-variable-revoke">revoke</a></span></td>
       <td class="coverage"><span data-ice="coverage">45 %</span><span data-ice="coverageCount" class="coverage-count">11/24</span></td>
-      <td style="display: none;" data-ice="size">8734 byte</td>
-      <td style="display: none;" data-ice="lines">346</td>
-      <td style="display: none;" data-ice="updated">2017-08-01 23:28:02 (UTC)</td>
+      <td style="display: none;" data-ice="size">10887 byte</td>
+      <td style="display: none;" data-ice="lines">423</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 18:15:43 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/DeleteAction.js.html#errorLines=19,20">packages/remote-context/src/actions/DeleteAction.js</a></span></td>
@@ -250,17 +263,17 @@
       <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/LocalDefinePropertyAction.js.html#errorLines=20,21,29,37,40,55,59">packages/remote-context/src/actions/LocalDefinePropertyAction.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/actions/LocalDefinePropertyAction.js~LocalDefinePropertyAction.html">LocalDefinePropertyAction</a></span></td>
       <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/7</span></td>
-      <td style="display: none;" data-ice="size">1912 byte</td>
+      <td style="display: none;" data-ice="size">1876 byte</td>
       <td style="display: none;" data-ice="lines">62</td>
-      <td style="display: none;" data-ice="updated">2017-08-01 23:28:02 (UTC)</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:41:45 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/LocalDeletePropertyAction.js.html#errorLines=19,20,24,38">packages/remote-context/src/actions/LocalDeletePropertyAction.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/actions/LocalDeletePropertyAction.js~LocalDeletePropertyAction.html">LocalDeletePropertyAction</a></span></td>
       <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
-      <td style="display: none;" data-ice="size">1256 byte</td>
+      <td style="display: none;" data-ice="size">1238 byte</td>
       <td style="display: none;" data-ice="lines">41</td>
-      <td style="display: none;" data-ice="updated">2017-08-01 23:28:02 (UTC)</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:41:45 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/LocalPreventExtensionsAction.js.html#errorLines=19,20,24,36">packages/remote-context/src/actions/LocalPreventExtensionsAction.js</a></span></td>
@@ -271,44 +284,36 @@
       <td style="display: none;" data-ice="updated">2017-08-01 23:28:02 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/LocalReferenceAction.js.html#errorLines=20,21,26">packages/remote-context/src/actions/LocalReferenceAction.js</a></span></td>
+      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/LocalReferenceAction.js.html#errorLines=20,21,26,30,32">packages/remote-context/src/actions/LocalReferenceAction.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/actions/LocalReferenceAction.js~LocalReferenceAction.html">LocalReferenceAction</a></span></td>
-      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/3</span></td>
-      <td style="display: none;" data-ice="size">983 byte</td>
-      <td style="display: none;" data-ice="lines">29</td>
-      <td style="display: none;" data-ice="updated">2017-08-03 20:23:58 (UTC)</td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/5</span></td>
+      <td style="display: none;" data-ice="size">1072 byte</td>
+      <td style="display: none;" data-ice="lines">34</td>
+      <td style="display: none;" data-ice="updated">2017-08-02 21:22:46 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/LocalSetPrototypeOfAction.js.html#errorLines=20,21,25,31,34,48,52">packages/remote-context/src/actions/LocalSetPrototypeOfAction.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/actions/LocalSetPrototypeOfAction.js~LocalSetPrototypeOfAction.html">LocalSetPrototypeOfAction</a></span></td>
       <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/7</span></td>
-      <td style="display: none;" data-ice="size">1717 byte</td>
+      <td style="display: none;" data-ice="size">1699 byte</td>
       <td style="display: none;" data-ice="lines">58</td>
-      <td style="display: none;" data-ice="updated">2017-08-01 23:28:02 (UTC)</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:41:45 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/PropertyDescriptorAction.js.html#errorLines=107,25,31,42,69,70,71,72,73,74,77">packages/remote-context/src/actions/PropertyDescriptorAction.js</a></span></td>
+      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/PropertyDescriptorAction.js.html#errorLines=123,31,51,79,80,81,82,83,84,87,91,95">packages/remote-context/src/actions/PropertyDescriptorAction.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/actions/PropertyDescriptorAction.js~PropertyDescriptorAction.html">PropertyDescriptorAction</a></span></td>
-      <td class="coverage"><span data-ice="coverage">8 %</span><span data-ice="coverageCount" class="coverage-count">1/12</span></td>
-      <td style="display: none;" data-ice="size">3497 byte</td>
-      <td style="display: none;" data-ice="lines">120</td>
-      <td style="display: none;" data-ice="updated">2017-08-01 23:28:02 (UTC)</td>
+      <td class="coverage"><span data-ice="coverage">7 %</span><span data-ice="coverageCount" class="coverage-count">1/13</span></td>
+      <td style="display: none;" data-ice="size">3775 byte</td>
+      <td style="display: none;" data-ice="lines">136</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:42:24 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/PropertyDescriptorsAction.js.html#errorLines=24,36,51,57,60,64,79">packages/remote-context/src/actions/PropertyDescriptorsAction.js</a></span></td>
-      <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/actions/PropertyDescriptorsAction.js~PropertyDescriptorsAction.html">PropertyDescriptorsAction</a></span></td>
-      <td class="coverage"><span data-ice="coverage">12 %</span><span data-ice="coverageCount" class="coverage-count">1/8</span></td>
-      <td style="display: none;" data-ice="size">2173 byte</td>
-      <td style="display: none;" data-ice="lines">84</td>
-      <td style="display: none;" data-ice="updated">2017-08-01 23:28:02 (UTC)</td>
-    </tr>
-<tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/ReferenceAction.js.html#errorLines=23,32,35">packages/remote-context/src/actions/ReferenceAction.js</a></span></td>
+      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/ReferenceAction.js.html#errorLines=23,32,35,39">packages/remote-context/src/actions/ReferenceAction.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/actions/ReferenceAction.js~ReferenceAction.html">ReferenceAction</a></span></td>
-      <td class="coverage"><span data-ice="coverage">25 %</span><span data-ice="coverageCount" class="coverage-count">1/4</span></td>
-      <td style="display: none;" data-ice="size">1037 byte</td>
-      <td style="display: none;" data-ice="lines">38</td>
-      <td style="display: none;" data-ice="updated">2017-08-01 18:48:25 (UTC)</td>
+      <td class="coverage"><span data-ice="coverage">20 %</span><span data-ice="coverageCount" class="coverage-count">1/5</span></td>
+      <td style="display: none;" data-ice="size">1120 byte</td>
+      <td style="display: none;" data-ice="lines">42</td>
+      <td style="display: none;" data-ice="updated">2017-08-02 21:22:46 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/ReferencePropertyAction.js.html#errorLines=19,20,24,33,36">packages/remote-context/src/actions/ReferencePropertyAction.js</a></span></td>
@@ -322,57 +327,65 @@
       <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/ReflectAction.js.html#errorLines=23,31,34,38">packages/remote-context/src/actions/ReflectAction.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/actions/ReflectAction.js~ReflectAction.html">ReflectAction</a></span></td>
       <td class="coverage"><span data-ice="coverage">20 %</span><span data-ice="coverageCount" class="coverage-count">1/5</span></td>
-      <td style="display: none;" data-ice="size">1085 byte</td>
+      <td style="display: none;" data-ice="size">1067 byte</td>
       <td style="display: none;" data-ice="lines">41</td>
-      <td style="display: none;" data-ice="updated">2017-08-01 23:28:02 (UTC)</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:41:45 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/ReflectApplyAction.js.html#errorLines=20,21,29,37,38,41,51,55">packages/remote-context/src/actions/ReflectApplyAction.js</a></span></td>
+      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/ReflectApplyAction.js.html#errorLines=20,21,29,37,38,41,49,53">packages/remote-context/src/actions/ReflectApplyAction.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/actions/ReflectApplyAction.js~ReflectApplyAction.html">ReflectApplyAction</a></span></td>
       <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/8</span></td>
-      <td style="display: none;" data-ice="size">1812 byte</td>
-      <td style="display: none;" data-ice="lines">61</td>
-      <td style="display: none;" data-ice="updated">2017-08-01 23:28:02 (UTC)</td>
+      <td style="display: none;" data-ice="size">1765 byte</td>
+      <td style="display: none;" data-ice="lines">59</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:42:35 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/ReflectConstructAction.js.html#errorLines=20,21,25,33,36,45,49">packages/remote-context/src/actions/ReflectConstructAction.js</a></span></td>
+      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/ReflectConstructAction.js.html#errorLines=20,21,25,33,36,43,47">packages/remote-context/src/actions/ReflectConstructAction.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/actions/ReflectConstructAction.js~ReflectConstructAction.html">ReflectConstructAction</a></span></td>
       <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/7</span></td>
-      <td style="display: none;" data-ice="size">1620 byte</td>
-      <td style="display: none;" data-ice="lines">55</td>
-      <td style="display: none;" data-ice="updated">2017-08-01 23:28:02 (UTC)</td>
+      <td style="display: none;" data-ice="size">1591 byte</td>
+      <td style="display: none;" data-ice="lines">53</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:42:40 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/ReflectGetAction.js.html#errorLines=20,21,25,33,36,43,47">packages/remote-context/src/actions/ReflectGetAction.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/actions/ReflectGetAction.js~ReflectGetAction.html">ReflectGetAction</a></span></td>
       <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/7</span></td>
-      <td style="display: none;" data-ice="size">1442 byte</td>
+      <td style="display: none;" data-ice="size">1424 byte</td>
       <td style="display: none;" data-ice="lines">50</td>
-      <td style="display: none;" data-ice="updated">2017-08-01 23:28:02 (UTC)</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:41:45 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/ReflectPromiseAction.js.html#errorLines=20,21,29,38,39,42,72,76">packages/remote-context/src/actions/ReflectPromiseAction.js</a></span></td>
+      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/ReflectPromiseAction.js.html#errorLines=21,22,26,39,40,43,67,71,75">packages/remote-context/src/actions/ReflectPromiseAction.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/actions/ReflectPromiseAction.js~ReflectPromiseAction.html">ReflectPromiseAction</a></span></td>
-      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/8</span></td>
-      <td style="display: none;" data-ice="size">2182 byte</td>
-      <td style="display: none;" data-ice="lines">79</td>
-      <td style="display: none;" data-ice="updated">2017-08-01 23:28:02 (UTC)</td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/9</span></td>
+      <td style="display: none;" data-ice="size">2367 byte</td>
+      <td style="display: none;" data-ice="lines">82</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:08:37 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/RemoteDefinePropertyAction.js.html#errorLines=20,21,29,37,40,49,53">packages/remote-context/src/actions/RemoteDefinePropertyAction.js</a></span></td>
+      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/RemoteDefinePropertyAction.js.html#errorLines=21,22,30,38,41,52,56">packages/remote-context/src/actions/RemoteDefinePropertyAction.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/actions/RemoteDefinePropertyAction.js~RemoteDefinePropertyAction.html">RemoteDefinePropertyAction</a></span></td>
       <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/7</span></td>
-      <td style="display: none;" data-ice="size">1769 byte</td>
-      <td style="display: none;" data-ice="lines">56</td>
-      <td style="display: none;" data-ice="updated">2017-08-01 23:28:02 (UTC)</td>
+      <td style="display: none;" data-ice="size">1844 byte</td>
+      <td style="display: none;" data-ice="lines">59</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:41:45 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/RemoteDeletePropertyAction.js.html#errorLines=19,20,24,31">packages/remote-context/src/actions/RemoteDeletePropertyAction.js</a></span></td>
+      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/RemoteDeletePropertyAction.js.html#errorLines=20,21,25,34">packages/remote-context/src/actions/RemoteDeletePropertyAction.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/actions/RemoteDeletePropertyAction.js~RemoteDeletePropertyAction.html">RemoteDeletePropertyAction</a></span></td>
       <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
-      <td style="display: none;" data-ice="size">1112 byte</td>
-      <td style="display: none;" data-ice="lines">34</td>
-      <td style="display: none;" data-ice="updated">2017-08-01 18:43:03 (UTC)</td>
+      <td style="display: none;" data-ice="size">1205 byte</td>
+      <td style="display: none;" data-ice="lines">37</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:41:45 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/RemoteDeletePropertyCacheAction.js.html#errorLines=20,21,28">packages/remote-context/src/actions/RemoteDeletePropertyCacheAction.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/actions/RemoteDeletePropertyCacheAction.js~RemoteSetPropertyCacheAction.html">RemoteSetPropertyCacheAction</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/3</span></td>
+      <td style="display: none;" data-ice="size">1046 byte</td>
+      <td style="display: none;" data-ice="lines">31</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:41:45 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/RemotePreventExtensionsAction.js.html#errorLines=19,20,24,30">packages/remote-context/src/actions/RemotePreventExtensionsAction.js</a></span></td>
@@ -383,52 +396,60 @@
       <td style="display: none;" data-ice="updated">2017-08-01 18:43:03 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/RemoteReferenceAction.js.html#errorLines=20,21,26">packages/remote-context/src/actions/RemoteReferenceAction.js</a></span></td>
+      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/RemoteReferenceAction.js.html#errorLines=20,21,26,30,32">packages/remote-context/src/actions/RemoteReferenceAction.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/actions/RemoteReferenceAction.js~RemoteReferenceAction.html">RemoteReferenceAction</a></span></td>
-      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/3</span></td>
-      <td style="display: none;" data-ice="size">987 byte</td>
-      <td style="display: none;" data-ice="lines">29</td>
-      <td style="display: none;" data-ice="updated">2017-08-03 20:23:58 (UTC)</td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/5</span></td>
+      <td style="display: none;" data-ice="size">1083 byte</td>
+      <td style="display: none;" data-ice="lines">34</td>
+      <td style="display: none;" data-ice="updated">2017-08-02 21:22:46 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/RemoteSetAction.js.html#errorLines=19,20,31,36,38,46,50">packages/remote-context/src/actions/RemoteSetAction.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/actions/RemoteSetAction.js~RemoteSetAction.html">RemoteSetAction</a></span></td>
       <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/7</span></td>
-      <td style="display: none;" data-ice="size">1577 byte</td>
+      <td style="display: none;" data-ice="size">1598 byte</td>
       <td style="display: none;" data-ice="lines">55</td>
-      <td style="display: none;" data-ice="updated">2017-08-03 20:23:58 (UTC)</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:08:37 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/RemoteSetFunctionAction.js.html#errorLines=23,24,29">packages/remote-context/src/actions/RemoteSetFunctionAction.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/actions/RemoteSetFunctionAction.js~RemoteSetFunctionAction.html">RemoteSetFunctionAction</a></span></td>
       <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/3</span></td>
-      <td style="display: none;" data-ice="size">1222 byte</td>
+      <td style="display: none;" data-ice="size">1219 byte</td>
       <td style="display: none;" data-ice="lines">34</td>
-      <td style="display: none;" data-ice="updated">2017-08-03 20:23:58 (UTC)</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:08:37 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/RemoteSetObjectAction.js.html#errorLines=105,21,23,24,40,54,77,78,79,83,91">packages/remote-context/src/actions/RemoteSetObjectAction.js</a></span></td>
+      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/RemoteSetObjectAction.js.html#errorLines=110,111,112,113,117,125,143,22,24,31,35,44,45,69,83">packages/remote-context/src/actions/RemoteSetObjectAction.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/actions/RemoteSetObjectAction.js~RemoteSetObjectAction.html">RemoteSetObjectAction</a></span></td>
-      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/11</span></td>
-      <td style="display: none;" data-ice="size">3201 byte</td>
-      <td style="display: none;" data-ice="lines">118</td>
-      <td style="display: none;" data-ice="updated">2017-08-01 23:28:02 (UTC)</td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/15</span></td>
+      <td style="display: none;" data-ice="size">4434 byte</td>
+      <td style="display: none;" data-ice="lines">157</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:41:45 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/RemoteSetPropertyCacheAction.js.html#errorLines=20,21,29,32,35,44,48">packages/remote-context/src/actions/RemoteSetPropertyCacheAction.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/actions/RemoteSetPropertyCacheAction.js~RemoteSetPropertyCacheAction.html">RemoteSetPropertyCacheAction</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/7</span></td>
+      <td style="display: none;" data-ice="size">1508 byte</td>
+      <td style="display: none;" data-ice="lines">51</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:41:45 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/RemoteSetPrototypeOfAction.js.html#errorLines=20,21,25,31,34,41,45">packages/remote-context/src/actions/RemoteSetPrototypeOfAction.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/actions/RemoteSetPrototypeOfAction.js~RemoteSetPrototypeOfAction.html">RemoteSetPrototypeOfAction</a></span></td>
       <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/7</span></td>
-      <td style="display: none;" data-ice="size">1575 byte</td>
+      <td style="display: none;" data-ice="size">1557 byte</td>
       <td style="display: none;" data-ice="lines">51</td>
-      <td style="display: none;" data-ice="updated">2017-08-01 18:43:03 (UTC)</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:41:45 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/RemoteSetSymbolAction.js.html#errorLines=20,21,31,46,47,50,58">packages/remote-context/src/actions/RemoteSetSymbolAction.js</a></span></td>
+      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/RemoteSetSymbolAction.js.html#errorLines=20,21,33,48,49,52,60">packages/remote-context/src/actions/RemoteSetSymbolAction.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-context/src/actions/RemoteSetSymbolAction.js~RemoteSetSymbolAction.html">RemoteSetSymbolAction</a></span></td>
       <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/7</span></td>
-      <td style="display: none;" data-ice="size">1965 byte</td>
-      <td style="display: none;" data-ice="lines">66</td>
-      <td style="display: none;" data-ice="updated">2017-08-01 23:28:02 (UTC)</td>
+      <td style="display: none;" data-ice="size">2006 byte</td>
+      <td style="display: none;" data-ice="lines">68</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:08:37 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/UndefinedValueAction.js.html#errorLines=23,28,33">packages/remote-context/src/actions/UndefinedValueAction.js</a></span></td>
@@ -442,9 +463,9 @@
       <td data-ice="filePath"><span><a href="file/packages/remote-context/src/actions/index.js.html">packages/remote-context/src/actions/index.js</a></span></td>
       <td data-ice="identifier" class="identifiers">-</td>
       <td class="coverage"><span data-ice="coverage">-</span></td>
-      <td style="display: none;" data-ice="size">2633 byte</td>
-      <td style="display: none;" data-ice="lines">65</td>
-      <td style="display: none;" data-ice="updated">2017-08-03 20:23:58 (UTC)</td>
+      <td style="display: none;" data-ice="size">2758 byte</td>
+      <td style="display: none;" data-ice="lines">67</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:08:37 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/packages/remote-context/src/envs/es6-unstable.js.html">packages/remote-context/src/envs/es6-unstable.js</a></span></td>
@@ -453,6 +474,25 @@
       <td style="display: none;" data-ice="size">735 byte</td>
       <td style="display: none;" data-ice="lines">20</td>
       <td style="display: none;" data-ice="updated">2017-08-03 20:23:58 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/packages/remote-context/src/helpers/descriptors.js.html#errorLines=111,115,124,148,158,170,26,30,34,38,54,58,71,77,89">packages/remote-context/src/helpers/descriptors.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-cacheGetters">cacheGetters</a></span>
+<span><a href="function/index.html#static-function-deleteCachedGetter">deleteCachedGetter</a></span>
+<span><a href="function/index.html#static-function-equalDescriptors">equalDescriptors</a></span>
+<span><a href="function/index.html#static-function-equalValue">equalValue</a></span>
+<span><a href="function/index.html#static-function-getCachedGetter">getCachedGetter</a></span>
+<span><a href="function/index.html#static-function-getOwnProperties">getOwnProperties</a></span>
+<span><a href="variable/index.html#static-variable-getOwnPropertyDescriptors">getOwnPropertyDescriptors</a></span>
+<span><a href="function/index.html#static-function-getPropertyDescriptor">getPropertyDescriptor</a></span>
+<span><a href="function/index.html#static-function-hasOwnProperty">hasOwnProperty</a></span>
+<span><a href="function/index.html#static-function-isAccessorDescriptor">isAccessorDescriptor</a></span>
+<span><a href="function/index.html#static-function-isDataDescriptor">isDataDescriptor</a></span>
+<span><a href="function/index.html#static-function-setCachedGetter">setCachedGetter</a></span></td>
+      <td class="coverage"><span data-ice="coverage">6 %</span><span data-ice="coverageCount" class="coverage-count">1/16</span></td>
+      <td style="display: none;" data-ice="size">4840 byte</td>
+      <td style="display: none;" data-ice="lines">175</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:08:37 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/packages/remote-context/src/index.js.html">packages/remote-context/src/index.js</a></span></td>
@@ -479,9 +519,9 @@
       <td data-ice="filePath"><span><a href="file/packages/remote-context/src/remote-instances.js.html">packages/remote-context/src/remote-instances.js</a></span></td>
       <td data-ice="identifier" class="identifiers">-</td>
       <td class="coverage"><span data-ice="coverage">-</span></td>
-      <td style="display: none;" data-ice="size">2336 byte</td>
-      <td style="display: none;" data-ice="lines">87</td>
-      <td style="display: none;" data-ice="updated">2017-08-07 21:08:39 (UTC)</td>
+      <td style="display: none;" data-ice="size">2418 byte</td>
+      <td style="display: none;" data-ice="lines">89</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:08:37 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/packages/remote-environment/es6.js.html">packages/remote-environment/es6.js</a></span></td>
@@ -866,18 +906,18 @@
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/packages/remote-protocol/src/Session.js.html#errorLines=21,22,23,24,25,26,27,30,33,36,38,39,41">packages/remote-protocol/src/Session.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-protocol/src/Session.js~Session.html">Session</a></span></td>
-      <td class="coverage"><span data-ice="coverage">61 %</span><span data-ice="coverageCount" class="coverage-count">21/34</span></td>
-      <td style="display: none;" data-ice="size">12322 byte</td>
-      <td style="display: none;" data-ice="lines">523</td>
-      <td style="display: none;" data-ice="updated">2017-08-01 23:28:02 (UTC)</td>
+      <td class="coverage"><span data-ice="coverage">62 %</span><span data-ice="coverageCount" class="coverage-count">22/35</span></td>
+      <td style="display: none;" data-ice="size">12638 byte</td>
+      <td style="display: none;" data-ice="lines">538</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:48:48 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/packages/remote-protocol/src/actions/Action.js.html">packages/remote-protocol/src/actions/Action.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-protocol/src/actions/Action.js~Action.html">Action</a></span></td>
-      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">6/6</span></td>
-      <td style="display: none;" data-ice="size">2318 byte</td>
-      <td style="display: none;" data-ice="lines">84</td>
-      <td style="display: none;" data-ice="updated">2017-08-07 16:18:29 (UTC)</td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">5/5</span></td>
+      <td style="display: none;" data-ice="size">1934 byte</td>
+      <td style="display: none;" data-ice="lines">68</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:36:31 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/packages/remote-protocol/src/actions/RequestAction.js.html">packages/remote-protocol/src/actions/RequestAction.js</a></span></td>
@@ -891,9 +931,9 @@
       <td data-ice="filePath"><span><a href="file/packages/remote-protocol/src/actions/ResponseAction.js.html">packages/remote-protocol/src/actions/ResponseAction.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/packages/remote-protocol/src/actions/ResponseAction.js~ResponseAction.html">ResponseAction</a></span></td>
       <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">8/8</span></td>
-      <td style="display: none;" data-ice="size">2230 byte</td>
+      <td style="display: none;" data-ice="size">2212 byte</td>
       <td style="display: none;" data-ice="lines">89</td>
-      <td style="display: none;" data-ice="updated">2017-08-07 16:21:29 (UTC)</td>
+      <td style="display: none;" data-ice="updated">2017-08-06 15:37:59 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/packages/remote-protocol/src/actions/index.js.html">packages/remote-protocol/src/actions/index.js</a></span></td>
@@ -909,7 +949,7 @@
       <td class="coverage"><span data-ice="coverage">-</span></td>
       <td style="display: none;" data-ice="size">760 byte</td>
       <td style="display: none;" data-ice="lines">20</td>
-      <td style="display: none;" data-ice="updated">2017-08-07 16:13:06 (UTC)</td>
+      <td style="display: none;" data-ice="updated">2017-08-07 09:21:07 (UTC)</td>
     </tr>
 </tbody>
 </table>

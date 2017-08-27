@@ -1,7 +1,7 @@
 {
-  "coverage": "51.19%",
-  "expectCount": 418,
-  "actualCount": 214,
+  "coverage": "48.68%",
+  "expectCount": 456,
+  "actualCount": 222,
   "files": {
     "packages/reference-context/src/reference-context.js": {
       "expectCount": 29,
@@ -21,11 +21,10 @@
       ]
     },
     "packages/remote-context/src/Context.js": {
-      "expectCount": 12,
+      "expectCount": 11,
       "actualCount": 10,
       "undocumentLines": [
-        27,
-        29
+        23
       ]
     },
     "packages/remote-context/src/EnvContext.js": {
@@ -51,20 +50,22 @@
       "undocumentLines": []
     },
     "packages/remote-context/src/LocalReference.js": {
-      "expectCount": 10,
-      "actualCount": 8,
+      "expectCount": 12,
+      "actualCount": 10,
       "undocumentLines": [
-        26,
-        27
+        28,
+        29
       ]
     },
-    "packages/remote-context/src/ObjectSnapshot.js": {
-      "expectCount": 7,
-      "actualCount": 4,
+    "packages/remote-context/src/LocalSnapshot.js": {
+      "expectCount": 15,
+      "actualCount": 10,
       "undocumentLines": [
-        19,
-        20,
-        22
+        24,
+        25,
+        26,
+        27,
+        29
       ]
     },
     "packages/remote-context/src/RemoteContext.js": {
@@ -88,30 +89,30 @@
       "expectCount": 22,
       "actualCount": 17,
       "undocumentLines": [
-        23,
-        24,
         25,
         26,
-        27
+        27,
+        28,
+        29
       ]
     },
     "packages/remote-context/src/RemoteValue.js": {
       "expectCount": 24,
       "actualCount": 11,
       "undocumentLines": [
-        27,
-        28,
-        30,
-        190,
-        192,
-        258,
-        262,
-        266,
-        278,
-        287,
-        297,
-        307,
-        317
+        36,
+        37,
+        39,
+        199,
+        201,
+        335,
+        339,
+        343,
+        355,
+        364,
+        374,
+        384,
+        394
       ]
     },
     "packages/remote-context/src/actions/DeleteAction.js": {
@@ -164,12 +165,14 @@
       ]
     },
     "packages/remote-context/src/actions/LocalReferenceAction.js": {
-      "expectCount": 3,
+      "expectCount": 5,
       "actualCount": 0,
       "undocumentLines": [
         20,
         21,
-        26
+        26,
+        30,
+        32
       ]
     },
     "packages/remote-context/src/actions/LocalSetPrototypeOfAction.js": {
@@ -186,42 +189,31 @@
       ]
     },
     "packages/remote-context/src/actions/PropertyDescriptorAction.js": {
-      "expectCount": 12,
+      "expectCount": 13,
       "actualCount": 1,
       "undocumentLines": [
-        25,
         31,
-        42,
-        69,
-        70,
-        71,
-        72,
-        73,
-        74,
-        77,
-        107
-      ]
-    },
-    "packages/remote-context/src/actions/PropertyDescriptorsAction.js": {
-      "expectCount": 8,
-      "actualCount": 1,
-      "undocumentLines": [
-        24,
-        36,
         51,
-        57,
-        60,
-        64,
-        79
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        87,
+        91,
+        95,
+        123
       ]
     },
     "packages/remote-context/src/actions/ReferenceAction.js": {
-      "expectCount": 4,
+      "expectCount": 5,
       "actualCount": 1,
       "undocumentLines": [
         23,
         32,
-        35
+        35,
+        39
       ]
     },
     "packages/remote-context/src/actions/ReferencePropertyAction.js": {
@@ -255,8 +247,8 @@
         37,
         38,
         41,
-        51,
-        55
+        49,
+        53
       ]
     },
     "packages/remote-context/src/actions/ReflectConstructAction.js": {
@@ -268,8 +260,8 @@
         25,
         33,
         36,
-        45,
-        49
+        43,
+        47
       ]
     },
     "packages/remote-context/src/actions/ReflectGetAction.js": {
@@ -286,40 +278,50 @@
       ]
     },
     "packages/remote-context/src/actions/ReflectPromiseAction.js": {
-      "expectCount": 8,
+      "expectCount": 9,
       "actualCount": 0,
       "undocumentLines": [
-        20,
         21,
-        29,
-        38,
+        22,
+        26,
         39,
-        42,
-        72,
-        76
+        40,
+        43,
+        67,
+        71,
+        75
       ]
     },
     "packages/remote-context/src/actions/RemoteDefinePropertyAction.js": {
       "expectCount": 7,
       "actualCount": 0,
       "undocumentLines": [
-        20,
         21,
-        29,
-        37,
-        40,
-        49,
-        53
+        22,
+        30,
+        38,
+        41,
+        52,
+        56
       ]
     },
     "packages/remote-context/src/actions/RemoteDeletePropertyAction.js": {
       "expectCount": 4,
       "actualCount": 0,
       "undocumentLines": [
-        19,
         20,
-        24,
-        31
+        21,
+        25,
+        34
+      ]
+    },
+    "packages/remote-context/src/actions/RemoteDeletePropertyCacheAction.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        20,
+        21,
+        28
       ]
     },
     "packages/remote-context/src/actions/RemotePreventExtensionsAction.js": {
@@ -333,12 +335,14 @@
       ]
     },
     "packages/remote-context/src/actions/RemoteReferenceAction.js": {
-      "expectCount": 3,
+      "expectCount": 5,
       "actualCount": 0,
       "undocumentLines": [
         20,
         21,
-        26
+        26,
+        30,
+        32
       ]
     },
     "packages/remote-context/src/actions/RemoteSetAction.js": {
@@ -364,20 +368,37 @@
       ]
     },
     "packages/remote-context/src/actions/RemoteSetObjectAction.js": {
-      "expectCount": 11,
+      "expectCount": 15,
       "actualCount": 0,
       "undocumentLines": [
-        21,
-        23,
+        22,
         24,
-        40,
-        54,
-        77,
-        78,
-        79,
+        31,
+        35,
+        44,
+        45,
+        69,
         83,
-        91,
-        105
+        110,
+        111,
+        112,
+        113,
+        117,
+        125,
+        143
+      ]
+    },
+    "packages/remote-context/src/actions/RemoteSetPropertyCacheAction.js": {
+      "expectCount": 7,
+      "actualCount": 0,
+      "undocumentLines": [
+        20,
+        21,
+        29,
+        32,
+        35,
+        44,
+        48
       ]
     },
     "packages/remote-context/src/actions/RemoteSetPrototypeOfAction.js": {
@@ -399,11 +420,11 @@
       "undocumentLines": [
         20,
         21,
-        31,
-        46,
-        47,
-        50,
-        58
+        33,
+        48,
+        49,
+        52,
+        60
       ]
     },
     "packages/remote-context/src/actions/UndefinedValueAction.js": {
@@ -413,6 +434,27 @@
         23,
         28,
         33
+      ]
+    },
+    "packages/remote-context/src/helpers/descriptors.js": {
+      "expectCount": 16,
+      "actualCount": 1,
+      "undocumentLines": [
+        26,
+        30,
+        34,
+        38,
+        54,
+        58,
+        71,
+        77,
+        89,
+        111,
+        115,
+        124,
+        148,
+        158,
+        170
       ]
     },
     "packages/remote-context/src/index.js": {
@@ -456,8 +498,8 @@
       "undocumentLines": []
     },
     "packages/remote-protocol/src/Session.js": {
-      "expectCount": 34,
-      "actualCount": 21,
+      "expectCount": 35,
+      "actualCount": 22,
       "undocumentLines": [
         21,
         22,
@@ -475,8 +517,8 @@
       ]
     },
     "packages/remote-protocol/src/actions/Action.js": {
-      "expectCount": 6,
-      "actualCount": 6,
+      "expectCount": 5,
+      "actualCount": 5,
       "undocumentLines": []
     },
     "packages/remote-protocol/src/actions/RequestAction.js": {

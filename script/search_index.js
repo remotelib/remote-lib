@@ -108,9 +108,9 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "remote-context/lib/objectsnapshot.js~objectsnapshot",
-    "class/packages/remote-context/src/ObjectSnapshot.js~ObjectSnapshot.html",
-    "<span>ObjectSnapshot</span> <span class=\"search-result-import-path\">remote-context/lib/ObjectSnapshot.js</span>",
+    "remote-context/lib/localsnapshot.js~localsnapshot",
+    "class/packages/remote-context/src/LocalSnapshot.js~LocalSnapshot.html",
+    "<span>LocalSnapshot</span> <span class=\"search-result-import-path\">remote-context/lib/LocalSnapshot.js</span>",
     "class"
   ],
   [
@@ -123,12 +123,6 @@ window.esdocSearchIndex = [
     "remote-context/lib/actions/propertydescriptoraction.js~propertydescriptoraction",
     "class/packages/remote-context/src/actions/PropertyDescriptorAction.js~PropertyDescriptorAction.html",
     "<span>PropertyDescriptorAction</span> <span class=\"search-result-import-path\">remote-context/lib/actions/PropertyDescriptorAction.js</span>",
-    "class"
-  ],
-  [
-    "remote-context/lib/actions/propertydescriptorsaction.js~propertydescriptorsaction",
-    "class/packages/remote-context/src/actions/PropertyDescriptorsAction.js~PropertyDescriptorsAction.html",
-    "<span>PropertyDescriptorsAction</span> <span class=\"search-result-import-path\">remote-context/lib/actions/PropertyDescriptorsAction.js</span>",
     "class"
   ],
   [
@@ -264,6 +258,18 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "remote-context/lib/actions/remotedeletepropertycacheaction.js~remotesetpropertycacheaction",
+    "class/packages/remote-context/src/actions/RemoteDeletePropertyCacheAction.js~RemoteSetPropertyCacheAction.html",
+    "<span>RemoteSetPropertyCacheAction</span> <span class=\"search-result-import-path\">remote-context/lib/actions/RemoteDeletePropertyCacheAction.js</span>",
+    "class"
+  ],
+  [
+    "remote-context/lib/actions/remotesetpropertycacheaction.js~remotesetpropertycacheaction",
+    "class/packages/remote-context/src/actions/RemoteSetPropertyCacheAction.js~RemoteSetPropertyCacheAction.html",
+    "<span>RemoteSetPropertyCacheAction</span> <span class=\"search-result-import-path\">remote-context/lib/actions/RemoteSetPropertyCacheAction.js</span>",
+    "class"
+  ],
+  [
     "remote-context/lib/actions/remotesetprototypeofaction.js~remotesetprototypeofaction",
     "class/packages/remote-context/src/actions/RemoteSetPrototypeOfAction.js~RemoteSetPrototypeOfAction.html",
     "<span>RemoteSetPrototypeOfAction</span> <span class=\"search-result-import-path\">remote-context/lib/actions/RemoteSetPrototypeOfAction.js</span>",
@@ -312,16 +318,82 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "remote-context/lib/helpers/descriptors.js~cachegetters",
+    "function/index.html#static-function-cacheGetters",
+    "<span>cacheGetters</span> <span class=\"search-result-import-path\">remote-context/lib/helpers/descriptors.js</span>",
+    "function"
+  ],
+  [
     "remote-instance~construct",
     "variable/index.html#static-variable-construct",
     "<span>construct</span> <span class=\"search-result-import-path\">remote-instance</span>",
     "variable"
   ],
   [
+    "remote-context/lib/helpers/descriptors.js~deletecachedgetter",
+    "function/index.html#static-function-deleteCachedGetter",
+    "<span>deleteCachedGetter</span> <span class=\"search-result-import-path\">remote-context/lib/helpers/descriptors.js</span>",
+    "function"
+  ],
+  [
+    "remote-context/lib/helpers/descriptors.js~equaldescriptors",
+    "function/index.html#static-function-equalDescriptors",
+    "<span>equalDescriptors</span> <span class=\"search-result-import-path\">remote-context/lib/helpers/descriptors.js</span>",
+    "function"
+  ],
+  [
+    "remote-context/lib/helpers/descriptors.js~equalvalue",
+    "function/index.html#static-function-equalValue",
+    "<span>equalValue</span> <span class=\"search-result-import-path\">remote-context/lib/helpers/descriptors.js</span>",
+    "function"
+  ],
+  [
+    "remote-context/lib/helpers/descriptors.js~getcachedgetter",
+    "function/index.html#static-function-getCachedGetter",
+    "<span>getCachedGetter</span> <span class=\"search-result-import-path\">remote-context/lib/helpers/descriptors.js</span>",
+    "function"
+  ],
+  [
+    "remote-context/lib/helpers/descriptors.js~getownproperties",
+    "function/index.html#static-function-getOwnProperties",
+    "<span>getOwnProperties</span> <span class=\"search-result-import-path\">remote-context/lib/helpers/descriptors.js</span>",
+    "function"
+  ],
+  [
+    "remote-context/lib/helpers/descriptors.js~getownpropertydescriptors",
+    "variable/index.html#static-variable-getOwnPropertyDescriptors",
+    "<span>getOwnPropertyDescriptors</span> <span class=\"search-result-import-path\">remote-context/lib/helpers/descriptors.js</span>",
+    "variable"
+  ],
+  [
+    "remote-context/lib/helpers/descriptors.js~getpropertydescriptor",
+    "function/index.html#static-function-getPropertyDescriptor",
+    "<span>getPropertyDescriptor</span> <span class=\"search-result-import-path\">remote-context/lib/helpers/descriptors.js</span>",
+    "function"
+  ],
+  [
+    "remote-context/lib/helpers/descriptors.js~hasownproperty",
+    "function/index.html#static-function-hasOwnProperty",
+    "<span>hasOwnProperty</span> <span class=\"search-result-import-path\">remote-context/lib/helpers/descriptors.js</span>",
+    "function"
+  ],
+  [
+    "remote-context/lib/helpers/descriptors.js~isaccessordescriptor",
+    "function/index.html#static-function-isAccessorDescriptor",
+    "<span>isAccessorDescriptor</span> <span class=\"search-result-import-path\">remote-context/lib/helpers/descriptors.js</span>",
+    "function"
+  ],
+  [
     "remote-instance~isconstructor",
     "variable/index.html#static-variable-isConstructor",
     "<span>isConstructor</span> <span class=\"search-result-import-path\">remote-instance</span>",
     "variable"
+  ],
+  [
+    "remote-context/lib/helpers/descriptors.js~isdatadescriptor",
+    "function/index.html#static-function-isDataDescriptor",
+    "<span>isDataDescriptor</span> <span class=\"search-result-import-path\">remote-context/lib/helpers/descriptors.js</span>",
+    "function"
   ],
   [
     "remote-context/lib/remotevalue.js~isremotevalue",
@@ -358,6 +430,12 @@ window.esdocSearchIndex = [
     "variable/index.html#static-variable-revoke",
     "<span>revoke</span> <span class=\"search-result-import-path\">remote-context/lib/RemoteValue.js</span>",
     "variable"
+  ],
+  [
+    "remote-context/lib/helpers/descriptors.js~setcachedgetter",
+    "function/index.html#static-function-setCachedGetter",
+    "<span>setCachedGetter</span> <span class=\"search-result-import-path\">remote-context/lib/helpers/descriptors.js</span>",
+    "function"
   ],
   [
     "remote-instance~trimargumentslist",
@@ -1008,9 +1086,21 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "packages/remote-context/src/localreference.js~localreference#deletepropertycache",
+    "class/packages/remote-context/src/LocalReference.js~LocalReference.html#instance-method-deletePropertyCache",
+    "packages/remote-context/src/LocalReference.js~LocalReference#deletePropertyCache",
+    "method"
+  ],
+  [
     "packages/remote-context/src/localreference.js~localreference#preventextensions",
     "class/packages/remote-context/src/LocalReference.js~LocalReference.html#instance-method-preventExtensions",
     "packages/remote-context/src/LocalReference.js~LocalReference#preventExtensions",
+    "method"
+  ],
+  [
+    "packages/remote-context/src/localreference.js~localreference#setpropertycache",
+    "class/packages/remote-context/src/LocalReference.js~LocalReference.html#instance-method-setPropertyCache",
+    "packages/remote-context/src/LocalReference.js~LocalReference#setPropertyCache",
     "method"
   ],
   [
@@ -1020,22 +1110,46 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "packages/remote-context/src/objectsnapshot.js",
-    "file/packages/remote-context/src/ObjectSnapshot.js.html",
-    "packages/remote-context/src/ObjectSnapshot.js",
+    "packages/remote-context/src/localsnapshot.js",
+    "file/packages/remote-context/src/LocalSnapshot.js.html",
+    "packages/remote-context/src/LocalSnapshot.js",
     "file"
   ],
   [
-    "packages/remote-context/src/objectsnapshot.js~objectsnapshot#constructor",
-    "class/packages/remote-context/src/ObjectSnapshot.js~ObjectSnapshot.html#instance-constructor-constructor",
-    "packages/remote-context/src/ObjectSnapshot.js~ObjectSnapshot#constructor",
+    "packages/remote-context/src/localsnapshot.js~localsnapshot#cachedgetters",
+    "class/packages/remote-context/src/LocalSnapshot.js~LocalSnapshot.html#instance-get-cachedGetters",
+    "packages/remote-context/src/LocalSnapshot.js~LocalSnapshot#cachedGetters",
+    "member"
+  ],
+  [
+    "packages/remote-context/src/localsnapshot.js~localsnapshot#constructor",
+    "class/packages/remote-context/src/LocalSnapshot.js~LocalSnapshot.html#instance-constructor-constructor",
+    "packages/remote-context/src/LocalSnapshot.js~LocalSnapshot#constructor",
     "method"
   ],
   [
-    "packages/remote-context/src/objectsnapshot.js~objectsnapshot#update",
-    "class/packages/remote-context/src/ObjectSnapshot.js~ObjectSnapshot.html#instance-method-update",
-    "packages/remote-context/src/ObjectSnapshot.js~ObjectSnapshot#update",
+    "packages/remote-context/src/localsnapshot.js~localsnapshot#ownpropertydescriptors",
+    "class/packages/remote-context/src/LocalSnapshot.js~LocalSnapshot.html#instance-get-ownPropertyDescriptors",
+    "packages/remote-context/src/LocalSnapshot.js~LocalSnapshot#ownPropertyDescriptors",
+    "member"
+  ],
+  [
+    "packages/remote-context/src/localsnapshot.js~localsnapshot#prototype",
+    "class/packages/remote-context/src/LocalSnapshot.js~LocalSnapshot.html#instance-get-prototype",
+    "packages/remote-context/src/LocalSnapshot.js~LocalSnapshot#prototype",
+    "member"
+  ],
+  [
+    "packages/remote-context/src/localsnapshot.js~localsnapshot#update",
+    "class/packages/remote-context/src/LocalSnapshot.js~LocalSnapshot.html#instance-method-update",
+    "packages/remote-context/src/LocalSnapshot.js~LocalSnapshot#update",
     "method"
+  ],
+  [
+    "packages/remote-context/src/localsnapshot.js~localsnapshot#value",
+    "class/packages/remote-context/src/LocalSnapshot.js~LocalSnapshot.html#instance-get-value",
+    "packages/remote-context/src/LocalSnapshot.js~LocalSnapshot#value",
+    "member"
   ],
   [
     "packages/remote-context/src/remotecontext.js",
@@ -1158,9 +1272,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "packages/remote-context/src/remotesession.js~remotesession#bind",
-    "class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-method-bind",
-    "packages/remote-context/src/RemoteSession.js~RemoteSession#bind",
+    "packages/remote-context/src/remotesession.js~remotesession#assign",
+    "class/packages/remote-context/src/RemoteSession.js~RemoteSession.html#instance-method-assign",
+    "packages/remote-context/src/RemoteSession.js~RemoteSession#assign",
     "method"
   ],
   [
@@ -1458,6 +1572,18 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "packages/remote-context/src/actions/localreferenceaction.js~localreferenceaction#reference",
+    "class/packages/remote-context/src/actions/LocalReferenceAction.js~LocalReferenceAction.html#instance-member-reference",
+    "packages/remote-context/src/actions/LocalReferenceAction.js~LocalReferenceAction#reference",
+    "member"
+  ],
+  [
+    "packages/remote-context/src/actions/localreferenceaction.js~localreferenceaction#release",
+    "class/packages/remote-context/src/actions/LocalReferenceAction.js~LocalReferenceAction.html#instance-method-release",
+    "packages/remote-context/src/actions/LocalReferenceAction.js~LocalReferenceAction#release",
+    "method"
+  ],
+  [
     "packages/remote-context/src/actions/localreferenceaction.js~localreferenceaction.fromargumentslist",
     "class/packages/remote-context/src/actions/LocalReferenceAction.js~LocalReferenceAction.html#static-method-fromArgumentsList",
     "packages/remote-context/src/actions/LocalReferenceAction.js~LocalReferenceAction.fromArgumentsList",
@@ -1542,6 +1668,18 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
+    "packages/remote-context/src/actions/propertydescriptoraction.js~propertydescriptoraction#isaccessordescriptor",
+    "class/packages/remote-context/src/actions/PropertyDescriptorAction.js~PropertyDescriptorAction.html#instance-method-isAccessorDescriptor",
+    "packages/remote-context/src/actions/PropertyDescriptorAction.js~PropertyDescriptorAction#isAccessorDescriptor",
+    "method"
+  ],
+  [
+    "packages/remote-context/src/actions/propertydescriptoraction.js~propertydescriptoraction#isdatadescriptor",
+    "class/packages/remote-context/src/actions/PropertyDescriptorAction.js~PropertyDescriptorAction.html#instance-method-isDataDescriptor",
+    "packages/remote-context/src/actions/PropertyDescriptorAction.js~PropertyDescriptorAction#isDataDescriptor",
+    "method"
+  ],
+  [
     "packages/remote-context/src/actions/propertydescriptoraction.js~propertydescriptoraction#set",
     "class/packages/remote-context/src/actions/PropertyDescriptorAction.js~PropertyDescriptorAction.html#instance-member-set",
     "packages/remote-context/src/actions/PropertyDescriptorAction.js~PropertyDescriptorAction#set",
@@ -1566,63 +1704,9 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "packages/remote-context/src/actions/propertydescriptoraction.js~propertydescriptoraction.fromproperty",
-    "class/packages/remote-context/src/actions/PropertyDescriptorAction.js~PropertyDescriptorAction.html#static-method-fromProperty",
-    "packages/remote-context/src/actions/PropertyDescriptorAction.js~PropertyDescriptorAction.fromProperty",
-    "method"
-  ],
-  [
     "packages/remote-context/src/actions/propertydescriptoraction.js~propertydescriptoraction.frompropertydescriptor",
     "class/packages/remote-context/src/actions/PropertyDescriptorAction.js~PropertyDescriptorAction.html#static-method-fromPropertyDescriptor",
     "packages/remote-context/src/actions/PropertyDescriptorAction.js~PropertyDescriptorAction.fromPropertyDescriptor",
-    "method"
-  ],
-  [
-    "packages/remote-context/src/actions/propertydescriptorsaction.js",
-    "file/packages/remote-context/src/actions/PropertyDescriptorsAction.js.html",
-    "packages/remote-context/src/actions/PropertyDescriptorsAction.js",
-    "file"
-  ],
-  [
-    "packages/remote-context/src/actions/propertydescriptorsaction.js~propertydescriptorsaction#constructor",
-    "class/packages/remote-context/src/actions/PropertyDescriptorsAction.js~PropertyDescriptorsAction.html#instance-constructor-constructor",
-    "packages/remote-context/src/actions/PropertyDescriptorsAction.js~PropertyDescriptorsAction#constructor",
-    "method"
-  ],
-  [
-    "packages/remote-context/src/actions/propertydescriptorsaction.js~propertydescriptorsaction#descriptors",
-    "class/packages/remote-context/src/actions/PropertyDescriptorsAction.js~PropertyDescriptorsAction.html#instance-member-descriptors",
-    "packages/remote-context/src/actions/PropertyDescriptorsAction.js~PropertyDescriptorsAction#descriptors",
-    "member"
-  ],
-  [
-    "packages/remote-context/src/actions/propertydescriptorsaction.js~propertydescriptorsaction#fetch",
-    "class/packages/remote-context/src/actions/PropertyDescriptorsAction.js~PropertyDescriptorsAction.html#instance-method-fetch",
-    "packages/remote-context/src/actions/PropertyDescriptorsAction.js~PropertyDescriptorsAction#fetch",
-    "method"
-  ],
-  [
-    "packages/remote-context/src/actions/propertydescriptorsaction.js~propertydescriptorsaction#isempty",
-    "class/packages/remote-context/src/actions/PropertyDescriptorsAction.js~PropertyDescriptorsAction.html#instance-method-isEmpty",
-    "packages/remote-context/src/actions/PropertyDescriptorsAction.js~PropertyDescriptorsAction#isEmpty",
-    "method"
-  ],
-  [
-    "packages/remote-context/src/actions/propertydescriptorsaction.js~propertydescriptorsaction#toargumentslist",
-    "class/packages/remote-context/src/actions/PropertyDescriptorsAction.js~PropertyDescriptorsAction.html#instance-method-toArgumentsList",
-    "packages/remote-context/src/actions/PropertyDescriptorsAction.js~PropertyDescriptorsAction#toArgumentsList",
-    "method"
-  ],
-  [
-    "packages/remote-context/src/actions/propertydescriptorsaction.js~propertydescriptorsaction.fromobject",
-    "class/packages/remote-context/src/actions/PropertyDescriptorsAction.js~PropertyDescriptorsAction.html#static-method-fromObject",
-    "packages/remote-context/src/actions/PropertyDescriptorsAction.js~PropertyDescriptorsAction.fromObject",
-    "method"
-  ],
-  [
-    "packages/remote-context/src/actions/propertydescriptorsaction.js~propertydescriptorsaction.frompropertydescriptors",
-    "class/packages/remote-context/src/actions/PropertyDescriptorsAction.js~PropertyDescriptorsAction.html#static-method-fromPropertyDescriptors",
-    "packages/remote-context/src/actions/PropertyDescriptorsAction.js~PropertyDescriptorsAction.fromPropertyDescriptors",
     "method"
   ],
   [
@@ -1642,6 +1726,12 @@ window.esdocSearchIndex = [
     "class/packages/remote-context/src/actions/ReferenceAction.js~ReferenceAction.html#instance-member-reference",
     "packages/remote-context/src/actions/ReferenceAction.js~ReferenceAction#reference",
     "member"
+  ],
+  [
+    "packages/remote-context/src/actions/referenceaction.js~referenceaction#release",
+    "class/packages/remote-context/src/actions/ReferenceAction.js~ReferenceAction.html#instance-method-release",
+    "packages/remote-context/src/actions/ReferenceAction.js~ReferenceAction#release",
+    "method"
   ],
   [
     "packages/remote-context/src/actions/referenceaction.js~referenceaction#toargumentslist",
@@ -1872,6 +1962,12 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
+    "packages/remote-context/src/actions/reflectpromiseaction.js~reflectpromiseaction#release",
+    "class/packages/remote-context/src/actions/ReflectPromiseAction.js~ReflectPromiseAction.html#instance-method-release",
+    "packages/remote-context/src/actions/ReflectPromiseAction.js~ReflectPromiseAction#release",
+    "method"
+  ],
+  [
     "packages/remote-context/src/actions/reflectpromiseaction.js~reflectpromiseaction#resolve",
     "class/packages/remote-context/src/actions/ReflectPromiseAction.js~ReflectPromiseAction.html#instance-member-resolve",
     "packages/remote-context/src/actions/ReflectPromiseAction.js~ReflectPromiseAction#resolve",
@@ -1956,6 +2052,24 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "packages/remote-context/src/actions/remotedeletepropertycacheaction.js",
+    "file/packages/remote-context/src/actions/RemoteDeletePropertyCacheAction.js.html",
+    "packages/remote-context/src/actions/RemoteDeletePropertyCacheAction.js",
+    "file"
+  ],
+  [
+    "packages/remote-context/src/actions/remotedeletepropertycacheaction.js~remotesetpropertycacheaction#exec",
+    "class/packages/remote-context/src/actions/RemoteDeletePropertyCacheAction.js~RemoteSetPropertyCacheAction.html#instance-method-exec",
+    "packages/remote-context/src/actions/RemoteDeletePropertyCacheAction.js~RemoteSetPropertyCacheAction#exec",
+    "method"
+  ],
+  [
+    "packages/remote-context/src/actions/remotedeletepropertycacheaction.js~remotesetpropertycacheaction#fetch",
+    "class/packages/remote-context/src/actions/RemoteDeletePropertyCacheAction.js~RemoteSetPropertyCacheAction.html#instance-method-fetch",
+    "packages/remote-context/src/actions/RemoteDeletePropertyCacheAction.js~RemoteSetPropertyCacheAction#fetch",
+    "method"
+  ],
+  [
     "packages/remote-context/src/actions/remotepreventextensionsaction.js",
     "file/packages/remote-context/src/actions/RemotePreventExtensionsAction.js.html",
     "packages/remote-context/src/actions/RemotePreventExtensionsAction.js",
@@ -1989,6 +2103,18 @@ window.esdocSearchIndex = [
     "packages/remote-context/src/actions/remotereferenceaction.js~remotereferenceaction#fetch",
     "class/packages/remote-context/src/actions/RemoteReferenceAction.js~RemoteReferenceAction.html#instance-method-fetch",
     "packages/remote-context/src/actions/RemoteReferenceAction.js~RemoteReferenceAction#fetch",
+    "method"
+  ],
+  [
+    "packages/remote-context/src/actions/remotereferenceaction.js~remotereferenceaction#reference",
+    "class/packages/remote-context/src/actions/RemoteReferenceAction.js~RemoteReferenceAction.html#instance-member-reference",
+    "packages/remote-context/src/actions/RemoteReferenceAction.js~RemoteReferenceAction#reference",
+    "member"
+  ],
+  [
+    "packages/remote-context/src/actions/remotereferenceaction.js~remotereferenceaction#release",
+    "class/packages/remote-context/src/actions/RemoteReferenceAction.js~RemoteReferenceAction.html#instance-method-release",
+    "packages/remote-context/src/actions/RemoteReferenceAction.js~RemoteReferenceAction#release",
     "method"
   ],
   [
@@ -2034,9 +2160,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "packages/remote-context/src/actions/remotesetaction.js~remotesetaction.fromvalue",
-    "class/packages/remote-context/src/actions/RemoteSetAction.js~RemoteSetAction.html#static-method-fromValue",
-    "packages/remote-context/src/actions/RemoteSetAction.js~RemoteSetAction.fromValue",
+    "packages/remote-context/src/actions/remotesetaction.js~remotesetaction.fromsnapshot",
+    "class/packages/remote-context/src/actions/RemoteSetAction.js~RemoteSetAction.html#static-method-fromSnapshot",
+    "packages/remote-context/src/actions/RemoteSetAction.js~RemoteSetAction.fromSnapshot",
     "method"
   ],
   [
@@ -2062,6 +2188,12 @@ window.esdocSearchIndex = [
     "file/packages/remote-context/src/actions/RemoteSetObjectAction.js.html",
     "packages/remote-context/src/actions/RemoteSetObjectAction.js",
     "file"
+  ],
+  [
+    "packages/remote-context/src/actions/remotesetobjectaction.js~remotesetobjectaction#cachedgetters",
+    "class/packages/remote-context/src/actions/RemoteSetObjectAction.js~RemoteSetObjectAction.html#instance-member-cachedGetters",
+    "packages/remote-context/src/actions/RemoteSetObjectAction.js~RemoteSetObjectAction#cachedGetters",
+    "member"
   ],
   [
     "packages/remote-context/src/actions/remotesetobjectaction.js~remotesetobjectaction#constructor",
@@ -2106,15 +2238,57 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "packages/remote-context/src/actions/remotesetobjectaction.js~remotesetobjectaction.fromvalue",
-    "class/packages/remote-context/src/actions/RemoteSetObjectAction.js~RemoteSetObjectAction.html#static-method-fromValue",
-    "packages/remote-context/src/actions/RemoteSetObjectAction.js~RemoteSetObjectAction.fromValue",
+    "packages/remote-context/src/actions/remotesetobjectaction.js~remotesetobjectaction.fromsnapshot",
+    "class/packages/remote-context/src/actions/RemoteSetObjectAction.js~RemoteSetObjectAction.html#static-method-fromSnapshot",
+    "packages/remote-context/src/actions/RemoteSetObjectAction.js~RemoteSetObjectAction.fromSnapshot",
     "method"
   ],
   [
     "packages/remote-context/src/actions/remotesetobjectaction.js~remotesetobjectaction.getprototype",
     "class/packages/remote-context/src/actions/RemoteSetObjectAction.js~RemoteSetObjectAction.html#static-method-getPrototype",
     "packages/remote-context/src/actions/RemoteSetObjectAction.js~RemoteSetObjectAction.getPrototype",
+    "method"
+  ],
+  [
+    "packages/remote-context/src/actions/remotesetpropertycacheaction.js",
+    "file/packages/remote-context/src/actions/RemoteSetPropertyCacheAction.js.html",
+    "packages/remote-context/src/actions/RemoteSetPropertyCacheAction.js",
+    "file"
+  ],
+  [
+    "packages/remote-context/src/actions/remotesetpropertycacheaction.js~remotesetpropertycacheaction#constructor",
+    "class/packages/remote-context/src/actions/RemoteSetPropertyCacheAction.js~RemoteSetPropertyCacheAction.html#instance-constructor-constructor",
+    "packages/remote-context/src/actions/RemoteSetPropertyCacheAction.js~RemoteSetPropertyCacheAction#constructor",
+    "method"
+  ],
+  [
+    "packages/remote-context/src/actions/remotesetpropertycacheaction.js~remotesetpropertycacheaction#exec",
+    "class/packages/remote-context/src/actions/RemoteSetPropertyCacheAction.js~RemoteSetPropertyCacheAction.html#instance-method-exec",
+    "packages/remote-context/src/actions/RemoteSetPropertyCacheAction.js~RemoteSetPropertyCacheAction#exec",
+    "method"
+  ],
+  [
+    "packages/remote-context/src/actions/remotesetpropertycacheaction.js~remotesetpropertycacheaction#fetch",
+    "class/packages/remote-context/src/actions/RemoteSetPropertyCacheAction.js~RemoteSetPropertyCacheAction.html#instance-method-fetch",
+    "packages/remote-context/src/actions/RemoteSetPropertyCacheAction.js~RemoteSetPropertyCacheAction#fetch",
+    "method"
+  ],
+  [
+    "packages/remote-context/src/actions/remotesetpropertycacheaction.js~remotesetpropertycacheaction#gettervalue",
+    "class/packages/remote-context/src/actions/RemoteSetPropertyCacheAction.js~RemoteSetPropertyCacheAction.html#instance-member-getterValue",
+    "packages/remote-context/src/actions/RemoteSetPropertyCacheAction.js~RemoteSetPropertyCacheAction#getterValue",
+    "member"
+  ],
+  [
+    "packages/remote-context/src/actions/remotesetpropertycacheaction.js~remotesetpropertycacheaction#toargumentslist",
+    "class/packages/remote-context/src/actions/RemoteSetPropertyCacheAction.js~RemoteSetPropertyCacheAction.html#instance-method-toArgumentsList",
+    "packages/remote-context/src/actions/RemoteSetPropertyCacheAction.js~RemoteSetPropertyCacheAction#toArgumentsList",
+    "method"
+  ],
+  [
+    "packages/remote-context/src/actions/remotesetpropertycacheaction.js~remotesetpropertycacheaction.fromlocal",
+    "class/packages/remote-context/src/actions/RemoteSetPropertyCacheAction.js~RemoteSetPropertyCacheAction.html#static-method-fromLocal",
+    "packages/remote-context/src/actions/RemoteSetPropertyCacheAction.js~RemoteSetPropertyCacheAction.fromLocal",
     "method"
   ],
   [
@@ -2196,9 +2370,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "packages/remote-context/src/actions/remotesetsymbolaction.js~remotesetsymbolaction.fromvalue",
-    "class/packages/remote-context/src/actions/RemoteSetSymbolAction.js~RemoteSetSymbolAction.html#static-method-fromValue",
-    "packages/remote-context/src/actions/RemoteSetSymbolAction.js~RemoteSetSymbolAction.fromValue",
+    "packages/remote-context/src/actions/remotesetsymbolaction.js~remotesetsymbolaction.fromsnapshot",
+    "class/packages/remote-context/src/actions/RemoteSetSymbolAction.js~RemoteSetSymbolAction.html#static-method-fromSnapshot",
+    "packages/remote-context/src/actions/RemoteSetSymbolAction.js~RemoteSetSymbolAction.fromSnapshot",
     "method"
   ],
   [
@@ -2235,6 +2409,12 @@ window.esdocSearchIndex = [
     "packages/remote-context/src/envs/es6-unstable.js",
     "file/packages/remote-context/src/envs/es6-unstable.js.html",
     "packages/remote-context/src/envs/es6-unstable.js",
+    "file"
+  ],
+  [
+    "packages/remote-context/src/helpers/descriptors.js",
+    "file/packages/remote-context/src/helpers/descriptors.js.html",
+    "packages/remote-context/src/helpers/descriptors.js",
     "file"
   ],
   [
@@ -2718,6 +2898,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "packages/remote-protocol/src/session.js~session#fetch",
+    "class/packages/remote-protocol/src/Session.js~Session.html#instance-method-fetch",
+    "packages/remote-protocol/src/Session.js~Session#fetch",
+    "method"
+  ],
+  [
     "packages/remote-protocol/src/session.js~session#isended",
     "class/packages/remote-protocol/src/Session.js~Session.html#instance-get-isEnded",
     "packages/remote-protocol/src/Session.js~Session#isEnded",
@@ -2781,12 +2967,6 @@ window.esdocSearchIndex = [
     "packages/remote-protocol/src/actions/action.js~action#tostring",
     "class/packages/remote-protocol/src/actions/Action.js~Action.html#instance-method-toString",
     "packages/remote-protocol/src/actions/Action.js~Action#toString",
-    "method"
-  ],
-  [
-    "packages/remote-protocol/src/actions/action.js~action.fetch",
-    "class/packages/remote-protocol/src/actions/Action.js~Action.html#static-method-fetch",
-    "packages/remote-protocol/src/actions/Action.js~Action.fetch",
     "method"
   ],
   [
