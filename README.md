@@ -1,9 +1,8 @@
 <h1 align="center">
   <br>
-  <a href="http://www.remotelib.com"><img src="https://github.com/remotelib/remote-lib/blob/master/manual/asset/icon.svg" alt="RemoteLib" 
-  width="200" border="0"></a>
+  <a href="http://www.remotelib.com"><img src="https://github.com/remotelib/remote-lib/raw/master/manual/asset/icon.png?docs-hack=.svg" alt="RemoteLib" width="200"></a>
   <br>
-  <span style="color:#0d3b66">RemoteLib</span>
+  RemoteLib
   <br>
   <br>
 </h1>
