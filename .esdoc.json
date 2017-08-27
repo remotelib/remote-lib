@@ -33,8 +33,7 @@
           "./manual/remote-environment.md",
           "./manual/remote-instance.md",
           "./manual/remote-protocol.md",
-          "./manual/reference-context.md",
-          "./CHANGELOG.md"
+          "./manual/reference-context.md"
         ]
       }
     }
