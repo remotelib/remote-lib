@@ -21,7 +21,7 @@
     "module",
     "export"
   ],
-  "version": "0.1.1",
+  "version": "0.2.0",
   "main": "lib/index.js",
   "module": "lib/index.js",
   "homepage": "http://www.remotelib.com",
@@ -31,7 +31,7 @@
     "node": ">=6.11"
   },
   "dependencies": {
-    "remote-context": "^0.1.1"
+    "remote-context": "^0.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
