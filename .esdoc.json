@@ -18,14 +18,15 @@
         "autoPrivate": true
       },
       "brand": {
-        "title": "Remotelib",
-        "description": "Run code remotely",
+        "title": "RemoteLib",
+        "description": "Run remote JavaScript code as if it's your own local library.",
         "repository": "https://github.com/remotelib/remote-lib",
         "site": "http://wwww.remotelib.com"
       },
       "manual": {
         "index": "./README.md",
         "globalIndex": true,
+        "asset": "./manual/asset",
         "files": [
           "./manual/remote-lib.md",
           "./manual/remote-context.md",
