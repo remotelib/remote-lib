@@ -17,7 +17,7 @@ build: build-only
 build-only:
 	./node_modules/.bin/gulp build
 
-build-dist: clean build docs-build
+build-dist: clean build
 
 docs-clean:
 	rm -rf docs
@@ -37,7 +37,6 @@ docs-publish:
 	git commit -m `cd .. && git rev-parse HEAD` && \
 	git push
 	open http://www.remotelib.com/
-
 
 watch: clean
 	BABEL_ENV=development ./node_modules/.bin/gulp watch
