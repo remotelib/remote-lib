@@ -29,6 +29,19 @@ functions with callbacks,
 [Promises](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise), 
 class inheritance, getters and setters support and more. See [usage](#usage) for some examples.
 
+### Features
+
+- **Use RemoteLib on node.js & on the browser** (just use [browserify](http://browserify.org) or
+ [webpack](https://webpack.js.org/) to create a bundle).
+- **Pure Javascript** (Using 
+[ES6 Proxy](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Proxy)).
+- **Seamless interface** (your library will be proxies AS IS to the users remotely!).  
+- Connect using **simple `Stream` interface** 
+([WebSocket](https://www.npmjs.com/package/websocket-stream) or 
+[WebRTC](https://www.npmjs.com/package/simple-peer) implementation available).
+- Serve **multiple peers** in parallel.
+- **Use RemoteLib for P2P projects** (via the [`remote-context`](packages/remote-context) library). 
+
 ### Install
 ```
 npm install remote-lib
