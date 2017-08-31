@@ -102,7 +102,9 @@ function getCachePropertyDescriptors(object) {
 
     proto = Object.getPrototypeOf(proto);
   } while (
-    proto !== Object.prototype && proto !== null && proto !== Function.prototype
+    proto !== Object.prototype &&
+    proto !== null &&
+    proto !== Function.prototype
   );
 
   return descriptors;
