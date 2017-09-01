@@ -1,6 +1,6 @@
 {
   "name": "remote-lib",
-  "description": "Create a JavaScript library and use it remotely over the internet.",
+  "description": "Convert your JavaScript library to a remote service.",
   "keywords": [
     "remote",
     "lib",

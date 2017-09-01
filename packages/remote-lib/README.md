@@ -5,7 +5,7 @@
 [![npm license](https://img.shields.io/npm/l/remote-lib.svg)](LICENSE)
 
 # Remote-lib
-Create a library and share it remotely with other peers via **ANY** stream object 💫.
+Convert your JavaScript library to a remote service 💫.
 
 Using only a [Duplex stream](https://nodejs.org/api/stream.html#stream_class_stream_duplex) such as 
 [TCP soocket](https://nodejs.org/api/net.html#net_net_createconnection_options_connectlistener), 
