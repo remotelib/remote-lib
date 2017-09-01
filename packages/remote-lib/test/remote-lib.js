@@ -39,6 +39,9 @@ describe('RemoteContext', () => {
 
       // Classes and objects
       myThings: new Set(['car', 'keys', 'pizza']),
+
+      // Functions that return functions
+      multiFunc: () => () => 'Yes!',
     });
 
     // Create a server and serve each client the context remotely
@@ -48,7 +51,7 @@ describe('RemoteContext', () => {
 
     // Bind on port 3000
     server.listen(3000, () => {
-      let tests = 4;
+      let tests = 5;
 
       // Connect to the server and get a stream
       const socket = net.createConnection(3000);
@@ -106,6 +109,14 @@ describe('RemoteContext', () => {
         tests -= 1;
         if (!tests) remoteLibrary.destroy();
       }, done);
+
+      // Use RemotePromise virtual path:
+      remoteLibrary.multiFunc()().then(value => {
+        assert.equal(value, 'Yes!');
+
+        tests -= 1;
+        if (!tests) remoteLibrary.destroy();
+      });
     });
   });
 });

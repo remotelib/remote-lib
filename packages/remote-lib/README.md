@@ -45,6 +45,10 @@ const library = new Library({
 
   // Classes and objects
   myThings: new Set(['car', 'keys', 'pizza']),
+  
+
+  // Functions that return functions
+  multiFunc: () => () => 'Yes!',
 });
 
 // Create a server and serve each client the context remotely
@@ -96,6 +100,11 @@ remoteLibrary.myThings.then(async set => {
   // Change the remote instance
   await set.add('dog');
   await set.has('dog'); // true
+});
+
+// Use RemotePromise virtual path:
+remoteLibrary.multiFunc()().then(value => {
+  // value === 'Yes!'
 });
 ```
 
