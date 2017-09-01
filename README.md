@@ -35,12 +35,18 @@ class inheritance, getters and setters support and more. See [usage](#usage) for
  [webpack](https://webpack.js.org/) to create a bundle).
 - **Pure Javascript** (Using 
 [ES6 Proxy](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Proxy)).
-- **Seamless interface** (your library will be proxies AS IS to the users remotely!).  
-- Connect using **simple `Stream` interface** 
+- **Seamless interface** (your library will be proxies AS IS to the users remotely!). 
+- **Proxy anything** - from functions and object, to classes and Promises and even 
+[Symbols](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Symbol)!
+- **Builtin support for Promises** - Resolve any path on the remote object via the `RemoteProxy` 
+interface.
+- **Builtin support for class inheritance** - Your user can use `instanceof` with the proxyied 
+objects.
+- **Use any communication method** - connect using simple `Stream` interface 
 ([WebSocket](https://www.npmjs.com/package/websocket-stream) or 
 [WebRTC](https://www.npmjs.com/package/simple-peer) implementation available).
 - Serve **multiple peers** in parallel.
-- **Use RemoteLib for P2P projects** (via the [`remote-context`](packages/remote-context) library). 
+- Use RemoteLib for **P2P projects** (via the [`remote-context`](packages/remote-context) library). 
 
 ### Install
 ```
