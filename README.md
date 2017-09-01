@@ -7,7 +7,7 @@
   <br>
 </h1>
 
-<h4 align="center">💫 Convert your JavaScript library to a remote service.</h4>
+<h4 align="center">Convert your JavaScript library to a remote service 💫.</h4>
 
 <p align="center">
 <a href="https://www.npmjs.org/package/remote-lib"><img src="http://img.shields.io/npm/v/remote-lib.svg" alt="View On NPM"></a>
