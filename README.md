@@ -29,6 +29,11 @@ functions with callbacks,
 [Promises](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise), 
 class inheritance, getters and setters support and more. See [usage](#usage) for some examples.
 
+##### Is it kind of RPC?
+No. RemoteLib is based on [remote-context](packages/remote-context) and won't just proxying 
+your functions. Instead, you have an entirely shared context between two remote peers. See 
+[Features](#features) for more details:
+
 ### Features
 
 - **Use RemoteLib on node.js & on the browser** (just use [browserify](http://browserify.org) or
