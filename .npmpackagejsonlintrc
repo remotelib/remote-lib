@@ -8,6 +8,7 @@
     "require-keywords": "error",
     "require-license": "error",
     "require-main": "error",
+    "require-module": "error",
     "require-name": "error",
     "require-repository": "error",
     "require-scripts": "error",
@@ -39,6 +40,7 @@
     "prefer-alphabetical-devDependencies": "error",
     "prefer-alphabetical-bundledDependencies": "error",
     "prefer-alphabetical-optionalDependencies": "error",
-    "prefer-alphabetical-peerDependencies": "error"
+    "prefer-alphabetical-peerDependencies": "error",
+    "prefer-property-order": ["error", []]
   }
 }

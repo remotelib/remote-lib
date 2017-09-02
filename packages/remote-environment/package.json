@@ -1,5 +1,6 @@
 {
   "name": "remote-environment",
+  "version": "0.1.1",
   "description": "Get a fixed context per specific environment such as ES6.",
   "keywords": [
     "remote",
@@ -14,17 +15,17 @@
     "list",
     "reference"
   ],
-  "version": "0.1.1",
-  "main": "lib/index.js",
   "homepage": "http://www.remotelib.com",
-  "repository": "https://github.com/remotelib/remote-lib/tree/master/packages/remote-environment",
   "bugs": "https://github.com/remotelib/remote-lib/issues",
-  "engines": {
-    "node": ">=6.11"
-  },
+  "license": "Apache-2.0",
+  "author": "Moshe Simantov <hi@moshesimantov.com> (http://www.moshesimantov.com)",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "repository": "https://github.com/remotelib/remote-lib/tree/master/packages/remote-environment",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Moshe Simantov <hi@moshesimantov.com> (http://www.moshesimantov.com)",
-  "license": "Apache-2.0"
+  "engines": {
+    "node": ">=6.11"
+  }
 }

@@ -1,5 +1,6 @@
 {
   "name": "remote-context",
+  "version": "0.2.0",
   "description": "Create a context and share it remotely with other peers via any stream object.",
   "keywords": [
     "remote",
@@ -16,14 +17,15 @@
     "peer",
     "p2p"
   ],
-  "version": "0.2.0",
+  "homepage": "http://www.remotelib.com",
+  "bugs": "https://github.com/remotelib/remote-lib/issues",
+  "license": "Apache-2.0",
+  "author": "Moshe Simantov <hi@moshesimantov.com> (http://www.moshesimantov.com)",
   "main": "lib/index.js",
   "module": "lib/index.js",
-  "homepage": "http://www.remotelib.com",
   "repository": "https://github.com/remotelib/remote-lib/tree/master/packages/remote-context",
-  "bugs": "https://github.com/remotelib/remote-lib/issues",
-  "engines": {
-    "node": ">=6.11"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "reference-context": "^0.1.1",
@@ -34,9 +36,7 @@
   "devDependencies": {
     "duplexify": "^3.5.1"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Moshe Simantov <hi@moshesimantov.com> (http://www.moshesimantov.com)",
-  "license": "Apache-2.0"
+  "engines": {
+    "node": ">=6.11"
+  }
 }

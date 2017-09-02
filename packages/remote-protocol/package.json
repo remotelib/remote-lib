@@ -1,5 +1,6 @@
 {
   "name": "remote-protocol",
+  "version": "0.2.0",
   "description": "A remote protocol for handling remote session and execute actions remotely.",
   "keywords": [
     "remote",
@@ -19,18 +20,17 @@
     "fetch",
     "dispatch"
   ],
-  "version": "0.2.0",
+  "homepage": "http://www.remotelib.com",
+  "bugs": "https://github.com/remotelib/remote-lib/issues",
+  "license": "Apache-2.0",
+  "author": "Moshe Simantov <hi@moshesimantov.com> (http://www.moshesimantov.com)",
   "main": "lib/index.js",
   "module": "lib/index.js",
-  "homepage": "http://www.remotelib.com",
   "repository": "https://github.com/remotelib/remote-lib/tree/master/packages/remote-protocol",
-  "bugs": "https://github.com/remotelib/remote-lib/issues",
-  "engines": {
-    "node": ">=6.11"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Moshe Simantov <hi@moshesimantov.com> (http://www.moshesimantov.com)",
-  "license": "Apache-2.0"
+  "engines": {
+    "node": ">=6.11"
+  }
 }

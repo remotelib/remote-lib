@@ -1,5 +1,6 @@
 {
   "name": "remote-lib-private",
+  "version": "0.1.0",
   "description": "A private module for developing remote-lib packages.",
   "keywords": [
     "remote",
@@ -17,18 +18,16 @@
     "stream",
     "serverless"
   ],
-  "private": true,
-  "author": "Moshe Simantov <hi@moshesimantov.com> (http://www.moshesimantov.com)",
+  "homepage": "http://www.remotelib.com",
+  "bugs": "https://github.com/remotelib/remote-lib/issues",
   "license": "Apache-2.0",
+  "author": "Moshe Simantov <hi@moshesimantov.com> (http://www.moshesimantov.com)",
   "main": "packages/remote-lib",
   "module": "packages/remote-lib",
-  "version": "0.1.0",
-  "homepage": "http://www.remotelib.com",
   "repository": {
     "type": "git",
     "url": "https://github.com/remotelib/remote-lib.git"
   },
-  "bugs": "https://github.com/remotelib/remote-lib/issues",
   "scripts": {
     "build": "make build",
     "fix": "make fix",
@@ -39,6 +38,7 @@
     "test": "make test",
     "package": "./scripts/npm-package.sh"
   },
+  "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-plugin-istanbul": "^4.1.4",
@@ -71,7 +71,7 @@
     "lerna": "^2.0.0",
     "lint-staged": "^4.0.2",
     "mocha": "^3.0.0",
-    "npm-package-json-lint": "^2.8.0",
+    "npm-package-json-lint": "^2.11.0",
     "prettier": "^1.6.1",
     "through2": "^2.0.0",
     "validate-commit-msg": "^2.14.0"
@@ -79,6 +79,7 @@
   "engines": {
     "node": ">=6.11"
   },
+  "private": true,
   "nyc": {
     "all": true,
     "exclude": [
@@ -95,6 +96,5 @@
     "*.json": [
       "eslint --format=codeframe"
     ]
-  },
-  "dependencies": {}
+  }
 }
