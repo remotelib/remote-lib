@@ -160,7 +160,7 @@ remoteLibrary.sum(5).then(async sum2 => {
 });
 
 // You can even speed things up by using the virtual-path promise:
-remoteLibrary.multiFunc(3)(2).then(value => {
+remoteLibrary.sum(3)(2).then(value => {
   // value === 5 
 });
 ```
