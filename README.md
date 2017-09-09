@@ -127,8 +127,13 @@ const library = new Library({
       setTimeout(() => resolve({ data: 'Tada!' }), 100),
     ),
   
+  // Functions with callbacks
+  loadInfo: callback => {
+    setTimeout(callback(123), 200); // call callback after 200ms
+  },
+  
   // Functions of functions
-  multiFunc: () => () => 'Yes!',
+  sum: x => y => x + y,
 });
 ```
 
@@ -143,9 +148,20 @@ remoteLibrary.getData().then(value => {
   // value == { data: 'Tada!' }
 });
 
-// notice the double parentheses
-remoteLibrary.multiFunc()().then(value => {
-  // value === 'Yes!' 
+// Promises already handled for you 
+remoteLibrary.loadInfo(value => {
+  // value === 123
+}).catch(err => {
+  // if there's an error while calling loadInfo()
+});
+
+remoteLibrary.sum(5).then(async sum2 => {
+  await sum2(2); // 10 
+});
+
+// You can even speed things up by using the virtual-path promise:
+remoteLibrary.multiFunc(3)(4).then(value => {
+  // value === 12 
 });
 ```
 
