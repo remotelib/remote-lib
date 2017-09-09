@@ -68,12 +68,12 @@ npm install remote-lib
 
 #### Simple "Hello World" library
 
+Create a context and a server:
 ```js
 const net = require('net');
 const { Library } = require('remote-lib');
 
-// You can put any object, class or instance under the context and it will be proxied to the
-// remote peer automatically
+// Create the library context
 const library = new Library({
   hello: 'World!',
 });
@@ -87,12 +87,11 @@ const server = net.createServer(socket => {
 server.listen(3000);
 ```
 
-Notice that the server and the client
- sharing only a single socket. You can easily replace it with 
+On the client side, we just need to connect to the server an create our remote library. Notice 
+that the server and the client sharing only a single socket without any knowledge of the server 
+library format. You can easily replace the socket it with 
  [WebSocket](https://www.npmjs.com/package/websocket-stream) or even 
 [WebRTC DataChannel](https://www.npmjs.com/package/simple-peer).
-
-On the client side, we just need to connect to the server an create our remote library: 
 
 ```js
 const net = require('net');
