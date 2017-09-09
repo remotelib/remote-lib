@@ -63,18 +63,12 @@ npm install remote-lib
 * **[Create a new issue](https://github.com/remotelib/remote-lib/issues/new)** to report bugs
 * **[Fix an issue](https://github.com/remotelib/remote-lib/issues?state=open)**. RemoteLib is an OPEN Open Source Project!
 
-### API Documentation
 
-**[See the API Reference bellow](#api-reference)**.
+### Getting Started
 
+#### Simple "Hello World" library
+In order to serve your library, we first needs to create the library context as follow:
 
-### Usage
-In this example we will create a demo library on a TCP server and then serve and use in on the 
-client. Notice that the server and the client sharing only a Duplex tcp stream. You can replace it
-easily with [WebSocket](https://www.npmjs.com/package/websocket-stream) or even 
-[WebRTC DataChannel](https://www.npmjs.com/package/simple-peer).
-
-#### Create a library on the server
 ```js
 const net = require('net');
 const { Library } = require('remote-lib');
@@ -82,24 +76,17 @@ const { Library } = require('remote-lib');
 // You can put any object, class or instance under the context and it will be proxied to the
 // remote peer automatically
 const library = new Library({
-  // Static vars
-  foo: 'bar',
-
-  // Dynamic functions
-  getRandom: () => Math.random(),
-
-  // Async functions
-  getData: () =>
-    new Promise(resolve =>
-      setTimeout(() => resolve({ data: 'Tada!' }), 100),
-    ),
-
-  // Classes and objects
-  myThings: new Set(['car', 'keys', 'pizza']),
-  
-  // Functions that return functions
-  multiFunc: () => () => 'Yes!',
+  hello: 'World!',
 });
+```
+
+Then, we create a server that the clients could connect to. Notice that the server and the client
+ sharing only a single socket. You can easily replace it with 
+ [WebSocket](https://www.npmjs.com/package/websocket-stream) or even 
+[WebRTC DataChannel](https://www.npmjs.com/package/simple-peer).
+
+```js
+const net = require('net');
 
 // Create a server and serve each client the context remotely
 const server = net.createServer(socket => {
@@ -110,7 +97,8 @@ const server = net.createServer(socket => {
 server.listen(3000);
 ```
 
-#### Use the library remotely on the client
+On the client side, we just need to connect to the server an create our remote library: 
+
 ```js
 const net = require('net');
 const { RemoteLibrary } = require('remote-lib');
@@ -121,40 +109,93 @@ const socket = net.createConnection(3000);
 // Create the remote library
 const remoteLibrary = new RemoteLibrary(socket);
 
-// Get the remote "foo"
-remoteLibrary.foo.then(value => {
-  // value === 'bar'
+// Get the remote "hello" value
+remoteLibrary.hello.then(value => {
+  // value === 'World!'
 });
+```
 
-// Run the remote function "getRandom"
-remoteLibrary.getRandom().then(value => {
-  // `value` is random number
-});
+#### Calling remote functions
 
-// Run the remote async function "getData"
-remoteLibrary.getData().then(value => {
-  // value === { data: 'Tada!' }
-});
+RemoteLib supporting calling remote functions as well:
 
-// Get remote instance set "myThings"
-remoteLibrary.myThings.then(async set => {
-  set instanceof Set; // true
+```js
+// On the server:
+const library = new Library({
+  // Simple functions
+  foo() {
+     return 'bar';
+  },
   
-  // Access getters and data properties instantly
-  set.size; // 3
-
-  // Call methods with async promises
-  await set.has('keys'); // true
-  await set.has('cat'); // false
-
-  // Change the remote instance
-  await set.add('dog');
-  await set.has('dog'); // true
+  // Async functions
+  getData: () =>
+    new Promise(resolve =>
+      setTimeout(() => resolve({ data: 'Tada!' }), 100),
+    ),
+  
+  // Functions of functions
+  multiFunc: () => () => 'Yes!',
 });
 
-// Use RemotePromise virtual path:
+// On the client:
+remoteLibrary.foo().then(value => {
+  // value === 'bar' 
+});
+
+// Promises already handled for you 
+remoteLibrary.getData().then(value => {
+  // value == { data: 'Tada!' }
+});
+
+// notice the double parentheses
 remoteLibrary.multiFunc()().then(value => {
-  // value === 'Yes!'
+  // value === 'Yes!' 
+});
+```
+
+#### Using remote classes
+Use can use build-in classes or create one by your own:
+
+```js
+class MyClass {
+  constructor(i) {
+    this.i = i;
+  }
+  
+  inc() {
+    this.i += 1;
+    return this.i;
+  }
+}
+
+// On the server:
+const library = new Library({
+  myClass: new MyClass(5),
+
+  // native ES6 Set class instance
+  myThings: new Set(['car', 'keys', 'pizza']),
+});
+
+// On the client:
+remoteLibrary.myClass.then(async myClass => {
+  // myClass.i === 5
+                
+  // Call methods with async promises
+  await myClass.inc(); // 6
+  // myClass.i === 6 
+});
+
+remoteLibrary.myThings.then(async myThings => {
+  myThings instanceof Set; // true
+    
+  // Access cached getters instantly
+  myThings.size; // 3
+
+  await myThings.has('keys'); // true
+  await myThings.has('cat'); // false
+
+  await myThings.add('dog');
+  await myThings.has('dog'); // true
 });
 ```
 
