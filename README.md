@@ -148,11 +148,11 @@ remoteLibrary.getData().then(value => {
   // value == { data: 'Tada!' }
 });
 
-// Promises already handled for you 
+// Send callback as first parameter
 remoteLibrary.loadInfo(value => {
   // value === 123
 }).catch(err => {
-  // if there's an error while calling loadInfo()
+  // catch any errors while calling loadInfo()
 });
 
 remoteLibrary.sum(5).then(async sum2 => {
