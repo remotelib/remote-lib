@@ -198,6 +198,33 @@ remoteLibrary.myThings.then(async myThings => {
 });
 ```
 
+#### Handling errors
+
+RemoteLib catch all the errors for you and deliver them back to the user as-if they happens on 
+the client:
+
+```js
+// On the server:
+const library = new Library({
+  doNotCallMe() {
+     throw ReferenceError('I told you! :)');
+  },
+});
+```
+
+```js
+// On the client:
+remoteLibrary.doNotCallMe().catch(err => {
+  err instanceof ReferenceError; // true
+  err.message; // "I told you! :)"
+});
+
+remoteLibrary.notExistsFunction().catch(err => {
+  err instanceof TypeError; // true
+  err.message; // "notExistsFunction is not a function"
+});
+```
+
 ### API Reference
 Remote-lib is build with many small sub-packages, each package implement a small part of this library.
 You can read here the [full API Reference](http://www.remotelib.com).
