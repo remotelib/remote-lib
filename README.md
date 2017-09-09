@@ -67,7 +67,6 @@ npm install remote-lib
 ### Getting Started
 
 #### Simple "Hello World" library
-In order to serve your library, we first needs to create the library context as follow:
 
 ```js
 const net = require('net');
@@ -78,15 +77,6 @@ const { Library } = require('remote-lib');
 const library = new Library({
   hello: 'World!',
 });
-```
-
-Then, we create a server that the clients could connect to. Notice that the server and the client
- sharing only a single socket. You can easily replace it with 
- [WebSocket](https://www.npmjs.com/package/websocket-stream) or even 
-[WebRTC DataChannel](https://www.npmjs.com/package/simple-peer).
-
-```js
-const net = require('net');
 
 // Create a server and serve each client the context remotely
 const server = net.createServer(socket => {
@@ -96,6 +86,11 @@ const server = net.createServer(socket => {
 // Bind on port 3000
 server.listen(3000);
 ```
+
+Notice that the server and the client
+ sharing only a single socket. You can easily replace it with 
+ [WebSocket](https://www.npmjs.com/package/websocket-stream) or even 
+[WebRTC DataChannel](https://www.npmjs.com/package/simple-peer).
 
 On the client side, we just need to connect to the server an create our remote library: 
 
@@ -136,7 +131,9 @@ const library = new Library({
   // Functions of functions
   multiFunc: () => () => 'Yes!',
 });
+```
 
+```js
 // On the client:
 remoteLibrary.foo().then(value => {
   // value === 'bar' 
@@ -157,6 +154,7 @@ remoteLibrary.multiFunc()().then(value => {
 Use can use build-in classes or create one by your own:
 
 ```js
+// On the server
 class MyClass {
   constructor(i) {
     this.i = i;
@@ -168,14 +166,15 @@ class MyClass {
   }
 }
 
-// On the server:
 const library = new Library({
   myClass: new MyClass(5),
 
   // native ES6 Set class instance
   myThings: new Set(['car', 'keys', 'pizza']),
 });
+```
 
+```js
 // On the client:
 remoteLibrary.myClass.then(async myClass => {
   // myClass.i === 5
