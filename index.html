@@ -102,7 +102,7 @@
 </h1>
 
 <p></p>
-<p></p><h4>Run remote JavaScript code as if it&apos;s your own local library.</h4>
+<p></p><h4>Convert your JavaScript library to a remote service &#x1F4AB;.</h4>
 
 <p></p>
 <p></p><p>
@@ -123,37 +123,40 @@ will be able to use your code remotely exactly as if it&apos;s local library. Th
 functions with callbacks, 
 <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promises</a>, 
 class inheritance, getters and setters support and more. See <a href="#usage">usage</a> for some examples.</p>
+<h5 id="is-it-kind-of-rpc-">Is it kind of RPC?</h5><p>No. RemoteLib is based on <a href="packages/remote-context">remote-context</a> and won&apos;t just proxying 
+your functions. Instead, you have an entirely shared context between two remote peers. See 
+<a href="#features">Features</a> for more details:</p>
+<h3 id="features">Features</h3><ul>
+<li><strong>Use RemoteLib on node.js &amp; on the browser</strong> (just use <a href="http://browserify.org">browserify</a> or
+<a href="https://webpack.js.org/">webpack</a> to create a bundle).</li>
+<li><strong>Pure Javascript</strong> (Using 
+<a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Proxy">ES6 Proxy</a>).</li>
+<li><strong>Seamless interface</strong> (your library will be proxies AS IS to the users remotely!). </li>
+<li><strong>Proxy anything</strong> - from functions and object, to classes and Promises and even 
+<a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Symbol">Symbols</a>!</li>
+<li><strong>Builtin support for Promises</strong> - Resolve any path on the remote object via the <code>RemoteProxy</code> 
+interface.</li>
+<li><strong>Builtin support for class inheritance</strong> - Your user can use <code>instanceof</code> with the proxyied 
+objects.</li>
+<li><strong>Use any communication method</strong> - connect using simple <code>Stream</code> interface 
+(<a href="https://www.npmjs.com/package/websocket-stream">WebSocket</a> or 
+<a href="https://www.npmjs.com/package/simple-peer">WebRTC</a> implementation available).</li>
+<li>Serve <strong>multiple peers</strong> in parallel.</li>
+<li>Use RemoteLib for <strong>P2P projects</strong> (via the <a href="packages/remote-context"><code>remote-context</code></a> library). </li>
+</ul>
 <h3 id="install">Install</h3><pre><code><code class="source-code prettyprint">npm install remote-lib</code>
 </code></pre><h3 id="ways-to-help">Ways to help</h3><ul>
 <li><strong>Join us in <a href="https://gitter.im/remotelib/Lobby">Gitter</a></strong> to help with development or to hang out with some mad science hackers :)</li>
 <li><strong><a href="https://github.com/remotelib/remote-lib/issues/new">Create a new issue</a></strong> to report bugs</li>
 <li><strong><a href="https://github.com/remotelib/remote-lib/issues?state=open">Fix an issue</a></strong>. RemoteLib is an OPEN Open Source Project!</li>
 </ul>
-<h3 id="api-documentation">API Documentation</h3><p><strong><a href="#api-reference">See the API Reference bellow</a></strong>.</p>
-<h3 id="usage">Usage</h3><p>In this example we will create a demo library on a TCP server and then serve and use in on the 
-client. Notice that the server and the client sharing only a Duplex tcp stream. You can replace it
-easily with <a href="https://www.npmjs.com/package/websocket-stream">WebSocket</a> or even 
-<a href="https://www.npmjs.com/package/simple-peer">WebRTC DataChannel</a>.</p>
-<h4 id="create-a-library-on-the-server">Create a library on the server</h4><pre><code class="lang-js"><code class="source-code prettyprint">const net = require(&apos;net&apos;);
+<h3 id="getting-started">Getting Started</h3><h4 id="simple--quot-hello-world-quot--library">Simple &quot;Hello World&quot; library</h4><p>Create a context and a server:</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">const net = require(&apos;net&apos;);
 const { Library } = require(&apos;remote-lib&apos;);
 
-// You can put any object, class or instance under the context and it will be proxied to the
-// remote peer automatically
+// Create the library context
 const library = new Library({
-  // Static vars
-  foo: &apos;bar&apos;,
-
-  // Dynamic functions
-  getRandom: () =&gt; Math.random(),
-
-  // Async functions
-  getData: () =&gt;
-    new Promise(resolve =&gt;
-      setTimeout(() =&gt; resolve({ data: &apos;Tada!&apos; }), 100),
-    ),
-
-  // Classes and objects
-  myThings: new Set([&apos;car&apos;, &apos;keys&apos;, &apos;pizza&apos;]),
+  hello: &apos;World!&apos;,
 });
 
 // Create a server and serve each client the context remotely
@@ -164,7 +167,12 @@ const server = net.createServer(socket =&gt; {
 // Bind on port 3000
 server.listen(3000);</code>
 </code></pre>
-<h4 id="use-the-library-remotely-on-the-client">Use the library remotely on the client</h4><pre><code class="lang-js"><code class="source-code prettyprint">const net = require(&apos;net&apos;);
+<p>On the client side, we just need to connect to the server an create our remote library. Notice 
+that the server and the client sharing only a single socket without any knowledge of the server 
+library format. You can easily replace the socket it with 
+ <a href="https://www.npmjs.com/package/websocket-stream">WebSocket</a> or even 
+<a href="https://www.npmjs.com/package/simple-peer">WebRTC DataChannel</a>.</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">const net = require(&apos;net&apos;);
 const { RemoteLibrary } = require(&apos;remote-lib&apos;);
 
 // Connect to the server and get a stream
@@ -173,35 +181,120 @@ const socket = net.createConnection(3000);
 // Create the remote library
 const remoteLibrary = new RemoteLibrary(socket);
 
-// Get the remote &quot;foo&quot;
-remoteLibrary.foo.then(value =&gt; {
-  // value === &apos;bar&apos;
+// Get the remote &quot;hello&quot; value
+remoteLibrary.hello.then(value =&gt; {
+  // value === &apos;World!&apos;
+});</code>
+</code></pre>
+<h4 id="calling-remote-functions">Calling remote functions</h4><p>RemoteLib supporting calling remote functions as well:</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">// On the server:
+const library = new Library({
+  // Simple functions
+  foo() {
+     return &apos;bar&apos;;
+  },
+
+  // Async functions
+  getData: () =&gt;
+    new Promise(resolve =&gt;
+      setTimeout(() =&gt; resolve({ data: &apos;Tada!&apos; }), 100),
+    ),
+
+  // Functions with callbacks
+  loadInfo: callback =&gt; {
+    setTimeout(callback(123), 200); // call callback after 200ms
+  },
+
+  // Functions of functions
+  sum: x =&gt; y =&gt; x + y,
+});</code>
+</code></pre>
+<pre><code class="lang-js"><code class="source-code prettyprint">// On the client:
+remoteLibrary.foo().then(value =&gt; {
+  // value === &apos;bar&apos; 
 });
 
-// Run the remote function &quot;getRandom&quot;
-remoteLibrary.getRandom().then(value =&gt; {
-  // `value` is random number
-});
-
-// Run the remote async function &quot;getData&quot;
+// Promises already handled for you 
 remoteLibrary.getData().then(value =&gt; {
-  // value === { data: &apos;Tada!&apos; }
+  // value == { data: &apos;Tada!&apos; }
 });
 
-// Get remote instance set &quot;myThings&quot;
-remoteLibrary.myThings.then(async set =&gt; {
-  set instanceof Set; // true
+// Send callback as first parameter
+remoteLibrary.loadInfo(value =&gt; {
+  // value === 123
+}).catch(err =&gt; {
+  // catch any errors while calling loadInfo()
+});
 
-  // Access getters and data properties instantly
-  set.size; // 3
+remoteLibrary.sum(5).then(async sum2 =&gt; {
+  await sum2(2); // 7 
+});
+
+// You can even speed things up by using the virtual-path promise:
+remoteLibrary.sum(3)(2).then(value =&gt; {
+  // value === 5 
+});</code>
+</code></pre>
+<h4 id="using-remote-classes">Using remote classes</h4><p>Use can use build-in classes or create one by your own:</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">// On the server
+class MyClass {
+  constructor(i) {
+    this.i = i;
+  }
+
+  inc() {
+    this.i += 1;
+    return this.i;
+  }
+}
+
+const library = new Library({
+  myClass: new MyClass(5),
+
+  // native ES6 Set class instance
+  myThings: new Set([&apos;car&apos;, &apos;keys&apos;, &apos;pizza&apos;]),
+});</code>
+</code></pre>
+<pre><code class="lang-js"><code class="source-code prettyprint">// On the client:
+remoteLibrary.myClass.then(async myClass =&gt; {
+  // myClass.i === 5
 
   // Call methods with async promises
-  await set.has(&apos;keys&apos;); // true
-  await set.has(&apos;cat&apos;); // false
+  await myClass.inc(); // 6
+  // myClass.i === 6 
+});
 
-  // Change the remote instance
-  await set.add(&apos;dog&apos;);
-  await set.has(&apos;dog&apos;); // true
+remoteLibrary.myThings.then(async myThings =&gt; {
+  myThings instanceof Set; // true
+
+  // Access cached getters instantly
+  myThings.size; // 3
+
+  await myThings.has(&apos;keys&apos;); // true
+  await myThings.has(&apos;cat&apos;); // false
+
+  await myThings.add(&apos;dog&apos;);
+  await myThings.has(&apos;dog&apos;); // true
+});</code>
+</code></pre>
+<h4 id="handling-errors">Handling errors</h4><p>RemoteLib catch all the errors for you and deliver them back to the user as-if they happens on 
+the client:</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">// On the server:
+const library = new Library({
+  doNotCallMe() {
+     throw ReferenceError(&apos;I told you! :)&apos;);
+  },
+});</code>
+</code></pre>
+<pre><code class="lang-js"><code class="source-code prettyprint">// On the client:
+remoteLibrary.doNotCallMe().catch(err =&gt; {
+  err instanceof ReferenceError; // true
+  err.message; // &quot;I told you! :)&quot;
+});
+
+remoteLibrary.notExistsFunction().catch(err =&gt; {
+  err instanceof TypeError; // true
+  err.message; // &quot;notExistsFunction is not a function&quot;
 });</code>
 </code></pre>
 <h3 id="api-reference">API Reference</h3><p>Remote-lib is build with many small sub-packages, each package implement a small part of this library.
@@ -257,7 +350,7 @@ You can read here the <a href="http://www.remotelib.com">full API Reference</a>.
     
   <div class="manual-card-wrap" data-ice="cards">
       <div class="manual-card">
-        <div data-ice="card"><h1>Remote-lib</h1><p>Create a library and share it remotely with other peers via <strong>ANY</strong> stream object &#x1F4AB;.</p><p>Using only a <a href="https://nodejs.org/api/stream.html#stream_class_stream_duplex">Duplex stream</a> such as 
+        <div data-ice="card"><h1>Remote-lib</h1><p>Convert your JavaScript library to a remote service &#x1F4AB;.</p><p>Using only a <a href="https://nodejs.org/api/stream.html#stream_class_stream_duplex">Duplex stream</a> such as 
 <a href="https://nodejs.org/api/net.html#net_net_createconnection_options_connectlistener">TCP soocket</a>, 
 <a href="https://www.npmj.com/package/websocket-stream">WebSocket</a> or even 
 <a href="https://www.npmjs.com/package/simple-peer">WebRTC DataChannel</a> with this library you can just share
@@ -284,6 +377,10 @@ const library = new Library({
 
   // Classes and objects
   myThings: new Set([&apos;car&apos;, &apos;keys&apos;, &apos;pizza&apos;]),
+
+
+  // Functions that return functions
+  multiFunc: () =&gt; () =&gt; &apos;Yes!&apos;,
 });
 
 // Create a server and serve each client the context remotely
@@ -331,6 +428,11 @@ remoteLibrary.myThings.then(async set =&gt; {
   // Change the remote instance
   await set.add(&apos;dog&apos;);
   await set.has(&apos;dog&apos;); // true
+});
+
+// Use RemotePromise virtual path:
+remoteLibrary.multiFunc()().then(value =&gt; {
+  // value === &apos;Yes!&apos;
 });</code>
 </code></pre><h2>API Reference</h2><p>This module is a part of the <a href="http://www.remotelib.com"><code>remote-lib</code></a> library.</p><p>Here is the relevant documentation for this module:</p><ul>
 <li><a href="http://www.remotelib.com/class/packages/remote-lib/src/Library.js~Library.html"><code>Library</code></a></li>
@@ -634,7 +736,7 @@ referenceContext.lookup(foo); // &quot;foo&quot;</code>
 </div>
 
 <footer class="footer">
-  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.1)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
 </footer>
 
 <script src="script/search_index.js"></script>
