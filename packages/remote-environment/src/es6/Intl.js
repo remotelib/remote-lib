@@ -32,5 +32,4 @@ export default {
   'Intl.NumberFormat.prototype': Intl.NumberFormat.prototype,
   'Intl.NumberFormat.prototype.resolvedOptions': Intl.NumberFormat.prototype.resolvedOptions,
   'Intl.NumberFormat.supportedLocalesOf': Intl.NumberFormat.supportedLocalesOf,
-  'Intl.v8BreakIterator': Intl.v8BreakIterator,
 };
