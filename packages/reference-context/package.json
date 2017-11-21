@@ -1,6 +1,6 @@
 {
   "name": "reference-context",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "Creates a virtual context that can hold values with given references.",
   "keywords": [
     "reference",

@@ -1,6 +1,6 @@
 {
   "name": "remote-instance",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "A parser for constructing objects instances remotely.",
   "keywords": [
     "remote",

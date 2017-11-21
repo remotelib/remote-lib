@@ -1,6 +1,6 @@
 {
   "name": "remote-lib",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Convert your JavaScript library to a remote service.",
   "keywords": [
     "remote",
@@ -33,7 +33,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "remote-context": "^0.2.0"
+    "remote-context": "^0.2.1"
   },
   "engines": {
     "node": ">=6.11"

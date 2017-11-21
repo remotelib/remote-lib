@@ -1,6 +1,6 @@
 {
   "name": "remote-context",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Create a context and share it remotely with other peers via any stream object.",
   "keywords": [
     "remote",
@@ -28,10 +28,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "reference-context": "^0.1.1",
-    "remote-environment": "^0.1.1",
-    "remote-instance": "^0.1.1",
-    "remote-protocol": "^0.2.0"
+    "reference-context": "^0.2.1",
+    "remote-environment": "^0.2.1",
+    "remote-instance": "^0.2.1",
+    "remote-protocol": "^0.2.1"
   },
   "devDependencies": {
     "duplexify": "^3.5.1"
