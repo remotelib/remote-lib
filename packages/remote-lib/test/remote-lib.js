@@ -111,12 +111,14 @@ describe('RemoteContext', () => {
       }, done);
 
       // Use RemotePromise virtual path:
-      remoteLibrary.multiFunc()().then(value => {
-        assert.equal(value, 'Yes!');
+      remoteLibrary
+        .multiFunc()()
+        .then(value => {
+          assert.equal(value, 'Yes!');
 
-        tests -= 1;
-        if (!tests) remoteLibrary.destroy();
-      });
+          tests -= 1;
+          if (!tests) remoteLibrary.destroy();
+        });
     });
   });
 });

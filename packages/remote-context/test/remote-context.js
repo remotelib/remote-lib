@@ -83,7 +83,8 @@ describe('RemoteContext', () => {
         .catch(done);
 
       // Run the remote function "getRandom"
-      remoteContext.fetch('getRandom')()
+      remoteContext
+        .fetch('getRandom')()
         .then(value => {
           assert.equal(typeof value, 'number');
           assert(value < 1);
@@ -95,7 +96,8 @@ describe('RemoteContext', () => {
         .catch(done);
 
       // Run the remote async function "getData"
-      remoteContext.fetch('getData')()
+      remoteContext
+        .fetch('getData')()
         .then(value => {
           assert.deepEqual(value, { data: 'Tada!' });
 
