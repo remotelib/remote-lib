@@ -30,9 +30,7 @@ export default class RemoteDefinePropertyAction extends ReferencePropertyAction 
   constructor(reference, property, descriptor) {
     if (!(descriptor instanceof PropertyDescriptorAction)) {
       throw new TypeError(
-        `Expect descriptor to be instance of PropertyDescriptorAction: ${
-          descriptor
-        }`
+        `Expect descriptor to be instance of PropertyDescriptorAction: ${descriptor}`
       );
     }
     super(reference, property);

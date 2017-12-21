@@ -132,9 +132,7 @@ export default class Parser {
       typeCode > TYPE_CODE_MAX
     ) {
       throw new TypeError(
-        `Expect typeCode to be integer between ${TYPE_CODE_MIN}-${
-          TYPE_CODE_MAX
-        }: ${typeCode}`
+        `Expect typeCode to be integer between ${TYPE_CODE_MIN}-${TYPE_CODE_MAX}: ${typeCode}`
       );
     }
 

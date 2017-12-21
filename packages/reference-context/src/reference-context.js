@@ -69,9 +69,7 @@ export default class ReferenceContext {
     if (parentContext != null) {
       if (!(parentContext instanceof ReferenceContext)) {
         throw new TypeError(
-          `Expect parent context be instance of ReferenceContext: ${
-            parentContext
-          }`
+          `Expect parent context be instance of ReferenceContext: ${parentContext}`
         );
       }
 
