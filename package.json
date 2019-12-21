@@ -51,7 +51,7 @@
     "esdoc-importpath-plugin": "^1.0.1",
     "esdoc-publish-markdown-plugin": "^1.0.0",
     "esdoc-standard-plugin": "^1.0.0",
-    "eslint": "^3.19.0",
+    "eslint": "^4.18.2",
     "eslint-config-airbnb-base": "^11.3.2",
     "eslint-config-prettier": "^2.9.0",
     "eslint-import-resolver-node": "^0.3.2",
