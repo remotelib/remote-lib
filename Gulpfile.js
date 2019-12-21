@@ -34,8 +34,6 @@ function swapSrcWithLib(srcPath) {
   return parts.join(path.sep);
 }
 
-gulp.task('default', ['build', 'docs']);
-
 gulp.task('build', () =>
   gulp
     .src(scripts, { base })
@@ -70,8 +68,13 @@ gulp.task('build', () =>
     .pipe(gulp.dest(base))
 );
 
-gulp.task('watch', ['build'], () => {
-  watch(scripts, { debounceDelay: 200 }, () => {
-    gulp.start('build');
-  });
-});
+gulp.task(
+  'watch',
+  gulp.series('build', () => {
+    watch(scripts, { debounceDelay: 200 }, () => {
+      gulp.start('build');
+    });
+  })
+);
+
+gulp.task('default', gulp.series('build'));
