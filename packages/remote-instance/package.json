@@ -30,7 +30,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "bl": "^1.2.1",
+    "bl": "^4.0.3",
     "deep-equal": "^1.0.1",
     "duplexify": "^3.5.0",
     "msgpack5": "^3.4.1"
